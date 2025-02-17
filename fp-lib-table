@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AAmega-mcu144")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/mega-mcu144/0.7")(options "")(descr ""))
+  (lib (name "AAoutput")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/output/0.3")(options "")(descr ""))
+  (lib (name "AApower_12and5V")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/power_12and5V/0.3")(options "")(descr ""))
+  (lib (name "AAmega-mcu100-f7")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/mega-mcu100-f7/0.2")(options "")(descr ""))
+)

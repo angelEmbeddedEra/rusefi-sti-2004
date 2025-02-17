@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AAmega-mcu144")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/mega-mcu144/0.7/mega-mcu144.kicad_sym")(options "")(descr ""))
+  (lib (name "AAmega-mcu100")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/mega-mcu100-f7/0.2/mega-mcu100-f7.kicad_sym")(options "")(descr ""))
+  (lib (name "AApower_12and5V")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/power_12and5V/0.3/power_12and5V.kicad_sym")(options "")(descr ""))
+  (lib (name "AAoutput")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/output/0.3/output.kicad_sym")(options "")(descr ""))
+)
