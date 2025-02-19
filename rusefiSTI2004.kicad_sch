@@ -13538,7 +13538,7 @@
 	)
 	(symbol
 		(lib_id "hellen-one-can-0.1:Module-can-0.1")
-		(at 499.11 44.45 0)
+		(at 311.15 386.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13547,7 +13547,7 @@
 		(fields_autoplaced yes)
 		(uuid "32026446-b86c-45e6-ab28-5f06b7e0d5f6")
 		(property "Reference" "M4"
-			(at 515.62 39.37 0)
+			(at 327.66 381 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13555,7 +13555,7 @@
 			)
 		)
 		(property "Value" "Module-can-0.1"
-			(at 515.62 41.91 0)
+			(at 327.66 383.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13563,7 +13563,7 @@
 			)
 		)
 		(property "Footprint" "hellen-one-can-0.1:can"
-			(at 499.11 44.45 0)
+			(at 311.15 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13572,7 +13572,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 499.11 44.45 0)
+			(at 311.15 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13581,7 +13581,7 @@
 			)
 		)
 		(property "Description" "Hellen-One CAN Module"
-			(at 499.11 44.45 0)
+			(at 311.15 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16243,7 +16243,7 @@
 	)
 	(symbol
 		(lib_id "hellen-one-wbo-0.5:Module-wbo-0.5")
-		(at 300.99 -72.39 0)
+		(at 210.82 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16252,7 +16252,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9e53fa7-fa96-40ad-ba8c-04398d3c6c48")
 		(property "Reference" "M3"
-			(at 317.5 -77.47 0)
+			(at 227.33 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16260,7 +16260,7 @@
 			)
 		)
 		(property "Value" "Module-wbo-0.5"
-			(at 317.5 -74.93 0)
+			(at 227.33 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16268,7 +16268,7 @@
 			)
 		)
 		(property "Footprint" "hellen-one-wbo-0.5:wbo"
-			(at 326.39 -73.66 0)
+			(at 236.22 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16277,7 +16277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 300.99 -72.39 0)
+			(at 210.82 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16286,7 +16286,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 300.99 -72.39 0)
+			(at 210.82 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
