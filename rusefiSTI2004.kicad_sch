@@ -14897,7 +14897,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STI:1-1376430-0"
 			(at 30.48 242.57 0)
 			(effects
 				(font
@@ -14916,6 +14916,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 30.48 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 30.48 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 30.48 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" ""
 			(at 30.48 266.7 0)
 			(effects
 				(font
@@ -17104,7 +17131,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STI:1-1376430-0"
 			(at 30.48 340.36 0)
 			(effects
 				(font
@@ -17123,6 +17150,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 30.48 364.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 30.48 364.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 30.48 364.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" ""
 			(at 30.48 364.49 0)
 			(effects
 				(font
@@ -17703,7 +17757,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STI:1-1376430-0"
 			(at 30.48 143.51 0)
 			(effects
 				(font
@@ -17722,6 +17776,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 30.48 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 30.48 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 30.48 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" ""
 			(at 30.48 167.64 0)
 			(effects
 				(font
@@ -18331,7 +18412,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STI:1-1376430-0"
 			(at 27.94 40.64 0)
 			(effects
 				(font
@@ -18350,6 +18431,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 27.94 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 27.94 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 27.94 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" ""
 			(at 27.94 64.77 0)
 			(effects
 				(font
