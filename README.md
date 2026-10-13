@@ -1,8 +1,12 @@
 # FAQ
 
+Q: How do I build the board package?
+
+A: ``tools/create-board.sh`` on our machine (docker, KiCad 10). Output lands in ``boards/<board>-<rev>/``. There is no GitHub workflow.
+
 Q: How do I get latest hellen-one?
 
-A: ``.github/workflows/update-hellen-one-reference.yaml`` is set to pull latest hellen daily!
+A: ``git submodule update --remote hellen-one kicad6-libraries``, then rebuild and commit.
 
 Q: I get error 'Cannot stat xx-yy__zz.kicad_pcb: No such file' but files are right there?
 
