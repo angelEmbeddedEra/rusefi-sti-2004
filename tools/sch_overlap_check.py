@@ -3,8 +3,9 @@
 
     python3 tools/sch_overlap_check.py rusefiSTI2004.kicad_sch [--json]
 
-Checks net labels, visible symbol fields (Reference, Value, power-symbol names) and sheet
-names against each other, and every text against the bodies of symbols it does not belong to.
+Checks net labels, visible symbol fields (Reference, Value, power-symbol names), notes and sheet
+names against each other and against symbol bodies; symbol bodies against each other; and fields
+against wires (a value printed across a wire).
 Text size is estimated from KiCad's stroke font (about 0.9 x height per character), so this
 is a conservative geometry check, not a renderer. Exit code 1 when anything overlaps.
 """
@@ -75,6 +76,9 @@ def effects(node):
         j = one(e, 'justify')
         just = ' '.join(j[1:]) if j else ''
         hide = 'hide' in e or any(isinstance(c, list) and c[:2] == ['hide', 'yes'] for c in e)
+    # KiCad 9/10 write (hide yes) on the property itself, beside (effects)
+    if any(isinstance(c, list) and c[:2] == ['hide', 'yes'] for c in node) or 'hide' in node[3:]:
+        hide = True
     return size, just, hide
 
 
@@ -147,6 +151,10 @@ def items(path):
             out.append(('field', 'sheet:' + name, p[2], text_box(p[2], float(pa[1]), float(pa[2]), float(pa[3]), size, just)))
         for pin in kids(sh, 'pin'):   # sheet pin names sit inside the sheet box: part of the body
             pass
+    for w in kids(root, 'wire'):
+        pts = [(float(q[1]), float(q[2])) for q in kids(one(w, 'pts'), 'xy')]
+        (x1, y1), (x2, y2) = pts[0], pts[-1]
+        out.append(('wire', None, 'wire', (min(x1, x2) - 0.05, min(y1, y2) - 0.05, max(x1, x2) + 0.05, max(y1, y2) + 0.05)))
     return out
 
 
@@ -156,8 +164,12 @@ def overlaps(path):
     bad = []
     for i, a in enumerate(it):
         for b in it[i + 1:]:
-            if a[0] == 'body' and b[0] == 'body':
-                continue                      # body vs body is layout, not text
+            kinds = {a[0], b[0]}
+            if 'wire' in kinds:
+                if kinds != {'wire', 'field'}:
+                    continue                  # only symbol fields may not sit on a wire (labels belong on them)
+            elif a[0] == 'body' and b[0] == 'body' and (a[1] or '').startswith('sheet:') and (b[1] or '').startswith('sheet:'):
+                continue
             if a[1] is not None and a[1] == b[1] and 'body' in (a[0], b[0]):
                 continue                      # a symbol's own fields may sit on its own body (not on each other)
             if {a[0], b[0]} == {'text', 'body'}:

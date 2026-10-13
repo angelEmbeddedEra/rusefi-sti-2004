@@ -1,126 +1,545 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "35286802-40c4-559c-a0ca-ebed7483ac1f")
 	(paper "A3")
 	(title_block
 		(title "Sensors")
-		(date "2025-02-17")
+		(date "2026-10-13")
 	)
 	(lib_symbols
-		(symbol "hellen-one-common:Jumper-Pad-Pad" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
-		    (property "Reference" "R" (at 0 2.54 0)
-		      (effects (font (size 1.016 1.016)))
-		    )
-		    (property "Value" "Jumper-Pad-Pad" (at 0 -1.778 0)
-		      (effects (font (size 1.016 1.016)) hide)
-		    )
-		    (property "Footprint" "hellen-one-common:PAD-0805-PAD" (at 0 -3.81 0)
-		      (effects (font (size 1.524 1.524)) hide)
-		    )
-		    (property "Datasheet" "" (at 0 0 0)
-		      (effects (font (size 1.524 1.524)) hide)
-		    )
-		    (property "LCSC" "C17477" (at 0 -3.81 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (symbol "Jumper-Pad-Pad_0_1"
-		      (circle (center -2.54 0) (radius 0.762)
-		        (stroke (width 0) (type default))
-		        (fill (type none))
-		      )
-		      (circle (center 2.54 0) (radius 0.762)
-		        (stroke (width 0) (type default))
-		        (fill (type none))
-		      )
-		      (pin passive line (at -5.08 0 0) (length 2.54)
-		        (name "1" (effects (font (size 1.524 1.524))))
-		        (number "1" (effects (font (size 1.524 1.524))))
-		      )
-		      (pin passive line (at 5.08 0 180) (length 2.54)
-		        (name "2" (effects (font (size 1.524 1.524))))
-		        (number "2" (effects (font (size 1.524 1.524))))
-		      )
-		    )
-		    (symbol "Jumper-Pad-Pad_1_0"
-		      (rectangle (start -2.54 -1.27) (end 2.54 1.27)
-		        (stroke (width 0.254) (type default))
-		        (fill (type background))
-		      )
-		    )
-		  )
-		(symbol "hellen-one-common:Res"
-			(pin_numbers hide)
+		(symbol "EmbeddedEra_Generic:+5VA"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "R"
-				(at 3.81 2.54 0)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Res"
-				(at 5.08 -2.54 0)
+			(property "Value" "+5VA"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "hellen-one-common:R0603"
-				(at 3.81 -3.81 0)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Power symbol creates a global label with name \"+5VA\". Copied from KiCad library power:+5VA (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "LCSC" ""
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(symbol "Res_1_0"
-				(rectangle
-					(start 2.54 -1.27)
-					(end 7.62 1.27)
+			(symbol "+5VA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5VA_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EmbeddedEra_Generic:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EmbeddedEra_Generic:GNDA"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GNDA"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground. Copied from KiCad library power:GNDA (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GNDA_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDA_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EmbeddedEra_Resistors_0603:EE_R_0603_1K_1%"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1K"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RES 1K 1% 0.1W 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part Number" "RC0603FR-071KL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C22548"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Specification" "0603 thick-film resistor, 1%, >=0.1 W, matching nominal resistance"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R resistor 1K 0603 1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "EE_R_0603_1K_1%_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
+					(at 0 2.54 270)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -137,8 +556,8 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
+					(at 0 -2.54 90)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -155,13 +574,205 @@
 					)
 				)
 			)
+			(embedded_fonts no)
+		)
+		(symbol "EmbeddedEra_Resistors_0805_5pct:EE_R_0805_0_5%"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "0"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "EmbeddedEra_Library:R_0805_2012Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "Unknown"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RES 0 OHM JUMPER 1/8W 0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part Number" "RC0805JR-070RL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Specification" "0805 thick-film resistor, 5%, >=0.125 W, matching nominal resistance"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R resistor 0 jumper 0805 5%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "EE_R_0805_0_5%_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
 		(symbol "hellen-one-knock-0.2:Module-knock-0.2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "M"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -170,6 +781,8 @@
 			)
 			(property "Value" "Module-knock-0.2"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -178,29 +791,35 @@
 			)
 			(property "Footprint" "hellen-one-knock-0.2:knock"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Hellen-One Knock Pre-amplifier Module"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Module-knock-0.2_1_0"
@@ -306,13 +925,18 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hellen-one-vr-discrete-0.5:Module-vr-discrete-0.5"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "M"
 				(at 1.27 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -321,6 +945,8 @@
 			)
 			(property "Value" "Module-vr-discrete-0.5"
 				(at 16.51 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -329,29 +955,35 @@
 			)
 			(property "Footprint" "hellen-one-vr-discrete-0.5:vr-discrete"
 				(at 25.4 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Module-vr-discrete-0.5_1_0"
@@ -502,318 +1134,7 @@
 					)
 				)
 			)
-		)
-		(symbol "power:+5VA"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5VA"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5VA\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5VA_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5VA_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+5VA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:GND"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:GNDA"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GNDA"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GNDA_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDA_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0) hide
-					(name "GNDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 	)
 	(text "Engine sensors."
@@ -821,12 +1142,12 @@
 		(at 15.24 16.51 0)
 		(effects
 			(font
-				(size 3.0 3.0)
+				(size 3 3)
 				(bold yes)
 			)
 			(justify left top)
 		)
-		(uuid "98558769-4444-494a-a111-a6d88a039b70")
+		(uuid "28f87c2e-4742-4966-a231-0f1c969c57ed")
 	)
 	(text "Crank: 2-wire VR sensor (B10 +, B22 -) into M5. Knock (C25) into M13. M7 is a spare knock channel (not used).\nCams: 3-wire Hall sensors (WI-114), wired straight to M1 inputs that have pull-ups; crossed parts = stronger pull-ups.\nAnalog sensors (MAF, MAP, IAT, ECT, TPS, pedal, TGV, fuel level) go straight to M1 inputs by net label.\nSensor returns C31/C34/C35 (GND_SENSOR): to GND through the fitted 0R, or to GNDA through the open link."
 		(exclude_from_sim no)
@@ -837,7 +1158,17 @@
 			)
 			(justify left top)
 		)
-		(uuid "f694f112-5039-474c-b170-c64818dab336")
+		(uuid "7f3d8a2a-7f06-424d-aaed-331dbca9b650")
+	)
+	(wire
+		(pts
+			(xy 73.66 101.6) (xy 71.12 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0631a5db-d250-427e-ae70-6d017cb7c03e")
 	)
 	(wire
 		(pts
@@ -861,6 +1192,56 @@
 	)
 	(wire
 		(pts
+			(xy 378.46 52.07) (xy 375.92 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b6a4f89-f217-430f-a138-ff7736284d14")
+	)
+	(wire
+		(pts
+			(xy 344.17 52.07) (xy 346.71 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "474ed26c-3ba1-4513-84d9-cb1c5d6433b5")
+	)
+	(wire
+		(pts
+			(xy 73.66 101.6) (xy 76.2 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c32442b-27b5-479a-ab8f-548f62e5004b")
+	)
+	(wire
+		(pts
+			(xy 27.94 101.6) (xy 25.4 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f812b68-c540-4bdf-96fc-b21b19283bd2")
+	)
+	(wire
+		(pts
+			(xy 83.82 101.6) (xy 86.36 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51ed6fbc-8d61-451e-b0e0-634987b8d552")
+	)
+	(wire
+		(pts
 			(xy 43.18 63.5) (xy 40.64 63.5)
 		)
 		(stroke
@@ -868,6 +1249,36 @@
 			(type default)
 		)
 		(uuid "5568abd7-53c7-45fe-b149-dfd4bfed276a")
+	)
+	(wire
+		(pts
+			(xy 222.25 68.58) (xy 236.22 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5842eddc-0b18-4a71-8dd2-30052985d88c")
+	)
+	(wire
+		(pts
+			(xy 334.01 52.07) (xy 336.55 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b79851-8ebc-447c-a5aa-074515852128")
+	)
+	(wire
+		(pts
+			(xy 388.62 52.07) (xy 391.16 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "761ad4a2-b129-49d2-a87e-2f15f01c0690")
 	)
 	(wire
 		(pts
@@ -881,6 +1292,46 @@
 	)
 	(wire
 		(pts
+			(xy 334.01 52.07) (xy 331.47 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f7dab2-8030-4586-8dcd-09508cf29f45")
+	)
+	(wire
+		(pts
+			(xy 27.94 101.6) (xy 30.48 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ea75a2f-1efc-4039-ad9b-1b15ef44e835")
+	)
+	(wire
+		(pts
+			(xy 83.82 101.6) (xy 81.28 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "983c5ced-55e4-4f71-bfb5-a5dc49d81c2e")
+	)
+	(wire
+		(pts
+			(xy 344.17 52.07) (xy 341.63 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3d424fa-7c34-4c93-bac2-4549779d4aaf")
+	)
+	(wire
+		(pts
 			(xy 91.44 53.34) (xy 111.76 53.34)
 		)
 		(stroke
@@ -888,6 +1339,26 @@
 			(type default)
 		)
 		(uuid "a7e14933-06a6-4d75-81c2-fee5b2ff9ef5")
+	)
+	(wire
+		(pts
+			(xy 157.48 68.58) (xy 173.99 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af1b3a35-ee11-480e-bf19-fd7c1e681c27")
+	)
+	(wire
+		(pts
+			(xy 388.62 52.07) (xy 386.08 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afd7612d-dd51-466e-9644-dfda0db93582")
 	)
 	(wire
 		(pts
@@ -911,6 +1382,46 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 101.6) (xy 35.56 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4a67499-fc15-4cb6-9218-ebcf72210252")
+	)
+	(wire
+		(pts
+			(xy 378.46 52.07) (xy 381 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f18f5bdc-8ee2-44e0-847f-c608de70cc97")
+	)
+	(wire
+		(pts
+			(xy 38.1 101.6) (xy 40.64 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ff3b8a-4eee-466c-a23c-4dd0e831afd9")
+	)
+	(wire
+		(pts
+			(xy 187.96 48.26) (xy 194.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb403296-6cb8-4ce1-8e4c-42e6b3a8a2d6")
+	)
+	(wire
+		(pts
 			(xy 91.44 58.42) (xy 111.76 58.42)
 		)
 		(stroke
@@ -919,31 +1430,43 @@
 		)
 		(uuid "fbfbaa29-a0c7-4a46-8371-6de44e6c402f")
 	)
-	(global_label "THRESHOLD_VR_CR"
+	(wire
+		(pts
+			(xy 194.31 48.26) (xy 194.31 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff0e8381-78e7-4ea7-9451-b18deb99684e")
+	)
+	(global_label "IN_CAM"
 		(shape passive)
-		(at 111.76 63.5 0)
+		(at 25.4 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "8cd6b534-c972-4ca9-b8e7-d6bb561b44b4")
+		(uuid "021e729d-f2b0-4475-8763-d3b56013e81c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 63.5 0)
+			(at 25.4 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
-	(global_label "IN_CRANK"
+	(global_label "IN_KNOCK"
 		(shape passive)
-		(at 111.76 53.34 0)
+		(at 236.22 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -951,15 +1474,17 @@
 			)
 			(justify left)
 		)
-		(uuid "113ec8d4-3b1c-4593-bec9-922f4944c209")
+		(uuid "17c15f42-9a6b-4780-ba00-666bddd7064c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 53.34 0)
+			(at 236.22 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -973,15 +1498,137 @@
 			)
 			(justify left)
 		)
-		(uuid "8168af25-0c32-4168-b2f3-5d883da035c2")
+		(uuid "45b0245a-e4b8-4278-a5a8-c60cb9fc9ab3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.76 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "GND_SENSOR"
+		(shape passive)
+		(at 331.47 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "48de5bfe-81df-4b8e-a625-384c9a6bc4ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 331.47 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "THRESHOLD_VR_CR"
+		(shape passive)
+		(at 111.76 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9cefcf3a-68ff-4984-bb05-f0db6d7dd59a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.76 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "VREF"
+		(shape passive)
+		(at 187.96 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a95139df-6332-47ef-a07e-04f071eaa150")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "IN_CRANK"
+		(shape passive)
+		(at 111.76 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ad6a5385-16bc-4480-ac46-cbf3878ffc75")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.76 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GND_SENSOR"
+		(shape passive)
+		(at 375.92 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b27cbf62-e336-4b0c-92c1-370722c84707")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 375.92 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -995,15 +1642,17 @@
 			)
 			(justify right)
 		)
-		(uuid "ed6948d5-07a5-49c0-9afa-761b7083ac6c")
+		(uuid "b82aeeb1-e96f-45c3-9976-77d4a0e4943d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 29.21 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -1017,15 +1666,333 @@
 			)
 			(justify right)
 		)
-		(uuid "c12147a3-6698-4a87-9878-bd3c06200f72")
+		(uuid "ba340ace-7c03-424f-9908-342e59b78f2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 29.21 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "IN_CAM_RH"
+		(shape passive)
+		(at 71.12 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bfe29db8-0288-4400-be5a-6172f3b47e43")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "IN_KNOCK_RAW"
+		(shape passive)
+		(at 157.48 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7b98676-7fc8-44f1-bb20-3bf1790df440")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:GNDA")
+		(at 391.16 52.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "14b78c42-a2f5-4681-9187-1b077971aae6")
+		(property "Reference" "#PWR086"
+			(at 391.16 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 394.97 52.07 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 391.16 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground. Copied from KiCad library power:GNDA (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 391.16 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84a04dad-7e78-4ebf-900e-c6cd6bbf3281")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Resistors_0805_5pct:EE_R_0805_0_5%")
+		(at 339.09 52.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f83bb9a-6953-44cd-bcd6-0ee724d2184a")
+		(property "Reference" "JP8"
+			(at 339.09 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 339.09 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EmbeddedEra_Library:R_0805_2012Metric"
+			(at 339.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "Unknown"
+			(at 339.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0 OHM JUMPER 1/8W 0805"
+			(at 339.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 339.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 339.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805JR-070RL"
+			(at 339.09 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20487842-fc09-4c90-8c26-6654b51f38aa")
+		)
+		(pin "2"
+			(uuid "acb13454-c22a-428e-a2b0-b7cc6af1a1f7")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
+					(reference "JP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:GND")
+		(at 196.85 83.82 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3832d9e9-760c-4c49-9010-750721edc456")
+		(property "Reference" "#PWR01"
+			(at 196.85 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 196.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "137839d1-b4a5-4ac3-acac-6b5ddd355cef")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
+					(reference "#PWR01")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1033,14 +2000,18 @@
 		(lib_id "hellen-one-vr-discrete-0.5:Module-vr-discrete-0.5")
 		(at 50.8 50.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64b78d65-0cba-496c-be63-8cd8b590a137")
 		(property "Reference" "M5"
 			(at 67.31 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1049,6 +2020,8 @@
 		)
 		(property "Value" "Module-vr-discrete-0.5"
 			(at 67.31 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1057,29 +2030,35 @@
 		)
 		(property "Footprint" "hellen-one-vr-discrete-0.5:vr-discrete"
 			(at 76.2 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 50.8 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 50.8 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "E3"
@@ -1113,26 +2092,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 40.64 64.77 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "70583b4c-24fc-41b1-b51d-102c5f6988ae")
 		(property "Reference" "#PWR04"
 			(at 40.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 40.64 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1141,29 +2126,35 @@
 		)
 		(property "Footprint" ""
 			(at 40.64 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 40.64 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 40.64 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1179,396 +2170,21 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5VA")
-		(at 39.37 60.96 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "92d4ed83-d9e9-4556-8816-b5f314016514")
-		(property "Reference" "#PWR03"
-			(at 43.18 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VA"
-			(at 33.7756 61.3283 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 39.37 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "51945b18-2cb8-4a87-88a9-98e2aeca0d25")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 222.25 68.58) (xy 236.22 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5842eddc-0b18-4a71-8dd2-30052985d88c")
-	)
-	(wire
-		(pts
-			(xy 157.48 68.58) (xy 173.99 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af1b3a35-ee11-480e-bf19-fd7c1e681c27")
-	)
-	(wire
-		(pts
-			(xy 187.96 48.26) (xy 194.31 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb403296-6cb8-4ce1-8e4c-42e6b3a8a2d6")
-	)
-	(wire
-		(pts
-			(xy 194.31 48.26) (xy 194.31 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff0e8381-78e7-4ea7-9451-b18deb99684e")
-	)
-	(global_label "IN_KNOCK"
-		(shape passive)
-		(at 236.22 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "04e0bce3-63b5-4bee-8f49-998a99ed9d26")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 236.22 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VREF"
-		(shape passive)
-		(at 187.96 48.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8b96da6b-0bc0-472b-a639-06e1f160153d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.96 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "IN_KNOCK_RAW"
-		(shape passive)
-		(at 157.48 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4aaa8a49-78a8-41e8-810e-3e8e17958931")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.48 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 196.85 83.82 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3832d9e9-760c-4c49-9010-750721edc456")
-		(property "Reference" "#PWR01"
-			(at 196.85 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 196.85 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 196.85 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "137839d1-b4a5-4ac3-acac-6b5ddd355cef")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hellen-one-knock-0.2:Module-knock-0.2")
-		(at 181.61 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a21557e5-cae6-4770-b8d6-72f431a1575e")
-		(property "Reference" "M13"
-			(at 210.566 53.848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Module-knock-0.2"
-			(at 210.566 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "hellen-one-knock-0.2:knock"
-			(at 181.61 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hellen-One Knock Pre-amplifier Module"
-			(at 181.61 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "W1"
-			(uuid "e99ab575-2d54-4c84-92b6-62b70ce8619a")
-		)
-		(pin "E3"
-			(uuid "3ed5e103-f9ed-4d4b-9200-769398fcb52e")
-		)
-		(pin "E1"
-			(uuid "f7fc3734-adc6-4fe7-9f7e-1a3ccba149ed")
-		)
-		(pin "E2"
-			(uuid "a6465faf-7844-4e6d-8c8f-bd3892b0c5b2")
-		)
-		(pin "W2"
-			(uuid "78f284a1-2cb9-44e3-bd39-57b3ecd08390")
-		)
-		(instances
-			(project ""
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "M13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5VA")
-		(at 199.39 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f78e9e8c-64aa-4824-8731-9d1a094a93b4")
-		(property "Reference" "#PWR02"
-			(at 199.39 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VA"
-			(at 199.39 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 199.39 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9672ee8d-d2a7-40d1-8187-db36ffdc5c9e")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "hellen-one-knock-0.2:Module-knock-0.2")
 		(at 256.54 43.18 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "735be1e0-59be-41b0-b83e-0e981d50d6a2")
 		(property "Reference" "M7"
 			(at 299.72 47.0214 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,6 +2193,8 @@
 		)
 		(property "Value" "Module-knock-0.2"
 			(at 299.72 49.5614 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1585,29 +2203,35 @@
 		)
 		(property "Footprint" "hellen-one-knock-0.2:knock"
 			(at 256.54 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 256.54 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Hellen-One Knock Pre-amplifier Module"
 			(at 256.54 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "E2"
@@ -1635,134 +2259,31 @@
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Jumper-Pad-Pad")
-		(at 339.09 50.8 0)
+		(lib_id "EmbeddedEra_Generic:GND")
+		(at 346.71 52.07 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "1f6a7fe8-3926-4862-947f-160d9f7971c4")
-		(property "Reference" "JP8"
-			(at 339.09 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 339.09 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
-			(at 339.09 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 339.09 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17477"
-			(at 339.09 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c0718be8-d81d-4c17-9ce0-9f3e08bba5d0")
-		)
-		(pin "2"
-			(uuid "7efc1384-7b35-4f57-95d6-122d7cdd4617")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "JP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 334.01 50.8) (xy 331.47 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70376abd-bce0-4f26-b4f8-d8c8ae9023cf")
-	)
-	(global_label "GND_SENSOR"
-		(shape passive)
-		(at 331.47 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6167f5c7-07ea-479b-9a21-7a5277b074b4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 331.47 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 344.17 50.8) (xy 346.71 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ead1506d-fb6b-460f-a09a-70d2fabdbf43")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 346.71 50.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d45751f4-661f-4ca6-941b-40112d52520b")
+		(uuid "81da6ffb-89c2-4ea7-828d-45b24f9256b9")
 		(property "Reference" "#PWR084"
-			(at 346.71 50.8 270)
+			(at 346.71 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
-			(at 350.52 50.8 270)
+			(at 350.52 52.07 270)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1771,34 +2292,40 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 346.71 50.8 270)
+			(at 346.71 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 346.71 50.8 270)
+			(at 346.71 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 346.71 50.8 270)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 346.71 52.07 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "3a24da59-3db4-492e-b520-255b8cd603f4")
+			(uuid "fa23b5ae-2a5d-44f4-9a82-f7df501565e7")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -1810,62 +2337,297 @@
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Jumper-Pad-Pad")
-		(at 383.54 53.34 0)
+		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_1K_1%")
+		(at 78.74 101.6 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp yes)
-		(uuid "754398bc-7504-4cc2-9e2e-2406398bf2bc")
-		(property "Reference" "JP9"
-			(at 381 45.72 0)
+		(uuid "90c1667a-0fb1-4698-91bf-bd0e77da35a1")
+		(property "Reference" "R43"
+			(at 73.66 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "DNP 0R"
-			(at 383.54 50.8 0)
+		(property "Value" "1K"
+			(at 73.66 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
-			(at 383.54 53.34 0)
+		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
+			(at 73.66 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 383.54 53.34 0)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 73.66 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C17477"
-			(at 383.54 53.34 0)
+		(property "Description" "RES 1K 1% 0.1W 0603"
+			(at 73.66 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "LCSC" "C22548"
+			(at 73.66 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 73.66 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0603FR-071KL"
+			(at 73.66 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "a9c46ddb-0525-4099-8121-3dc1ca904940")
+			(uuid "1fa1fe48-42ea-4682-9b45-06feb47d729f")
 		)
 		(pin "2"
-			(uuid "50ad69fb-09a1-4f8f-8e3f-56544a776902")
+			(uuid "0fe7ab2b-d908-402d-a176-12a6571a8151")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+5VA")
+		(at 39.37 60.96 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92d4ed83-d9e9-4556-8816-b5f314016514")
+		(property "Reference" "#PWR03"
+			(at 43.18 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 33.7756 61.3283 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\". Copied from KiCad library power:+5VA (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 39.37 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51945b18-2cb8-4a87-88a9-98e2aeca0d25")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Resistors_0805_5pct:EE_R_0805_0_5%")
+		(at 383.54 52.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "990462d5-db1e-4232-b180-7b94648eb834")
+		(property "Reference" "JP9"
+			(at 382.27 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 383.54 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EmbeddedEra_Library:R_0805_2012Metric"
+			(at 383.54 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "Unknown"
+			(at 383.54 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0 OHM JUMPER 1/8W 0805"
+			(at 383.54 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 383.54 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 383.54 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805JR-070RL"
+			(at 383.54 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc7d2d30-bef4-4c53-9412-3e6ad66a3aaf")
+		)
+		(pin "2"
+			(uuid "c12b7f2a-637d-4e8e-a5b1-9d20144bab8c")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -1876,243 +2638,120 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 378.46 53.34) (xy 375.92 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89d3fa26-d75c-4730-b5a0-f8c37abca795")
-	)
-	(global_label "GND_SENSOR"
-		(shape passive)
-		(at 375.92 53.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c1ba34a6-b549-4a58-b404-9c80e2b5f1ab")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 375.92 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 388.62 53.34) (xy 391.16 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a02a9a17-97ff-45af-beca-4103636c5f87")
-	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 391.16 53.34 90)
+		(lib_id "hellen-one-knock-0.2:Module-knock-0.2")
+		(at 181.61 58.42 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "357d87c8-33a0-4d54-8a31-74c3a7860be2")
-		(property "Reference" "#PWR086"
-			(at 391.16 53.34 270)
+		(uuid "a21557e5-cae6-4770-b8d6-72f431a1575e")
+		(property "Reference" "M13"
+			(at 210.566 53.848 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 394.97 53.34 270)
+		(property "Value" "Module-knock-0.2"
+			(at 210.566 56.388 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 391.16 53.34 270)
+		(property "Footprint" "hellen-one-knock-0.2:knock"
+			(at 181.61 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 391.16 53.34 270)
+			(at 181.61 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 391.16 53.34 270)
+		(property "Description" "Hellen-One Knock Pre-amplifier Module"
+			(at 181.61 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "f792b1b7-190b-46cf-89b8-40e9f300582e")
+		(pin "W1"
+			(uuid "e99ab575-2d54-4c84-92b6-62b70ce8619a")
+		)
+		(pin "E3"
+			(uuid "3ed5e103-f9ed-4d4b-9200-769398fcb52e")
+		)
+		(pin "E1"
+			(uuid "f7fc3734-adc6-4fe7-9f7e-1a3ccba149ed")
+		)
+		(pin "E2"
+			(uuid "a6465faf-7844-4e6d-8c8f-bd3892b0c5b2")
+		)
+		(pin "W2"
+			(uuid "78f284a1-2cb9-44e3-bd39-57b3ecd08390")
 		)
 		(instances
-			(project "rusefiSTI2004"
+			(project ""
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "#PWR086")
+					(reference "M13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Res")
-		(at 27.94 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "f4f385f9-e144-4c06-8349-c206fdfb183f")
-		(property "Reference" "R42"
-			(at 27.94 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 27.94 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "hellen-one-common:R0603"
-			(at 27.94 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C21190"
-			(at 27.94 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "32955eb5-6d2a-4eb1-902b-19a054080ee7")
-		)
-		(pin "2"
-			(uuid "5086621b-c7cc-4833-8257-2566b78a7ce2")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 27.94 101.6) (xy 25.4 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daca8736-e6dc-4f03-85c0-12bc1ed071eb")
-	)
-	(global_label "IN_CAM"
-		(shape passive)
-		(at 25.4 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "387aba06-be13-4860-9a8d-15bb67d85fe5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.4 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 38.1 101.6) (xy 40.64 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b9b52c9-8fd6-40b9-9f93-826753edb575")
-	)
-	(symbol
-		(lib_id "power:+5VA")
+		(lib_id "EmbeddedEra_Generic:+5VA")
 		(at 40.64 101.6 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "4f12c434-d090-4915-8b92-a17972f89dd7")
+		(uuid "abe1f9b2-f696-450e-99ec-6752ac9beb54")
 		(property "Reference" "#PWR081"
 			(at 40.64 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5VA"
 			(at 44.45 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2122,33 +2761,39 @@
 		)
 		(property "Footprint" ""
 			(at 40.64 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 40.64 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5VA\". Copied from KiCad library power:+5VA (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 40.64 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "e3647b41-3061-4f57-a4ce-9b7ab719d9b9")
+			(uuid "0e15f0af-185e-4b6d-b828-c15d1a4d2c5d")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -2160,134 +2805,31 @@
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Res")
-		(at 73.66 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "e67cd53e-8b31-469f-8ef5-0e7048d28f79")
-		(property "Reference" "R43"
-			(at 73.66 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 73.66 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "hellen-one-common:R0603"
-			(at 73.66 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C21190"
-			(at 73.66 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4827ba05-3132-46fd-b9ef-21c7dab4659b")
-		)
-		(pin "2"
-			(uuid "3e3f055c-38b3-49b6-b98e-79bd8e0c42c1")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "R43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 73.66 101.6) (xy 71.12 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3de3128f-de96-4269-959c-3c75dc86cd37")
-	)
-	(global_label "IN_CAM_RH"
-		(shape passive)
-		(at 71.12 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4f16f5c8-960c-4725-b597-93b9fde1cc67")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.12 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 83.82 101.6) (xy 86.36 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e117592d-b29e-48fc-b358-303c63a59cee")
-	)
-	(symbol
-		(lib_id "power:+5VA")
+		(lib_id "EmbeddedEra_Generic:+5VA")
 		(at 86.36 101.6 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "50590725-75ef-433e-8828-5917b5cef16f")
+		(uuid "e7c929a3-9107-4070-b93d-cc0af727ef15")
 		(property "Reference" "#PWR082"
 			(at 86.36 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5VA"
 			(at 90.17 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2297,38 +2839,233 @@
 		)
 		(property "Footprint" ""
 			(at 86.36 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 86.36 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5VA\". Copied from KiCad library power:+5VA (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 86.36 101.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "187b9b1c-02ac-48de-aa9b-cb14f321402f")
+			(uuid "0822cc77-529f-40c2-bc11-959124a2abe6")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
 					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_1K_1%")
+		(at 33.02 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "ec1c43fc-f3d4-4f8a-8570-f3fdd7439534")
+		(property "Reference" "R42"
+			(at 27.94 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 27.94 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
+			(at 27.94 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 27.94 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 1K 1% 0.1W 0603"
+			(at 27.94 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22548"
+			(at 27.94 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 27.94 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0603FR-071KL"
+			(at 27.94 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df138621-c3e6-476d-8069-461bdb46ced1")
+		)
+		(pin "2"
+			(uuid "bb9a3085-23e9-4ffa-9f92-fb73e9a2e4ef")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+5VA")
+		(at 199.39 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f78e9e8c-64aa-4824-8731-9d1a094a93b4")
+		(property "Reference" "#PWR02"
+			(at 199.39 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 199.39 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\". Copied from KiCad library power:+5VA (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 199.39 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9672ee8d-d2a7-40d1-8187-db36ffdc5c9e")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)

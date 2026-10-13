@@ -1,79 +1,117 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "a418efa1-9ba3-4d5b-b128-e76baf44d8aa")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Power_Management:AUIPS2041L"
+		(symbol "EmbeddedEra:VND14NV04-E"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 3.81 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "AUIPS2041L"
+			(property "Value" "VND14NV04-E"
 				(at 3.81 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(property "Footprint" "EmbeddedEra_Library:TO-252-2"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-AUIPS2041-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aae147a9d4c57"
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" "Intelligent Power Low Side Switch, 68V, 5A, SOT-223"
+			(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_keywords" "low side switch"
+			(property "IPN" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*"
+			(property "Manufacturer" "STMicroelectronics"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "AUIPS2041L_0_1"
+			(property "Manufacturer Part Number" "VND14NV04-E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C155647"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VND14NV04-E_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 2.54 -5.08)
@@ -86,7 +124,7 @@
 					)
 				)
 			)
-			(symbol "AUIPS2041L_1_1"
+			(symbol "VND14NV04-E_1_1"
 				(pin input line
 					(at -10.16 0 0)
 					(length 2.54)
@@ -142,132 +180,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "hellen-one-common:Res"
-			(pin_numbers hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 3.81 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
+		(symbol "EmbeddedEra_Generic:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
 			)
-			(property "Value" "Res"
-				(at 5.08 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "hellen-one-common:R0603"
-				(at 3.81 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Res_1_0"
-				(rectangle
-					(start 2.54 -1.27)
-					(end 7.62 1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:GND"
-			(power)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -276,38 +219,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -327,8 +278,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -344,6 +295,205 @@
 					)
 				)
 			)
+			(embedded_fonts no)
+		)
+		(symbol "EmbeddedEra_Resistors_0603:EE_R_0603_4.7K_1%"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4.7K"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RES 4K7 1% 0.1W 0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part Number" "RC0603FR-074K7L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C99782"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Specification" "0603 thick-film resistor, 1%, >=0.1 W, matching nominal resistance"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R resistor 4.7K 0603 1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "EE_R_0603_4.7K_1%_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -369,6 +519,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff8bec5e-3c67-4663-9d76-5b973a051a67")
+	)
+	(wire
+		(pts
+			(xy 167.64 123.19) (xy 167.64 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0589e9d2-e6e2-496f-bccf-cdc45585b408")
+	)
+	(wire
+		(pts
+			(xy 167.64 101.6) (xy 167.64 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a1f1cc-78a7-4682-8960-6b1088b323e9")
 	)
 	(wire
 		(pts
@@ -432,6 +602,36 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 90.17) (xy 167.64 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee4da37-15cb-4389-ad4f-1ea955d44e20")
+	)
+	(wire
+		(pts
+			(xy 167.64 133.35) (xy 167.64 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e7012df-737f-4e25-8094-f78a3455b41e")
+	)
+	(wire
+		(pts
+			(xy 167.64 80.01) (xy 167.64 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f16cf5f-fe8d-4504-9e77-cb6ed8c5511f")
+	)
+	(wire
+		(pts
 			(xy 128.27 50.8) (xy 149.86 50.8)
 		)
 		(stroke
@@ -439,6 +639,36 @@
 			(type default)
 		)
 		(uuid "87558533-3b1c-4675-a3c2-4108f2b6d452")
+	)
+	(wire
+		(pts
+			(xy 167.64 111.76) (xy 167.64 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e106b7c-21bf-4531-bb17-a018410c4d92")
+	)
+	(wire
+		(pts
+			(xy 167.64 68.58) (xy 167.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cfea6b-f73c-47f5-9782-9c06aefadf52")
+	)
+	(wire
+		(pts
+			(xy 167.64 58.42) (xy 167.64 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9d7e540-9ffa-4175-a256-c8e336f7e77d")
 	)
 	(wire
 		(pts
@@ -493,7 +723,6 @@
 	(hierarchical_label "IN3"
 		(shape input)
 		(at 175.26 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -505,7 +734,6 @@
 	(hierarchical_label "OUT4"
 		(shape output)
 		(at 128.27 115.57 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -517,7 +745,6 @@
 	(hierarchical_label "IN2"
 		(shape input)
 		(at 175.26 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -529,7 +756,6 @@
 	(hierarchical_label "OUT1"
 		(shape output)
 		(at 128.27 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -541,7 +767,6 @@
 	(hierarchical_label "OUT2"
 		(shape output)
 		(at 128.27 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -553,7 +778,6 @@
 	(hierarchical_label "IN4"
 		(shape input)
 		(at 175.26 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -565,7 +789,6 @@
 	(hierarchical_label "OUT3"
 		(shape output)
 		(at 128.27 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -577,7 +800,6 @@
 	(hierarchical_label "IN1"
 		(shape input)
 		(at 175.26 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -587,26 +809,32 @@
 		(uuid "fbf36246-210e-4b63-a7f4-830843ab7a04")
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 167.64 133.35 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00aeeb4b-81e2-47ba-b9aa-1a120f4660de")
 		(property "Reference" "#PWR041"
 			(at 167.64 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 167.64 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -615,29 +843,35 @@
 		)
 		(property "Footprint" ""
 			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -645,142 +879,184 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR041")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0122")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR049")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR041")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0121")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0122")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0123")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Res")
-		(at 167.64 58.42 270)
+		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_4.7K_1%")
+		(at 167.64 63.5 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ffe01c6-8303-4f39-9937-2dbaaab872f2")
 		(property "Reference" "R3"
-			(at 165.1 63.5 0)
+			(at 163.83 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4.7K"
 			(at 167.64 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "hellen-one-common:R0603"
+		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
 			(at 163.83 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 167.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 4K7 1% 0.1W 0603"
 			(at 167.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C23162"
+		(property "LCSC" "C99782"
 			(at 167.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0603FR-074K7L"
+			(at 167.64 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "540d199c-7f3b-4f89-852f-064c4fbd2700")
+			(uuid "95f6651e-b481-4030-a2fa-f740706ac69c")
 		)
 		(pin "2"
-			(uuid "d2c43cef-9735-4524-a241-306e4845d36c")
+			(uuid "9a271b4b-4f07-4f11-9e64-ac2835a57d64")
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "R3")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "R15")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "R7")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "R3")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "R11")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "R15")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "R19")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "R7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 167.64 90.17 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "18a90365-cc87-4993-8972-7f351d128415")
 		(property "Reference" "#PWR037"
 			(at 167.64 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 167.64 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -789,29 +1065,35 @@
 		)
 		(property "Footprint" ""
 			(at 167.64 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 167.64 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 167.64 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -819,41 +1101,45 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR037")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0125")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR045")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR037")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0124")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0125")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0126")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Power_Management:AUIPS2041L")
+		(lib_id "EmbeddedEra:VND14NV04-E")
 		(at 149.86 123.19 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b022239-af77-4def-b653-0f2841e73387")
 		(property "Reference" "Q4"
 			(at 144.78 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -863,6 +1149,8 @@
 		)
 		(property "Value" "VND14NV04-E"
 			(at 148.59 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -870,41 +1158,82 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "hellen-one-common:DPAK"
+		(property "Footprint" "EmbeddedEra_Library:TO-252-2"
 			(at 149.86 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-AUIPS2041-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aae147a9d4c57"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
 			(at 149.86 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
 			(at 149.86 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C155647"
 			(at 149.86 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 149.86 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "VND14NV04-E"
+			(at 149.86 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IPN" ""
+			(at 149.86 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -918,50 +1247,56 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "Q4")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "Q16")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "Q8")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "Q4")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "Q12")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "Q16")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "Q20")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "Q8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 167.64 111.76 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "24a6e003-2a0b-4d89-8aa5-9611c0ebc443")
 		(property "Reference" "#PWR039"
 			(at 167.64 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 167.64 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -970,29 +1305,35 @@
 		)
 		(property "Footprint" ""
 			(at 167.64 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 167.64 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 167.64 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1000,50 +1341,56 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR039")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0128")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR047")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR039")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0127")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0128")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0129")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 149.86 87.63 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "43bcf08e-0a59-4e90-b145-afdb7588bb6e")
 		(property "Reference" "#PWR036"
 			(at 149.86 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 149.86 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1052,29 +1399,35 @@
 		)
 		(property "Footprint" ""
 			(at 149.86 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 149.86 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 149.86 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1082,142 +1435,184 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR036")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0131")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR044")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR036")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0130")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0131")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0132")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Res")
-		(at 167.64 123.19 270)
+		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_4.7K_1%")
+		(at 167.64 128.27 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "56a862e7-52e0-484a-9964-f3b404bb8ec6")
 		(property "Reference" "R6"
-			(at 165.1 128.27 0)
+			(at 163.83 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4.7K"
 			(at 167.64 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "hellen-one-common:R0603"
+		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
 			(at 163.83 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 167.64 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 4K7 1% 0.1W 0603"
 			(at 167.64 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C23162"
+		(property "LCSC" "C99782"
 			(at 167.64 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0603FR-074K7L"
+			(at 167.64 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "2815bf84-0ceb-41c6-a0c7-b8978e71446b")
+			(uuid "1206595c-2d00-4f35-b595-c01f8a5c6a48")
 		)
 		(pin "2"
-			(uuid "69afb8a6-6fc2-4b8d-9bef-220e642a18b6")
+			(uuid "d3bacc82-9b2a-45be-a2f6-fff9c3755435")
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "R6")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "R18")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "R10")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "R6")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "R14")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "R18")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "R22")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "R10")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 149.86 109.22 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ead6965-27b0-4c50-a963-c5e80fb0f0cc")
 		(property "Reference" "#PWR038"
 			(at 149.86 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 149.86 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1226,29 +1621,35 @@
 		)
 		(property "Footprint" ""
 			(at 149.86 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 149.86 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 149.86 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1256,50 +1657,56 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR038")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0134")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR046")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR038")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0133")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0134")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0135")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 149.86 130.81 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "75e1bfc5-f5c6-4a3b-93f2-c438b7567013")
 		(property "Reference" "#PWR040"
 			(at 149.86 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 149.86 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1308,29 +1715,35 @@
 		)
 		(property "Footprint" ""
 			(at 149.86 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 149.86 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 149.86 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1338,50 +1751,56 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR040")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0137")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR048")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR040")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0136")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0137")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0138")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 149.86 66.04 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "96569b22-4fc1-4e46-a6f8-caee4f4fa52c")
 		(property "Reference" "#PWR034"
 			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 149.86 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1390,29 +1809,35 @@
 		)
 		(property "Footprint" ""
 			(at 149.86 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 149.86 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 149.86 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1420,225 +1845,301 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR034")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0140")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR042")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR034")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0139")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0140")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0141")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Res")
-		(at 167.64 101.6 270)
+		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_4.7K_1%")
+		(at 167.64 106.68 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0d37d5a-4f6c-4f2e-b71c-3c04f0fbfb3a")
 		(property "Reference" "R5"
-			(at 165.1 106.68 0)
+			(at 163.83 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4.7K"
 			(at 167.64 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "hellen-one-common:R0603"
+		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
 			(at 163.83 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 167.64 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 4K7 1% 0.1W 0603"
 			(at 167.64 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C23162"
+		(property "LCSC" "C99782"
 			(at 167.64 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0603FR-074K7L"
+			(at 167.64 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "77c59514-73aa-4f4f-9e8c-e8f7b96d44d5")
+			(uuid "b44595fd-6cb5-4115-983a-941b04a26c37")
 		)
 		(pin "2"
-			(uuid "a3b2e264-02e7-4864-9775-cf4f3472be4f")
+			(uuid "95fa32f7-5f49-495b-aa37-79e09b873b33")
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "R5")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "R17")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "R9")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "R5")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "R13")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "R17")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "R21")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "R9")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Res")
-		(at 167.64 80.01 270)
+		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_4.7K_1%")
+		(at 167.64 85.09 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "bab956b3-a113-452b-ba88-cecb1bd1d014")
 		(property "Reference" "R4"
-			(at 165.1 85.09 0)
+			(at 163.83 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4.7K"
 			(at 167.64 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "hellen-one-common:R0603"
+		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
 			(at 163.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 167.64 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 4K7 1% 0.1W 0603"
 			(at 167.64 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" "C23162"
+		(property "LCSC" "C99782"
 			(at 167.64 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0603FR-074K7L"
+			(at 167.64 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "6eb2e22d-acc9-40a8-a549-6234b7177cef")
+			(uuid "1d154547-8518-42ca-8f71-7efd3b63fb06")
 		)
 		(pin "2"
-			(uuid "4f37329a-6655-4dc0-9920-5861effef327")
+			(uuid "866ce499-ead3-4d08-bbda-f0e9c53a4d50")
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "R4")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "R16")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "R8")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "R4")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "R12")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "R16")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "R20")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "R8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Power_Management:AUIPS2041L")
+		(lib_id "EmbeddedEra:VND14NV04-E")
 		(at 149.86 58.42 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf4f9f00-a09a-409c-a8a5-e422b91b112c")
 		(property "Reference" "Q1"
 			(at 144.78 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1648,6 +2149,8 @@
 		)
 		(property "Value" "VND14NV04-E"
 			(at 148.59 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1655,41 +2158,82 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "hellen-one-common:DPAK"
+		(property "Footprint" "EmbeddedEra_Library:TO-252-2"
 			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-AUIPS2041-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aae147a9d4c57"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
 			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
 			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C155647"
 			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "VND14NV04-E"
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IPN" ""
+			(at 149.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1703,41 +2247,45 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "Q1")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "Q13")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "Q5")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "Q1")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "Q9")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "Q13")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "Q17")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Power_Management:AUIPS2041L")
+		(lib_id "EmbeddedEra:VND14NV04-E")
 		(at 149.86 80.01 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0ca8bbc-91fe-4c07-9cdc-09e8930c626f")
 		(property "Reference" "Q2"
 			(at 142.24 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,6 +2295,8 @@
 		)
 		(property "Value" "VND14NV04-E"
 			(at 146.05 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1754,41 +2304,82 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "hellen-one-common:DPAK"
+		(property "Footprint" "EmbeddedEra_Library:TO-252-2"
 			(at 149.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-AUIPS2041-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aae147a9d4c57"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
 			(at 149.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
 			(at 149.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC" " C155647"
+		(property "LCSC" "C155647"
 			(at 149.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 149.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "VND14NV04-E"
+			(at 149.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IPN" ""
+			(at 149.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1802,50 +2393,56 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "Q2")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "Q14")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "Q6")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "Q2")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "Q10")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "Q14")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "Q18")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "Q6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 167.64 68.58 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6a1e9a9-0d00-477e-9d12-ef005fb5913f")
 		(property "Reference" "#PWR035"
 			(at 167.64 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 167.64 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1854,29 +2451,35 @@
 		)
 		(property "Footprint" ""
 			(at 167.64 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 167.64 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 167.64 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1884,41 +2487,45 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "#PWR035")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0143")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "#PWR043")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR035")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "#PWR0142")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "#PWR0143")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "#PWR0144")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Power_Management:AUIPS2041L")
+		(lib_id "EmbeddedEra:VND14NV04-E")
 		(at 149.86 101.6 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa03b4c2-9238-4184-acfe-23ab3b7673f0")
 		(property "Reference" "Q3"
 			(at 144.78 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,6 +2535,8 @@
 		)
 		(property "Value" "VND14NV04-E"
 			(at 147.32 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1935,41 +2544,82 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "hellen-one-common:DPAK"
+		(property "Footprint" "EmbeddedEra_Library:TO-252-2"
 			(at 149.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-AUIPS2041-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aae147a9d4c57"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
 			(at 149.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
 			(at 149.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C155647"
 			(at 149.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 149.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "VND14NV04-E"
+			(at 149.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IPN" ""
+			(at 149.86 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1983,24 +2633,24 @@
 		)
 		(instances
 			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "Q3")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "Q15")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "Q7")
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "Q3")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
 					(reference "Q11")
 					(unit 1)
 				)
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "Q15")
-					(unit 1)
-				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
 					(reference "Q19")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "Q7")
 					(unit 1)
 				)
 			)

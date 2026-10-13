@@ -1,0 +1,94 @@
+(version 1)
+# EmbeddedEra JLCPCB-only design rules — for boards that need finer geometry than the
+# "safe everywhere" default (USB-C, fine-pitch BGA). Swap this in as <project>.kicad_dru and
+# the board is JLCPCB-only from then on; say so in the project README.
+# Ported 2026-09-15 from labtroll/KiCad-DesignRules (JLCPCB, KiCad 7 syntax, 362 stars) against
+# https://jlcpcb.com/capabilities/pcb-capabilities. Two values still to confirm by eye on the
+# capabilities page: the via pad / annular figure, and USB 90 Ω width+gap per stackup from the
+# JLCPCB impedance calculator (net class USB2 carries the placeholder 0.2/0.25).
+
+(rule "Track width, outer layer (1oz)"
+	(layer outer)
+	(condition "A.Type == 'track'")
+	(constraint track_width (min 0.127mm))
+)
+
+(rule "Track spacing, outer layer (1oz)"
+	(layer outer)
+	(condition "A.Type == 'track' && B.Type == A.Type")
+	(constraint clearance (min 0.127mm))
+)
+
+(rule "Track width, inner layer"
+	(layer inner)
+	(condition "A.Type == 'track'")
+	(constraint track_width (min 0.09mm))
+)
+
+(rule "Track spacing, inner layer"
+	(layer inner)
+	(condition "A.Type == 'track' && B.Type == A.Type")
+	(constraint clearance (min 0.09mm))
+)
+
+(rule "Silkscreen text"
+	(layer "?.Silkscreen")
+	(condition "A.Type == 'Text' || A.Type == 'Text Box'")
+	(constraint text_thickness (min 0.15mm))
+	(constraint text_height (min 1mm))
+)
+
+(rule "Pad to silkscreen"
+	(layer outer)
+	(condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
+	(constraint silk_clearance (min 0.15mm))
+)
+
+(rule "Edge (routed) to copper"
+	(condition "A.Type == 'track' || A.Type == 'pad' || A.Type == 'zone'")
+	(constraint edge_clearance (min 0.3mm))
+)
+
+(rule "Hole diameter"
+	(constraint hole_size (min 0.2mm) (max 6.3mm))
+)
+
+(rule "NPTH diameter"
+	(layer outer)
+	(condition "!A.isPlated()")
+	(constraint hole_size (min 0.5mm))
+)
+
+(rule "Annular ring, via and PTH"
+	(layer outer)
+	(condition "A.isPlated()")
+	(constraint annular_width (min 0.075mm))
+)
+
+(rule "Hole to hole, different nets"
+	(layer outer)
+	(condition "A.Net != B.Net")
+	(constraint hole_to_hole (min 0.5mm))
+)
+
+(rule "Hole to hole, same net"
+	(layer outer)
+	(condition "A.Net == B.Net")
+	(constraint hole_to_hole (min 0.254mm))
+)
+
+(rule "Track to NPTH hole"
+	(condition "!A.isPlated() && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.254mm))
+)
+
+(rule "Track to PTH hole"
+	(condition "A.isPlated() && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.33mm))
+)
+
+(rule "Solder mask dam between pads"
+	(layer outer)
+	(condition "A.Type == 'pad' && B.Type == 'pad' && A.Net != B.Net")
+	(constraint physical_clearance (min 0.1mm))
+)

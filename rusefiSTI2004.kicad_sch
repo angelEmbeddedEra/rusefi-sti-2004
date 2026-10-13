@@ -1,74 +1,13 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "00d4d98c-a749-4bd2-a087-ea484becbbe4")
 	(paper "A3")
 	(title_block
-		(date "2025-02-17")
+		(date "2026-10-13")
 	)
 	(lib_symbols)
-	(text "rusEFI STI 2004: plug-and-play ECU for the 2004 USDM Subaru Impreza WRX STI (EJ257, drive-by-wire)."
-		(exclude_from_sim no)
-		(at 15.24 16.51 0)
-		(effects
-			(font
-				(size 3.0 3.0)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "5947cd46-0436-4281-9fac-02265fca9436")
-	)
-	(text "Built from Hellen-One modules. Signals between sheets are global net labels; power symbols are global.\nCrossed-out (DNP) parts are optional footprints, not assembled: what each one is for is in documents/README.md.\nCar pinout and cross-check: documents/STI2004-pinout-check.xlsx (tools/pinout_check.py).\nSheet order follows the signal: car connector -> power -> MCU -> inputs -> outputs -> comms -> aux."
-		(exclude_from_sim no)
-		(at 15.24 24.13 0)
-		(effects
-			(font
-				(size 2.0 2.0)
-			)
-			(justify left top)
-		)
-		(uuid "01deb68e-0fa9-409b-b8c0-179da7711b3e")
-	)
-	(sheet
-		(at 15.24 60.96)
-		(size 76.2 30.48)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "8f77e81b-d6a3-50b3-91ba-ed97dc82c74a")
-		(property "Sheetname" "Vehicle connector"
-			(at 15.24 60.26 0)
-			(effects
-				(font
-					(size 1.8 1.8)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Connector.kicad_sch"
-			(at 15.24 92.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(page "2")
-				)
-			)
-		)
-	)
 	(text "Units: D = B137, C = B136, B = B135, A = B134. Every\npin carries a global net label used on the other\nsheets."
 		(exclude_from_sim no)
 		(at 15.24 95.25 0)
@@ -78,45 +17,18 @@
 			)
 			(justify left top)
 		)
-		(uuid "8d6739e3-d40f-4e6a-bf7f-674404f725a9")
+		(uuid "17e037fd-f439-4a54-8eca-acb1a80a07a2")
 	)
-	(sheet
-		(at 110.49 60.96)
-		(size 76.2 30.48)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "9210100f-c116-57a2-84be-e34f28a52b29")
-		(property "Sheetname" "Power"
-			(at 110.49 60.26 0)
-			(effects
-				(font
-					(size 1.8 1.8)
-				)
-				(justify left bottom)
+	(text "Built from Hellen-One modules. Signals between sheets are global net labels; power symbols are global.\nCrossed-out (DNP) parts are optional footprints, not assembled: what each one is for is in documents/README.md.\nCar pinout and cross-check: documents/STI2004-pinout-check.xlsx (tools/pinout_check.py).\nSheet order follows the signal: car connector -> power -> MCU -> inputs -> outputs -> comms -> aux."
+		(exclude_from_sim no)
+		(at 15.24 24.13 0)
+		(effects
+			(font
+				(size 2 2)
 			)
+			(justify left top)
 		)
-		(property "Sheetfile" "Power.kicad_sch"
-			(at 110.49 92.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(page "3")
-				)
-			)
-		)
+		(uuid "1d550e5b-8407-4fb9-8087-bb0e0f45a421")
 	)
 	(text "M14 (main power module): +12V_RAW from the main\nrelay (B5/B6), +12V_IGN (D15), back-up +12V (B19)."
 		(exclude_from_sim no)
@@ -127,45 +39,51 @@
 			)
 			(justify left top)
 		)
-		(uuid "d5395b44-8c4d-4e90-a773-b69c7993bef7")
+		(uuid "42616b1f-f3ca-455a-b444-e3446e4a96ab")
 	)
-	(sheet
-		(at 205.74 60.96)
-		(size 76.2 30.48)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "a3d769b8-ff18-59ca-80df-ef94f6b9000c")
-		(property "Sheetname" "MCU and USB"
-			(at 205.74 60.26 0)
-			(effects
-				(font
-					(size 1.8 1.8)
-				)
-				(justify left bottom)
+	(text "J3: Molex Mini-Fit Jr 2x7 (pinout in\ndocuments/README.md): fused 12 V and 5 V, sensor\nground, three digital"
+		(exclude_from_sim no)
+		(at 300.99 156.21 0)
+		(effects
+			(font
+				(size 1.4 1.4)
 			)
+			(justify left top)
 		)
-		(property "Sheetfile" "Mcu.kicad_sch"
-			(at 205.74 92.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
+		(uuid "52628ba9-9e22-4d63-a194-ad68e725add3")
+	)
+	(text "M11/M12 (dinput4): car lines that close to ground\n(defogger D11, lights D12, blower D13, test mode\nD14,"
+		(exclude_from_sim no)
+		(at 15.24 156.21 0)
+		(effects
+			(font
+				(size 1.4 1.4)
 			)
+			(justify left top)
 		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(page "4")
-				)
+		(uuid "63304620-a66d-414d-a213-11b9dcb2a61d")
+	)
+	(text "M3: rusEFI wideband (WBO) for a Bosch LSU 4.9 front\nO2, on CAN to M1. It reaches the sensor through the\nstock"
+		(exclude_from_sim no)
+		(at 205.74 156.21 0)
+		(effects
+			(font
+				(size 1.4 1.4)
 			)
+			(justify left top)
 		)
+		(uuid "78218469-0c52-4ec6-8457-40f10d182a8b")
+	)
+	(text "Crank: 2-wire VR sensor (B10 +, B22 -) into M5.\nKnock (C25) into M13. M7 is a spare knock channel\n(not used)."
+		(exclude_from_sim no)
+		(at 300.99 95.25 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "8ff9ceec-6e5a-492d-ad55-577af335474c")
 	)
 	(text "M1: Hellen mega-mcu144 (STM32F7), with a 120R CAN\nterminator built in."
 		(exclude_from_sim no)
@@ -176,22 +94,51 @@
 			)
 			(justify left top)
 		)
-		(uuid "b7b511ff-a68d-4cca-bba1-f9bbce133ac0")
+		(uuid "a11f5db3-c9c4-4540-ac3a-175258ef00fe")
+	)
+	(text "rusEFI STI 2004: plug-and-play ECU for the 2004 USDM Subaru Impreza WRX STI (EJ257, drive-by-wire)."
+		(exclude_from_sim no)
+		(at 15.24 16.51 0)
+		(effects
+			(font
+				(size 3 3)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "a78eeb20-4fc4-414a-9051-b1e647865cf4")
+	)
+	(text "Low-side drivers (VND14NV04) in sub-sheets: INJ\ninjectors 1-4; LS1 main relay, fans, ETB relay;"
+		(exclude_from_sim no)
+		(at 110.49 156.21 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "c5c5a691-2167-43fb-b752-6699e59cb319")
 	)
 	(sheet
 		(at 300.99 60.96)
 		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "174c6130-5ef2-5679-8495-7e10ec78ddae")
 		(property "Sheetname" "Sensors"
 			(at 300.99 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.8 1.8)
@@ -201,6 +148,8 @@
 		)
 		(property "Sheetfile" "Sensors.kicad_sch"
 			(at 300.99 92.06 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -216,80 +165,26 @@
 			)
 		)
 	)
-	(text "Crank: 2-wire VR sensor (B10 +, B22 -) into M5.\nKnock (C25) into M13. M7 is a spare knock channel\n(not used)."
-		(exclude_from_sim no)
-		(at 300.99 95.25 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "f1e87e0b-9b65-4f67-87bf-9d13055bcb2f")
-	)
-	(sheet
-		(at 15.24 121.92)
-		(size 76.2 30.48)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "4ce447e9-4c15-5889-860e-afd273f7f724")
-		(property "Sheetname" "Switch inputs"
-			(at 15.24 121.22 0)
-			(effects
-				(font
-					(size 1.8 1.8)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Inputs.kicad_sch"
-			(at 15.24 153.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(page "6")
-				)
-			)
-		)
-	)
-	(text "M11/M12 (dinput4): car lines that close to ground\n(defogger D11, lights D12, blower D13, test mode\nD14,"
-		(exclude_from_sim no)
-		(at 15.24 156.21 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "5a14de2e-917a-4c25-b7b6-51c27fe14a47")
-	)
 	(sheet
 		(at 110.49 121.92)
 		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "1f1c2aba-1e41-5cad-b5a9-8038c979259f")
 		(property "Sheetname" "Outputs"
 			(at 110.49 121.22 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.8 1.8)
@@ -299,6 +194,8 @@
 		)
 		(property "Sheetfile" "Outputs.kicad_sch"
 			(at 110.49 153.02 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -314,31 +211,210 @@
 			)
 		)
 	)
-	(text "Low-side drivers (VND14NV04) in sub-sheets: INJ\ninjectors 1-4; LS1 main relay, fans, ETB relay;"
-		(exclude_from_sim no)
-		(at 110.49 156.21 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "a0116a75-44ce-4eb2-8cdd-8ccfc772c8cb")
-	)
 	(sheet
-		(at 205.74 121.92)
+		(at 15.24 121.92)
 		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
+		)
+		(uuid "4ce447e9-4c15-5889-860e-afd273f7f724")
+		(property "Sheetname" "Switch inputs"
+			(at 15.24 121.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.8 1.8)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Inputs.kicad_sch"
+			(at 15.24 153.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 60.96)
+		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8f77e81b-d6a3-50b3-91ba-ed97dc82c74a")
+		(property "Sheetname" "Vehicle connector"
+			(at 15.24 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.8 1.8)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connector.kicad_sch"
+			(at 15.24 92.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 110.49 60.96)
+		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9210100f-c116-57a2-84be-e34f28a52b29")
+		(property "Sheetname" "Power"
+			(at 110.49 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.8 1.8)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 110.49 92.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 205.74 60.96)
+		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a3d769b8-ff18-59ca-80df-ef94f6b9000c")
+		(property "Sheetname" "MCU and USB"
+			(at 205.74 60.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.8 1.8)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Mcu.kicad_sch"
+			(at 205.74 92.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 205.74 121.92)
+		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
 		)
 		(uuid "b698161d-5eaf-5046-aa12-9fab6361af26")
 		(property "Sheetname" "Comms"
 			(at 205.74 121.22 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.8 1.8)
@@ -348,6 +424,8 @@
 		)
 		(property "Sheetfile" "Comms.kicad_sch"
 			(at 205.74 153.02 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -363,31 +441,26 @@
 			)
 		)
 	)
-	(text "M3: rusEFI wideband (WBO) for a Bosch LSU 4.9 front\nO2, on CAN to M1. It reaches the sensor through the\nstock"
-		(exclude_from_sim no)
-		(at 205.74 156.21 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "344452e6-1e9e-4cab-aff6-1f5d2a7754aa")
-	)
 	(sheet
 		(at 300.99 121.92)
 		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "c0467e69-52b2-574e-acc6-b223afa9d490")
 		(property "Sheetname" "Aux and expansion"
 			(at 300.99 121.22 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.8 1.8)
@@ -397,6 +470,8 @@
 		)
 		(property "Sheetfile" "Aux.kicad_sch"
 			(at 300.99 153.02 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -411,17 +486,6 @@
 				)
 			)
 		)
-	)
-	(text "J3: Molex Mini-Fit Jr 2x7 (pinout in\ndocuments/README.md): fused 12 V and 5 V, sensor\nground, three digital"
-		(exclude_from_sim no)
-		(at 300.99 156.21 0)
-		(effects
-			(font
-				(size 1.4 1.4)
-			)
-			(justify left top)
-		)
-		(uuid "832c2865-e4cf-4d53-8bf6-9b9f777fb267")
 	)
 	(sheet_instances
 		(path "/"

@@ -36,6 +36,13 @@ The schematic is split by function (root page `rusefiSTI2004.kicad_sch` shows th
 
 Checks: `python3 tools/sch_overlap_check.py <sheet>.kicad_sch` (no text may overlap), `python3 tools/pinout_check.py` (car pinout), `python3 tools/options_table.py` (option list).
 
+## Libraries, template and KiCad version
+
+- **KiCad 10.** Every sheet and the board are KiCad 10 files (KiCad 10.0.7). Older KiCad cannot open them.
+- **EmbeddedEra libraries only** ([[kicad-own-libraries-only]], SOP-008 section 10): every symbol and footprint comes from the EmbeddedEra library (`EmbeddedEra`, `EmbeddedEra_Generic`, `EmbeddedEra_Resistors_*`, `EmbeddedEra_Library` footprints). The one exception is the nine Hellen-One modules (`hellen-one-<module>-<rev>`), which the Hellen board generator recognises by Value and builds from rusEFI's own module files.
+- New library parts for this board are on the library branch `sti2004-parts` (EmbeddedEra/KiCad): VND14NV04-E, JK-nSMD005, nSMD050-24V, TE_1-1376430-0, Molex_39281143, PROTO_AREA, TestPoint_THT, power symbols, 0R jumpers, and the TO-252-2, Fuse_1206, Mini-Fit Jr 2x7 and TH test-pad footprints. Until that branch is merged, KiCad on a design machine shows "library not found" warnings for them (the schematic carries its own copies, so it opens and exports fine).
+- **Template** (`template/EmbeddedEra_Project`, SOP-021 steps 1-3): EmbeddedEra worksheet (copied into the project as `EmbeddedEraTemplate003.kicad_wks` so no library path is needed), text variables (Customer, Designer, Part_Number, Revision B), the six net classes with power classes assigned by expected load (review before routing), and `EmbeddedEra_JLCPCB.kicad_dru` as the design rules (USB-C and fine-pitch Hellen modules need JLCPCB geometry). Net names follow the template: `USB_D+`/`USB_D-`, `I2C_1_SCL`/`I2C_1_SDA`, `UART_8_TX`/`UART_8_RX`.
+
 ## Re-running the check
 
 ```sh
@@ -143,33 +150,33 @@ Generated from the schematic by `python3 tools/options_table.py` (re-run after a
 
 | Sheet | Ref | Value | Joins | Default | When to fit / remove |
 |---|---|---|---|---|---|
-| Aux | JP7 | DNP 0R | AUX_AN2 / FP_STATUS | not fitted | read the FPCU status on IN_AT2 (then do not use AUX_AN2) |
-| Aux | R48 | 4.7k | AUX_IN1 / GND | not fitted | aux input 1 floats: stronger pull-down |
-| Aux | R49 | 4.7k | AUX_IN2 / GND | not fitted | aux input 2 floats: stronger pull-down |
-| Aux | R50 | 4.7k | AUX_IN3 / GND | not fitted | aux input 3 floats: stronger pull-down |
-| Comms | JP1 | 0R | WBO_UN / WBO_UN_J1 | fitted | FITTED: LSU Un through the harness (remove for a pigtail on the pads) |
-| Comms | JP2 | 0R | WBO_VM / WBO_VM_J1 | fitted | FITTED: LSU Vm through the harness |
-| Comms | JP3 | 0R | WBO_IP / WBO_IP_J1 | fitted | FITTED: LSU Ip through the harness (A25 shield wire) |
-| Comms | JP4 | DNP 0R | DLC6_D29 / K_LINE | not fitted | D29 turns out to be a second K-line |
+| Aux | JP7 | 0 | AUX_AN2 / FP_STATUS | not fitted | read the FPCU status on IN_AT2 (then do not use AUX_AN2) |
+| Aux | R48 | 4.7K | AUX_IN1 / GND | not fitted | aux input 1 floats: stronger pull-down |
+| Aux | R49 | 4.7K | AUX_IN2 / GND | not fitted | aux input 2 floats: stronger pull-down |
+| Aux | R50 | 4.7K | AUX_IN3 / GND | not fitted | aux input 3 floats: stronger pull-down |
+| Comms | JP1 | 0 | WBO_UN / WBO_UN_J1 | fitted | FITTED: LSU Un through the harness (remove for a pigtail on the pads) |
+| Comms | JP2 | 0 | WBO_VM / WBO_VM_J1 | fitted | FITTED: LSU Vm through the harness |
+| Comms | JP3 | 0 | WBO_IP / WBO_IP_J1 | fitted | FITTED: LSU Ip through the harness (A25 shield wire) |
+| Comms | JP4 | 0 | DLC6_D29 / K_LINE | not fitted | D29 turns out to be a second K-line |
 | Comms | R54 | 120 | CAN_H / CAN_L | not fitted | external CAN device that does not terminate the bus |
-| Inputs | R44 | 4.7k | GND / IN_NEUTRAL_SWITCH | not fitted | neutral switch turns out to be 12 V-active |
-| Inputs | R45 | 1k | +5VA / IN_FUEL_LEVEL | not fitted | tune the fuel gauge reading |
-| Inputs | R51 | 10k | +5V / IN_DEFOG | not fitted | defogger line floats when off: stronger pull-up |
-| Inputs | R52 | 10k | +5V / IN_SMALL_LIGHT | not fitted | lights line floats when off: stronger pull-up |
-| Inputs | R53 | 10k | +5V / IN_BLOWER | not fitted | blower line floats when off: stronger pull-up |
-| Mcu | JP10 | 0R | GND / USB_SHIELD | fitted | FITTED: USB shell to GND (remove to float the shell) |
-| Mcu | JP11 | DNP 0R | +3.3V / BOOT0 | not fitted | bridge to force the USB DFU bootloader |
-| Outputs | JP5 | DNP 0R | EVAP_A12 / OUT_SPARE_LS1 | not fitted | drive EVAP A12 from spare low-side 1 |
-| Outputs | JP6 | DNP 0R | EVAP_A13 / OUT_SPARE_LS2 | not fitted | drive EVAP A13 from spare low-side 2 |
+| Inputs | R44 | 4.7K | GND / IN_NEUTRAL_SWITCH | not fitted | neutral switch turns out to be 12 V-active |
+| Inputs | R45 | 1K | +5VA / IN_FUEL_LEVEL | not fitted | tune the fuel gauge reading |
+| Inputs | R51 | 10K | +5V / IN_DEFOG | not fitted | defogger line floats when off: stronger pull-up |
+| Inputs | R52 | 10K | +5V / IN_SMALL_LIGHT | not fitted | lights line floats when off: stronger pull-up |
+| Inputs | R53 | 10K | +5V / IN_BLOWER | not fitted | blower line floats when off: stronger pull-up |
+| Mcu | JP10 | 0 | GND / USB_SHIELD | fitted | FITTED: USB shell to GND (remove to float the shell) |
+| Mcu | JP11 | 0 | +3.3V / BOOT0 | not fitted | bridge to force the USB DFU bootloader |
+| Outputs | JP5 | 0 | EVAP_A12 / OUT_SPARE_LS1 | not fitted | drive EVAP A12 from spare low-side 1 |
+| Outputs | JP6 | 0 | EVAP_A13 / OUT_SPARE_LS2 | not fitted | drive EVAP A13 from spare low-side 2 |
 | Outputs | R38 | 2.2k | +12V_RAW / OUT_TACH | not fitted | tach needle dead: pull-up to 12 V |
 | Outputs | R39 | 100 | FP_CMD / FUEL_PUMP_SIGNAL1 | fitted | FITTED: series protection on the FPCU command |
-| Outputs | R40 | 1k | +5V / FUEL_PUMP_SIGNAL1 | not fitted | FPCU input needs a pull-up (scope the stock ECM first) |
-| Outputs | R41 | 10k | FUEL_PUMP_SIGNAL1 / GND | not fitted | FPCU input needs a pull-down |
-| Power | JP12 | DNP 0R | +5VAS / APS_PS_5V | not fitted | only if M8 is not fitted: pedal back on the shared sensor 5 V |
-| Sensors | JP8 | 0R | GND / GND_SENSOR | fitted | FITTED: sensor returns to GND (remove to move them to GNDA) |
-| Sensors | JP9 | DNP 0R | GNDA / GND_SENSOR | not fitted | sensor returns on analog ground instead of GND |
-| Sensors | R42 | 1k | +5VA / IN_CAM | not fitted | stronger pull-up, LH cam (weak or noisy signal) |
-| Sensors | R43 | 1k | +5VA / IN_CAM_RH | not fitted | stronger pull-up, RH cam |
+| Outputs | R40 | 1K | +5V / FUEL_PUMP_SIGNAL1 | not fitted | FPCU input needs a pull-up (scope the stock ECM first) |
+| Outputs | R41 | 10K | FUEL_PUMP_SIGNAL1 / GND | not fitted | FPCU input needs a pull-down |
+| Power | JP12 | 0 | +5VAS / APS_PS_5V | not fitted | only if M8 is not fitted: pedal back on the shared sensor 5 V |
+| Sensors | JP8 | 0 | GND / GND_SENSOR | fitted | FITTED: sensor returns to GND (remove to move them to GNDA) |
+| Sensors | JP9 | 0 | GNDA / GND_SENSOR | not fitted | sensor returns on analog ground instead of GND |
+| Sensors | R42 | 1K | +5VA / IN_CAM | not fitted | stronger pull-up, LH cam (weak or noisy signal) |
+| Sensors | R43 | 1K | +5VA / IN_CAM_RH | not fitted | stronger pull-up, RH cam |
 
 Pads (no assembly cost): LSU 4.9 and CAN on the Comms sheet; K-line, D29 and A22 charging wire; spare low-side outputs and FPCU status on Outputs; BOOT0 and SWD on MCU and USB; spare MCU pins (IGN6-8, I2C, OUT_PWM3, IN_RES2), aux inputs, M8 power-good and every rail on the Aux sheet, next to the prototype area G1.
 

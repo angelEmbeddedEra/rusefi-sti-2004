@@ -1,118 +1,142 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "4e2d7b8f-be32-5998-be18-4252bcad7088")
 	(paper "A3")
 	(title_block
 		(title "Power")
-		(date "2025-02-17")
+		(date "2026-10-13")
 	)
 	(lib_symbols
-		(symbol "alphax:+5VAS"
-			(power)
+		(symbol "EmbeddedEra:TestPoint_THT"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
-			(property "Reference" "#PWR09"
-				(at -3.81 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5VAS"
-				(at 2.8912 2.1493 90)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Value" "TestPoint_THT"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "EmbeddedEra_Library:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" "+5V Analog power for Sensors"
+			(property "Description" "TEST POINT THT PAD 2.0MM"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "IPN" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "+5VAS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+			(property "Manufacturer" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(symbol "+5VAS_1_1"
-				(pin power_in line
+			(property "Manufacturer Part Number" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_THT_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_THT_1_1"
+				(pin passive line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5VAS"
+					(length 2.54)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -128,26 +152,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "hellen-one-common:+12V_RAW"
-			(power)
+		(symbol "EmbeddedEra_Generic:+12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Value" "+12V_RAW"
+			(property "Value" "+12V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -156,56 +191,52 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+12V_RAW\""
+			(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "+12V_RAW_0_1"
+			(symbol "+12V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -227,12 +258,24 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "+12V_RAW_1_1"
+			(symbol "+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+12V_RAW"
+					(length 0)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -248,91 +291,459 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "hellen-one-common:Jumper-Pad-Pad" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
-		    (property "Reference" "R" (at 0 2.54 0)
-		      (effects (font (size 1.016 1.016)))
-		    )
-		    (property "Value" "Jumper-Pad-Pad" (at 0 -1.778 0)
-		      (effects (font (size 1.016 1.016)) hide)
-		    )
-		    (property "Footprint" "hellen-one-common:PAD-0805-PAD" (at 0 -3.81 0)
-		      (effects (font (size 1.524 1.524)) hide)
-		    )
-		    (property "Datasheet" "" (at 0 0 0)
-		      (effects (font (size 1.524 1.524)) hide)
-		    )
-		    (property "LCSC" "C17477" (at 0 -3.81 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (symbol "Jumper-Pad-Pad_0_1"
-		      (circle (center -2.54 0) (radius 0.762)
-		        (stroke (width 0) (type default))
-		        (fill (type none))
-		      )
-		      (circle (center 2.54 0) (radius 0.762)
-		        (stroke (width 0) (type default))
-		        (fill (type none))
-		      )
-		      (pin passive line (at -5.08 0 0) (length 2.54)
-		        (name "1" (effects (font (size 1.524 1.524))))
-		        (number "1" (effects (font (size 1.524 1.524))))
-		      )
-		      (pin passive line (at 5.08 0 180) (length 2.54)
-		        (name "2" (effects (font (size 1.524 1.524))))
-		        (number "2" (effects (font (size 1.524 1.524))))
-		      )
-		    )
-		    (symbol "Jumper-Pad-Pad_1_0"
-		      (rectangle (start -2.54 -1.27) (end 2.54 1.27)
-		        (stroke (width 0.254) (type default))
-		        (fill (type background))
-		      )
-		    )
-		  )
-		(symbol "hellen-one-common:Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-		    (property "Reference" "P" (at 2.54 0 0)
-		      (effects (font (size 1.27 1.27)))
-		    )
-		    (property "Value" "Pad" (at 0 -2.54 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (property "Footprint" "hellen-one-common:PAD-TH" (at 0 -3.81 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (property "Datasheet" "~" (at 0 0 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (property "ki_keywords" "connector" (at 0 0 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (property "ki_description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-		      (effects (font (size 1.27 1.27)) hide)
-		    )
-		    (symbol "Pad_1_1"
-		      (rectangle (start -1.27 0.127) (end 0 -0.127)
-		        (stroke (width 0.1524) (type default))
-		        (fill (type none))
-		      )
-		      (rectangle (start -1.27 1.27) (end 1.27 -1.27)
-		        (stroke (width 0.254) (type default))
-		        (fill (type background))
-		      )
-		      (pin passive line (at -5.08 0 0) (length 3.81)
-		        (name "Pin_1" (effects (font (size 1.27 1.27))))
-		        (number "1" (effects (font (size 1.27 1.27))))
-		      )
-		    )
-		  )
+		(symbol "EmbeddedEra_Generic:+5V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\". Copied from KiCad library power:+5V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EmbeddedEra_Generic:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EmbeddedEra_Resistors_0805_5pct:EE_R_0805_0_5%"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "0"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "EmbeddedEra_Library:R_0805_2012Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "Unknown"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RES 0 OHM JUMPER 1/8W 0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part Number" "RC0805JR-070RL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Specification" "0805 thick-film resistor, 5%, >=0.125 W, matching nominal resistance"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R resistor 0 jumper 0805 5%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "EE_R_0805_0_5%_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "hellen-one-power_12and5V-0.3:Module-power_12and5V-0.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "M"
 				(at 1.27 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -341,6 +752,8 @@
 			)
 			(property "Value" "Module-power_12and5V-0.3"
 				(at -1.27 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -349,29 +762,35 @@
 			)
 			(property "Footprint" "hellen-one-power_12and5V-0.3:power_12and5V"
 				(at -2.54 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Hellen-One Power_12and5V Module"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Module-power_12and5V-0.3_1_0"
@@ -585,342 +1004,7 @@
 					)
 				)
 			)
-		)
-		(symbol "power:+12V"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+12V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:+5V"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:GND"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 	)
 	(text "Power."
@@ -928,12 +1012,12 @@
 		(at 15.24 16.51 0)
 		(effects
 			(font
-				(size 3.0 3.0)
+				(size 3 3)
 				(bold yes)
 			)
 			(justify left top)
 		)
-		(uuid "55fad521-35cb-460d-a078-49cf87cb5365")
+		(uuid "7440971c-3454-4e7f-9795-772f0f5bd47b")
 	)
 	(text "M14 (main power module): +12V_RAW from the main relay (B5/B6), +12V_IGN (D15), back-up +12V (B19).\nIt makes +12V, +5V and +5VAS, the protected sensor 5 V for throttle TPS, MAP and TGV sensors (C16).\nM8 (second power module) feeds only the pedal 5 V (APS_PS_5V, C15), so pedal and throttle sensors are on\nindependent rails and their plausibility check works. The open link puts the pedal on +5VAS if M8 is not fitted."
 		(exclude_from_sim no)
@@ -944,7 +1028,17 @@
 			)
 			(justify left top)
 		)
-		(uuid "6e6192e7-58bd-4d45-8d83-b2a791f6d8fb")
+		(uuid "a27ab323-74ba-49ca-bdc1-b724adc66624")
+	)
+	(wire
+		(pts
+			(xy 138.43 60.96) (xy 133.35 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1698329f-8ca8-4213-976b-34d2fd48efcf")
 	)
 	(wire
 		(pts
@@ -978,6 +1072,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 52.07) (xy 236.22 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39ef1b6e-21a3-4cef-8a8f-cfa355812392")
+	)
+	(wire
+		(pts
 			(xy 33.02 55.88) (xy 36.83 55.88)
 		)
 		(stroke
@@ -985,6 +1089,36 @@
 			(type default)
 		)
 		(uuid "623d64ef-dc61-4499-81d0-6f62faa25a29")
+	)
+	(wire
+		(pts
+			(xy 186.69 66.04) (xy 194.31 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70b006ae-d007-4d89-b00e-cb42dcc99b2a")
+	)
+	(wire
+		(pts
+			(xy 138.43 53.34) (xy 133.35 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824c9738-ac82-4463-afe2-aeb4b4527340")
+	)
+	(wire
+		(pts
+			(xy 161.29 78.74) (xy 161.29 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8accba4a-7d26-4d1a-b252-5f044ccb21c2")
 	)
 	(wire
 		(pts
@@ -998,6 +1132,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 52.07) (xy 246.38 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b16c8fbd-3953-4504-b7e0-2419508c2cb5")
+	)
+	(wire
+		(pts
 			(xy 85.09 53.34) (xy 88.9 53.34)
 		)
 		(stroke
@@ -1005,6 +1149,36 @@
 			(type default)
 		)
 		(uuid "b473ebef-51ce-4c0c-9529-7d80aa0fe57f")
+	)
+	(wire
+		(pts
+			(xy 138.43 68.58) (xy 130.81 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5c79d65-21bc-4370-954f-66ef05b92182")
+	)
+	(wire
+		(pts
+			(xy 138.43 55.88) (xy 133.35 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbab0f61-6371-4f5a-9eea-0ac4855f8b5d")
+	)
+	(wire
+		(pts
+			(xy 233.68 52.07) (xy 231.14 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca76a185-24eb-4b1d-878b-804f45b7522c")
 	)
 	(wire
 		(pts
@@ -1038,6 +1212,26 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 52.07) (xy 241.3 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1862411-b9d4-4866-a645-e957ba3fe8cd")
+	)
+	(wire
+		(pts
+			(xy 186.69 68.58) (xy 194.31 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f29b2fbb-9854-424b-aeff-1a487aab5663")
+	)
+	(wire
+		(pts
 			(xy 85.09 58.42) (xy 91.44 58.42)
 		)
 		(stroke
@@ -1045,6 +1239,16 @@
 			(type default)
 		)
 		(uuid "f6a81c4b-1386-4f63-8e6b-b44e36288f9c")
+	)
+	(wire
+		(pts
+			(xy 281.94 49.53) (xy 279.4 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb7493af-0c69-4ad2-9f8b-97943ac165a5")
 	)
 	(wire
 		(pts
@@ -1056,6 +1260,30 @@
 		)
 		(uuid "fc499452-903f-456d-b1d7-371a76c0968f")
 	)
+	(global_label "PWR_EN"
+		(shape passive)
+		(at 130.81 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "258084ea-cebf-4c40-8fd2-578d3dd919b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.81 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "IGN"
 		(shape passive)
 		(at 91.44 58.42 0)
@@ -1066,15 +1294,41 @@
 			)
 			(justify left)
 		)
-		(uuid "816c2b74-ca49-416b-9183-0f40421174a2")
+		(uuid "3156112b-053d-4fa9-9eb4-7a8241d7eda3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 91.44 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
+			)
+		)
+	)
+	(global_label "PG_5VP_APS"
+		(shape passive)
+		(at 194.31 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3f08feb0-fceb-4f39-89e1-b9d18b47ab8f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -1088,37 +1342,17 @@
 			)
 			(justify right)
 		)
-		(uuid "c36ebdfb-8aa9-41c3-aa89-50d82c612509")
+		(uuid "691632b1-5fa0-45ce-9b34-6b8b5f6091f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 25.4 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape passive)
-		(at 91.44 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "963e4574-f92d-4601-95eb-7ded8a8fcdaf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.44 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -1132,39 +1366,143 @@
 			)
 			(justify left)
 		)
-		(uuid "400f7fe6-b7fa-4836-b3a0-25bc5ce93a9b")
+		(uuid "6df6198e-4e69-414e-9a98-e5cfaa53354d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 97.79 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
-	(symbol
-		(lib_id "hellen-one-common:+12V_RAW")
-		(at 33.02 60.96 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02ae366c-cfbf-4ff4-9d46-15e2f4c5bb5f")
-		(property "Reference" "#PWR020"
-			(at 36.83 60.96 0)
+	(global_label "PG_5VP_APS"
+		(shape passive)
+		(at 279.4 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "91359686-3863-4668-a3a0-da6cea8df6c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 279.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
+			)
+		)
+	)
+	(global_label "APS_PS_5V"
+		(shape passive)
+		(at 231.14 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc8031f9-5808-4ecf-ae2d-70edaa641b01")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.14 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "APS_PS_5V"
+		(shape passive)
+		(at 194.31 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c270987a-df19-41d6-8562-e29eb381a737")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(shape passive)
+		(at 91.44 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2053986-2542-4e31-8e5b-05cf7045905d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+12V")
+		(at 33.02 60.96 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "02ae366c-cfbf-4ff4-9d46-15e2f4c5bb5f")
+		(property "Reference" "#PWR020"
+			(at 36.83 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Value" "+12V_IGN"
-			(at 29.8449 61.3283 90)
+			(at 29.8449 62.5983 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1174,56 +1512,68 @@
 		)
 		(property "Footprint" ""
 			(at 33.02 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 33.02 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 33.02 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" ""
 			(at 33.02 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" ""
 			(at 33.02 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "JLCPCB Part #" ""
 			(at 33.02 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1242,14 +1592,18 @@
 		(lib_id "hellen-one-power_12and5V-0.3:Module-power_12and5V-0.3")
 		(at 44.45 50.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "111a2938-9bd7-4d40-ba1e-050ef4edc1ec")
 		(property "Reference" "M14"
 			(at 60.96 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1258,6 +1612,8 @@
 		)
 		(property "Value" "Module-power_12and5V-0.3"
 			(at 60.96 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1266,29 +1622,35 @@
 		)
 		(property "Footprint" "hellen-one-power_12and5V-0.3:power_12and5V"
 			(at 41.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 44.45 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Hellen-One Power_12and5V Module"
 			(at 44.45 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "E4"
@@ -1334,26 +1696,333 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 59.69 78.74 0)
-		(mirror y)
+		(lib_id "EmbeddedEra_Generic:+12V")
+		(at 133.35 55.88 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "84737774-ce4c-49d1-b3c5-5b439fdbd780")
-		(property "Reference" "#PWR018"
-			(at 59.69 85.09 0)
+		(uuid "504ef052-0ff6-4414-b23c-2bf4fbc999bc")
+		(property "Reference" "#PWR0114"
+			(at 133.35 55.88 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Value" "+12V_BACK_UP"
+			(at 129.54 55.88 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 55.88 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 55.88 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 133.35 55.88 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 133.35 55.88 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 133.35 55.88 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 133.35 55.88 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8bed6e62-1cfd-453b-94da-28b8f5ee0415")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+12V")
+		(at 133.35 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78025e8f-cff5-42fd-917b-84fc02f1b874")
+		(property "Reference" "#PWR0111"
+			(at 133.35 53.34 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_RAW"
+			(at 129.54 53.34 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 53.34 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 53.34 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 133.35 53.34 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16edcff9-420d-4a0a-9a16-5e15cf943497")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Resistors_0805_5pct:EE_R_0805_0_5%")
+		(at 238.76 52.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "7da1dd40-fd6b-44af-be1b-28538b7024cd")
+		(property "Reference" "JP12"
+			(at 241.3 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 238.76 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EmbeddedEra_Library:R_0805_2012Metric"
+			(at 238.76 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "Unknown"
+			(at 238.76 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0 OHM JUMPER 1/8W 0805"
+			(at 238.76 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 238.76 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 238.76 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805JR-070RL"
+			(at 238.76 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cbf268d4-2733-42fe-8ca4-3a31e0c52d7e")
+		)
+		(pin "2"
+			(uuid "3a91f415-95bf-414b-8b08-35a9dd9dbf59")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "JP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:GND")
+		(at 59.69 78.74 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84737774-ce4c-49d1-b3c5-5b439fdbd780")
+		(property "Reference" "#PWR018"
+			(at 59.69 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Value" "GND"
 			(at 59.69 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1362,29 +2031,35 @@
 		)
 		(property "Footprint" ""
 			(at 59.69 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 59.69 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 59.69 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1400,374 +2075,21 @@
 		)
 	)
 	(symbol
-		(lib_id "alphax:+5VAS")
-		(at 87.63 66.04 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a4317407-c7d2-463b-adb1-d5f29e60cdba")
-		(property "Reference" "#PWR027"
-			(at 87.63 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5VAS"
-			(at 90.932 65.786 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 87.63 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02ec5c37-582e-44b6-83b3-9766bbd702df")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hellen-one-common:+12V_RAW")
-		(at 33.02 55.88 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ad2922fd-f77e-4294-80ba-0f9e769c9a17")
-		(property "Reference" "#PWR022"
-			(at 36.83 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_BACK_UP"
-			(at 29.8449 56.2483 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 33.02 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 33.02 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 33.02 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" ""
-			(at 33.02 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b9b3ff3e-67d6-494c-aca3-7e2ecb589e7a")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hellen-one-common:+12V_RAW")
-		(at 33.02 53.34 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cf6ab225-1cea-49f8-b496-dc19567a24aa")
-		(property "Reference" "#PWR019"
-			(at 36.83 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_RAW"
-			(at 29.8449 53.7083 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 33.02 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "74166dc3-c86f-4bab-a22b-2abeb509565b")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 88.9 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e09bc485-de8f-457b-a46c-b5007d5330ca")
-		(property "Reference" "#PWR028"
-			(at 88.9 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 89.2683 47.7456 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "06c6949c-08a7-465b-be37-7e7d69739d96")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 87.63 63.5 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e57ef4d6-7222-41f7-a5bc-8cf1ddb29c82")
-		(property "Reference" "#PWR026"
-			(at 83.82 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 92.964 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 87.63 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6afc689c-3c0b-4179-b241-7849ada51c17")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "hellen-one-power_12and5V-0.3:Module-power_12and5V-0.3")
 		(at 146.05 50.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d962c4f-88ee-4cbc-affe-651124a23444")
 		(property "Reference" "M8"
 			(at 162.56 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1776,6 +2098,8 @@
 		)
 		(property "Value" "Module-power_12and5V-0.3"
 			(at 162.56 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,29 +2108,35 @@
 		)
 		(property "Footprint" "hellen-one-power_12and5V-0.3:power_12and5V"
 			(at 143.51 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Hellen-One Power_12and5V Module"
 			(at 146.05 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "V3"
@@ -1851,414 +2181,152 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 138.43 53.34) (xy 133.35 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b74cf705-c85a-4d24-b0d6-308aee0c3e4a")
-	)
-	(wire
-		(pts
-			(xy 138.43 60.96) (xy 133.35 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f898836-a34d-41cf-acab-baadd14d89fc")
-	)
-	(wire
-		(pts
-			(xy 138.43 55.88) (xy 133.35 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac3ad18a-136e-4466-a72e-aba40dc764fd")
-	)
-	(wire
-		(pts
-			(xy 138.43 68.58) (xy 130.81 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d73ac250-3455-4aee-b9ac-e17c00f48e82")
-	)
-	(global_label "PWR_EN"
-		(shape passive)
-		(at 130.81 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "456b53ad-055d-40be-82a3-4b1ead81ffdc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 161.29 78.74) (xy 161.29 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f17fb8c-e5d1-44c5-9e06-0743d98f49ab")
-	)
-	(wire
-		(pts
-			(xy 186.69 66.04) (xy 194.31 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "920f9141-ec81-4a11-96d0-dc4f72e87c88")
-	)
-	(global_label "APS_PS_5V"
-		(shape passive)
-		(at 194.31 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "01fb13f7-1fd5-4050-b3da-da559a591dcd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 186.69 68.58) (xy 194.31 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5084978f-6d21-4ec4-b515-7dd91762379e")
-	)
-	(global_label "PG_5VP_APS"
-		(shape passive)
-		(at 194.31 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "abcabc7d-b46f-41da-97da-4aec457ace85")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
-		(lib_id "hellen-one-common:+12V_RAW")
-		(at 133.35 53.34 90)
+		(lib_id "EmbeddedEra:TestPoint_THT")
+		(at 281.94 49.53 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "05d6732b-e0c9-41ee-8a38-3d6e5d61b7df")
-		(property "Reference" "#PWR0111"
-			(at 133.35 53.34 270)
+		(uuid "90f6ddb7-c46b-462c-8e7e-051f623927ae")
+		(property "Reference" "P32"
+			(at 289.56 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+12V_RAW"
-			(at 129.54 53.34 270)
+		(property "Value" "PG_5VP_APS"
+			(at 287.02 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 133.35 53.34 270)
+		(property "Footprint" "EmbeddedEra_Library:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 287.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 53.34 270)
+			(at 287.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 133.35 53.34 270)
+		(property "Description" "TEST POINT THT PAD 2.0MM"
+			(at 287.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ea3e2006-9b15-4edb-91e5-4655f16529fe")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR0111")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hellen-one-common:+12V_RAW")
-		(at 133.35 60.96 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d6229943-d512-47b8-9e78-0d4d9c6413ca")
-		(property "Reference" "#PWR0113"
-			(at 133.35 60.96 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_IGN"
-			(at 129.54 60.96 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 60.96 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 60.96 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 60.96 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" ""
-			(at 133.35 60.96 270)
+			(at 287.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 133.35 60.96 270)
+			(at 287.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" ""
-			(at 133.35 60.96 270)
+		(property "LCSC" ""
+			(at 287.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "IPN" ""
+			(at 287.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "36393ff9-e065-477a-8082-befe21fbe802")
+			(uuid "3a20b432-7c34-446e-b2ea-e099477581cf")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR0113")
+					(reference "P32")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:+12V_RAW")
-		(at 133.35 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2a7b48c9-f4f2-4136-9c60-ebbb197ca9e9")
-		(property "Reference" "#PWR0114"
-			(at 133.35 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_BACK_UP"
-			(at 129.54 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 133.35 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" ""
-			(at 133.35 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" ""
-			(at 133.35 55.88 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c38cec2c-3775-41d1-bd2f-7c9e685159a0")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "#PWR0114")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
+		(lib_id "EmbeddedEra_Generic:GND")
 		(at 161.29 83.82 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "96c5dfe4-01be-447b-af45-73c62a5b3ad9")
+		(uuid "a03350d4-699f-4a1a-95c4-611fdd98e3e9")
 		(property "Reference" "#PWR0115"
 			(at 161.29 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 161.29 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,33 +2336,39 @@
 		)
 		(property "Footprint" ""
 			(at 161.29 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 161.29 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
 			(at 161.29 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "07e224d9-83da-423d-9eaa-6b78af17a225")
+			(uuid "3b1bdae6-72c1-4cf0-8277-7064fc70e570")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -2306,134 +2380,31 @@
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-common:Jumper-Pad-Pad")
-		(at 238.76 50.8 0)
+		(lib_id "EmbeddedEra_Generic:+5V")
+		(at 87.63 66.04 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
-		(uuid "d8050446-73fc-4778-928f-30f5444933d5")
-		(property "Reference" "JP12"
-			(at 238.76 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DNP 0R"
-			(at 238.76 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
-			(at 238.76 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17477"
-			(at 238.76 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa6cf1c6-576e-40ef-a327-dc69e4ba063b")
-		)
-		(pin "2"
-			(uuid "7a359409-3854-4ca9-bc9d-31d312905cb2")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "JP12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 233.68 50.8) (xy 231.14 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "090fc4fa-7cd8-4952-9dec-f6258cbc666f")
-	)
-	(global_label "APS_PS_5V"
-		(shape passive)
-		(at 231.14 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f009ee13-234b-477f-a03e-40fa8fe080a1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.14 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 243.84 50.8) (xy 246.38 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "566ca2c8-c66c-4faf-92b4-551eaa556673")
-	)
-	(symbol
-		(lib_id "alphax:+5VAS")
-		(at 246.38 50.8 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "4bf2d658-83a3-4b04-8a76-52b1b0ddf62a")
-		(property "Reference" "#PWR0116"
-			(at 246.38 50.8 90)
+		(uuid "a4317407-c7d2-463b-adb1-d5f29e60cdba")
+		(property "Reference" "#PWR027"
+			(at 87.63 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5VAS"
-			(at 250.19 50.8 90)
+			(at 90.932 65.786 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2442,34 +2413,574 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 50.8 90)
+			(at 87.63 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 50.8 90)
+			(at 87.63 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 246.38 50.8 90)
+		(property "Description" "Power symbol creates a global label with name \"+5V\". Copied from KiCad library power:+5V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 87.63 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "369a1ab8-2d95-46e8-b2d0-72662d24a48a")
+			(uuid "02ec5c37-582e-44b6-83b3-9766bbd702df")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+12V")
+		(at 33.02 55.88 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad2922fd-f77e-4294-80ba-0f9e769c9a17")
+		(property "Reference" "#PWR022"
+			(at 36.83 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_BACK_UP"
+			(at 29.8449 57.5183 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 33.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 33.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 33.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 33.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9b3ff3e-67d6-494c-aca3-7e2ecb589e7a")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+12V")
+		(at 33.02 53.34 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cf6ab225-1cea-49f8-b496-dc19567a24aa")
+		(property "Reference" "#PWR019"
+			(at 36.83 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_RAW"
+			(at 29.8449 51.1683 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 33.02 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74166dc3-c86f-4bab-a22b-2abeb509565b")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+12V")
+		(at 133.35 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d3333d46-0d61-4195-aa81-5a43c0fce12d")
+		(property "Reference" "#PWR0113"
+			(at 133.35 60.96 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_IGN"
+			(at 129.54 60.96 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 60.96 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 60.96 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 133.35 60.96 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 133.35 60.96 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 133.35 60.96 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 133.35 60.96 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d46c578e-d88c-4d0a-91cb-1bf89e60d39e")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+12V")
+		(at 88.9 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e09bc485-de8f-457b-a46c-b5007d5330ca")
+		(property "Reference" "#PWR028"
+			(at 88.9 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 89.2683 47.7456 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\". Copied from KiCad library power:+12V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 88.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06c6949c-08a7-465b-be37-7e7d69739d96")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+5V")
+		(at 87.63 63.5 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e57ef4d6-7222-41f7-a5bc-8cf1ddb29c82")
+		(property "Reference" "#PWR026"
+			(at 83.82 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 92.964 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\". Copied from KiCad library power:+5V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 87.63 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6afc689c-3c0b-4179-b241-7849ada51c17")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EmbeddedEra_Generic:+5V")
+		(at 246.38 52.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8ea4367-798b-4de6-abad-e4450912e128")
+		(property "Reference" "#PWR0116"
+			(at 246.38 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5VAS"
+			(at 250.19 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\". Copied from KiCad library power:+5V (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 246.38 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d03e52df-0935-43eb-8b73-e17fef724510")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -2477,93 +2988,6 @@
 					(reference "#PWR0116")
 					(unit 1)
 				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hellen-one-common:Pad")
-		(at 287.02 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "35810c07-259d-4f68-98a9-f52ddbb7f64d")
-		(property "Reference" "P32"
-			(at 287.02 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PG_5VP_APS"
-			(at 287.02 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "hellen-one-common:PAD-TH"
-			(at 287.02 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 287.02 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "36715748-bc22-4bef-86d7-0303244e83e7")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/9210100f-c116-57a2-84be-e34f28a52b29"
-					(reference "P32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 281.94 48.26) (xy 279.4 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cec8956c-7637-4c29-8985-9f96b1d1a223")
-	)
-	(global_label "PG_5VP_APS"
-		(shape passive)
-		(at 279.4 48.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a326deb6-9e17-45bb-b333-30ea3b775b2c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 279.4 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
 			)
 		)
 	)
