@@ -1130,16 +1130,7 @@
 		)
 		(uuid "8bd5e8a0-ca99-45bd-b5ba-09d4135421c5")
 	)
-	(wire
-		(pts
-			(xy 243.84 52.07) (xy 246.38 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b16c8fbd-3953-4504-b7e0-2419508c2cb5")
-	)
+
 	(wire
 		(pts
 			(xy 85.09 53.34) (xy 88.9 53.34)
@@ -1210,16 +1201,7 @@
 		)
 		(uuid "ec8b839b-d19a-4a0a-8faa-f514f0e45313")
 	)
-	(wire
-		(pts
-			(xy 243.84 52.07) (xy 241.3 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1862411-b9d4-4866-a645-e957ba3fe8cd")
-	)
+
 	(wire
 		(pts
 			(xy 186.69 68.58) (xy 194.31 68.58)
@@ -1489,7 +1471,7 @@
 		(dnp no)
 		(uuid "02ae366c-cfbf-4ff4-9d46-15e2f4c5bb5f")
 		(property "Reference" "#PWR020"
-			(at 36.83 60.96 0)
+			(at 33.02 60.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1500,7 +1482,7 @@
 			)
 		)
 		(property "Value" "+12V_IGN"
-			(at 29.8449 62.5983 90)
+			(at 29.21 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1808,7 +1790,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+12V")
-		(at 133.35 53.34 90)
+		(at 133.35 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1818,7 +1800,7 @@
 		(dnp no)
 		(uuid "78025e8f-cff5-42fd-917b-84fc02f1b874")
 		(property "Reference" "#PWR0111"
-			(at 133.35 53.34 270)
+			(at 133.35 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1829,14 +1811,13 @@
 			)
 		)
 		(property "Value" "+12V_RAW"
-			(at 129.54 53.34 270)
+			(at 133.35 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -1886,7 +1867,8 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Resistors_0805_5pct:EE_R_0805_0_5%")
-		(at 238.76 52.07 90)
+		(at 236.22 49.53 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1894,25 +1876,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
+		(fields_autoplaced yes)
 		(uuid "7da1dd40-fd6b-44af-be1b-28538b7024cd")
 		(property "Reference" "JP12"
-			(at 241.3 46.99 0)
+			(at 238.76 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "0"
-			(at 238.76 49.53 0)
+			(at 238.76 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0805_2012Metric"
@@ -1999,7 +1984,6 @@
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
 		(at 59.69 78.74 0)
-		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2020,7 +2004,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 83.82 0)
+			(at 59.69 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2191,25 +2175,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "90f6ddb7-c46b-462c-8e7e-051f623927ae")
 		(property "Reference" "P32"
-			(at 289.56 46.99 0)
+			(at 287.02 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "PG_5VP_APS"
-			(at 287.02 49.53 0)
+			(at 287.02 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:TestPoint_THTPad_D2.0mm_Drill1.0mm"
@@ -2313,7 +2300,7 @@
 		(dnp no)
 		(uuid "a03350d4-699f-4a1a-95c4-611fdd98e3e9")
 		(property "Reference" "#PWR0115"
-			(at 161.29 83.82 0)
+			(at 161.29 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2331,7 +2318,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify top)
 			)
 		)
 		(property "Footprint" ""
@@ -2391,7 +2377,7 @@
 		(dnp no)
 		(uuid "a4317407-c7d2-463b-adb1-d5f29e60cdba")
 		(property "Reference" "#PWR027"
-			(at 87.63 62.23 0)
+			(at 87.63 66.04 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2402,7 +2388,7 @@
 			)
 		)
 		(property "Value" "+5VAS"
-			(at 90.932 65.786 90)
+			(at 91.44 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2470,7 +2456,7 @@
 		(dnp no)
 		(uuid "ad2922fd-f77e-4294-80ba-0f9e769c9a17")
 		(property "Reference" "#PWR022"
-			(at 36.83 55.88 0)
+			(at 33.02 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2481,7 +2467,7 @@
 			)
 		)
 		(property "Value" "+12V_BACK_UP"
-			(at 29.8449 57.5183 90)
+			(at 29.21 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2571,8 +2557,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+12V")
-		(at 33.02 53.34 90)
-		(mirror x)
+		(at 33.02 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2582,7 +2567,7 @@
 		(dnp no)
 		(uuid "cf6ab225-1cea-49f8-b496-dc19567a24aa")
 		(property "Reference" "#PWR019"
-			(at 36.83 53.34 0)
+			(at 33.02 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2593,14 +2578,13 @@
 			)
 		)
 		(property "Value" "+12V_RAW"
-			(at 29.8449 51.1683 90)
+			(at 33.02 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2782,7 +2766,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 89.2683 47.7456 0)
+			(at 88.9 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2838,7 +2822,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+5V")
-		(at 87.63 63.5 270)
+		(at 87.63 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2848,7 +2832,7 @@
 		(dnp no)
 		(uuid "e57ef4d6-7222-41f7-a5bc-8cf1ddb29c82")
 		(property "Reference" "#PWR026"
-			(at 83.82 63.5 0)
+			(at 87.63 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2859,7 +2843,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 92.964 63.5 90)
+			(at 87.63 59.944 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2915,7 +2899,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+5V")
-		(at 246.38 52.07 270)
+		(at 236.22 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2925,7 +2909,7 @@
 		(dnp no)
 		(uuid "e8ea4367-798b-4de6-abad-e4450912e128")
 		(property "Reference" "#PWR0116"
-			(at 246.38 52.07 90)
+			(at 236.22 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2936,14 +2920,13 @@
 			)
 		)
 		(property "Value" "+5VAS"
-			(at 250.19 52.07 90)
+			(at 236.22 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""

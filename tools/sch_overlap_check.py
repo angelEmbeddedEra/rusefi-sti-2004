@@ -147,7 +147,7 @@ def items(path):
             if field_hflip(ang, rot, mir):
                 just = just.replace('left', '\0').replace('right', 'left').replace('\0', 'right')
             out.append(('field', ref, p[2], text_box(p[2], float(pa[1]), float(pa[2]), ang, size, just or 'center')))
-        if lib is not None and not ref.startswith('#'):
+        if lib is not None:                                 # power symbols too: text must not sit on an arrow
             b = body_box(lib, unit, x, y, rot, mir)
             if b:
                 out.append(('body', ref, ref, b))

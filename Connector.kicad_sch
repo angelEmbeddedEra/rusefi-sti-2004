@@ -3620,7 +3620,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Units: D = B137, C = B136, B = B135, A = B134. Every pin carries a global net label used on the other sheets.\nPin functions: documents/oem-ecm-pinout-2004-sti.csv (FSM EN(STi)-18..22, wiring WI-106..118); check: tools/pinout_check.py.\nCoil outputs B15-B18 run through F1-F4 (50 mA PTC). R1/R2 divide battery voltage for IN_VMAIN."
+	(text "Units: D = B137, C = B136, B = B135, A = B134. Every pin carries a global net label used on the other sheets.\nPin functions: documents/oem-ecm-pinout-2004-sti.csv (FSM EN(STi)-18..22, wiring WI-106..118); check: tools/pinout_check.py.\nCoil outputs B15-B18 run through F1-F4 (50 mA PTC, block below J1C, joined by IGNn_COIL labels). R1/R2 divide battery voltage for IN_VMAIN."
 		(exclude_from_sim no)
 		(at 15.24 22.86 0)
 		(effects
@@ -3749,26 +3749,8 @@
 		)
 		(uuid "05fd375e-9c3c-4916-8cb1-66b717526fef")
 	)
-	(wire
-		(pts
-			(xy 210.82 90.17) (xy 227.33 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b5191b7-2362-4eba-b6c4-649a575b396b")
-	)
-	(wire
-		(pts
-			(xy 233.68 73.66) (xy 233.68 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cd68209-86a6-43b0-9170-9297000a8808")
-	)
+
+
 	(wire
 		(pts
 			(xy 232.41 63.5) (xy 229.87 63.5)
@@ -4609,16 +4591,7 @@
 		)
 		(uuid "b9dd2512-97e4-4697-b68f-964154c4f4dc")
 	)
-	(wire
-		(pts
-			(xy 210.82 87.63) (xy 227.33 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb0ec358-39d6-4d50-afdd-64a313730db8")
-	)
+
 	(wire
 		(pts
 			(xy 110.49 67.31) (xy 118.11 67.31)
@@ -4799,16 +4772,7 @@
 		)
 		(uuid "e284f416-80da-46a2-b2a5-fa8e555d7b3b")
 	)
-	(wire
-		(pts
-			(xy 210.82 85.09) (xy 227.33 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e422ac34-3769-4a2d-b649-5fd52a8d6d74")
-	)
+
 	(wire
 		(pts
 			(xy 31.75 82.55) (xy 39.37 82.55)
@@ -4819,16 +4783,7 @@
 		)
 		(uuid "e525013e-37b5-4e49-8fd7-745fa811992c")
 	)
-	(wire
-		(pts
-			(xy 210.82 92.71) (xy 227.33 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec968d7b-5633-4f50-b3b0-3641bcb45353")
-	)
+
 	(wire
 		(pts
 			(xy 34.29 57.15) (xy 34.29 54.61)
@@ -5151,7 +5106,7 @@
 	)
 	(global_label "OUT_IGN3"
 		(shape passive)
-		(at 227.33 87.63 0)
+		(at 227.33 162.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5161,7 +5116,7 @@
 		)
 		(uuid "07f9a8d3-3c70-410e-8142-ff8ad9a95047")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.33 87.63 0)
+			(at 227.33 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5199,7 +5154,7 @@
 	)
 	(global_label "OUT_IGN4"
 		(shape passive)
-		(at 227.33 85.09 0)
+		(at 227.33 152.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5209,7 +5164,7 @@
 		)
 		(uuid "121a5e68-53b5-4a40-a7cf-fef569687f1e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.33 85.09 0)
+			(at 227.33 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5511,7 +5466,7 @@
 	)
 	(global_label "OUT_IGN1"
 		(shape passive)
-		(at 227.33 92.71 0)
+		(at 227.33 182.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5521,7 +5476,7 @@
 		)
 		(uuid "2d6ca700-1197-427e-bd81-be0a149ac311")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.33 92.71 0)
+			(at 227.33 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6735,7 +6690,7 @@
 	)
 	(global_label "OUT_IGN2"
 		(shape passive)
-		(at 227.33 90.17 0)
+		(at 227.33 172.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6745,7 +6700,7 @@
 		)
 		(uuid "ef04c799-f353-427a-9ecd-9d616f3ba19f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.33 90.17 0)
+			(at 227.33 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6903,8 +6858,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 53.34 59.69 90)
-		(mirror x)
+		(at 60.96 57.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6914,7 +6868,7 @@
 		(dnp no)
 		(uuid "1f0d4772-0e4d-46df-bcea-e168e9c5b7d3")
 		(property "Reference" "#PWR016"
-			(at 59.69 59.69 0)
+			(at 60.96 57.15 270)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6925,13 +6879,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 59.69 90)
+			(at 64.77 57.15 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7059,7 +7014,8 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_6.8K_1%")
-		(at 233.68 68.58 180)
+		(at 233.68 68.58 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7067,25 +7023,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "30e534bd-84c6-4a32-90a2-9bbfbacec15b")
 		(property "Reference" "R2"
-			(at 229.87 68.58 0)
+			(at 236.22 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "6.8K"
-			(at 233.68 68.58 0)
+			(at 236.22 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
@@ -7171,7 +7130,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra:JK-nSMD005")
-		(at 205.74 85.09 0)
+		(at 205.74 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7179,9 +7138,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "332c2356-1d55-495b-aca8-9b316ab80a41")
 		(property "Reference" "F1"
-			(at 200.66 84.0048 0)
+			(at 205.74 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7191,7 +7151,7 @@
 			)
 		)
 		(property "Value" "JK-nSMD005"
-			(at 212.6327 84.2321 0)
+			(at 205.74 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7294,7 +7254,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 205.74 49.53 90)
+		(at 210.82 49.53 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -7305,7 +7265,7 @@
 		(dnp no)
 		(uuid "47029c70-c7c3-48bf-a424-b60794efaf26")
 		(property "Reference" "#PWR013"
-			(at 212.09 49.53 0)
+			(at 210.82 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7316,13 +7276,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 210.82 48.26 90)
+			(at 214.63 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -7372,8 +7333,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+12V")
-		(at 214.63 59.69 270)
-		(mirror x)
+		(at 219.71 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7383,7 +7343,7 @@
 		(dnp no)
 		(uuid "487ca0de-091a-4cfd-833b-29898a08adae")
 		(property "Reference" "#PWR09"
-			(at 210.82 59.69 0)
+			(at 219.71 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7394,14 +7354,13 @@
 			)
 		)
 		(property "Value" "+12V_RAW"
-			(at 217.8051 58.0517 90)
+			(at 219.71 56.134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7449,87 +7408,10 @@
 			)
 		)
 	)
+
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 53.34 54.61 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "55448fb1-1636-4960-89bb-fda4815ae1ed")
-		(property "Reference" "#PWR017"
-			(at 59.69 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.42 54.61 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
-			(at 53.34 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f0491152-c781-4967-9b52-8774fac8034c")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/8f77e81b-d6a3-50b3-91ba-ed97dc82c74a"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EmbeddedEra_Generic:GND")
-		(at 292.1 134.62 90)
+		(at 292.1 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7539,7 +7421,7 @@
 		(dnp no)
 		(uuid "55f5026b-77fc-4224-94e6-93b3e7808dca")
 		(property "Reference" "#PWR059"
-			(at 292.1 134.62 270)
+			(at 292.1 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7550,14 +7432,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.91 134.62 270)
+			(at 292.1 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7607,8 +7488,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 233.68 73.66 0)
-		(mirror y)
+		(at 233.68 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7618,7 +7498,7 @@
 		(dnp no)
 		(uuid "58ac8c3b-ca78-48ea-9a95-a7c007c7e6b0")
 		(property "Reference" "#PWR021"
-			(at 233.68 80.01 0)
+			(at 233.68 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7629,7 +7509,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 233.68 78.74 90)
+			(at 233.68 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7685,8 +7565,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 53.34 130.81 90)
-		(mirror x)
+		(at 53.34 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7696,7 +7575,7 @@
 		(dnp no)
 		(uuid "633e8820-5ad4-4a71-9ac0-599a4d0c8ccd")
 		(property "Reference" "#PWR033"
-			(at 59.69 130.81 0)
+			(at 53.34 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7707,7 +7586,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 130.81 90)
+			(at 53.34 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7763,8 +7642,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+12V")
-		(at 58.42 90.17 270)
-		(mirror x)
+		(at 63.5 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7774,7 +7652,7 @@
 		(dnp no)
 		(uuid "67e36d0e-51e6-4694-97e4-01c534d5beb9")
 		(property "Reference" "#PWR08"
-			(at 54.61 90.17 0)
+			(at 63.5 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7785,14 +7663,13 @@
 			)
 		)
 		(property "Value" "+12V_IGN"
-			(at 61.5951 89.8017 90)
+			(at 63.5 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -8410,8 +8287,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 205.74 57.15 90)
-		(mirror x)
+		(at 208.28 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8421,7 +8297,7 @@
 		(dnp no)
 		(uuid "7cb81d53-2127-41e6-a74a-6136dfe016cf")
 		(property "Reference" "#PWR012"
-			(at 212.09 57.15 0)
+			(at 208.28 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8432,7 +8308,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 210.82 57.15 90)
+			(at 208.28 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8488,8 +8364,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 210.82 77.47 90)
-		(mirror x)
+		(at 215.9 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8499,7 +8374,7 @@
 		(dnp no)
 		(uuid "7ea8b5de-5b0d-4ab7-ab62-e61a14efe643")
 		(property "Reference" "#PWR011"
-			(at 217.17 77.47 0)
+			(at 215.9 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8510,7 +8385,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 77.47 90)
+			(at 215.9 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8574,9 +8449,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8af68bc6-a55e-4694-8fb0-070e1aa63d95")
 		(property "Reference" "R1"
-			(at 228.6 59.69 0)
+			(at 227.33 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8586,7 +8462,7 @@
 			)
 		)
 		(property "Value" "33K"
-			(at 227.33 63.5 0)
+			(at 227.33 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8678,8 +8554,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 130.81 130.81 90)
-		(mirror x)
+		(at 133.35 129.54 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8689,7 +8564,7 @@
 		(dnp no)
 		(uuid "9564c353-1a9b-44fd-a47d-6224738c3746")
 		(property "Reference" "#PWR052"
-			(at 137.16 130.81 0)
+			(at 133.35 129.54 270)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8700,13 +8575,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 128.27 90)
+			(at 137.16 129.54 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -8756,8 +8632,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 307.34 63.5 90)
-		(mirror x)
+		(at 312.42 63.5 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8767,7 +8642,7 @@
 		(dnp no)
 		(uuid "9698c32d-5e36-4ea9-85da-cb27d67aa8d9")
 		(property "Reference" "#PWR010"
-			(at 313.69 63.5 0)
+			(at 312.42 63.5 270)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8778,13 +8653,14 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 312.42 63.5 90)
+			(at 316.23 63.5 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -8834,7 +8710,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra:JK-nSMD005")
-		(at 205.74 90.17 0)
+		(at 205.74 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8842,9 +8718,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b31fcca7-735f-424f-a28d-3e1a78e109ce")
 		(property "Reference" "F3"
-			(at 200.66 89.0848 0)
+			(at 205.74 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8854,7 +8731,7 @@
 			)
 		)
 		(property "Value" "JK-nSMD005"
-			(at 212.6327 96.9321 0)
+			(at 205.74 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8968,7 +8845,7 @@
 		(dnp no)
 		(uuid "b8c4b482-318b-45e0-82e5-1fc41abe6bfc")
 		(property "Reference" "#PWR07"
-			(at 210.82 95.25 0)
+			(at 214.63 95.25 270)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8979,14 +8856,14 @@
 			)
 		)
 		(property "Value" "+12V_BACK_UP"
-			(at 217.8051 94.8817 90)
+			(at 218.44 95.25 270)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -9069,8 +8946,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 212.09 125.73 90)
-		(mirror x)
+		(at 214.63 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9080,7 +8956,7 @@
 		(dnp no)
 		(uuid "bb5e3e66-20c3-4e85-8dcc-de5af14087d5")
 		(property "Reference" "#PWR051"
-			(at 218.44 125.73 0)
+			(at 214.63 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9091,7 +8967,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.17 125.73 90)
+			(at 214.63 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9303,7 +9179,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra:JK-nSMD005")
-		(at 205.74 87.63 0)
+		(at 205.74 162.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9311,9 +9187,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "e12f190b-5c7d-47c2-81de-4002c277b3fa")
 		(property "Reference" "F2"
-			(at 200.66 86.5448 0)
+			(at 205.74 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9323,7 +9200,7 @@
 			)
 		)
 		(property "Value" "JK-nSMD005"
-			(at 212.6327 81.6921 0)
+			(at 205.74 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9959,84 +9836,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "EmbeddedEra_Generic:GND")
-		(at 130.81 128.27 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e7625f27-1180-453b-9f8c-97db6681b24e")
-		(property "Reference" "#PWR053"
-			(at 137.16 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 135.89 128.27 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
-			(at 130.81 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e91d970-04be-4949-a4b1-5c881c365834")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/8f77e81b-d6a3-50b3-91ba-ed97dc82c74a"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
+
 	(symbol
 		(lib_id "EmbeddedEra:TE_1-1376430-0")
 		(at 107.95 92.71 0)
@@ -10574,8 +10374,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+12V")
-		(at 71.12 67.31 270)
-		(mirror x)
+		(at 71.12 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10585,7 +10384,7 @@
 		(dnp no)
 		(uuid "f3cab4f2-4e77-48c6-8ded-0aff6b365cba")
 		(property "Reference" "#PWR023"
-			(at 67.31 67.31 0)
+			(at 71.12 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10596,14 +10395,13 @@
 			)
 		)
 		(property "Value" "+12V_ETB"
-			(at 74.2951 66.9417 90)
+			(at 71.12 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -11221,7 +11019,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra:JK-nSMD005")
-		(at 205.74 92.71 0)
+		(at 205.74 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11229,9 +11027,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "f5e6e10e-1e6a-4ab2-8c7e-b6076ffc0438")
 		(property "Reference" "F4"
-			(at 200.66 91.6248 0)
+			(at 205.74 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11241,7 +11040,7 @@
 			)
 		)
 		(property "Value" "JK-nSMD005"
-			(at 212.6327 99.4721 0)
+			(at 205.74 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11341,5 +11140,368 @@
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 214.63 59.69) (xy 219.71 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be886ee7-f8e1-4280-b76e-94379495ec0b")
+	)
+	(wire
+		(pts
+			(xy 53.34 54.61) (xy 58.42 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af64ae46-7e90-442b-856a-4dfc990c61ae")
+	)
+	(wire
+		(pts
+			(xy 58.42 90.17) (xy 63.5 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ef06876-e534-425c-a3ab-e8cbf0e6c6a1")
+	)
+	(wire
+		(pts
+			(xy 205.74 57.15) (xy 208.28 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89c4707e-e565-41c4-9d85-e7f05c173256")
+	)
+	(wire
+		(pts
+			(xy 210.82 77.47) (xy 213.36 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71361902-353b-4b30-8b9c-ebd5fb4007fe")
+	)
+	(wire
+		(pts
+			(xy 307.34 63.5) (xy 309.88 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb503b38-361f-4629-9d23-85edaf7824ca")
+	)
+	(wire
+		(pts
+			(xy 212.09 125.73) (xy 214.63 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2753e602-60d7-4c6b-8f88-776d6b9128c0")
+	)
+	(wire
+		(pts
+			(xy 130.81 128.27) (xy 133.35 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60e5e710-b38a-4a01-87bf-896cefd0b611")
+	)
+	(wire
+		(pts
+			(xy 309.88 63.5) (xy 312.42 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a187d8d9-62cb-4f9a-a4da-a38cac419cf1")
+	)
+	(wire
+		(pts
+			(xy 213.36 77.47) (xy 215.9 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "056b5227-ead4-4aa7-a263-225dfec2cb8d")
+	)
+	(wire
+		(pts
+			(xy 205.74 49.53) (xy 210.82 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c27d044c-04a5-4a14-8078-6f18f31b7b6e")
+	)
+	(wire
+		(pts
+			(xy 53.34 59.69) (xy 58.42 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6708235b-9149-48d0-83dd-81138eedd838")
+	)
+	(wire
+		(pts
+			(xy 58.42 54.61) (xy 60.96 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba0e2c8b-16fd-4b9f-b8c3-156c331a4f95")
+	)
+
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 60.96 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "612e9c04-55d7-484d-87c7-a5a8554b985b")
+	)
+	(wire
+		(pts
+			(xy 60.96 54.61) (xy 60.96 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e06d81-b67e-40c6-b541-deddad548851")
+	)
+	(wire
+		(pts
+			(xy 60.96 57.15) (xy 60.96 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f8b089-ee71-4b4c-b842-a1c724b60523")
+	)
+	(junction
+		(at 60.96 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f8e1c4a-886a-4048-b4dd-89c0d6db2b85")
+	)
+	(wire
+		(pts
+			(xy 130.81 130.81) (xy 133.35 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18ff8fa8-151e-409b-9715-541ee0b32d45")
+	)
+	(wire
+		(pts
+			(xy 133.35 128.27) (xy 133.35 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a07162-0deb-4121-b837-5e1573a2a0ac")
+	)
+	(wire
+		(pts
+			(xy 133.35 129.54) (xy 133.35 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11c4dfe2-0ce2-4526-8484-e6004169ce77")
+	)
+	(junction
+		(at 133.35 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa5a4128-3808-438a-9913-04a2b8000030")
+	)
+	(label "IGN4_COIL"
+		(at 200.66 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e51f1c96-d29a-4e8b-aaae-84d03de95957")
+	)
+	(label "IGN4_COIL"
+		(at 190.5 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ebd7da5d-9425-47f7-8445-24b62dee1a5d")
+	)
+	(wire
+		(pts
+			(xy 190.5 152.4) (xy 200.66 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2dfecaf-9efd-4378-b948-2e550fa1c71e")
+	)
+	(wire
+		(pts
+			(xy 210.82 152.4) (xy 227.33 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c2b4cd3-8ff3-4250-8e76-a03343326c26")
+	)
+	(label "IGN3_COIL"
+		(at 200.66 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0869fcaf-a7c9-4f34-9ca4-4bce7b707451")
+	)
+	(label "IGN3_COIL"
+		(at 190.5 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3cc9e09d-fa18-49c8-a317-92c30c6dd062")
+	)
+	(wire
+		(pts
+			(xy 190.5 162.56) (xy 200.66 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8362591e-4048-4c21-978c-356a2d6d939b")
+	)
+	(wire
+		(pts
+			(xy 210.82 162.56) (xy 227.33 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f20eb829-a623-4cbf-b7c4-b2f8ec51394d")
+	)
+	(label "IGN2_COIL"
+		(at 200.66 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5558dc5c-2be8-4b09-8897-20dbf37f525f")
+	)
+	(label "IGN2_COIL"
+		(at 190.5 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6df1e4f0-bd12-4d0c-994f-a377f76242c5")
+	)
+	(wire
+		(pts
+			(xy 190.5 172.72) (xy 200.66 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be77816e-dd2e-40be-a419-ea4f12f5842d")
+	)
+	(wire
+		(pts
+			(xy 210.82 172.72) (xy 227.33 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c29acd58-2ad0-4d46-bb36-0099198617ef")
+	)
+	(label "IGN1_COIL"
+		(at 200.66 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b90e4946-4a6d-425e-88d2-ccaa8583d870")
+	)
+	(label "IGN1_COIL"
+		(at 190.5 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7cc8a438-d19e-4c42-af9b-fbc7c3554350")
+	)
+	(wire
+		(pts
+			(xy 190.5 182.88) (xy 200.66 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afbd403c-8caa-43a0-8a06-d12043088f20")
+	)
+	(wire
+		(pts
+			(xy 210.82 182.88) (xy 227.33 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b192479c-3694-4847-a518-ed30d66a6979")
 	)
 )

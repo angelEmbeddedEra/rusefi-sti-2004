@@ -2344,16 +2344,7 @@
 		)
 		(uuid "62312462-4925-47af-9581-2abc10b8153a")
 	)
-	(wire
-		(pts
-			(xy 367.03 115.57) (xy 369.57 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "638e1a56-6cc7-46c3-81c8-15a38efe7742")
-	)
+
 	(wire
 		(pts
 			(xy 134.62 54.61) (xy 153.67 54.61)
@@ -2434,16 +2425,7 @@
 		)
 		(uuid "7626c1ba-c2fd-4e85-85e6-6d672e1db115")
 	)
-	(wire
-		(pts
-			(xy 367.03 115.57) (xy 364.49 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77173bb7-d215-4cf3-8677-16154dc7cb53")
-	)
+
 	(wire
 		(pts
 			(xy 354.33 54.61) (xy 346.71 54.61)
@@ -2494,16 +2476,7 @@
 		)
 		(uuid "861ab1b9-1a7c-4509-bfa6-352289a968c3")
 	)
-	(wire
-		(pts
-			(xy 314.96 115.57) (xy 317.5 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "889bf491-5912-4c93-a07e-1f7617595a8e")
-	)
+
 	(wire
 		(pts
 			(xy 326.39 77.47) (xy 328.93 77.47)
@@ -2624,16 +2597,7 @@
 		)
 		(uuid "b0fc17ac-1f97-4be1-9f31-c0127951f4e4")
 	)
-	(wire
-		(pts
-			(xy 199.39 115.57) (xy 201.93 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd555a06-8ded-4bb1-b045-80adba66a21d")
-	)
+
 	(wire
 		(pts
 			(xy 121.92 81.28) (xy 137.16 81.28)
@@ -2694,16 +2658,7 @@
 		)
 		(uuid "c49fd6b6-3c0d-43f5-9c9c-2ab1db4ac384")
 	)
-	(wire
-		(pts
-			(xy 199.39 115.57) (xy 196.85 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9241a9f-aa31-4ec3-9f91-390c948de4b6")
-	)
+
 	(wire
 		(pts
 			(xy 173.99 59.69) (xy 207.01 59.69)
@@ -2884,16 +2839,7 @@
 		)
 		(uuid "f685b71a-2bce-431f-9082-3f0b39e4cdfe")
 	)
-	(wire
-		(pts
-			(xy 314.96 115.57) (xy 312.42 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f843e213-113f-4320-8f91-6dc61ef76b53")
-	)
+
 	(wire
 		(pts
 			(xy 50.8 82.55) (xy 43.18 82.55)
@@ -4412,9 +4358,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
+		(fields_autoplaced yes)
 		(uuid "0c4c9304-1cdb-4754-9d66-fd8103671908")
 		(property "Reference" "JP5"
-			(at 334.01 72.39 0)
+			(at 331.47 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4424,7 +4371,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 331.47 74.93 0)
+			(at 331.47 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4516,8 +4463,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+12V")
-		(at 130.81 86.36 90)
-		(mirror x)
+		(at 130.81 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4527,7 +4473,7 @@
 		(dnp no)
 		(uuid "115df6d4-51de-46c2-bc94-ed5a1208dd75")
 		(property "Reference" "#PWR024"
-			(at 134.62 86.36 0)
+			(at 130.81 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4538,14 +4484,13 @@
 			)
 		)
 		(property "Value" "+12V_ETB"
-			(at 127.6349 84.1883 90)
+			(at 130.81 82.804 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4628,7 +4573,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+5V")
-		(at 317.5 115.57 270)
+		(at 307.34 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4638,7 +4583,7 @@
 		(dnp no)
 		(uuid "384959ba-4b0d-464a-bdd8-5a31d24b2e3c")
 		(property "Reference" "#PWR079"
-			(at 317.5 115.57 90)
+			(at 307.34 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4649,14 +4594,13 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 321.31 115.57 90)
+			(at 307.34 106.934 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4706,7 +4650,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+12V")
-		(at 201.93 115.57 270)
+		(at 191.77 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4716,7 +4660,7 @@
 		(dnp no)
 		(uuid "465a5a00-f48a-411b-a135-38eab0c5ac6d")
 		(property "Reference" "#PWR078"
-			(at 201.93 115.57 90)
+			(at 191.77 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4727,14 +4671,13 @@
 			)
 		)
 		(property "Value" "+12V_RAW"
-			(at 205.74 115.57 90)
+			(at 191.77 106.934 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4784,7 +4727,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:+3.3V")
-		(at 130.81 91.44 90)
+		(at 130.81 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4794,7 +4737,7 @@
 		(dnp no)
 		(uuid "4a85976d-f1a4-4242-a315-2e542fa80404")
 		(property "Reference" "#PWR050"
-			(at 134.62 91.44 0)
+			(at 130.81 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4805,14 +4748,13 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 128.27 90.17 90)
+			(at 130.81 87.884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4870,25 +4812,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "57373e4b-8274-4e2e-9cac-c7be0c8a53a3")
 		(property "Reference" "P9"
-			(at 165.1 114.3 0)
+			(at 162.56 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "OUT_SPARE_LS1"
-			(at 162.56 119.38 0)
+			(at 162.56 118.11 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:TestPoint_THTPad_D2.0mm_Drill1.0mm"
@@ -5103,9 +5048,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "6c20d703-54e6-4b43-bcd5-0a708c3cedfd")
 		(property "Reference" "P12"
-			(at 125.73 113.03 0)
+			(at 123.952 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5115,7 +5061,7 @@
 			)
 		)
 		(property "Value" "FP_STATUS"
-			(at 128.27 116.84 0)
+			(at 123.952 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5406,7 +5352,8 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_1K_1%")
-		(at 309.88 115.57 90)
+		(at 307.34 113.03 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5414,25 +5361,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
+		(fields_autoplaced yes)
 		(uuid "979bd540-7507-4c8c-8f54-1f2290efde74")
 		(property "Reference" "R40"
-			(at 304.8 113.03 0)
+			(at 309.88 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "1K"
-			(at 304.8 118.11 0)
+			(at 309.88 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
@@ -5518,7 +5468,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 229.87 96.52 270)
+		(at 229.87 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5528,7 +5478,7 @@
 		(dnp no)
 		(uuid "9a7091f6-e3da-4287-ac34-910d9101bb8b")
 		(property "Reference" "#PWR068"
-			(at 229.87 96.52 90)
+			(at 229.87 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5539,14 +5489,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 226.06 96.52 90)
+			(at 229.87 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -5674,7 +5623,8 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Resistors_0805_5pct:EE_R_0805_2.2k_5%")
-		(at 194.31 115.57 90)
+		(at 191.77 113.03 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5682,25 +5632,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
+		(fields_autoplaced yes)
 		(uuid "aac9fd9e-b7ba-4d09-b703-fea5718ac966")
 		(property "Reference" "R38"
-			(at 189.23 113.03 0)
+			(at 194.31 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "2.2k"
-			(at 189.23 118.11 0)
+			(at 194.31 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0805_2012Metric"
@@ -5794,9 +5747,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
+		(fields_autoplaced yes)
 		(uuid "ad316dc2-38a4-4449-879f-10fe8fbb9169")
 		(property "Reference" "JP6"
-			(at 44.45 113.03 0)
+			(at 41.91 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5806,7 +5760,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 41.91 113.03 0)
+			(at 41.91 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5899,7 +5853,6 @@
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
 		(at 134.62 97.79 0)
-		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5920,7 +5873,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.62 102.87 0)
+			(at 134.62 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5984,9 +5937,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d5b91bd0-e126-428f-9b23-8cdff200009b")
 		(property "Reference" "R39"
-			(at 234.95 113.03 0)
+			(at 240.03 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5996,7 +5950,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 234.95 118.11 0)
+			(at 240.03 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6088,7 +6042,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 369.57 115.57 90)
+		(at 359.41 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6098,7 +6052,7 @@
 		(dnp no)
 		(uuid "dab1412d-5b39-48e5-a80d-75b097f981c1")
 		(property "Reference" "#PWR080"
-			(at 369.57 115.57 270)
+			(at 359.41 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6109,14 +6063,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 373.38 115.57 270)
+			(at 359.41 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6166,7 +6119,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Resistors_0603:EE_R_0603_10K_1%")
-		(at 361.95 115.57 90)
+		(at 359.41 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6174,25 +6127,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
+		(fields_autoplaced yes)
 		(uuid "ea5260ac-c87c-45f0-babc-94d7be4bfeaf")
 		(property "Reference" "R41"
-			(at 356.87 113.03 0)
+			(at 361.95 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "10K"
-			(at 356.87 118.11 0)
+			(at 361.95 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
@@ -6286,9 +6242,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "ea6c972d-49e3-4176-84e7-573e1d7a4bf1")
 		(property "Reference" "P10"
-			(at 95.25 113.03 0)
+			(at 93.472 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6298,7 +6255,7 @@
 			)
 		)
 		(property "Value" "OUT_SPARE_LS2"
-			(at 87.63 127 0)
+			(at 93.472 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

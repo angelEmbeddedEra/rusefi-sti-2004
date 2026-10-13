@@ -600,26 +600,8 @@
 		)
 		(uuid "5b0e0331-d64a-47ce-bc81-fe9018e0ad63")
 	)
-	(wire
-		(pts
-			(xy 167.64 90.17) (xy 167.64 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ee4da37-15cb-4389-ad4f-1ea955d44e20")
-	)
-	(wire
-		(pts
-			(xy 167.64 133.35) (xy 167.64 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e7012df-737f-4e25-8094-f78a3455b41e")
-	)
+
+
 	(wire
 		(pts
 			(xy 167.64 80.01) (xy 167.64 82.55)
@@ -640,26 +622,8 @@
 		)
 		(uuid "87558533-3b1c-4675-a3c2-4108f2b6d452")
 	)
-	(wire
-		(pts
-			(xy 167.64 111.76) (xy 167.64 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e106b7c-21bf-4531-bb17-a018410c4d92")
-	)
-	(wire
-		(pts
-			(xy 167.64 68.58) (xy 167.64 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1cfea6b-f73c-47f5-9782-9c06aefadf52")
-	)
+
+
 	(wire
 		(pts
 			(xy 167.64 58.42) (xy 167.64 60.96)
@@ -810,8 +774,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 167.64 133.35 0)
-		(mirror y)
+		(at 167.64 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -821,7 +784,7 @@
 		(dnp no)
 		(uuid "00aeeb4b-81e2-47ba-b9aa-1a120f4660de")
 		(property "Reference" "#PWR041"
-			(at 167.64 139.7 0)
+			(at 167.64 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -832,7 +795,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 137.16 0)
+			(at 167.64 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -912,25 +875,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "0ffe01c6-8303-4f39-9937-2dbaaab872f2")
 		(property "Reference" "R3"
-			(at 163.83 63.5 0)
+			(at 170.18 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "4.7K"
-			(at 167.64 63.5 0)
+			(at 170.18 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
@@ -1032,8 +998,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 167.64 90.17 0)
-		(mirror y)
+		(at 167.64 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1043,7 +1008,7 @@
 		(dnp no)
 		(uuid "18a90365-cc87-4993-8972-7f351d128415")
 		(property "Reference" "#PWR037"
-			(at 167.64 96.52 0)
+			(at 167.64 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1054,7 +1019,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 93.98 0)
+			(at 167.64 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1135,9 +1100,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "1b022239-af77-4def-b653-0f2841e73387")
 		(property "Reference" "Q4"
-			(at 144.78 128.27 0)
+			(at 146.05 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1148,7 +1114,7 @@
 			)
 		)
 		(property "Value" "VND14NV04-E"
-			(at 148.59 130.81 0)
+			(at 146.05 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1272,8 +1238,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 167.64 111.76 0)
-		(mirror y)
+		(at 167.64 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1283,7 +1248,7 @@
 		(dnp no)
 		(uuid "24a6e003-2a0b-4d89-8aa5-9611c0ebc443")
 		(property "Reference" "#PWR039"
-			(at 167.64 118.11 0)
+			(at 167.64 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1294,7 +1259,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 115.57 0)
+			(at 167.64 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1367,7 +1332,6 @@
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
 		(at 149.86 87.63 0)
-		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1468,25 +1432,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "56a862e7-52e0-484a-9964-f3b404bb8ec6")
 		(property "Reference" "R6"
-			(at 163.83 128.27 0)
+			(at 170.18 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "4.7K"
-			(at 167.64 128.27 0)
+			(at 170.18 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
@@ -1589,7 +1556,6 @@
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
 		(at 149.86 109.22 0)
-		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1682,8 +1648,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 149.86 130.81 0)
-		(mirror y)
+		(at 152.4 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1693,7 +1658,7 @@
 		(dnp no)
 		(uuid "75e1bfc5-f5c6-4a3b-93f2-c438b7567013")
 		(property "Reference" "#PWR040"
-			(at 149.86 137.16 0)
+			(at 152.4 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1704,7 +1669,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 134.62 0)
+			(at 152.4 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1776,8 +1741,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 149.86 66.04 0)
-		(mirror y)
+		(at 152.4 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1787,7 +1751,7 @@
 		(dnp no)
 		(uuid "96569b22-4fc1-4e46-a6f8-caee4f4fa52c")
 		(property "Reference" "#PWR034"
-			(at 149.86 72.39 0)
+			(at 152.4 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1798,7 +1762,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 69.85 0)
+			(at 152.4 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1878,25 +1842,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b0d37d5a-4f6c-4f2e-b71c-3c04f0fbfb3a")
 		(property "Reference" "R5"
-			(at 163.83 106.68 0)
+			(at 170.18 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "4.7K"
-			(at 167.64 106.68 0)
+			(at 170.18 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
@@ -2006,25 +1973,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "bab956b3-a113-452b-ba88-cecb1bd1d014")
 		(property "Reference" "R4"
-			(at 163.83 85.09 0)
+			(at 170.18 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "4.7K"
-			(at 167.64 85.09 0)
+			(at 170.18 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:R_0603_1608Metric"
@@ -2135,9 +2105,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "cf4f9f00-a09a-409c-a8a5-e422b91b112c")
 		(property "Reference" "Q1"
-			(at 144.78 63.5 0)
+			(at 146.05 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2148,7 +2119,7 @@
 			)
 		)
 		(property "Value" "VND14NV04-E"
-			(at 148.59 66.04 0)
+			(at 146.05 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2281,9 +2252,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "e0ca8bbc-91fe-4c07-9cdc-09e8930c626f")
 		(property "Reference" "Q2"
-			(at 142.24 78.74 0)
+			(at 146.05 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2418,8 +2390,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 167.64 68.58 0)
-		(mirror y)
+		(at 167.64 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2429,7 +2400,7 @@
 		(dnp no)
 		(uuid "e6a1e9a9-0d00-477e-9d12-ef005fb5913f")
 		(property "Reference" "#PWR035"
-			(at 167.64 74.93 0)
+			(at 167.64 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2440,7 +2411,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 72.39 0)
+			(at 167.64 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2521,9 +2492,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "fa03b4c2-9238-4184-acfe-23ab3b7673f0")
 		(property "Reference" "Q3"
-			(at 144.78 105.41 0)
+			(at 146.05 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2534,7 +2506,7 @@
 			)
 		)
 		(property "Value" "VND14NV04-E"
-			(at 147.32 107.95 0)
+			(at 146.05 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2655,5 +2627,25 @@
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 149.86 66.04) (xy 152.4 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb518f1f-a381-48d7-a14b-d2d0f893a868")
+	)
+	(wire
+		(pts
+			(xy 149.86 130.81) (xy 152.4 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e207db0-adbd-4e22-98ca-c2bf54384b92")
 	)
 )
