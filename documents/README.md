@@ -19,6 +19,23 @@ What the car's engine computer connects to, and whether this board's J1 connecto
 
 J1 pin order: pins 1-31 are B137 (D1-D31), 32-66 are B136 (C1-C35), 67-101 are B135 (B1-B35), 102-135 are B134 (A1-A34).
 
+## Schematic sheets
+
+The schematic is split by function (root page `rusefiSTI2004.kicad_sch` shows the blocks). Every sheet starts with a note on what it holds and why. Signals between sheets are global net labels; power symbols are global.
+
+| Sheet | File | Holds |
+|---|---|---|
+| Vehicle connector | `Connector.kicad_sch` | J1, all four ECM plugs (D=B137, C=B136, B=B135, A=B134), coil-line fuses, battery divider |
+| Power | `Power.kicad_sch` | M14 main power module, M8 pedal-only 5 V |
+| MCU and USB | `Mcu.kicad_sch` | M1 STM32F7 module, USB-C with ESD, BOOT0 and SWD |
+| Sensors | `Sensors.kicad_sch` | crank VR (M5), knock (M13, spare M7), cam pull-up options, sensor-ground selection |
+| Switch inputs | `Inputs.kicad_sch` | dinput4 modules (M11, M12), pull-downs and pull-up options for every switch |
+| Outputs | `Outputs.kicad_sch` | low-side driver sheets (INJ, LS1-LS4 in `INJ4.kicad_sch`), throttle (M2), TGV (M9), fuel pump options |
+| Comms | `Comms.kicad_sch` | LSU 4.9 wideband (M3), K-line (M10), CAN |
+| Aux and expansion | `Aux.kicad_sch` | J3 Mini-Fit Jr, its fuses, spare pins and rails on pads, prototype area |
+
+Checks: `python3 tools/sch_overlap_check.py <sheet>.kicad_sch` (no text may overlap), `python3 tools/pinout_check.py` (car pinout), `python3 tools/options_table.py` (option list).
+
 ## Re-running the check
 
 ```sh
@@ -70,9 +87,9 @@ Q9-Q16 are two more copies of the 4-channel `INJ4` low-side sheet (LS2, LS3).
 | A15 / A16 | Cruise main lamp / set lamp | OUT_IO5 / OUT_IO6 -> Q17 / Q18 | sheet LS4 |
 | D20 | K-line (SSM) | M10 LIN module, UART8 TX/RX | |
 | A2+A3, A33, A26, A25 | LSU 4.9 (see below) | M3 WBO module, CAN to M1 CANH/CANL | |
-| D11 / D12 / D13 / D14 | Defogger / small lights / blower (A/C) / test mode | M11 dinput4 -> IO5 / IO6 / IO7 / OUT_IO13 | close to ground; 680k pull-up to 5 V, R49-R51 10k options |
+| D11 / D12 / D13 / D14 | Defogger / small lights / blower (A/C) / test mode | M11 dinput4 -> IO5 / IO6 / IO7 / OUT_IO13 | close to ground; 680k pull-up to 5 V, R51-R53 10k options |
 | D24 | Blow-by (PCV) diagnosis | M12 dinput4 ch4 -> OUT_INJ8 | |
-| aux pads P29-P31 | AUX_IN1-3: launch / 2-step button, map switch, spare | M12 dinput4 ch1-3 -> OUT_IO9 / OUT_IO10 / OUT_IO11 | expect 12 V when pressed; 680k pull-down, R46-R48 4.7k options |
+| aux pads P29-P31 | AUX_IN1-3: launch / 2-step button, map switch, spare | M12 dinput4 ch1-3 -> OUT_IO9 / OUT_IO10 / OUT_IO11 | expect 12 V when pressed; 680k pull-down, R48-R50 4.7k options |
 | USB J2 (USB-C) | TunerStudio | M1 USB D+/D-/VBUS | ESD U1 |
 
 ### Front O2: Bosch LSU 4.9 on the rusEFI WBO module (M3)
@@ -96,12 +113,12 @@ Before relying on it: confirm the A25 shield is not grounded at the sensor end (
 
 - **M1 module ground (`GND_G`) was not connected.** Now on GND.
 - **F5 (JK-nSMD005, a 50 mA PTC) was in series with the throttle motor supply** (D6 -> M2). It would have tripped as soon as the motor moved. Removed; D6 feeds +12V_ETB directly. The car fuses the throttle relay feed upstream.
-- **No USB.** J2 USB-C (HRO TYPE-C-31-M-12, C165948, the EmbeddedEra library part we already build with) to the MCU USB pins, 5.1k CC pull-downs (device), USBLC6-2SC6 ESD (U1, C7519), shield to GND through a fitted 0R link. BOOT0 pad P23 with open link JP10 to 3.3 V for DFU recovery; SWD pads P24-P26 (SWDIO, SWCLK, NRST).
+- **No USB.** J2 USB-C (HRO TYPE-C-31-M-12, C165948, the EmbeddedEra library part we already build with) to the MCU USB pins, 5.1k CC pull-downs (device), USBLC6-2SC6 ESD (U1, C7519), shield to GND through a fitted 0R link. BOOT0 pad P23 with open link JP11 to 3.3 V for DFU recovery; SWD pads P24-P26 (SWDIO, SWCLK, NRST).
 - **Removed unused modules:** M6 (VR, the cams are Hall) and M4 (CAN; M1 has its own transceiver). Their MCU pins OUT_PWM3 and IN_RES2 are on pads P27/P28.
 - **More inputs:** two Hellen dinput4 modules (M11, M12) on spare 5 V-tolerant GPIOs. An I2C expander was considered: rusEFI has no driver for I2C input expanders, and its one supported switch-input chip (MC33972, SPI) is obsolete. I2C SCL/SDA are on pads in case an expander is added later.
 - Spare 5 V push-pull outputs IGN6-8 on pads.
-- **Pedal 5 V is now its own rail.** The pedal supply C15 (net APS_PS_5V) comes from the second power module M8's protected 5 V; the throttle/MAP/TGV sensor supply C16 stays on M14 (+5VAS). A shared rail would let one short take out both pedal and throttle sensors and defeat their plausibility check. JP11 (open) puts the pedal back on +5VAS if M8 is not fitted; M8's power-good is on pad P32.
-- **CAN termination:** M1 already has 120R across CANH/CANL (R100 on mega-mcu144 sheet 15); the WBO module has none. R52 (120R, DNP) at the aux connector terminates the far end if an external device on the aux CAN does not.
+- **Pedal 5 V is now its own rail.** The pedal supply C15 (net APS_PS_5V) comes from the second power module M8's protected 5 V; the throttle/MAP/TGV sensor supply C16 stays on M14 (+5VAS). A shared rail would let one short take out both pedal and throttle sensors and defeat their plausibility check. JP12 (open) puts the pedal back on +5VAS if M8 is not fitted; M8's power-good is on pad P32.
+- **CAN termination:** M1 already has 120R across CANH/CANL (R100 on mega-mcu144 sheet 15); the WBO module has none. R54 (120R, DNP) at the aux connector terminates the far end if an external device on the aux CAN does not.
 - Still unused: M7 (second knock module; the STI has one knock sensor).
 
 ### Aux connector J3: Molex Mini-Fit Jr 2x7 (5566-14A vertical, Molex 39281143)
@@ -118,34 +135,45 @@ Mating plug: Molex 39-01-2140 (5557-14R housing) with 39-00-0038 crimp terminals
 | 11 | AUX_OUT2 low-side (LS4 ch4) | 12 | CAN H |
 | 13 | CAN L | 14 | GND |
 
-AUX_IN1-3 expect a switch to 12 V (680k pull-down on the dinput4, R46-R48 4.7k options). AUX_AN2 shares IN_AT2 with the FPCU status option JP7: fit only one. AUX_OUT1/2 also reach EVAP A12/A13 through open JP5/JP6.
+AUX_IN1-3 expect a switch to 12 V (680k pull-down on the dinput4, R48-R50 4.7k options). AUX_AN2 shares IN_AT2 with the FPCU status option JP7: fit only one. AUX_OUT1/2 also reach EVAP A12/A13 through open JP5/JP6.
 
-### Option parts (footprints on the board, not assembled)
+### Option parts (footprints on the board)
 
-Listed in `bom_replace_rusefiSTI2004-a.csv` (Hellen's removal list) and marked DNP in KiCad. Fit one by deleting its line.
+Generated from the schematic by `python3 tools/options_table.py` (re-run after any change). "Not fitted" parts are marked DNP in KiCad and listed in `bom_replace_rusefiSTI2004-a.csv`, Hellen's removal list: delete a part's line there to have it assembled.
 
-| Ref | Option | When to fit |
-|---|---|---|
-| R38 2.2k 0805 | Tach A23 pull-up to +12V_RAW | tach needle dead |
-| R39 100R | *Fitted*: series resistor on the FPCU command | always |
-| R40 1k / R41 10k | FPCU command B26 pull-up to 5 V / pull-down | if the FPCU input needs it (scope the stock ECM first) |
-| JP7 | D28 FPCU status -> IN_AT2 | to read pump status (then do not use AUX_AN2) |
-| R42 / R43 1k | Extra pull-ups on cam LH / RH | weak or noisy cam signal |
-| R44 4.7k | Neutral switch pull-down | if neutral turns out to be 12 V-active |
-| R45 1k | Fuel level pull-up | to tune the fuel gauge reading |
-| JP4 | D29 (DLC pin 6) -> K-line | if D29 is a second K-line |
-| JP5 / JP6 | Spare low-side LS4 ch3 / ch4 -> EVAP A12 / A13 | to drive the EVAP solenoids |
-| JP8 (fitted) / JP9 | Sensor ground GND_SENSOR (C31, C34, C35) -> GND / -> GNDA | move sensor returns to analog ground |
-| R30-R37 | Pull-down values (fitted) | change the value if a switch reads wrong |
-| R46-R48 4.7k | Aux input pull-downs | if an aux button input floats |
-| R49-R51 10k | Pull-ups on defogger / lights / blower lines | if a load line floats when off |
-| JP10 | BOOT0 to 3.3 V | bridge to force USB DFU bootloader |
-| JP11 | Pedal 5 V back onto +5VAS | only if M8 is not fitted |
-| R52 120R | CAN terminator at the aux connector | external CAN device that does not terminate |
+| Sheet | Ref | Value | Joins | Default | When to fit / remove |
+|---|---|---|---|---|---|
+| Aux | JP7 | DNP 0R | AUX_AN2 / FP_STATUS | not fitted | read the FPCU status on IN_AT2 (then do not use AUX_AN2) |
+| Aux | R48 | 4.7k | AUX_IN1 / GND | not fitted | aux input 1 floats: stronger pull-down |
+| Aux | R49 | 4.7k | AUX_IN2 / GND | not fitted | aux input 2 floats: stronger pull-down |
+| Aux | R50 | 4.7k | AUX_IN3 / GND | not fitted | aux input 3 floats: stronger pull-down |
+| Comms | JP1 | 0R | WBO_UN / WBO_UN_J1 | fitted | FITTED: LSU Un through the harness (remove for a pigtail on the pads) |
+| Comms | JP2 | 0R | WBO_VM / WBO_VM_J1 | fitted | FITTED: LSU Vm through the harness |
+| Comms | JP3 | 0R | WBO_IP / WBO_IP_J1 | fitted | FITTED: LSU Ip through the harness (A25 shield wire) |
+| Comms | JP4 | DNP 0R | DLC6_D29 / K_LINE | not fitted | D29 turns out to be a second K-line |
+| Comms | R54 | 120 | CAN_H / CAN_L | not fitted | external CAN device that does not terminate the bus |
+| Inputs | R44 | 4.7k | GND / IN_NEUTRAL_SWITCH | not fitted | neutral switch turns out to be 12 V-active |
+| Inputs | R45 | 1k | +5VA / IN_FUEL_LEVEL | not fitted | tune the fuel gauge reading |
+| Inputs | R51 | 10k | +5V / IN_DEFOG | not fitted | defogger line floats when off: stronger pull-up |
+| Inputs | R52 | 10k | +5V / IN_SMALL_LIGHT | not fitted | lights line floats when off: stronger pull-up |
+| Inputs | R53 | 10k | +5V / IN_BLOWER | not fitted | blower line floats when off: stronger pull-up |
+| Mcu | JP10 | 0R | GND / USB_SHIELD | fitted | FITTED: USB shell to GND (remove to float the shell) |
+| Mcu | JP11 | DNP 0R | +3.3V / BOOT0 | not fitted | bridge to force the USB DFU bootloader |
+| Outputs | JP5 | DNP 0R | EVAP_A12 / OUT_SPARE_LS1 | not fitted | drive EVAP A12 from spare low-side 1 |
+| Outputs | JP6 | DNP 0R | EVAP_A13 / OUT_SPARE_LS2 | not fitted | drive EVAP A13 from spare low-side 2 |
+| Outputs | R38 | 2.2k | +12V_RAW / OUT_TACH | not fitted | tach needle dead: pull-up to 12 V |
+| Outputs | R39 | 100 | FP_CMD / FUEL_PUMP_SIGNAL1 | fitted | FITTED: series protection on the FPCU command |
+| Outputs | R40 | 1k | +5V / FUEL_PUMP_SIGNAL1 | not fitted | FPCU input needs a pull-up (scope the stock ECM first) |
+| Outputs | R41 | 10k | FUEL_PUMP_SIGNAL1 / GND | not fitted | FPCU input needs a pull-down |
+| Power | JP12 | DNP 0R | +5VAS / APS_PS_5V | not fitted | only if M8 is not fitted: pedal back on the shared sensor 5 V |
+| Sensors | JP8 | 0R | GND / GND_SENSOR | fitted | FITTED: sensor returns to GND (remove to move them to GNDA) |
+| Sensors | JP9 | DNP 0R | GNDA / GND_SENSOR | not fitted | sensor returns on analog ground instead of GND |
+| Sensors | R42 | 1k | +5VA / IN_CAM | not fitted | stronger pull-up, LH cam (weak or noisy signal) |
+| Sensors | R43 | 1k | +5VA / IN_CAM_RH | not fitted | stronger pull-up, RH cam |
 
-Pads: P1-P7 LSU and CAN, P8 K-line, P9/P10 spare low-side outputs, P11 A22 charging wire, P12 FPCU status, P13 D29, P14-P18 spare MCU pins (IGN6-8, I2C SCL/SDA), P19-P22 rails, P23 BOOT0, P24-P26 SWD, P27/P28 OUT_PWM3 / IN_RES2, P29-P31 aux inputs, P32 M8 power-good (+5VA, +3.3V, +12V_RAW, GND), plus a prototype area G1 for any extra circuit.
+Pads (no assembly cost): LSU 4.9 and CAN on the Comms sheet; K-line, D29 and A22 charging wire; spare low-side outputs and FPCU status on Outputs; BOOT0 and SWD on MCU and USB; spare MCU pins (IGN6-8, I2C, OUT_PWM3, IN_RES2), aux inputs, M8 power-good and every rail on the Aux sheet, next to the prototype area G1.
 
-**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q20, R11-R22 in the low-side sheets, R30-R52, JP1-JP11, F6-F7, P1-P32, M10-M12, J2, J3, G1; M8 now wired).
+**Next:** in KiCad, *Update PCB from Schematic* with **Re-link footprints to schematic symbols based on their references** ticked (the sheet split changed every symbol's sheet path), then place and route the new parts (everything not yet on the board: Q9-Q20 and R11-R22 in the low-side sheets, R30-R54, JP1-JP12, F6-F7, P1-P32, M10-M12, J2, U1, J3, G1; M8 now wired).
 
 ## Findings (2026-10-13, master vs `rev-b-schematic-fixes`)
 

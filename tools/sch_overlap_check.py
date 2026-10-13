@@ -106,7 +106,18 @@ def items(path):
     out = []   # (kind, owner, text, box)
     for l in kids(root, 'label') + kids(root, 'global_label') + kids(root, 'hierarchical_label'):
         at = one(l, 'at'); size, just, hide = effects(l)
-        out.append(('label', None, l[1], text_box(l[1], float(at[1]), float(at[2]), float(at[3]), size, just or 'left bottom')))
+        flag = l[0] != 'label'                      # global/hierarchical labels draw a flag outline around the text
+        name = l[1] + ('   ' if flag else '')
+        if flag and not just:
+            just = 'left'
+        out.append(('label', None, l[1], text_box(name, float(at[1]), float(at[2]), float(at[3]), size, (just or 'left bottom') if not flag else just + ' center')))
+    for tx in kids(root, 'text'):                     # free notes, possibly several lines
+        at = one(tx, 'at'); size, just, hide = effects(tx)
+        lines = tx[1].replace('\\n', '\n').split('\n')
+        w = max(len(s) for s in lines) * size * CHAR_W; h = size * 1.6 * len(lines)
+        x, y = float(at[1]), float(at[2])
+        y0 = y if 'top' in just else (y - h / 2 if 'bottom' not in just else y - h)   # bottom-justified blocks grow upward
+        out.append(('text', None, lines[0][:20], (x - PAD, y0 - PAD, x + w + PAD, y0 + h + PAD)))
     for s in kids(root, 'symbol'):
         ref = next((p[2] for p in kids(s, 'property') if p[1] == 'Reference'), '?')
         at = one(s, 'at'); x, y, rot = float(at[1]), float(at[2]), float(at[3]) if len(at) > 3 else 0
@@ -149,6 +160,11 @@ def overlaps(path):
                 continue                      # body vs body is layout, not text
             if a[1] is not None and a[1] == b[1] and 'body' in (a[0], b[0]):
                 continue                      # a symbol's own fields may sit on its own body (not on each other)
+            if {a[0], b[0]} == {'text', 'body'}:
+                tx, bd = (a, b) if a[0] == 'text' else (b, a)
+                ax, ay = tx[3][0] + PAD, tx[3][3] - PAD          # text anchor (left, baseline)
+                if bd[3][0] <= ax <= bd[3][2] and bd[3][1] <= ay <= bd[3][3]:
+                    continue                  # a note drawn inside a symbol outline (e.g. plug names in J1)
             if hit(a[3], b[3]):
                 bad.append((a, b))
     return bad
