@@ -108,7 +108,7 @@
 		)
 		(uuid "a78eeb20-4fc4-414a-9051-b1e647865cf4")
 	)
-	(text "Low-side drivers (VND14NV04) in sub-sheets: INJ\ninjectors 1-4; LS1 main relay, fans, ETB relay;"
+	(text "Low-side drivers (NCV8401B, protected) in sub-sheets: INJ\ninjectors 1-4; LS1 main relay, fans, ETB relay;"
 		(exclude_from_sim no)
 		(at 110.49 156.21 0)
 		(effects

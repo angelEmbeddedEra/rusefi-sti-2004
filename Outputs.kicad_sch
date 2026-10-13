@@ -1991,7 +1991,7 @@
 		)
 		(uuid "00f5ff43-2953-47ed-bf73-4f75df0f7e41")
 	)
-	(text "Low-side drivers (VND14NV04) in sub-sheets: INJ injectors 1-4; LS1 main relay, fans, ETB relay;\nLS2 wastegate, AVCS RH/LH, purge; LS3 check-engine lamp, rear O2 heater, A/C relay, tach;\nLS4 cruise lamps and two spares (aux connector, or EVAP A12/A13 through the open links).\nM2 drives the electronic throttle motor; M9 drives both TGV motors in parallel.\nFuel pump control unit command B26: 5 V PWM from IGN5 through 100R, with pull-up/down options."
+	(text "Low-side drivers (NCV8401B, protected) in sub-sheets: INJ injectors 1-4; LS1 main relay, fans, ETB relay;\nLS2 wastegate, AVCS RH/LH, purge; LS3 check-engine lamp, rear O2 heater, A/C relay, tach;\nLS4 cruise lamps and two spares (aux connector, or EVAP A12/A13 through the open links).\nM2 drives the electronic throttle motor; M9 drives both TGV motors in parallel.\nFuel pump control unit command B26: 5 V PWM from IGN5 through 100R, with pull-up/down options."
 		(exclude_from_sim no)
 		(at 15.24 22.86 0)
 		(effects

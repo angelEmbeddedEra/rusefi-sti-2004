@@ -5,7 +5,7 @@
 	(uuid "a418efa1-9ba3-4d5b-b128-e76baf44d8aa")
 	(paper "A4")
 	(lib_symbols
-		(symbol "EmbeddedEra:VND14NV04-E"
+		(symbol "EmbeddedEra:NCV8401BDTRKG"
 			(pin_names
 				(offset 1.016)
 			)
@@ -24,7 +24,7 @@
 					)
 				)
 			)
-			(property "Value" "VND14NV04-E"
+			(property "Value" "NCV8401BDTRKG"
 				(at 3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -45,7 +45,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
+			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -56,7 +56,7 @@
 					)
 				)
 			)
-			(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
+			(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -78,7 +78,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "STMicroelectronics"
+			(property "Manufacturer" "onsemi"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -89,7 +89,7 @@
 					)
 				)
 			)
-			(property "Manufacturer Part Number" "VND14NV04-E"
+			(property "Manufacturer Part Number" "NCV8401BDTRKG"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -100,7 +100,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C155647"
+			(property "LCSC" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -111,7 +111,7 @@
 					)
 				)
 			)
-			(symbol "VND14NV04-E_0_1"
+			(symbol "NCV8401BDTRKG_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 2.54 -5.08)
@@ -124,7 +124,7 @@
 					)
 				)
 			)
-			(symbol "VND14NV04-E_1_1"
+			(symbol "NCV8401BDTRKG_1_1"
 				(pin input line
 					(at -10.16 0 0)
 					(length 2.54)
@@ -1090,7 +1090,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:VND14NV04-E")
+		(lib_id "EmbeddedEra:NCV8401BDTRKG")
 		(at 149.86 123.19 0)
 		(mirror y)
 		(unit 1)
@@ -1113,7 +1113,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VND14NV04-E"
+		(property "Value" "NCV8401BDTRKG"
 			(at 146.05 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1136,7 +1136,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
 			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1147,7 +1147,7 @@
 				)
 			)
 		)
-		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
+		(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
 			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1158,7 +1158,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C155647"
+		(property "LCSC" ""
 			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1169,7 +1169,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
+		(property "Manufacturer" "onsemi"
 			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1180,7 +1180,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "VND14NV04-E"
+		(property "Manufacturer Part Number" "NCV8401BDTRKG"
 			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2095,7 +2095,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:VND14NV04-E")
+		(lib_id "EmbeddedEra:NCV8401BDTRKG")
 		(at 149.86 58.42 0)
 		(mirror y)
 		(unit 1)
@@ -2118,7 +2118,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VND14NV04-E"
+		(property "Value" "NCV8401BDTRKG"
 			(at 146.05 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2141,7 +2141,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2152,7 +2152,7 @@
 				)
 			)
 		)
-		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
+		(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2163,7 +2163,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C155647"
+		(property "LCSC" ""
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2174,7 +2174,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
+		(property "Manufacturer" "onsemi"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2185,7 +2185,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "VND14NV04-E"
+		(property "Manufacturer Part Number" "NCV8401BDTRKG"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2242,7 +2242,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:VND14NV04-E")
+		(lib_id "EmbeddedEra:NCV8401BDTRKG")
 		(at 149.86 80.01 0)
 		(mirror y)
 		(unit 1)
@@ -2265,7 +2265,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VND14NV04-E"
+		(property "Value" "NCV8401BDTRKG"
 			(at 146.05 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2288,7 +2288,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2299,7 +2299,7 @@
 				)
 			)
 		)
-		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
+		(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2310,7 +2310,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C155647"
+		(property "LCSC" ""
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2321,7 +2321,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
+		(property "Manufacturer" "onsemi"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2332,7 +2332,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "VND14NV04-E"
+		(property "Manufacturer Part Number" "NCV8401BDTRKG"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2482,7 +2482,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:VND14NV04-E")
+		(lib_id "EmbeddedEra:NCV8401BDTRKG")
 		(at 149.86 101.6 0)
 		(mirror y)
 		(unit 1)
@@ -2505,7 +2505,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VND14NV04-E"
+		(property "Value" "NCV8401BDTRKG"
 			(at 146.05 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2528,7 +2528,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnd14nv04-e.pdf"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2539,7 +2539,7 @@
 				)
 			)
 		)
-		(property "Description" "VND14NV04-E OMNIFET II LOW SIDE POWER SWITCH 40V 14MOHM DPAK"
+		(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2550,7 +2550,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C155647"
+		(property "LCSC" ""
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2561,7 +2561,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "STMicroelectronics"
+		(property "Manufacturer" "onsemi"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2572,7 +2572,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "VND14NV04-E"
+		(property "Manufacturer Part Number" "NCV8401BDTRKG"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
