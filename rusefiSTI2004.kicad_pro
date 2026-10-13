@@ -204,7 +204,16 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.25,
+        0.4,
+        0.6,
+        1.0,
+        1.25,
+        2.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -231,7 +240,28 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.5
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.6
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -509,6 +539,25 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
+        "name": "Ground",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "Power_1A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
@@ -547,6 +596,25 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
+        "name": "Power_3A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.25,
+        "tuning_profile": "",
+        "via_diameter": 1.0,
+        "via_drill": 0.5,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "Power_500mA",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
@@ -555,6 +623,25 @@
         "tuning_profile": "",
         "via_diameter": 0.7,
         "via_drill": 0.35,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power_5A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.5,
+        "tuning_profile": "",
+        "via_diameter": 1.2,
+        "via_drill": 0.6,
         "wire_width": 6
       },
       {
@@ -603,20 +690,52 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "USB2",
-        "pattern": "USB_D*"
+        "netclass": "Ground",
+        "pattern": "GND"
       },
       {
-        "netclass": "Power_2A",
+        "netclass": "Power_5A",
         "pattern": "+12V_RAW"
       },
       {
-        "netclass": "Power_2A",
+        "netclass": "Power_5A",
         "pattern": "+12V_ETB"
       },
       {
-        "netclass": "Power_2A",
+        "netclass": "Power_5A",
         "pattern": "OUT_ETB*"
+      },
+      {
+        "netclass": "Power_3A",
+        "pattern": "OUT_TGV_*"
+      },
+      {
+        "netclass": "Power_500mA",
+        "pattern": "GND_SENSOR"
+      },
+      {
+        "netclass": "Power_1A",
+        "pattern": "EVAP_*"
+      },
+      {
+        "netclass": "Signal_Robust",
+        "pattern": "*IGN?_COIL"
+      },
+      {
+        "netclass": "Signal_Robust",
+        "pattern": "WBO_*_J1"
+      },
+      {
+        "netclass": "Signal_Robust",
+        "pattern": "DLC6_*"
+      },
+      {
+        "netclass": "Signal_Robust",
+        "pattern": "CHARGE_*"
+      },
+      {
+        "netclass": "USB2",
+        "pattern": "USB_D*"
       },
       {
         "netclass": "Power_2A",
@@ -625,10 +744,6 @@
       {
         "netclass": "Power_2A",
         "pattern": "WBO_HEATER"
-      },
-      {
-        "netclass": "Power_2A",
-        "pattern": "OUT_TGV_*"
       },
       {
         "netclass": "Power_1A",
