@@ -92,3 +92,23 @@
 	(condition "A.Type == 'pad' && B.Type == 'pad' && A.Net != B.Net")
 	(constraint physical_clearance (min 0.1mm))
 )
+
+# --- rusefi-sti-2004 exceptions: one footprint each, the rest of the board keeps the rules above.
+# J2 (HRO TYPE-C-31-M-12) has 0.15 mm pad gaps and 0.2 mm peg-to-pad: inside JLCPCB capability.
+(rule "J2 usb-c fine pitch"
+	(condition "A.memberOfFootprint('J2') && B.memberOfFootprint('J2')")
+	(constraint clearance (min 0.127mm))
+	(constraint hole_clearance (min 0.15mm))
+)
+
+# M13 (Hellen knock module) ships with a 0.197 mm gap inside the module.
+(rule "M13 hellen module internal"
+	(condition "A.memberOfFootprint('M13') && B.memberOfFootprint('M13')")
+	(constraint clearance (min 0.15mm))
+)
+
+# J1 GND pins sit between dense header rows: one thermal spoke into the plane is enough.
+(rule "J1 gnd spokes"
+	(condition "A.memberOfFootprint('J1')")
+	(constraint min_resolved_spokes 1)
+)
