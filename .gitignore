@@ -6,3 +6,7 @@ fp-info-cache
 
 # project local?
 *.kicad_prl
+
+# Office lock files and KiCad autosaves
+~$*
+_autosave-*
