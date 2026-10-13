@@ -30,7 +30,7 @@ Needs `kicad-cli` and `gridcraft-cli`. The status column is judged on the last s
 
 ## Findings (2026-10-13, master vs `rev-b-schematic-fixes`)
 
-Status counts on rev-b: 47 OK, 3 mismatch, 16 label only, 34 not wired, 2 to check, 33 unused by the car.
+Status counts on rev-b: 47 OK, 3 mismatch, 16 label only, 34 not wired, 3 to check, 32 unused by the car.
 
 ### Wrong today (fix in the schematic)
 
@@ -49,14 +49,15 @@ The net has the right name at J1 and stops there: starter switch D8, neutral D9,
 
 ### The car uses these, the schematic does not (34 pins)
 
-- **Needed to run:** front A/F sensor (A33 signal +, A26 signal -, A25 shield, heaters A2/A3, heater grounds already on GND). The stock sensor is a **Denso 5-wire A/F**, not a Bosch LSU, so the Hellen WBO module cannot read it as is: either fit an LSU 4.9 or add a Denso A/F interface. Decision needed.
+- **Needed to run:** front A/F sensor (A33 signal +, A26 signal -, A25 shield, heaters A2/A3, heater grounds already on GND). The stock sensor is a **Denso 4-wire A/F** (plug B18: heater +12 V from the main relay, heater return to A2 and A3 joined in the harness, signal A33/A26), not a Bosch LSU, so the Hellen WBO module cannot read it as is: either fit an LSU 4.9 or add a Denso A/F interface. Decision needed.
 - **Needed for a clean dash and emissions:** MIL A17, rear O2 signal D25 and heater B2, brake switches C8/C9, TGV motors A8-A11 (or a TGV delete), A/C request D16 and A/C relay B33.
 - **Optional:** SSM/K-line D20, cruise (C7, C10, C11, A15, A16), EVAP (A12, A13, A24, C12, C21), test mode D14, defogger/lights/blower load inputs D11-D13, blow-by diagnosis D24.
 - **Ground:** A34 is joined to the D1/D2 grounds on WI-107; tie it to GND.
 
 ### Check
 
-- D29 is not in the I/O table, but WI-107 draws a line from it toward the data link connector. Confirm on the car before using it.
+- D29 is not in the I/O table; WI-112 shows a red/white wire to data link connector pin 6. Leave it unconnected.
+- A22 is not in the I/O table, but WI-111 shows a blue wire to the charging system (CHG-01). It is not a spare pin: do not ground or drive it, and measure it on the car.
 - Sensor returns (C31, C34, C35, D3) are on the power GND. rusEFI boards usually return sensors to an analog ground; worth a look before layout.
 
 ### Errors in the sources
@@ -64,3 +65,13 @@ The net has the right name at J1 and stops there: starter switch D8, neutral D9,
 - The FSM I/O table prints ignition #3 and #4 both as B135 16. The wiring diagram (WI-107) shows B15 to coil 4; the check uses B15.
 - The FSM I/O table prints A/C relay control as "B133 33". There is no B133 on this ECM; WI-106 shows B33 to the auto A/C module, so it is B135 33.
 - The working sheet `pinout-ECU.xlsx` notes "A/C relay control" on the B22 row (crank signal -); it belongs on B33. It also leaves A34 (ground) blank.
+
+## Independent verification (2026-10-13)
+
+A second agent (Claude Fable, read-only) rebuilt all 135 terminals from the FSM pages without seeing this table, then compared. 134 of 135 rows agreed; the one difference was A22 (wired to the charging system, now recorded), plus the A/F sensor wire count (4, not 5, now fixed).
+
+- **Model year:** consistent with the 2004 USDM STI: four ECM plugs (135 terminals), drive-by-wire with ETC relay, dual AVCS, TGVs, MAF plus MAP, fuel pump control unit, USDM EVAP, Denso 4-wire A/F, no immobilizer line. The I/O table PDF is dated 2003-05-12. rusEFI's documentation files the byte-identical table as "2005-2007 GDA/GDB"; the community and plug-in ECU makers treat 2004-2006 USDM STI pinouts as the same.
+- **Plug letters** A = B134, B = B135, C = B136, D = B137 are printed on WI-108, WI-111 and WI-113 and match the pin-grid drawings.
+- **Community disagreement:** rusEFI's [2005 STI EJ257 pinout](https://github.com/rusefi/rusefi_documentation/blob/master/OEM-Docs/Subaru/2005-Subaru-Impreza-WRX-STi-EJ257-ECM-pinout.md) (from a Mitchell diagram) swaps D14/D15 and B26/B27, and flags them itself for on-car checking. The FSM table and wire colours on WI-108/109/112 support this table (D14 test mode, D15 ignition switch, B26 fuel pump control unit, B27 vehicle speed). Confirm these four with a meter before power-up.
+- **Not usable:** the allpinouts.org "2004 STI ECU" page is a 2002-03 WRX layout (five connectors, wrong pin counts).
+- **Could not verify from documents:** the function of A22 and D29, and the physical polarity of the throttle motor pins D4/D5.

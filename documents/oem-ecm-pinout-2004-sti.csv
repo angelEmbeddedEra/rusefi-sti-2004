@@ -1,7 +1,7 @@
 code,function,type,volts_key_on,volts_idle,source,note
 D1,GND (control systems),ground,0,0,EN(STi)-20,
 D2,GND (control systems),ground,0,0,EN(STi)-20,
-D3,Electric throttle GND (sensor),sensor ground,0,0,EN(STi)-21,
+D3,Electric throttle GND (sensor),sensor ground,0,0,EN(STi)-21,Harness side is grounded at engine ground GE-1 (WI-77)
 D4,Electric throttle motor (-),H-bridge output,duty,duty,EN(STi)-21,500 Hz
 D5,Electric throttle motor (+),H-bridge output,duty,duty,EN(STi)-21,500 Hz
 D6,Electric throttle motor power supply,12 V in (from ETB relay),10-13,13-14,EN(STi)-21,
@@ -27,7 +27,7 @@ D25,Rear oxygen sensor signal,analog in (narrowband O2),0,0-0.9,EN(STi)-18,
 D26,(not used),,,,,
 D27,(not used),,,,,
 D28,Fuel pump control unit signal 2,12 V to FPCU,10-13,13-14,EN(STi)-19,
-D29,(not in I/O table),,,,WI-107,Wiring diagram shows a line from D29 toward the data link connector
+D29,(not in I/O table),,,,WI-112,Red/white wire to data link connector pin 6 (WI-112); function not in the I/O table. Leave unconnected.
 D30,(not used),,,,,
 D31,Rear oxygen sensor shield,shield,0,0,EN(STi)-18,
 C1,(not used),,,,,
@@ -101,8 +101,8 @@ B33,A/C relay control,low-side output (relay),ON <=0.5 / OFF 10-13,ON <=0.5 / OF
 B34,(not used),,,,,
 B35,Electric throttle motor relay,low-side output (relay),ON 0 / OFF 10-13,ON 0 / OFF 13-14,EN(STi)-21,ON whenever the ignition is ON
 A1,Clutch switch,digital in (to ground),pressed 0 / released 10-13,pressed 0 / released 13-14,EN(STi)-21,
-A2,Front A/F sensor heater signal 2,heater low-side,0-1.0,-,EN(STi)-18,
-A3,Front A/F sensor heater signal 1,heater low-side,0-1.0,-,EN(STi)-18,
+A2,Front A/F sensor heater signal 2,heater low-side,0-1.0,-,EN(STi)-18,Joined with A3 in the harness to A/F heater B18 pin 1 (WI-113); heater +12 V comes from the main relay
+A3,Front A/F sensor heater signal 1,heater low-side,0-1.0,-,EN(STi)-18,Joined with A2 in the harness to A/F heater B18 pin 1 (WI-113)
 A4,(not used),,,,,
 A5,(not used),,,,,
 A6,GND (front A/F sensor heater 2),ground,0,0,EN(STi)-20,
@@ -121,16 +121,16 @@ A18,AVCS (VVT) solenoid RH signal (+),solenoid PWM (+),ON 10-13 / OFF 0,ON 13-14
 A19,AVCS (VVT) solenoid LH signal (+),solenoid PWM (+),ON 10-13 / OFF 0,ON 13-14 / OFF 0,EN(STi)-21,
 A20,(not used),,,,,
 A21,(not used),,,,,
-A22,(not used),,,,,
+A22,(not in I/O table) wire to charging system,,,,WI-111,"Blue (L) wire to REF. TO CHG-01 (charging system); function not in the I/O table, likely alternator signal. Not spare: do not ground or drive it. Measure on the car."
 A23,Engine speed output (tach),tach output,-,0-13 or more,EN(STi)-20,Waveform
 A24,Fuel tank sensor control valve,low-side output,ON <=1 / OFF 10-13,ON <=1 / OFF 13-14,EN(STi)-20,
 A25,Front A/F sensor shield,shield,0,0,EN(STi)-20,
-A26,Front A/F sensor signal (-),analog in (A/F),2.4-2.7,2.4-2.7,EN(STi)-20,Denso 5-wire A/F sensor; not a Bosch LSU
+A26,Front A/F sensor signal (-),analog in (A/F),2.4-2.7,2.4-2.7,EN(STi)-20,Denso 4-wire A/F sensor (plug B18 pin 4; WI-113); not a Bosch LSU
 A27,(not used),,,,,
 A28,AVCS (VVT) solenoid RH signal (-),solenoid return,0,0,EN(STi)-21,
 A29,AVCS (VVT) solenoid LH signal (-),solenoid return,0,0,EN(STi)-21,
 A30,(not used),,,,,
 A31,(not used),,,,,
 A32,Wastegate control solenoid valve,low-side output (PWM),0 or 10-13,0 or 13-14,EN(STi)-19,
-A33,Front A/F sensor signal (+),analog in (A/F),2.8-3.2,2.8-3.2,EN(STi)-20,Denso 5-wire A/F sensor; not a Bosch LSU
+A33,Front A/F sensor signal (+),analog in (A/F),2.8-3.2,2.8-3.2,EN(STi)-20,Denso 4-wire A/F sensor (plug B18 pin 3; WI-113); not a Bosch LSU
 A34,(not in I/O table),ground,,,WI-107,Wiring diagram joins A34 to the D1/D2 grounds
