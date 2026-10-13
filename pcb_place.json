@@ -1,9 +1,24 @@
 {
   "libs": {},
   "copper_layers": 4,
-  "planes": {
-    "In1.Cu": "GND"
-  },
+  "planes": [
+    {
+      "layer": "In1.Cu",
+      "net": "GND"
+    },
+    {
+      "layer": "In2.Cu",
+      "net": "+12V_RAW"
+    },
+    {
+      "layer": "F.Cu",
+      "net": "GND"
+    },
+    {
+      "layer": "B.Cu",
+      "net": "GND"
+    }
+  ],
   "silk": {
     "height": 1.0,
     "thickness": 0.15,
@@ -142,5 +157,24 @@
     "P": 0.75
   },
   "edge": 0.5,
-  "pull_max_pins": 8
+  "pull_max_pins": 8,
+  "spreaders": {
+    "refs": "^Q\\d+$",
+    "pad": "2",
+    "margin": 1.5,
+    "layers": [
+      "F.Cu",
+      "B.Cu"
+    ],
+    "vias": 6
+  },
+  "stitch": {
+    "net": "GND",
+    "pitch": 8,
+    "via": [
+      0.6,
+      0.3
+    ]
+  },
+  "trim_inner_pads": "^(J1|J3|P\\d+)$"
 }

@@ -107,8 +107,8 @@
 	(constraint clearance (min 0.15mm))
 )
 
-# J1 GND pins sit between dense header rows: one thermal spoke into the plane is enough.
-(rule "J1 gnd spokes"
-	(condition "A.memberOfFootprint('J1')")
+# J1 GND pins sit between dense header rows, J2's GND pads are 0.3 mm wide: one thermal spoke is enough.
+(rule "J1 J2 gnd spokes"
+	(condition "A.memberOfFootprint('J1') || A.memberOfFootprint('J2')")
 	(constraint min_resolved_spokes 1)
 )
