@@ -115,7 +115,7 @@ def status(code, used, net, ends, unlisted=False):
         return "MISMATCH", f"Expected a net matching {want!r}"
     if not ends or "(dead end)" in ends:
         return "LABEL ONLY", "Net is named but reaches no module or rail"
-    sig = [e for e in re.findall(r"\b(M\d+)\.([^,;\s]+)", ends) if not re.search("12V|GND|5V|VCC", e[1])]
+    sig = [e for e in re.findall(r"\b(M\d+)\.([^,;\s]+)", ends) if not re.search("12V|GND|5V|VCC|VIGN|PERM|VBAT", e[1])]
     if len(sig) > 1:
         return "MISMATCH", "Joins several module signal pins: " + ", ".join(".".join(e) for e in sig)
     if not want:

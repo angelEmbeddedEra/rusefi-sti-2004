@@ -100,7 +100,25 @@ Before relying on it: confirm the A25 shield is not grounded at the sensor end (
 - **Removed unused modules:** M6 (VR, the cams are Hall) and M4 (CAN; M1 has its own transceiver). Their MCU pins OUT_PWM3 and IN_RES2 are on pads P27/P28.
 - **More inputs:** two Hellen dinput4 modules (M11, M12) on spare 5 V-tolerant GPIOs. An I2C expander was considered: rusEFI has no driver for I2C input expanders, and its one supported switch-input chip (MC33972, SPI) is obsolete. I2C SCL/SDA are on pads in case an expander is added later.
 - Spare 5 V push-pull outputs IGN6-8 on pads.
-- Still unused: M7 (second knock module; the STI has one knock sensor) and M8 (second power module, earmarked to give the pedal C15 its own 5 V).
+- **Pedal 5 V is now its own rail.** The pedal supply C15 (net APS_PS_5V) comes from the second power module M8's protected 5 V; the throttle/MAP/TGV sensor supply C16 stays on M14 (+5VAS). A shared rail would let one short take out both pedal and throttle sensors and defeat their plausibility check. JP11 (open) puts the pedal back on +5VAS if M8 is not fitted; M8's power-good is on pad P32.
+- **CAN termination:** M1 already has 120R across CANH/CANL (R100 on mega-mcu144 sheet 15); the WBO module has none. R52 (120R, DNP) at the aux connector terminates the far end if an external device on the aux CAN does not.
+- Still unused: M7 (second knock module; the STI has one knock sensor).
+
+### Aux connector J3: Molex Mini-Fit Jr 2x7 (5566-14A vertical, Molex 39281143)
+
+Mating plug: Molex 39-01-2140 (5557-14R housing) with 39-00-0038 crimp terminals (5556, 18-24 AWG). Footprint `STI:Molex_Mini-Fit_Jr_5566-14A_2x07_P4.20mm_Vertical` (copied from the KiCad 8.0.7 library). Through-hole, no LCSC number: hand-solder or order THT assembly; a right-angle 5569-14A footprint can be swapped in if the case needs it.
+
+| Pin | Signal | Pin | Signal |
+|---|---|---|---|
+| 1 | +12 V out (main relay, F6 0.5 A PTC) | 2 | GND |
+| 3 | +5 V sensor out (+5VAS, F7 50 mA PTC) | 4 | Sensor ground (GND_SENSOR) |
+| 5 | AUX_IN1 digital (launch / 2-step) | 6 | AUX_IN2 digital (map switch) |
+| 7 | AUX_IN3 digital (spare, flex fuel frequency OK) | 8 | AUX_AN1 analog 0-5 V (IN_RES2, 340k) |
+| 9 | AUX_AN2 analog (IN_AT2, 2.35k pull-up: thermistor-ready) | 10 | AUX_OUT1 low-side (LS4 ch3) |
+| 11 | AUX_OUT2 low-side (LS4 ch4) | 12 | CAN H |
+| 13 | CAN L | 14 | GND |
+
+AUX_IN1-3 expect a switch to 12 V (680k pull-down on the dinput4, R46-R48 4.7k options). AUX_AN2 shares IN_AT2 with the FPCU status option JP7: fit only one. AUX_OUT1/2 also reach EVAP A12/A13 through open JP5/JP6.
 
 ### Option parts (footprints on the board, not assembled)
 
@@ -111,7 +129,7 @@ Listed in `bom_replace_rusefiSTI2004-a.csv` (Hellen's removal list) and marked D
 | R38 2.2k 0805 | Tach A23 pull-up to +12V_RAW | tach needle dead |
 | R39 100R | *Fitted*: series resistor on the FPCU command | always |
 | R40 1k / R41 10k | FPCU command B26 pull-up to 5 V / pull-down | if the FPCU input needs it (scope the stock ECM first) |
-| JP7 | D28 FPCU status -> IN_AT2 | to read pump status |
+| JP7 | D28 FPCU status -> IN_AT2 | to read pump status (then do not use AUX_AN2) |
 | R42 / R43 1k | Extra pull-ups on cam LH / RH | weak or noisy cam signal |
 | R44 4.7k | Neutral switch pull-down | if neutral turns out to be 12 V-active |
 | R45 1k | Fuel level pull-up | to tune the fuel gauge reading |
@@ -122,10 +140,12 @@ Listed in `bom_replace_rusefiSTI2004-a.csv` (Hellen's removal list) and marked D
 | R46-R48 4.7k | Aux input pull-downs | if an aux button input floats |
 | R49-R51 10k | Pull-ups on defogger / lights / blower lines | if a load line floats when off |
 | JP10 | BOOT0 to 3.3 V | bridge to force USB DFU bootloader |
+| JP11 | Pedal 5 V back onto +5VAS | only if M8 is not fitted |
+| R52 120R | CAN terminator at the aux connector | external CAN device that does not terminate |
 
-Pads: P1-P7 LSU and CAN, P8 K-line, P9/P10 spare low-side outputs, P11 A22 charging wire, P12 FPCU status, P13 D29, P14-P18 spare MCU pins (IGN6-8, I2C SCL/SDA), P19-P22 rails, P23 BOOT0, P24-P26 SWD, P27/P28 OUT_PWM3 / IN_RES2, P29-P31 aux inputs (+5VA, +3.3V, +12V_RAW, GND), plus a prototype area G1 for any extra circuit.
+Pads: P1-P7 LSU and CAN, P8 K-line, P9/P10 spare low-side outputs, P11 A22 charging wire, P12 FPCU status, P13 D29, P14-P18 spare MCU pins (IGN6-8, I2C SCL/SDA), P19-P22 rails, P23 BOOT0, P24-P26 SWD, P27/P28 OUT_PWM3 / IN_RES2, P29-P31 aux inputs, P32 M8 power-good (+5VA, +3.3V, +12V_RAW, GND), plus a prototype area G1 for any extra circuit.
 
-**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q20, R11-R22 in the low-side sheets, R30-R51, JP1-JP10, P1-P31, M10-M12, J2, G1).
+**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q20, R11-R22 in the low-side sheets, R30-R52, JP1-JP11, F6-F7, P1-P32, M10-M12, J2, J3, G1; M8 now wired).
 
 ## Findings (2026-10-13, master vs `rev-b-schematic-fixes`)
 
