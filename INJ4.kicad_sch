@@ -4,6 +4,10 @@
 	(generator_version "10.0")
 	(uuid "a418efa1-9ba3-4d5b-b128-e76baf44d8aa")
 	(paper "A4")
+	(title_block
+		(title "${Project_Name}")
+		(date "2026-10-13")
+	)
 	(lib_symbols
 		(symbol "EmbeddedEra:NCV8401BDTRKG"
 			(pin_names

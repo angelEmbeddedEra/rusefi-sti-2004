@@ -5,7 +5,7 @@
 	(uuid "4e2d7b8f-be32-5998-be18-4252bcad7088")
 	(paper "A3")
 	(title_block
-		(title "Power")
+		(title "${Project_Name}")
 		(date "2026-10-13")
 	)
 	(lib_symbols

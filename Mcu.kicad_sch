@@ -5,7 +5,7 @@
 	(uuid "0daedc4f-baef-5ed6-8e73-73f215373237")
 	(paper "A3" portrait)
 	(title_block
-		(title "MCU and USB")
+		(title "${Project_Name}")
 		(date "2026-10-13")
 	)
 	(lib_symbols

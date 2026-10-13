@@ -811,6 +811,7 @@
     "Costumer": "EmbeddedEra",
     "Designer": "AGD",
     "Part_Number": "TBD",
-    "Revision": "B"
+    "Revision": "B",
+    "Project_Name": "rusEFI STI 2004 ECU"
   }
 }
