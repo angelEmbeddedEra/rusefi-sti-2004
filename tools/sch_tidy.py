@@ -482,8 +482,14 @@ def autoplace(sh, sym, others=(), force=None):
     side = force or next((sd for sd in free if not collides(sd)), prefs[0])
     x, y = box_for(side)
     hj = {'R': 'left', 'L': 'right', 'U': 'center', 'D': 'center'}[side]
-    if pin_side.get(side):
+    if pin_side.get(side):                    # KiCad: beside that side's pins, not across them
         hj = 'left' if side in 'UD' else 'center'
+        sp = [(px, py) for px, py in sym['pins'].values()
+              if (('R' if px - cx > 0 else 'L') if abs(px - cx) > abs(py - cy) else ('D' if py - cy > 0 else 'U')) == side]
+        if side in 'UD':
+            x = max(px for px, _ in sp) + 2 * HPAD + 0.5
+        else:
+            y = min(py for _, py in sp) - (fh + 2 * VPAD)
     angle = 90 if sym['rot'] % 180 else 0                     # displayed horizontal
     out = []
     for i, (name, val, sz) in enumerate(fields):

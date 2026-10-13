@@ -6858,7 +6858,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 60.96 57.15 90)
+		(at 68.58 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6868,7 +6868,7 @@
 		(dnp no)
 		(uuid "1f0d4772-0e4d-46df-bcea-e168e9c5b7d3")
 		(property "Reference" "#PWR016"
-			(at 60.96 57.15 270)
+			(at 68.58 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6879,14 +6879,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 57.15 270)
+			(at 68.58 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7254,8 +7253,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 210.82 49.53 90)
-		(mirror x)
+		(at 220.98 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7265,7 +7263,7 @@
 		(dnp no)
 		(uuid "47029c70-c7c3-48bf-a424-b60794efaf26")
 		(property "Reference" "#PWR013"
-			(at 210.82 49.53 90)
+			(at 220.98 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7276,14 +7274,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.63 49.53 90)
+			(at 220.98 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -8632,7 +8629,7 @@
 	)
 	(symbol
 		(lib_id "EmbeddedEra_Generic:GND")
-		(at 312.42 63.5 90)
+		(at 317.5 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8642,7 +8639,7 @@
 		(dnp no)
 		(uuid "9698c32d-5e36-4ea9-85da-cb27d67aa8d9")
 		(property "Reference" "#PWR010"
-			(at 312.42 63.5 270)
+			(at 317.5 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8653,14 +8650,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 316.23 63.5 270)
+			(at 317.5 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -11503,5 +11499,35 @@
 			(type default)
 		)
 		(uuid "b192479c-3694-4847-a518-ed30d66a6979")
+	)
+	(wire
+		(pts
+			(xy 60.96 57.15) (xy 68.58 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5467f8d-eb9e-433f-8a02-4fcd6c066f8c")
+	)
+	(wire
+		(pts
+			(xy 210.82 49.53) (xy 220.98 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0287f5a4-50a0-4d4b-9a0d-fadfb8e2a2a6")
+	)
+	(wire
+		(pts
+			(xy 312.42 63.5) (xy 317.5 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1a0b108-6389-40ab-b8fe-e4c971c8e24a")
 	)
 )

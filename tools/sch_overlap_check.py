@@ -183,7 +183,9 @@ def overlaps(path):
             elif a[0] == 'body' and b[0] == 'body' and (a[1] or '').startswith('sheet:') and (b[1] or '').startswith('sheet:'):
                 continue
             if a[1] is not None and a[1] == b[1] and 'body' in (a[0], b[0]):
-                continue                      # a symbol's own fields may sit on its own body (not on each other)
+                bd = a if a[0] == 'body' else b
+                if (bd[3][2] - bd[3][0]) * (bd[3][3] - bd[3][1]) > 150:
+                    continue                  # big blocks (modules, connectors) may carry their own fields inside
             if {a[0], b[0]} == {'text', 'body'}:
                 tx, bd = (a, b) if a[0] == 'text' else (b, a)
                 ax, ay = tx[3][0] + PAD, tx[3][3] - PAD          # text anchor (left, baseline)

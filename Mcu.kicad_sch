@@ -12417,25 +12417,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d808d442-57ea-4333-af0c-ee9574900deb")
 		(property "Reference" "U1"
-			(at 220.98 58.42 0)
+			(at 222.75 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 220.98 67.31 0)
+			(at 222.75 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EmbeddedEra_Library:SOT-23-6"
