@@ -154,7 +154,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EmbeddedEra:USBLC6-2P6"
+		(symbol "EmbeddedEra:USBLC6-2SC6"
 			(pin_names
 				(hide yes)
 			)
@@ -174,7 +174,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "USBLC6-2P6"
+			(property "Value" "USBLC6-2SC6"
 				(at 0.635 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -185,7 +185,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "EmbeddedEra_Library:SOT-666"
+			(property "Footprint" "EmbeddedEra_Library:SOT-23-6"
 				(at 1.016 -6.731 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -210,7 +210,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "USBLC6-2P6 ESD PROTECTION DIODE 2 DATA-LINE SOT-666"
+			(property "Description" "USBLC6-2SC6 ESD PROTECTION DIODE 2 DATA-LINE SOT-23-6"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -221,7 +221,7 @@
 					)
 				)
 			)
-			(property "IPN" "EE-C-0128"
+			(property "IPN" "EE-C-0146"
 				(at 0.635 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -232,7 +232,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" ""
+			(property "Manufacturer" "STMicroelectronics"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -243,7 +243,7 @@
 					)
 				)
 			)
-			(property "Manufacturer Part Number" ""
+			(property "Manufacturer Part Number" "USBLC6-2SC6"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -254,7 +254,7 @@
 					)
 				)
 			)
-			(property "LCSC" ""
+			(property "LCSC" "C7519"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -276,7 +276,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?666*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -287,7 +287,7 @@
 					)
 				)
 			)
-			(symbol "USBLC6-2P6_0_0"
+			(symbol "USBLC6-2SC6_0_0"
 				(circle
 					(center -1.524 0)
 					(radius 0.0001)
@@ -355,7 +355,7 @@
 					)
 				)
 			)
-			(symbol "USBLC6-2P6_0_1"
+			(symbol "USBLC6-2SC6_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 2.54 0)
@@ -514,7 +514,7 @@
 					)
 				)
 			)
-			(symbol "USBLC6-2P6_1_1"
+			(symbol "USBLC6-2SC6_1_1"
 				(rectangle
 					(start -2.54 2.794)
 					(end 2.54 -5.334)
@@ -11459,7 +11459,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11659,7 +11659,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11859,7 +11859,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12213,7 +12213,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12408,7 +12408,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:USBLC6-2P6")
+		(lib_id "EmbeddedEra:USBLC6-2SC6")
 		(at 220.98 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -12452,7 +12452,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
 			(at 220.98 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -12463,7 +12463,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USBLC6-2SC6 ESD PROTECTION DIODE 2 DATA-LINE SOT-23-6"
 			(at 220.98 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
