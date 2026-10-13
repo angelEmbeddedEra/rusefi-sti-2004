@@ -9,6 +9,275 @@
 		(date "2026-10-13")
 	)
 	(lib_symbols
+		(symbol "EmbeddedEra:VNLD5160TR-E"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 3.81 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VNLD5160TR-E"
+				(at 3.81 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "EmbeddedEra_Library:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnld5160-e.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "VNLD5160TR-E DUAL OMNIFET III LOW SIDE DRIVER 41V 3.5A 160MOHM AEC-Q100 SO-8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IPN" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "STMicroelectronics"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part Number" "VNLD5160TR-E"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C377942"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VNLD5160TR-E_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "VNLD5160TR-E_1_1"
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "ST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "VNLD5160TR-E_2_1"
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "ST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "EmbeddedEra:NCV8401BDTRKG"
 			(pin_names
 				(offset 1.016)
@@ -2099,7 +2368,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:NCV8401BDTRKG")
+		(lib_id "EmbeddedEra:VNLD5160TR-E")
 		(at 149.86 58.42 0)
 		(mirror y)
 		(unit 1)
@@ -2111,29 +2380,27 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf4f9f00-a09a-409c-a8a5-e422b91b112c")
-		(property "Reference" "Q1"
-			(at 146.05 57.15 0)
+		(property "Reference" "U1"
+			(at 165.1 53.848 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "NCV8401BDTRKG"
-			(at 146.05 59.69 0)
+		(property "Value" "VNLD5160TR-E"
+			(at 165.1 56.388 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "EmbeddedEra_Library:TO-252-2"
+		(property "Footprint" "EmbeddedEra_Library:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2145,7 +2412,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnld5160-e.pdf"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2156,7 +2423,7 @@
 				)
 			)
 		)
-		(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
+		(property "Description" "VNLD5160TR-E DUAL OMNIFET III LOW SIDE DRIVER 41V 3.5A 160MOHM AEC-Q100 SO-8"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2167,7 +2434,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C377942"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2178,7 +2445,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2189,7 +2456,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "NCV8401BDTRKG"
+		(property "Manufacturer Part Number" "VNLD5160TR-E"
 			(at 149.86 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -2212,44 +2479,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "c9829754-c910-4cd1-9feb-c749c0c952ff")
+			(uuid "199f602f-cd5e-40c9-9e10-9cc14876a51a")
 		)
 		(pin "2"
-			(uuid "e3846af5-d050-404b-82d7-4977807a9306")
+			(uuid "491913ff-a64a-438c-9fc7-3a6129a97fbc")
 		)
-		(pin "3"
-			(uuid "c1836906-c2ad-4584-a68b-9a53b4ebaffd")
+		(pin "8"
+			(uuid "2b17b83f-f34a-481c-ba5f-f1f960a39f33")
+		)
+		(pin "7"
+			(uuid "6ac8baee-dee3-4f2f-82bb-ad1e540800d8")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "Q13")
+					(reference "U18")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "Q1")
+					(reference "U10")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
-					(reference "Q9")
+					(reference "U14")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
-					(reference "Q17")
+					(reference "U16")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "Q5")
+					(reference "U12")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:NCV8401BDTRKG")
+		(lib_id "EmbeddedEra:VNLD5160TR-E")
 		(at 149.86 80.01 0)
 		(mirror y)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2258,29 +2528,27 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0ca8bbc-91fe-4c07-9cdc-09e8930c626f")
-		(property "Reference" "Q2"
-			(at 146.05 78.74 0)
+		(property "Reference" "U1"
+			(at 165.1 75.438 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "NCV8401BDTRKG"
-			(at 146.05 81.28 0)
+		(property "Value" "VNLD5160TR-E"
+			(at 165.1 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "EmbeddedEra_Library:TO-252-2"
+		(property "Footprint" "EmbeddedEra_Library:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2292,7 +2560,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnld5160-e.pdf"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2303,7 +2571,7 @@
 				)
 			)
 		)
-		(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
+		(property "Description" "VNLD5160TR-E DUAL OMNIFET III LOW SIDE DRIVER 41V 3.5A 160MOHM AEC-Q100 SO-8"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2314,7 +2582,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C377942"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2325,7 +2593,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2336,7 +2604,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "NCV8401BDTRKG"
+		(property "Manufacturer Part Number" "VNLD5160TR-E"
 			(at 149.86 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2358,36 +2626,39 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "3dcf9a7d-3324-4d71-80fa-e9464954315b")
-		)
-		(pin "2"
-			(uuid "3493da53-cd5f-4fa1-bc9f-7d88fbe84428")
-		)
 		(pin "3"
-			(uuid "bfb683b6-2319-4dde-8153-004c0398a76c")
+			(uuid "e4ee4a52-867f-49f7-af1b-f47fb7fdf7ff")
+		)
+		(pin "4"
+			(uuid "231592e7-5591-4238-9cf1-7b83b339bb07")
+		)
+		(pin "6"
+			(uuid "9d888667-6f25-47fc-99c5-d9428796f88f")
+		)
+		(pin "5"
+			(uuid "d0d98e4f-782c-4035-8b3a-5b044437f413")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "Q14")
-					(unit 1)
+					(reference "U18")
+					(unit 2)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "Q2")
-					(unit 1)
+					(reference "U10")
+					(unit 2)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
-					(reference "Q10")
-					(unit 1)
+					(reference "U14")
+					(unit 2)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
-					(reference "Q18")
-					(unit 1)
+					(reference "U16")
+					(unit 2)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "Q6")
-					(unit 1)
+					(reference "U12")
+					(unit 2)
 				)
 			)
 		)
@@ -2486,7 +2757,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EmbeddedEra:NCV8401BDTRKG")
+		(lib_id "EmbeddedEra:VNLD5160TR-E")
 		(at 149.86 101.6 0)
 		(mirror y)
 		(unit 1)
@@ -2498,29 +2769,27 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa03b4c2-9238-4184-acfe-23ab3b7673f0")
-		(property "Reference" "Q3"
-			(at 146.05 100.33 0)
+		(property "Reference" "U2"
+			(at 165.1 97.028 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "NCV8401BDTRKG"
-			(at 146.05 102.87 0)
+		(property "Value" "VNLD5160TR-E"
+			(at 165.1 99.568 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "EmbeddedEra_Library:TO-252-2"
+		(property "Footprint" "EmbeddedEra_Library:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2532,7 +2801,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ncv8401-d.pdf"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnld5160-e.pdf"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2543,7 +2812,7 @@
 				)
 			)
 		)
-		(property "Description" "NCV8401BDTRKG SELF-PROTECTED LOW SIDE DRIVER 42V 33A 23MOHM DPAK"
+		(property "Description" "VNLD5160TR-E DUAL OMNIFET III LOW SIDE DRIVER 41V 3.5A 160MOHM AEC-Q100 SO-8"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2554,7 +2823,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C377942"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2565,7 +2834,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2576,7 +2845,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "NCV8401BDTRKG"
+		(property "Manufacturer Part Number" "VNLD5160TR-E"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2599,34 +2868,37 @@
 			)
 		)
 		(pin "1"
-			(uuid "59e7446e-f41b-4608-b4ef-cebd187d6711")
+			(uuid "5ea26559-54e4-49ba-982f-cf66a149a136")
 		)
 		(pin "2"
-			(uuid "6c179138-bd50-4425-b27a-61724093c8da")
+			(uuid "12cde0a0-ace3-4707-adbe-8344a453e8bb")
 		)
-		(pin "3"
-			(uuid "708e2442-1544-4ca7-bf4f-e1b35b1ddcf1")
+		(pin "8"
+			(uuid "ed2a0273-75ea-491d-9553-0e3d83381844")
+		)
+		(pin "7"
+			(uuid "d44bbaed-4e57-411b-b31c-535d75e5e410")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
-					(reference "Q15")
+					(reference "U19")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
-					(reference "Q3")
+					(reference "U11")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
-					(reference "Q11")
+					(reference "U15")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
-					(reference "Q19")
+					(reference "U17")
 					(unit 1)
 				)
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
-					(reference "Q7")
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -2651,5 +2923,281 @@
 			(type default)
 		)
 		(uuid "6e207db0-adbd-4e22-98ca-c2bf54384b92")
+	)
+	(no_connect
+		(at 144.78 58.42)
+		(uuid "b307f42f-f0ea-4fb4-aa37-d9c4e80eb933")
+	)
+	(no_connect
+		(at 144.78 80.01)
+		(uuid "1d6897d8-12d4-4f55-96a4-383364a7b295")
+	)
+	(no_connect
+		(at 144.78 101.6)
+		(uuid "7b0f8906-852b-4ebf-b4e3-a526fce89156")
+	)
+		(symbol
+		(lib_id "EmbeddedEra:VNLD5160TR-E")
+		(at 149.86 148.59 0)
+		(mirror y)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3395192f-cd6d-4693-b9e6-5cd437b859b7")
+		(property "Reference" "U2"
+			(at 165.1 144.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VNLD5160TR-E"
+			(at 165.1 146.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EmbeddedEra_Library:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vnld5160-e.pdf"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VNLD5160TR-E DUAL OMNIFET III LOW SIDE DRIVER 41V 3.5A 160MOHM AEC-Q100 SO-8"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C377942"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "VNLD5160TR-E"
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IPN" ""
+			(at 149.86 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "3bfe44b2-6cff-4e7a-8d1f-9caaab8953cd")
+		)
+		(pin "4"
+			(uuid "b7fe6cee-b51d-45b2-9dff-bb2ab527e4a9")
+		)
+		(pin "6"
+			(uuid "25283d00-3007-417f-b462-78f857f43fb3")
+		)
+		(pin "5"
+			(uuid "df78f5e3-fa4c-455c-bc45-01f8633f89b4")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "U19")
+					(unit 2)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "U11")
+					(unit 2)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
+					(reference "U15")
+					(unit 2)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
+					(reference "U17")
+					(unit 2)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "U13")
+					(unit 2)
+				)
+			)
+		)
+	)
+		(symbol
+		(lib_id "EmbeddedEra_Generic:GND")
+		(at 149.86 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "14a640a4-25eb-4e17-b651-ea5ee54c829b")
+		(property "Reference" "#PWR041"
+			(at 149.86 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a0dcfb44-8f48-432a-a6a9-b37dc299a66a")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/45b705dc-a742-5352-a286-87c9df7824b3"
+					(reference "#PWR0200")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/64048d80-4f67-49dd-b08e-d59f8687e8cf"
+					(reference "#PWR0200")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/65b5976d-334a-5aea-994f-af5625d7068a"
+					(reference "#PWR0200")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/a3895837-b56b-507f-8607-cee38bbe16a0"
+					(reference "#PWR0200")
+					(unit 1)
+				)
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/1f1c2aba-1e41-5cad-b5a9-8038c979259f/c6448fab-a996-4a7d-a783-16e671cef0a7"
+					(reference "#PWR0200")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 149.86 140.97)
+		(uuid "eb1cbfe7-ca83-4504-9df2-94749bca84df")
+	)
+	(no_connect
+		(at 160.02 148.59)
+		(uuid "010c4e0c-e0b0-488a-baad-ba0dee81d94a")
+	)
+	(no_connect
+		(at 144.78 148.59)
+		(uuid "d251e5d6-07ad-482d-817c-8c22572879d7")
+	)
+	(text "U19 channel 2: unused spare (input and drain open, as the datasheet allows)."
+		(exclude_from_sim no)
+		(at 162.56 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e8f82b6-556e-463d-8808-134636045d35")
 	)
 )

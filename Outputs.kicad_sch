@@ -1991,7 +1991,7 @@
 		)
 		(uuid "00f5ff43-2953-47ed-bf73-4f75df0f7e41")
 	)
-	(text "Protected low-side drivers, sized per load: INJ injectors 1-4 and LS2 wastegate, AVCS RH/LH, rear O2 heater on\nNCV8401B (DPAK); LS3 purge, A/C relay and the two spares (aux connector, or EVAP A12/A13 through the open links)\non ZXMS6006DGQ (SOT-223, 2.8 A); LS1 main relay, fans, ETB relay and LS4 cruise lamps, MIL, tach on ZXMS6004FF (SOT-23F).\nM2 drives the electronic throttle motor; M9 drives both TGV motors in parallel.\nFuel pump control unit command B26: 5 V PWM from IGN5 through 100R, with pull-up/down options."
+	(text "Protected low-side drivers as on the newest rusEFI boards: dual ST VNLD5160 (SO-8, 2 channels each) for INJ injectors 1-4,\nLS1 main relay, fans, ETB relay, LS2 wastegate, AVCS RH/LH, purge, LS4 cruise lamps, MIL, tach and LS3 A/C relay and the\ntwo spares (aux connector, or EVAP A12/A13 through the open links); the rear O2 heater (~2 A) on one NCV8401B DPAK.\nM2 drives the electronic throttle motor; M9 drives both TGV motors in parallel.\nFuel pump control unit command B26: 5 V PWM from IGN5 through 100R, with pull-up/down options."
 		(exclude_from_sim no)
 		(at 15.24 22.86 0)
 		(effects
@@ -3028,7 +3028,7 @@
 			)
 		)
 	)
-	(global_label "OUT_SPARE_LS2"
+	(global_label "OUT_O2_HEATER_REAR"
 		(shape passive)
 		(at 346.71 59.69 180)
 		(fields_autoplaced yes)
@@ -3196,7 +3196,7 @@
 			)
 		)
 	)
-	(global_label "AC_RELAY"
+	(global_label "SPARE_LS1"
 		(shape passive)
 		(at 382.27 54.61 0)
 		(fields_autoplaced yes)
@@ -3340,7 +3340,7 @@
 			)
 		)
 	)
-	(global_label "PURGE"
+	(global_label "AC_RELAY"
 		(shape passive)
 		(at 382.27 52.07 0)
 		(fields_autoplaced yes)
@@ -3364,7 +3364,7 @@
 			)
 		)
 	)
-	(global_label "OUT_AC_RELAY"
+	(global_label "OUT_SPARE_LS1"
 		(shape passive)
 		(at 346.71 54.61 180)
 		(fields_autoplaced yes)
@@ -3460,7 +3460,7 @@
 			)
 		)
 	)
-	(global_label "SPARE_LS1"
+	(global_label "SPARE_LS2"
 		(shape passive)
 		(at 382.27 57.15 0)
 		(fields_autoplaced yes)
@@ -3652,7 +3652,7 @@
 			)
 		)
 	)
-	(global_label "OUT_PURGE_CONTROL"
+	(global_label "OUT_AC_RELAY"
 		(shape passive)
 		(at 346.71 52.07 180)
 		(fields_autoplaced yes)
@@ -3676,7 +3676,7 @@
 			)
 		)
 	)
-	(global_label "OUT_SPARE_LS1"
+	(global_label "OUT_SPARE_LS2"
 		(shape passive)
 		(at 346.71 57.15 180)
 		(fields_autoplaced yes)
@@ -3772,7 +3772,7 @@
 			)
 		)
 	)
-	(global_label "SPARE_LS2"
+	(global_label "O2_HEATER_REAR"
 		(shape passive)
 		(at 382.27 59.69 0)
 		(fields_autoplaced yes)
@@ -4132,7 +4132,7 @@
 			)
 		)
 	)
-	(global_label "O2_HEATER_REAR"
+	(global_label "PURGE"
 		(shape passive)
 		(at 304.8 59.69 0)
 		(fields_autoplaced yes)
@@ -4276,7 +4276,7 @@
 			)
 		)
 	)
-	(global_label "OUT_O2_HEATER_REAR"
+	(global_label "OUT_PURGE_CONTROL"
 		(shape passive)
 		(at 269.24 59.69 180)
 		(fields_autoplaced yes)
@@ -6380,7 +6380,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "LS_SOT223.kicad_sch"
+		(property "Sheetfile" "LS_MIX.kicad_sch"
 			(at 354.33 62.8146 0)
 			(hide yes)
 			(show_name no)
@@ -6507,7 +6507,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "INJ4.kicad_sch"
+		(property "Sheetfile" "LS_VNLD.kicad_sch"
 			(at 41.91 62.8146 0)
 			(hide yes)
 			(show_name no)
@@ -6634,7 +6634,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "INJ4.kicad_sch"
+		(property "Sheetfile" "LS_VNLD.kicad_sch"
 			(at 276.86 62.8146 0)
 			(hide yes)
 			(show_name no)
@@ -6761,7 +6761,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "LS_SOT23.kicad_sch"
+		(property "Sheetfile" "LS_VNLD.kicad_sch"
 			(at 50.8 85.6746 0)
 			(hide yes)
 			(show_name no)
@@ -6888,7 +6888,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "LS_SOT23.kicad_sch"
+		(property "Sheetfile" "LS_VNLD.kicad_sch"
 			(at 153.67 62.8146 0)
 			(hide yes)
 			(show_name no)
