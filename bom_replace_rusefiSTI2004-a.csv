@@ -3,3 +3,17 @@ R66006,
 
 # replacement example - replace specific fuse part number
 F42333310,"nSMD050-24V","SMD1206","C70076"
+
+# --- options (DNP): footprints kept on the board, not assembled. Delete a line to fit that part.
+JP4,
+JP5,
+JP6,
+R38,
+R40,
+R41,
+JP7,
+R42,
+R43,
+R44,
+R45,
+JP9,

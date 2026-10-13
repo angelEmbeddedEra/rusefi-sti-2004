@@ -34,6 +34,9 @@ EXPECT = {
     "B26": "FUEL_PUMP_SIGNAL1", "B27": "VSS", "B31": "GND", "B35": "THROTT?L?E_RELAY|ETB_RELAY",
     "D16": "AC_REQUEST", "D25": "O2S", "C8": "BRAKE_SW2", "C9": "BRAKE_SW1", "B2": "O2_HEATER", "B33": "AC_RELAY",
     "A8": "TGV_CLOSE", "A10": "TGV_CLOSE", "A9": "TGV_OPEN", "A11": "TGV_OPEN", "A17": "MIL",
+    "C7": "CRUISE_MAIN", "C10": "CRUISE_RESUME", "C11": "CRUISE_SET", "A15": "CRUISE_MAIN_LIGHT", "A16": "CRUISE_SET_LIGHT",
+    "D20": "K_LINE", "A2": "WBO_HEATER", "A3": "WBO_HEATER", "A33": "WBO_UN", "A26": "WBO_VM", "A25": "WBO_IP",
+    "A12": "EVAP_A12", "A13": "EVAP_A13", "D28": "FP_STATUS", "D29": "DLC6", "A22": "CHARGE_A22",
     "A1": "CLUTCH", "A6": "^GND$", "A7": "^GND$", "A14": "PURGE", "A18": r"VVT_RH\+|12V_RAW", "A19": r"VVT_LH\+|12V_RAW",
     "A23": "TACH", "A28": "VVT_RH-", "A29": "VVT_LH-", "A32": "WG|WASTEGATE", "A34": "^GND$",
 }

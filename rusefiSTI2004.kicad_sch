@@ -8,6 +8,285 @@
 		(date "2025-02-17")
 	)
 	(lib_symbols
+		(symbol "hellen-one-lin-0.1:Module-lin-0.1" (in_bom yes) (on_board yes)
+		    (property "Reference" "M" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)))
+		    )
+		    (property "Value" "Module-lin-0.1" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)))
+		    )
+		    (property "Footprint" "hellen-one-lin-0.1:lin" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "Datasheet" "" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "ki_description" "Hellen-One K-LINE (LIN) Module" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (symbol "Module-lin-0.1_1_0"
+		      (rectangle (start 33.02 0) (end 0 -20.32)
+		        (stroke (width 0)) (fill (type background))
+		      )
+		      (pin passive line (at -5.08 -5.08 0) (length 5.08)
+		        (name "12V" (effects (font (size 1.27 1.27))))
+		        (number "V1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -5.08 -15.24 0) (length 5.08)
+		        (name "UART_RX" (effects (font (size 1.27 1.27))))
+		        (number "V2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -5.08 -10.16 0) (length 5.08)
+		        (name "5V" (effects (font (size 1.27 1.27))))
+		        (number "V3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 38.1 -2.54 180) (length 5.08)
+		        (name "LIN" (effects (font (size 1.27 1.27))))
+		        (number "V4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -5.08 -17.78 0) (length 5.08)
+		        (name "UART_TX" (effects (font (size 1.27 1.27))))
+		        (number "V5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 38.1 -15.24 180) (length 5.08)
+		        (name "GND" (effects (font (size 1.27 1.27))))
+		        (number "S1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 38.1 -17.78 180) (length 5.08)
+		        (name "GND" (effects (font (size 1.27 1.27))))
+		        (number "E1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -5.08 -2.54 0) (length 5.08)
+		        (name "12V" (effects (font (size 1.27 1.27))))
+		        (number "N1" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "hellen-one-common:PROTO_AREA" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+		    (property "Reference" "G" (at 1.27 3.81 0)
+		      (effects (font (size 1.524 1.524)) hide)
+		    )
+		    (property "Value" "PROTO_AREA" (at 25.4 3.81 0)
+		      (effects (font (size 1.524 1.524)))
+		    )
+		    (property "Footprint" "hellen-one-common:PROTO_AREA" (at 15.24 -11.43 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "Datasheet" "" (at -12.7 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (symbol "PROTO_AREA_0_0"
+		      (text "" (at 35.56 6.35 0)
+		        (effects (font (size 1.27 1.27)))
+		      )
+		    )
+		    (symbol "PROTO_AREA_0_1"
+		      (rectangle (start 0 2.54) (end 33.02 -10.16)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 5.08 -7.62) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 5.08 -3.81) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 5.08 0) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 11.43 -7.62) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 11.43 -3.81) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 11.43 0) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 17.78 -7.62) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 17.78 -3.81) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 17.78 0) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 24.13 -7.62) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 24.13 -3.81) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 24.13 0) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 30.48 -7.62) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 30.48 -3.81) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 30.48 0) (radius 1.27)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		    )
+		    (symbol "PROTO_AREA_1_1"
+		      (pin passive line (at 1.27 0 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 26.67 -3.81 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "10" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 1.27 -7.62 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "11" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 7.62 -7.62 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "12" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 13.97 -7.62 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "13" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 20.32 -7.62 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "14" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 26.67 -7.62 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "15" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 7.62 0 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 13.97 0 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 20.32 0 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 26.67 0 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 1.27 -3.81 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 7.62 -3.81 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "7" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 13.97 -3.81 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "8" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 20.32 -3.81 0) (length 2.54)
+		        (name "" (effects (font (size 1.27 1.27))))
+		        (number "9" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "hellen-one-common:Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+		    (property "Reference" "P" (at 2.54 0 0)
+		      (effects (font (size 1.27 1.27)))
+		    )
+		    (property "Value" "Pad" (at 0 -2.54 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "Footprint" "hellen-one-common:PAD-TH" (at 0 -3.81 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "Datasheet" "~" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "ki_keywords" "connector" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "ki_description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (symbol "Pad_1_1"
+		      (rectangle (start -1.27 0.127) (end 0 -0.127)
+		        (stroke (width 0.1524) (type default))
+		        (fill (type none))
+		      )
+		      (rectangle (start -1.27 1.27) (end 1.27 -1.27)
+		        (stroke (width 0.254) (type default))
+		        (fill (type background))
+		      )
+		      (pin passive line (at -5.08 0 0) (length 3.81)
+		        (name "Pin_1" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "hellen-one-common:Jumper-Pad-Pad" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+		    (property "Reference" "R" (at 0 2.54 0)
+		      (effects (font (size 1.016 1.016)))
+		    )
+		    (property "Value" "Jumper-Pad-Pad" (at 0 -1.778 0)
+		      (effects (font (size 1.016 1.016)) hide)
+		    )
+		    (property "Footprint" "hellen-one-common:PAD-0805-PAD" (at 0 -3.81 0)
+		      (effects (font (size 1.524 1.524)) hide)
+		    )
+		    (property "Datasheet" "" (at 0 0 0)
+		      (effects (font (size 1.524 1.524)) hide)
+		    )
+		    (property "LCSC" "C17477" (at 0 -3.81 0)
+		      (effects (font (size 1.27 1.27)) hide)
+		    )
+		    (symbol "Jumper-Pad-Pad_0_1"
+		      (circle (center -2.54 0) (radius 0.762)
+		        (stroke (width 0) (type default))
+		        (fill (type none))
+		      )
+		      (circle (center 2.54 0) (radius 0.762)
+		        (stroke (width 0) (type default))
+		        (fill (type none))
+		      )
+		      (pin passive line (at -5.08 0 0) (length 2.54)
+		        (name "1" (effects (font (size 1.524 1.524))))
+		        (number "1" (effects (font (size 1.524 1.524))))
+		      )
+		      (pin passive line (at 5.08 0 180) (length 2.54)
+		        (name "2" (effects (font (size 1.524 1.524))))
+		        (number "2" (effects (font (size 1.524 1.524))))
+		      )
+		    )
+		    (symbol "Jumper-Pad-Pad_1_0"
+		      (rectangle (start -2.54 -1.27) (end 2.54 1.27)
+		        (stroke (width 0.254) (type default))
+		        (fill (type background))
+		      )
+		    )
+		  )
 		(symbol "alphax:+5VAS"
 			(power)
 			(pin_names
@@ -11091,7 +11370,7 @@
 		)
 		(uuid "0de00548-8584-4bfa-8064-c91c770c774c")
 	)
-	(label "FUEL_PUMP_SIGNAL2"
+	(label "FP_STATUS"
 		(at 52.07 95.25 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12202,7 +12481,7 @@
 		)
 		(uuid "e89c0de7-45b1-4bb8-a4f7-a90fb9bd00ed")
 	)
-	(label "MAS_GND"
+	(label "GND_SENSOR"
 		(at 39.37 200.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12290,7 +12569,7 @@
 		)
 		(uuid "f550ef7e-4293-4efa-8264-9719d5ac095b")
 	)
-	(label "APS_GND"
+	(label "GND_SENSOR"
 		(at 48.26 208.28 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12412,72 +12691,6 @@
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 53.34 200.66 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e9009a2-9bed-4b09-b42a-9db1881b0c80")
-		(property "Reference" "#PWR054"
-			(at 59.69 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.42 200.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ed5708c-b1ad-40d1-87c1-76c1b74d91c3")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -15436,72 +15649,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 53.34 210.82 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "89fb6da4-e3e3-4741-ab0f-2a7dcc008616")
-		(property "Reference" "#PWR014"
-			(at 59.69 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.42 210.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf336f1b-593f-40f3-89ff-458e44110f67")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "hellen-one-common:Res")
 		(at 69.85 237.49 0)
 		(unit 1)
@@ -18192,72 +18339,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 53.34 208.28 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f47477f0-c17c-47be-b212-9759753a197f")
-		(property "Reference" "#PWR015"
-			(at 59.69 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.42 208.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "202a2292-bf2c-4a1c-83d7-d7fd8e4d2574")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "rusefi_1-1376430-0_135pin:1-1376430-0")
 		(at 27.94 64.77 0)
 		(mirror y)
@@ -19444,7 +19525,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bc58a8c5-2394-4dc1-9e61-c85f5cd7a08d")
+		(uuid "77ed51be-cbf8-44fb-88e3-f232150e7053")
 		(property "Reference" "#PWR058"
 			(at 57.15 41.91 0)
 			(effects
@@ -19490,7 +19571,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1679d63a-a7cb-4cce-9821-dbfbf3ea99be")
+			(uuid "ba26c601-6077-439a-8504-d0eafa557c86")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -19509,7 +19590,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b14f8875-38d8-4bc6-9d6f-7ffacaf98540")
+		(uuid "24e57de5-a8f3-46b8-b8fc-d56d938133e1")
 	)
 	(label "IN_MAP"
 		(at 50.8 177.8 0)
@@ -19520,7 +19601,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8f02e3f3-3c5f-4ca9-9001-de8e5c4cb434")
+		(uuid "0ded6dbd-ba03-4814-a085-37e9e4d6263b")
 	)
 	(wire
 		(pts
@@ -19530,7 +19611,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6eaed398-4d9b-4562-b82f-68102dd502c5")
+		(uuid "2ef2aec0-fb0b-4275-961a-19a5ce05a023")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -19540,7 +19621,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0ad4e13d-2dab-4982-9338-d460169fb384")
+		(uuid "ed9fae20-908d-42c7-a948-4cf95014a0bb")
 		(property "Reference" "#PWR059"
 			(at 44.45 406.4 0)
 			(effects
@@ -19586,7 +19667,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5968079d-4df4-474b-9e19-3429bbd6113a")
+			(uuid "c178c28b-c9ca-4562-b538-e4b83087a5b5")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -19605,7 +19686,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "50943c22-5792-4d58-a802-0ef9894536d1")
+		(uuid "d97b0f22-7581-47f6-acfe-256da4d3d02c")
 	)
 	(label "IN_O2S"
 		(at 38.1 87.63 0)
@@ -19616,7 +19697,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c6e307e6-1c0c-4672-8c5a-c1d77b1fdb2e")
+		(uuid "fcfcc88e-4af0-42ec-aa52-5554f7b7e991")
 	)
 	(wire
 		(pts
@@ -19626,7 +19707,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "28e9a45a-d2fb-4e8f-ab60-8fc906807f39")
+		(uuid "98a90651-3e11-4e08-8d8b-d76509a37f23")
 	)
 	(label "IN_O2S"
 		(at 332.74 219.71 180)
@@ -19637,7 +19718,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "6779ebc6-9210-4ad1-9000-c254a44fcc3a")
+		(uuid "6615a5e3-6f42-48be-9faa-34d39ec98bc7")
 	)
 	(wire
 		(pts
@@ -19647,7 +19728,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "86a1cd8e-0944-4e3f-8368-b69f66e030bc")
+		(uuid "71d71b2c-d82b-40ff-a8ff-9e15967aada6")
 	)
 	(label "IN_CAM_RH"
 		(at 332.74 247.65 180)
@@ -19658,7 +19739,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "20e074e5-c434-4dc7-90b7-5e191864263a")
+		(uuid "7f9dc27f-f478-4e99-9c1b-6a9eec1f0f1a")
 	)
 	(wire
 		(pts
@@ -19668,7 +19749,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8125eced-97ea-40c7-89bf-f32d25636c8c")
+		(uuid "3aa290b5-dfe4-4a66-89ea-4504a5fa0f36")
 	)
 	(label "IN_NEUTRAL_SWITCH"
 		(at 332.74 250.19 180)
@@ -19679,7 +19760,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "716e7398-102f-4c85-81c6-78724933ea27")
+		(uuid "28156f29-4edf-4bbf-b680-4c863c968224")
 	)
 	(wire
 		(pts
@@ -19689,7 +19770,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1f9b792d-a529-496f-9bb1-5cd675816248")
+		(uuid "f333bb32-ac38-4178-9005-995aa29ed555")
 	)
 	(label "IN_PS_PRESSURE_SWITCH"
 		(at 332.74 252.73 180)
@@ -19700,7 +19781,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "69049a79-9288-40cb-9f41-62851b0b3fdc")
+		(uuid "1c674388-872b-4890-915f-7ce61b7013e1")
 	)
 	(wire
 		(pts
@@ -19710,7 +19791,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "06040aad-c0ec-45f0-8505-700f7b35a8b7")
+		(uuid "da6696d1-a38a-4ff0-a2e8-11da7b4bf44e")
 	)
 	(label "IN_STARTER_SWITCH"
 		(at 332.74 262.89 180)
@@ -19721,7 +19802,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "012ed304-ae0d-424d-9307-e873acef6526")
+		(uuid "30f1c133-dea6-4566-bf62-d8954b55ef44")
 	)
 	(symbol
 		(lib_id "hellen-one-common:Res")
@@ -19731,8 +19812,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a1a51eb7-2b80-4a93-ab90-740f77035137")
-		(property "Reference" "R19"
+		(uuid "53627a45-99bd-4ecb-b6bd-f2deca978fc2")
+		(property "Reference" "R30"
 			(at 107.95 125.73 0)
 			(effects
 				(font
@@ -19785,15 +19866,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2479c468-7fb8-498b-943c-2a9d1db36826")
+			(uuid "ceef9fcf-ec40-464a-8254-41778d915bcc")
 		)
 		(pin "2"
-			(uuid "e4877e8e-8ffe-4767-9ae7-4fa8543366a3")
+			(uuid "702c99b4-a7ad-4eee-9763-4b664e61e08e")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "R19")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -19807,7 +19888,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "330167cb-29b0-4013-8f40-a85c162481ad")
+		(uuid "51e36139-6772-4983-9a76-2a15a22a73e4")
 	)
 	(label "IN_STARTER_SWITCH"
 		(at 105.41 130.81 180)
@@ -19818,7 +19899,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "c6c7e31c-21f1-499b-ab99-df27b79e17f5")
+		(uuid "e2deb345-e54f-4a4a-8c99-01820c80fe44")
 	)
 	(wire
 		(pts
@@ -19828,7 +19909,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "70405088-c940-4200-a06e-11e9e8a0c596")
+		(uuid "2e404873-a410-4d87-8406-a8d0b3afe68c")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -19838,7 +19919,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f775c561-6956-4b09-bfc7-a55559afd482")
+		(uuid "12f4940b-1a2c-411e-90cc-ba0fc6ff4f51")
 		(property "Reference" "#PWR060"
 			(at 132.08 130.81 0)
 			(effects
@@ -19884,7 +19965,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6b0053fd-6f2f-472a-9191-637a6e8f9f5b")
+			(uuid "1dcc2249-2467-412d-bb6e-294d5ead9eac")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -19903,7 +19984,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a64a1ea2-3e30-4b1a-a674-f7b2df665182")
+		(uuid "03c49d62-b1ec-4958-bcfe-fd8596c5376b")
 	)
 	(label "IN_AC_REQUEST"
 		(at 38.1 64.77 0)
@@ -19914,7 +19995,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2d030dd5-8dcf-4577-a4d1-d7764aaec927")
+		(uuid "dd5f74c1-af7a-49d7-8291-1fc83aedc684")
 	)
 	(wire
 		(pts
@@ -19924,7 +20005,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5b6e3f68-1756-4b6d-ae2f-0cac262eaba0")
+		(uuid "3174a825-7d68-462c-b605-554587b56a4f")
 	)
 	(label "IN_AC_REQUEST"
 		(at 332.74 265.43 180)
@@ -19935,7 +20016,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "92d5a806-7200-4def-8659-f59912d394e3")
+		(uuid "29b0fba2-fc04-4e4c-9ed3-9615e0838f7e")
 	)
 	(symbol
 		(lib_id "hellen-one-common:Res")
@@ -19945,8 +20026,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "428ae80d-db15-4d8b-9824-e52101ef142b")
-		(property "Reference" "R20"
+		(uuid "61a399cc-4f87-4949-93dd-c668005d7e98")
+		(property "Reference" "R31"
 			(at 107.95 133.35 0)
 			(effects
 				(font
@@ -19999,15 +20080,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "68530271-dc22-4254-b09c-8f90c511cb15")
+			(uuid "2924e147-1986-4a47-adf5-b40b153a45aa")
 		)
 		(pin "2"
-			(uuid "8205ea15-2b2d-40ef-b93c-3d86e5de6ced")
+			(uuid "dc7c0f36-bdf2-4528-9b44-ce31e038afe4")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "R20")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -20021,7 +20102,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "68810db1-b9f4-4d9d-b72b-f8c43b395939")
+		(uuid "a67bd567-7ae6-4f2d-9557-e88f0b6202c7")
 	)
 	(label "IN_AC_REQUEST"
 		(at 105.41 138.43 180)
@@ -20032,7 +20113,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "fdc2b6ff-39f6-4c99-9436-2b458d1c75d3")
+		(uuid "edf164d6-a9c8-449c-ae8f-5dec451803ff")
 	)
 	(wire
 		(pts
@@ -20042,7 +20123,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d3a777d4-0e17-4bb7-aa08-acbbfa291aa0")
+		(uuid "4eaef1ae-2b2d-4aa3-90a2-7ed75dd3938c")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -20052,7 +20133,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e7d148ed-611d-43d7-88eb-2e19f943cf05")
+		(uuid "84b0c781-2d8a-4011-ab0f-19969430d9fc")
 		(property "Reference" "#PWR061"
 			(at 132.08 138.43 0)
 			(effects
@@ -20098,7 +20179,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "69759a18-220d-40e9-ba1b-da3a29be944b")
+			(uuid "506be4c2-3aa7-4aee-b08f-e3c490990896")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -20117,7 +20198,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b09c8f0b-af90-4562-a1d2-d9390a6c14b2")
+		(uuid "53e0928d-151a-452d-a506-77717509c08c")
 	)
 	(label "IN_BRAKE_SW2"
 		(at 40.64 142.24 0)
@@ -20128,7 +20209,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0e7b7252-7091-4aba-992b-49280d40d78f")
+		(uuid "04c06129-b30c-4437-8383-d627d0d481c4")
 	)
 	(wire
 		(pts
@@ -20138,7 +20219,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8f6b68bc-1e61-46ce-99d7-aec8eba4367f")
+		(uuid "c81ba5ba-872e-45b8-8c7d-5c17bb1d86ed")
 	)
 	(label "IN_BRAKE_SW2"
 		(at 332.74 267.97 180)
@@ -20149,7 +20230,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "efa9c6f7-407f-48b4-987b-01f8db007212")
+		(uuid "8e1e1eba-24b4-4f07-90b3-05949b9aeb88")
 	)
 	(symbol
 		(lib_id "hellen-one-common:Res")
@@ -20159,8 +20240,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c5c07c2e-54c8-4fbf-a7f4-f29bbfc41b84")
-		(property "Reference" "R21"
+		(uuid "c959824d-6d05-4c8d-9c55-43ae1bc8ce63")
+		(property "Reference" "R32"
 			(at 107.95 140.97 0)
 			(effects
 				(font
@@ -20213,15 +20294,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "031fc63e-515d-4800-a319-cd8ac49eebbd")
+			(uuid "c853757a-7731-4f4b-b200-13f77a230d55")
 		)
 		(pin "2"
-			(uuid "272c96b7-16c8-4a07-a00a-b105e022262c")
+			(uuid "64e0b369-7b75-479a-8f16-e72ffdbed236")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "R21")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -20235,7 +20316,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9daf78bd-9c4b-4d8b-9cc4-dc7807429a8a")
+		(uuid "1b0accd3-0853-43c3-aba0-2a4e8fe23cea")
 	)
 	(label "IN_BRAKE_SW2"
 		(at 105.41 146.05 180)
@@ -20246,7 +20327,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "de1d7107-59be-44f9-878e-93662e45985d")
+		(uuid "c5f31635-7577-429f-92da-849e76a39743")
 	)
 	(wire
 		(pts
@@ -20256,7 +20337,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c657b5b7-e8de-4fb1-bda5-37a1a7599279")
+		(uuid "e956246d-115b-445b-9fd1-66ff5db435ea")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -20266,7 +20347,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "37250bda-c3a5-4b0f-9b1f-bedae587fd93")
+		(uuid "b885132d-2fe8-4b91-be8c-40f5ea2e889d")
 		(property "Reference" "#PWR062"
 			(at 132.08 146.05 0)
 			(effects
@@ -20312,7 +20393,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca9a4675-9ed2-4bf8-ba60-f6e03892e8a1")
+			(uuid "d449286c-b42c-4ed2-b18d-648c3d32210c")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -20331,7 +20412,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e4286401-bb88-4025-9e01-8cd8b13d3cb9")
+		(uuid "ee8df859-99d8-4c57-82b2-be3f159ce2fb")
 	)
 	(label "IN_CLUTCH"
 		(at 332.74 227.33 180)
@@ -20342,7 +20423,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3100ffd5-8d11-4b3b-aaed-bb690bf15ece")
+		(uuid "d88dd7a1-c898-4ca9-8900-ae44def1bdeb")
 	)
 	(symbol
 		(lib_id "hellen-one-common:Res")
@@ -20352,8 +20433,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "215741d9-55c7-40df-927f-872ac52ff358")
-		(property "Reference" "R22"
+		(uuid "550750e0-7472-437e-aca0-663517671881")
+		(property "Reference" "R33"
 			(at 107.95 148.59 0)
 			(effects
 				(font
@@ -20406,15 +20487,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "53fcb5a9-6a08-4dda-a08f-ce55320797e5")
+			(uuid "c1413e99-1201-4f68-a203-473608a2299e")
 		)
 		(pin "2"
-			(uuid "f9b29074-cf72-4f22-85ce-9082b3c7579f")
+			(uuid "79cd81f7-35af-4e62-81e2-2ab858c0f1a6")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "R22")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -20428,7 +20509,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1be93f06-4ec9-4fab-8152-2d0d4e3846bc")
+		(uuid "deea63aa-4393-4257-91ca-e0f518025d41")
 	)
 	(label "IN_CLUTCH"
 		(at 105.41 153.67 180)
@@ -20439,7 +20520,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "113d8f05-a803-41ef-bf51-47eb6a669bb8")
+		(uuid "378d495f-b41b-4270-94de-cb51f4610ed4")
 	)
 	(wire
 		(pts
@@ -20449,7 +20530,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7fb457cc-16b1-43f8-8820-ee95fc195bdf")
+		(uuid "b6c11f3f-ef65-48b4-b07a-3795537f4964")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -20459,7 +20540,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c3ff0a1d-5316-4d75-b153-76d04a1fd309")
+		(uuid "6ac6e6b2-109b-4741-96ea-47620b358caa")
 		(property "Reference" "#PWR063"
 			(at 132.08 153.67 0)
 			(effects
@@ -20505,7 +20586,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5422956c-eba1-4ea6-81b6-cbdc06321cbc")
+			(uuid "f43b45e5-53ca-45c1-983f-5263bbc0391d")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -20524,7 +20605,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c48113bd-5e72-40bf-81e7-e51257658dbc")
+		(uuid "cdd3dab8-5c6a-40b5-b331-0d2680008a1a")
 	)
 	(label "IN_BRAKE_SW1"
 		(at 40.64 144.78 0)
@@ -20535,7 +20616,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "43b23d2c-130a-4c1f-a4c1-d00500fc95c3")
+		(uuid "65d7c30f-7cbd-45a6-b914-d78114cc66f2")
 	)
 	(wire
 		(pts
@@ -20545,7 +20626,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "efa20c5e-8094-4563-b120-49bd02140974")
+		(uuid "33c2537a-347b-448a-a098-489c40451aac")
 	)
 	(label "IN_BRAKE_SW1"
 		(at 332.74 222.25 180)
@@ -20556,7 +20637,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "516285b6-6cf5-4fc2-ac1c-61f20b25e7c8")
+		(uuid "63a51545-2cff-4e42-b33b-0207961ebd4d")
 	)
 	(symbol
 		(lib_id "hellen-one-common:Res")
@@ -20566,8 +20647,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "19321af4-0c36-4798-b8d1-cf1c53e03f51")
-		(property "Reference" "R23"
+		(uuid "3acc92a0-dbae-476b-af2c-f2733002bbcf")
+		(property "Reference" "R34"
 			(at 107.95 156.21 0)
 			(effects
 				(font
@@ -20620,15 +20701,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f1b0e31-456e-4e0b-8529-6053983c3f4a")
+			(uuid "4b0b9c93-52d2-4282-a989-7e12dd0d0943")
 		)
 		(pin "2"
-			(uuid "013833e8-e0d0-4686-adf9-6b2c1b860508")
+			(uuid "7c9e013e-3b3c-49f4-aa1a-862f12ba630d")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
-					(reference "R23")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -20642,7 +20723,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2366555e-8223-4288-b02f-d7d2b79b0c5e")
+		(uuid "6fa0e495-f316-4da1-a6d9-b59d8dd8ca5a")
 	)
 	(label "IN_BRAKE_SW1"
 		(at 105.41 161.29 180)
@@ -20653,7 +20734,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e7068a12-cbcf-4c5d-a6a8-75d207e7b89b")
+		(uuid "a4b99d7b-e2ad-43cc-b9a3-3c2204a326a9")
 	)
 	(wire
 		(pts
@@ -20663,7 +20744,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8e2473aa-0aba-48aa-b176-fdda99b83514")
+		(uuid "f9592676-5a10-428d-9948-74f2ff07a773")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -20673,7 +20754,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ffcc13af-0bfc-4f78-b41c-9ded7340b4b7")
+		(uuid "807bd37a-a80c-4f06-a601-52db3ebf2114")
 		(property "Reference" "#PWR064"
 			(at 132.08 161.29 0)
 			(effects
@@ -20719,7 +20800,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "41f6b427-fc57-4f02-bedf-edae8c1219c4")
+			(uuid "ca97553c-7f53-4153-92ef-f9c4e4fa8e37")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -20738,7 +20819,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "611438ee-53a4-4bee-b8d0-c323c130c0f0")
+		(uuid "d7a5670c-3d74-469c-a84c-26e048663141")
 	)
 	(label "IN_MAF"
 		(at 332.74 260.35 180)
@@ -20749,7 +20830,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "fa62ec05-9ad2-43f9-afb6-32b1a0ab9853")
+		(uuid "67e2773f-e3b4-491c-bd66-026597204311")
 	)
 	(wire
 		(pts
@@ -20759,7 +20840,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f15b3e5e-8e13-4c77-8791-ec547b761fb0")
+		(uuid "e3f686c5-0867-424a-904a-31995de203c8")
 	)
 	(label "IN_TUMBLE_SENSOR_LH"
 		(at 332.74 240.03 180)
@@ -20770,7 +20851,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9a2b1c87-d3fd-4a77-af97-fe99ea20438c")
+		(uuid "a0b3ca2c-594c-4c60-9596-794e91a3b598")
 	)
 	(wire
 		(pts
@@ -20780,7 +20861,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bfb058c9-b6dc-417f-aa63-39f5d43e510b")
+		(uuid "148d2749-738a-4a64-b183-428204871c09")
 	)
 	(label "IN_TUMBLE_SENSOR_RH"
 		(at 332.74 242.57 180)
@@ -20791,7 +20872,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "6037c92a-d82b-4667-950d-a86201d11c36")
+		(uuid "29aa236a-fb1f-4a8a-9409-9cafce2db2ad")
 	)
 	(wire
 		(pts
@@ -20801,7 +20882,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9f147995-e9bb-400a-b8f3-9fc09a647854")
+		(uuid "378df0ff-6630-4ff0-8e6f-f9fa98e98e83")
 	)
 	(label "IN_FUEL_LEVEL"
 		(at 332.74 209.55 180)
@@ -20812,7 +20893,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "452ed44d-2bbe-4cff-b3ec-8b28680efc0e")
+		(uuid "738b8c71-2ba3-40e9-97ff-d44cb58b4a13")
 	)
 	(wire
 		(pts
@@ -20822,9 +20903,9 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7b9895e2-3ef1-4d9a-85af-b517988e9ba7")
+		(uuid "8f2010a3-2f0c-4fbc-b319-9196dab63717")
 	)
-	(label "FUEL_PUMP_SIGNAL1"
+	(label "FP_CMD"
 		(at 332.74 80.01 180)
 		(fields_autoplaced yes)
 		(effects
@@ -20833,7 +20914,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9e2c3fe7-e55d-430b-a12e-d122f95cce5d")
+		(uuid "5ff7f021-3c37-41b9-bb63-4b576c1089d6")
 	)
 	(sheet
 		(at 120.65 30.48)
@@ -20874,7 +20955,7 @@
 				)
 				(justify right)
 			)
-			(uuid "de1c6416-8ac8-4c6d-b7b0-594fb1dbd46f")
+			(uuid "3b526256-d561-4372-90e7-aa13e4dde8c8")
 		)
 		(pin "IN2" input
 			(at 140.97 35.56 0)
@@ -20884,7 +20965,7 @@
 				)
 				(justify right)
 			)
-			(uuid "161cd39d-3f50-4ffa-8851-f7f19bdad60c")
+			(uuid "33faf25e-e64e-4b74-b7f0-77767616555c")
 		)
 		(pin "IN4" input
 			(at 140.97 40.64 0)
@@ -20894,7 +20975,7 @@
 				)
 				(justify right)
 			)
-			(uuid "18dc3341-07f6-4a5d-84fc-55f109504021")
+			(uuid "a16a4226-a3a0-4e9d-a943-21e9dbb06141")
 		)
 		(pin "IN3" input
 			(at 140.97 38.1 0)
@@ -20904,7 +20985,7 @@
 				)
 				(justify right)
 			)
-			(uuid "0246eb12-0bf1-464f-9cc5-4b522bb32dcf")
+			(uuid "1864ec26-31a5-47ce-af43-73d6d78a757b")
 		)
 		(pin "OUT3" output
 			(at 120.65 38.1 180)
@@ -20914,7 +20995,7 @@
 				)
 				(justify left)
 			)
-			(uuid "ed04206b-607f-46b1-a744-56554019d14e")
+			(uuid "24170db5-ff75-47a5-aa3b-211bb3db8eca")
 		)
 		(pin "OUT2" output
 			(at 120.65 35.56 180)
@@ -20924,7 +21005,7 @@
 				)
 				(justify left)
 			)
-			(uuid "88eb75b6-1412-40ca-84a4-d1e506e48610")
+			(uuid "7d2eddc7-c87b-4c23-b657-abe6ab394362")
 		)
 		(pin "OUT1" output
 			(at 120.65 33.02 180)
@@ -20934,7 +21015,7 @@
 				)
 				(justify left)
 			)
-			(uuid "87c07728-38bb-4d3e-8844-5345554278b4")
+			(uuid "cf5b0898-e57d-40ca-9cf9-be5dcec09c84")
 		)
 		(pin "OUT4" output
 			(at 120.65 40.64 180)
@@ -20944,7 +21025,7 @@
 				)
 				(justify left)
 			)
-			(uuid "3809e155-f737-4b75-8840-0a4b913eee12")
+			(uuid "bfb5f358-f499-4385-ba51-1da81406ea3b")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -20962,7 +21043,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "346f4acf-a4ca-4ff4-86f0-ac17adb59ac4")
+		(uuid "f65c3f27-0d9a-44b3-bbe4-a65650854561")
 	)
 	(label "WG"
 		(at 148.59 33.02 0)
@@ -20973,7 +21054,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "69001fb7-0cb2-446e-b806-8fe629f7df98")
+		(uuid "0ee16eff-4e40-4818-b7e4-e6c0cd54aca2")
 	)
 	(wire
 		(pts
@@ -20983,7 +21064,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bfc20a14-df08-40f3-9489-91df1559e5a0")
+		(uuid "9d563d9f-8fc7-4b57-b6f3-5548e571f65f")
 	)
 	(label "OUT_WG"
 		(at 113.03 33.02 180)
@@ -20994,7 +21075,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "32849c75-75d6-4402-891d-b2fa22d15d17")
+		(uuid "9f8b4e30-add6-462e-b32c-00e42d1092d6")
 	)
 	(wire
 		(pts
@@ -21004,7 +21085,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "64d150bb-965c-467d-8bee-53cf9baf0006")
+		(uuid "fb5a947e-e58f-4bd1-970c-44938eb82858")
 	)
 	(label "VVT_RH"
 		(at 148.59 35.56 0)
@@ -21015,7 +21096,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "aaa57e7d-7aed-4001-86a4-28da4276396e")
+		(uuid "bb1d6e4f-ac0b-4c2b-aa1e-8c8ad157a765")
 	)
 	(wire
 		(pts
@@ -21025,7 +21106,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a6c8bd42-9564-4db0-b910-fa91cbcdb203")
+		(uuid "168878ed-d923-4cd9-b379-e8e9d7b77093")
 	)
 	(label "OUT_VVT_RH-"
 		(at 113.03 35.56 180)
@@ -21036,7 +21117,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "72bc3325-a534-4050-903f-3ed2d9d957d8")
+		(uuid "8bc25c31-e1fd-41f4-ab69-6fe19e441b21")
 	)
 	(wire
 		(pts
@@ -21046,7 +21127,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e36ed2f3-b495-431f-b179-9a1ab7714612")
+		(uuid "1dfdcbb4-8e54-4bbf-880e-423038a1a774")
 	)
 	(label "VVT_LH"
 		(at 148.59 38.1 0)
@@ -21057,7 +21138,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5bf6d616-8a06-424b-88cd-e85b42ab9557")
+		(uuid "47ab275c-b494-46ac-9e4c-57840c419f6c")
 	)
 	(wire
 		(pts
@@ -21067,7 +21148,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "df8699eb-da67-427a-938d-d7d14a4559b6")
+		(uuid "f19d7a75-4a71-4326-a1a1-1eb3bd9a1250")
 	)
 	(label "OUT_VVT_LH-"
 		(at 113.03 38.1 180)
@@ -21078,7 +21159,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0d679861-f5bb-42e7-8b37-b1c2c4e91820")
+		(uuid "b69e9417-09b3-4e59-abd3-bf1e89ae2c5b")
 	)
 	(wire
 		(pts
@@ -21088,7 +21169,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b1a0ea88-c937-4f54-b868-b85c74b3d471")
+		(uuid "95b11be5-36ac-4a4b-a5fe-371405eb474a")
 	)
 	(label "PURGE"
 		(at 148.59 40.64 0)
@@ -21099,7 +21180,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4f3a712f-d90e-4231-8285-d853913f2421")
+		(uuid "920ad093-3ce4-4d40-957d-bdc00a2c182b")
 	)
 	(wire
 		(pts
@@ -21109,7 +21190,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "38da7f72-6ac4-4030-8b4f-65a5dd43dcd6")
+		(uuid "acd31f6a-2b14-4fc4-a07a-06357df54758")
 	)
 	(label "OUT_PURGE_CONTROL"
 		(at 113.03 40.64 180)
@@ -21120,7 +21201,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d56986dc-a1cf-41af-8b67-725eb7d46ee6")
+		(uuid "194a07ee-d409-4178-9f0e-c5cc9efdfe5c")
 	)
 	(sheet
 		(at 120.65 55.88)
@@ -21161,7 +21242,7 @@
 				)
 				(justify right)
 			)
-			(uuid "0ff83700-d727-47b1-96be-941ef446e911")
+			(uuid "2086c904-a9e2-4353-8327-79c83ef4f40d")
 		)
 		(pin "IN2" input
 			(at 140.97 60.96 0)
@@ -21171,7 +21252,7 @@
 				)
 				(justify right)
 			)
-			(uuid "8f625f5b-7a0c-415b-a190-ada4cae85970")
+			(uuid "f5b1c4ac-4846-4c9f-bb9f-04cddacc4dd2")
 		)
 		(pin "IN4" input
 			(at 140.97 66.04 0)
@@ -21181,7 +21262,7 @@
 				)
 				(justify right)
 			)
-			(uuid "de572177-0492-42f3-b485-176dc4a2711c")
+			(uuid "4d6006f8-aac6-4865-a3da-bc0651fbdf1f")
 		)
 		(pin "IN3" input
 			(at 140.97 63.5 0)
@@ -21191,7 +21272,7 @@
 				)
 				(justify right)
 			)
-			(uuid "1d33f9f7-0d03-4086-9665-4ae09fb2a193")
+			(uuid "ef9bf472-09e1-4f76-abb1-44d7d3316042")
 		)
 		(pin "OUT3" output
 			(at 120.65 63.5 180)
@@ -21201,7 +21282,7 @@
 				)
 				(justify left)
 			)
-			(uuid "3967a46e-e501-4a1d-867c-115f2c910c5b")
+			(uuid "be8ceef2-c120-42f7-b883-8ea30f018e6d")
 		)
 		(pin "OUT2" output
 			(at 120.65 60.96 180)
@@ -21211,7 +21292,7 @@
 				)
 				(justify left)
 			)
-			(uuid "1f97734c-6716-455b-8be4-ed5f8787f093")
+			(uuid "434642a7-57c4-4e29-ade2-f5420cd9cada")
 		)
 		(pin "OUT1" output
 			(at 120.65 58.42 180)
@@ -21221,7 +21302,7 @@
 				)
 				(justify left)
 			)
-			(uuid "cfaa24f0-1f32-409c-b4eb-7a62788072a1")
+			(uuid "9b918315-399a-4b7c-a580-eec033b28b6e")
 		)
 		(pin "OUT4" output
 			(at 120.65 66.04 180)
@@ -21231,7 +21312,7 @@
 				)
 				(justify left)
 			)
-			(uuid "063e35a6-46b7-49f1-a43b-0092bf4af066")
+			(uuid "14276ba0-e7ed-489e-aac3-b120a21c7b21")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -21249,7 +21330,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "acad9301-525e-4425-ab1d-924eb487e5ff")
+		(uuid "431ba4b8-0941-45ef-9687-9b836a35555f")
 	)
 	(label "MIL"
 		(at 148.59 58.42 0)
@@ -21260,7 +21341,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "89b196c1-1e6b-4a47-bdef-d3b4aa8b438a")
+		(uuid "eee96946-5689-4183-aa95-4592eda97af9")
 	)
 	(wire
 		(pts
@@ -21270,7 +21351,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9db5712b-23e7-42f6-8246-b89811f0f216")
+		(uuid "2cc0644f-5822-4758-9dff-de4ffb7ed7f1")
 	)
 	(label "OUT_MIL"
 		(at 113.03 58.42 180)
@@ -21281,7 +21362,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "eb5e744f-0513-438b-8f27-160241e297ee")
+		(uuid "cf7a1fad-9442-4077-8cb9-cd024052e6b3")
 	)
 	(wire
 		(pts
@@ -21291,7 +21372,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "30ae3065-22a4-4a58-ba72-f4b4d9d73e25")
+		(uuid "f8971607-ac8a-4939-9977-52d427e1f801")
 	)
 	(label "O2_HEATER_REAR"
 		(at 148.59 60.96 0)
@@ -21302,7 +21383,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "46e46176-086b-4250-9c66-71ca122ac5a5")
+		(uuid "52c705d8-ec5a-4d3d-b860-7d89e065f5f2")
 	)
 	(wire
 		(pts
@@ -21312,7 +21393,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "12ffdc3d-924c-4270-8b04-2b2498a06d08")
+		(uuid "db3faf4e-f7df-42b5-8499-669d52e1f83a")
 	)
 	(label "OUT_O2_HEATER_REAR"
 		(at 113.03 60.96 180)
@@ -21323,7 +21404,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2a6af507-2e09-4dc5-9735-7174ec98a9ca")
+		(uuid "6f04c5c6-359f-4ac4-adb1-b23f0f7062f0")
 	)
 	(wire
 		(pts
@@ -21333,7 +21414,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d621b5d2-71ff-47ad-b14d-d966b49c8aae")
+		(uuid "1ad76e2a-7551-4cdd-9871-be30b1ea038f")
 	)
 	(label "AC_RELAY"
 		(at 148.59 63.5 0)
@@ -21344,7 +21425,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "936f2ff7-592c-4e6f-afda-3114161071a8")
+		(uuid "bd0fde5f-79bb-429d-906e-abef7d63aaef")
 	)
 	(wire
 		(pts
@@ -21354,7 +21435,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e561f03a-e51a-43a9-b213-0ac2b20a2267")
+		(uuid "f2e5357d-cd25-46ac-8cc2-7e7a959a816e")
 	)
 	(label "OUT_AC_RELAY"
 		(at 113.03 63.5 180)
@@ -21365,7 +21446,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ecfb66d0-0045-455f-be28-5d30260f59c5")
+		(uuid "939959ff-0b24-4d1c-96a6-503b6d8b8456")
 	)
 	(wire
 		(pts
@@ -21375,7 +21456,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1c59c014-8c6f-45b0-907e-62d786d2677a")
+		(uuid "f444ab8d-1e47-41f2-b1ca-6f504674054f")
 	)
 	(label "TACH"
 		(at 148.59 66.04 0)
@@ -21386,7 +21467,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "964cc7c1-5440-4b40-9831-0ffe3669d2d0")
+		(uuid "6c174a31-2ed6-4667-be77-308275d3f9c7")
 	)
 	(wire
 		(pts
@@ -21396,7 +21477,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f4951ccb-6ffd-4f83-85d3-4235622e42f9")
+		(uuid "812b3379-e042-4697-a52c-48eedd7b2431")
 	)
 	(label "OUT_TACH"
 		(at 113.03 66.04 180)
@@ -21407,7 +21488,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "41ccd4f9-9624-43d2-b19e-b0a0a8d72f23")
+		(uuid "3dbb41e1-a4dd-4714-ba14-ca2a1a1d6486")
 	)
 	(wire
 		(pts
@@ -21417,7 +21498,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0dc0ea55-dffe-497e-a4bd-767721c1b4ee")
+		(uuid "f727cbe1-bb31-45e9-b953-f621d44e6492")
 	)
 	(label "WG"
 		(at 332.74 120.65 180)
@@ -21428,7 +21509,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4217e0a7-d7f4-4af2-b526-156b6c7d1ca1")
+		(uuid "adb60d37-7a5f-4e2a-8443-43ae939b1671")
 	)
 	(wire
 		(pts
@@ -21438,7 +21519,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "191c3f5c-0230-4426-9ffa-8ace126e1488")
+		(uuid "f067fee1-d12d-4a0b-bb56-6ee9c5eabedd")
 	)
 	(label "VVT_RH"
 		(at 332.74 128.27 180)
@@ -21449,7 +21530,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e2302e6d-a153-446f-a723-3d206a7128b9")
+		(uuid "94f64275-94a2-4a49-87f1-a75943a22fdc")
 	)
 	(wire
 		(pts
@@ -21459,7 +21540,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a90c9fbb-3bbd-4188-a797-f1a72e5e05ba")
+		(uuid "2d65efc1-1d45-44de-8575-44e41506893d")
 	)
 	(label "VVT_LH"
 		(at 332.74 130.81 180)
@@ -21470,7 +21551,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8f4feef4-700f-411f-a30a-5851333a84c7")
+		(uuid "b660835a-6e96-497c-a711-6168e4dde272")
 	)
 	(wire
 		(pts
@@ -21480,7 +21561,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "76b1c01c-9a8e-444c-b1dd-eb245ab0bb99")
+		(uuid "211732bc-ae22-4f83-8a74-9c100c3675ed")
 	)
 	(label "PURGE"
 		(at 332.74 135.89 180)
@@ -21491,7 +21572,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b3fdf77b-3a29-4a63-b52b-e565668e547e")
+		(uuid "4ad07ff5-17d6-4849-b640-e31d1299f13a")
 	)
 	(wire
 		(pts
@@ -21501,7 +21582,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f2629b7d-d9e4-4c24-a7ec-5744a57cb9d5")
+		(uuid "0711bd9d-1614-4c2d-a437-a76624542a91")
 	)
 	(label "MIL"
 		(at 332.74 146.05 180)
@@ -21512,7 +21593,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "732cb9f1-bb6a-4b65-aa08-99a877a74e39")
+		(uuid "a693ea49-df55-4f69-9841-e273b9f03137")
 	)
 	(wire
 		(pts
@@ -21522,7 +21603,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0c9ae0ff-5d5d-4e15-af77-1adb0610fdc5")
+		(uuid "1ad05419-51dd-4897-898a-a0a361e90c6f")
 	)
 	(label "O2_HEATER_REAR"
 		(at 332.74 148.59 180)
@@ -21533,7 +21614,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "144c63a6-9990-4f30-94f3-e9a1959d4848")
+		(uuid "b1d6b2d0-e43e-448a-a400-96b398445673")
 	)
 	(wire
 		(pts
@@ -21543,7 +21624,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8f16d8db-1a1f-4f73-ba18-6beff08c40d3")
+		(uuid "8f6d29d0-99d8-42d8-a776-744e42841f95")
 	)
 	(label "AC_RELAY"
 		(at 332.74 151.13 180)
@@ -21554,7 +21635,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4ccc5a3d-3008-47b4-be69-e2b3959fb606")
+		(uuid "e0e24a46-9016-4887-8463-7c242c458063")
 	)
 	(wire
 		(pts
@@ -21564,7 +21645,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8a926eef-6815-4504-b52d-d0e4ecca6105")
+		(uuid "07e30839-c466-4acc-9237-a59b2b6ba5b9")
 	)
 	(label "TACH"
 		(at 332.74 153.67 180)
@@ -21575,7 +21656,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e8afc904-de9d-48e1-bce7-499cebc38925")
+		(uuid "f1a7aff7-a1ab-4089-8217-3199cca1de5a")
 	)
 	(wire
 		(pts
@@ -21585,7 +21666,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f3ada736-f60b-4591-91c6-5db3c1115cf6")
+		(uuid "b48126f2-4555-4f5b-8ba7-7b059b3e41c0")
 	)
 	(label "OUT_MIL"
 		(at 40.64 363.22 0)
@@ -21596,7 +21677,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "1db966c1-8f25-42c5-9d9a-617e3b0a0143")
+		(uuid "af15c1f6-a079-4aa1-ba36-1f2858c12701")
 	)
 	(wire
 		(pts
@@ -21606,7 +21687,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "394ed89b-13e9-42a4-96ee-1cb6f6eb63b9")
+		(uuid "864e54e1-9177-4bd4-bc8d-fc8b9129b4f3")
 	)
 	(label "OUT_O2_HEATER_REAR"
 		(at 40.64 226.06 0)
@@ -21617,7 +21698,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "84165939-51ba-4439-993a-8efe1143f0b8")
+		(uuid "95c8b4dc-6f69-46fa-8218-9e2c4e10418a")
 	)
 	(wire
 		(pts
@@ -21627,7 +21708,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1f31eab6-4144-4e8f-8d1b-4f8fe6177159")
+		(uuid "3354ea41-3b74-4291-b0a8-ca5013d29a33")
 	)
 	(label "OUT_AC_RELAY"
 		(at 40.64 304.8 0)
@@ -21638,7 +21719,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d574868b-fbc1-4f19-8b07-d0bdfecbf825")
+		(uuid "2155c3c0-19fa-4c01-b478-353ce248668c")
 	)
 	(symbol
 		(lib_id "hellen-one-common:+12V_RAW")
@@ -21648,7 +21729,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f698c559-f695-4955-97c0-b41c4a805c1a")
+		(uuid "b626ff7d-3c56-4379-8dab-1f34cb240187")
 		(property "Reference" "#PWR065"
 			(at 46.99 365.76 0)
 			(effects
@@ -21695,7 +21776,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a5c6b119-0cb6-4248-9e8f-26f7242f5aae")
+			(uuid "461e020d-a876-4d2f-9684-9b09da189db4")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -21714,7 +21795,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6dab91ef-d772-4723-81e6-1de8ef55ae2d")
+		(uuid "63cb99f6-5769-42c8-ba43-ed1e69cc8413")
 		(property "Reference" "#PWR066"
 			(at 46.99 368.3 0)
 			(effects
@@ -21761,7 +21842,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a2a64313-c3d7-49d3-9637-836a88f03bc4")
+			(uuid "50f39ed2-b27d-43ae-b242-7ff4d63c0607")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -21780,7 +21861,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9d4eef4a-f8a6-4313-b75f-98d3f49971fc")
+		(uuid "abb4ae6a-17a8-44d1-8687-5d8d2f2ae1ab")
 	)
 	(label "OUT_TGV_OPEN"
 		(at 40.64 342.9 0)
@@ -21791,7 +21872,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "46c66500-02c4-4c2d-bfa9-ee2b772ed629")
+		(uuid "0080949b-9146-498c-8d87-70efa2735459")
 	)
 	(wire
 		(pts
@@ -21801,7 +21882,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "dd5605fd-8e46-46bd-a173-afe036c4b56c")
+		(uuid "65d392d3-cf37-44e8-9e9b-076557d3bc75")
 	)
 	(label "OUT_TGV_OPEN"
 		(at 40.64 347.98 0)
@@ -21812,7 +21893,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7a64be08-028a-4725-a622-6ee3f32d662f")
+		(uuid "6e92501d-5b86-4a6a-b7e6-34aa61aa3836")
 	)
 	(wire
 		(pts
@@ -21822,7 +21903,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "49c3c658-a3f1-4d19-ae20-f14a50615ef2")
+		(uuid "327d809b-394a-4f0c-9f2c-22fa607069f3")
 	)
 	(label "OUT_TGV_CLOSE"
 		(at 40.64 340.36 0)
@@ -21833,7 +21914,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "9cec626a-1173-4f7e-99ed-abb1e3905e73")
+		(uuid "bb3486eb-639f-430d-ba73-58d25cad6526")
 	)
 	(wire
 		(pts
@@ -21843,7 +21924,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "be96bbb9-2f58-47b6-b976-d23520674b88")
+		(uuid "c736e3f6-e0f4-4482-b9cd-99d0ede4fd26")
 	)
 	(label "OUT_TGV_CLOSE"
 		(at 40.64 345.44 0)
@@ -21854,7 +21935,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d20153f9-f4df-4d78-a750-7acda02aae07")
+		(uuid "5d1e2d4c-2bf1-4d26-aca9-ad9f459af0be")
 	)
 	(wire
 		(pts
@@ -21864,7 +21945,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d3f6a17f-3b0e-40b8-9377-6f8e712b76fd")
+		(uuid "da7328fb-497a-4db3-a0c7-5036c7454e1a")
 	)
 	(label "OUT_TGV_OPEN"
 		(at 194.31 374.65 180)
@@ -21875,7 +21956,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e27e558c-d672-42c0-8092-8c9269365240")
+		(uuid "f770526a-8b68-4f36-b047-c2f3a1c138fb")
 	)
 	(wire
 		(pts
@@ -21885,7 +21966,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "115f53fa-f430-4397-b3c8-082c630970fc")
+		(uuid "aa27e85f-fe22-4b69-bb23-9bcffbff293a")
 	)
 	(label "OUT_TGV_CLOSE"
 		(at 194.31 372.11 180)
@@ -21896,7 +21977,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "75188337-056e-4b28-ae96-809675fc7b60")
+		(uuid "8df9bc5b-5ad5-4b77-95a0-6c75e6fa6ec9")
 	)
 	(wire
 		(pts
@@ -21906,7 +21987,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5e01cac0-7073-4229-a2a3-6dfb643d9cde")
+		(uuid "cb48d958-2e1a-4b36-b1c9-a8dbcf5e1c0c")
 	)
 	(label "TGV_PWM"
 		(at 252.73 374.65 0)
@@ -21917,7 +21998,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "cc5f66ec-4559-4e99-ae1d-870197943a69")
+		(uuid "748a2de4-9c61-4bf6-9a19-4e9e8084f644")
 	)
 	(wire
 		(pts
@@ -21927,7 +22008,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7e3682bc-d47f-4c6a-a25a-d26d23bf308b")
+		(uuid "3f6c1808-ff15-415e-9dd5-fafad052992f")
 	)
 	(label "TGV_PWM"
 		(at 332.74 173.99 180)
@@ -21938,7 +22019,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8971c916-cc73-420d-998d-0c9f1db40a33")
+		(uuid "f956a7aa-36b3-412e-b269-05dff8826df2")
 	)
 	(wire
 		(pts
@@ -21948,7 +22029,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a398ba8e-5a71-4ab8-be55-1fc5b4fb8662")
+		(uuid "e46e6915-fb42-418b-b85b-f02d9bbc5eda")
 	)
 	(label "TGV_DIR"
 		(at 252.73 377.19 0)
@@ -21959,7 +22040,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0ba57f73-cb35-44f3-93b2-60056e1b7e5d")
+		(uuid "81ab42f6-e056-49f9-b576-bf82312d6aba")
 	)
 	(wire
 		(pts
@@ -21969,7 +22050,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "056a945f-9475-45de-84d4-3ec8a2b767e2")
+		(uuid "cb405df1-b2e7-4e5d-8b2b-663b634604b8")
 	)
 	(label "TGV_DIR"
 		(at 410.21 189.23 0)
@@ -21980,7 +22061,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "cb703cd6-1a72-41d0-812d-9da71443ecaf")
+		(uuid "a966e768-c9e0-4d14-9e3a-c78f10b834a7")
 	)
 	(wire
 		(pts
@@ -21990,7 +22071,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "eebd3878-4d90-4060-84a7-438c432ff5f7")
+		(uuid "9f00d7b9-8d46-42b8-bc36-d95f4b641f01")
 	)
 	(label "TGV_DIS"
 		(at 252.73 372.11 0)
@@ -22001,7 +22082,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "691aa7a7-8724-407d-94a7-c9dffabbd7fe")
+		(uuid "e867d27a-f15e-4b94-9fd9-b2e9c55aa3b2")
 	)
 	(wire
 		(pts
@@ -22011,7 +22092,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "0c83de31-7c1f-40ba-a4bd-d0df12859827")
+		(uuid "29ec833f-f615-4cda-a132-46ad5193659c")
 	)
 	(label "TGV_DIS"
 		(at 410.21 191.77 0)
@@ -22022,7 +22103,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ac2f5219-2fa8-45bb-8df7-ce43e7571a51")
+		(uuid "efc1f6d1-5e21-4088-9021-3d84161fbde7")
 	)
 	(wire
 		(pts
@@ -22032,7 +22113,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4256422e-eff2-4dd9-b675-5dff281dedf4")
+		(uuid "3918e0a9-07cf-4128-bdda-b56ea2f97510")
 	)
 	(symbol
 		(lib_id "hellen-one-common:+12V_RAW")
@@ -22042,7 +22123,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "39b48860-0650-4d44-865c-f508a053d8ac")
+		(uuid "f1511594-58b7-4fa2-96d0-cab35a61dfd4")
 		(property "Reference" "#PWR067"
 			(at 193.04 379.73 0)
 			(effects
@@ -22089,7 +22170,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a1c88627-7404-4cc2-a3f8-f0be20e98165")
+			(uuid "d5dd26a7-5445-43ab-b72f-50c5e7b618b4")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -22108,7 +22189,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "847fd570-3da5-4b39-9847-1bece8c2fa0d")
+		(uuid "db57c65a-7606-4cd9-954a-18e804a17b27")
 	)
 	(symbol
 		(lib_id "hellen-one-common:+12V_RAW")
@@ -22118,7 +22199,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7544389d-c355-49d9-8d85-6e1c6e859f5b")
+		(uuid "d7bc98a0-2bb1-4902-9f50-8ce2e8258b53")
 		(property "Reference" "#PWR068"
 			(at 193.04 382.27 0)
 			(effects
@@ -22165,7 +22246,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e76ffa7a-1344-4816-ad75-1ec84e8eb159")
+			(uuid "01ec9b09-671e-4dc4-8567-23bcb2114e89")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -22184,7 +22265,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b1098cd1-2af9-45dc-b5db-18353f1f3b46")
+		(uuid "99f2f618-39d3-4ba6-9ab2-979b6c537ffb")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -22194,7 +22275,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b49d8953-d50e-4ecd-a593-33fc39f86c33")
+		(uuid "b6a3702c-ea7e-4dcf-93aa-86a5c9e34d8c")
 		(property "Reference" "#PWR069"
 			(at 200.66 384.81 0)
 			(effects
@@ -22241,7 +22322,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "09a99b9e-53d7-49cd-a883-ddf6342fb27f")
+			(uuid "1eef2435-d60c-4902-8507-cc8257322160")
 		)
 		(instances
 			(project "rusefiSTI2004"
@@ -22260,7 +22341,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "92b820db-67c2-491b-b5ac-bc37255fd09f")
+		(uuid "0fbed3cb-bfa4-4360-8d1e-c9801afc019e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -22270,7 +22351,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f060db3a-c315-48dc-92a8-2d58dce053bd")
+		(uuid "ecb57701-816e-44f9-b8fd-328eb77e4537")
 		(property "Reference" "#PWR070"
 			(at 203.2 389.89 0)
 			(effects
@@ -22316,12 +22397,6748 @@
 			)
 		)
 		(pin "1"
-			(uuid "21c0af13-332c-4dbb-bf77-0cff265bc053")
+			(uuid "bf91b5b6-c28a-4b3d-babc-9f1cd16c4610")
 		)
 		(instances
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 251.46 90.17) (xy 256.54 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f1c0a96-8fa9-460d-aa36-7292e9c67706")
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 256.54 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33952a19-fcae-45fe-95a3-b44d77d58396")
+		(property "Reference" "#PWR071"
+			(at 260.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 250.9456 90.5383 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d121c683-9ede-44b1-b272-155616ce74e1")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 251.46 107.95) (xy 256.54 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c385f96-85a0-4e3b-9b8f-7fbbeb7f1eb9")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 256.54 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23732941-2bad-4b75-85f7-8f0b770a6340")
+		(property "Reference" "#PWR072"
+			(at 262.89 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 256.54 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1c5838d-5658-4f8c-bf44-c1baaaa183ef")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 251.46 92.71) (xy 256.54 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1481d2-8e87-40ac-a062-98d652603481")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 256.54 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "528d1c86-d83d-4eb2-ab92-e4224840f1f6")
+		(property "Reference" "#PWR073"
+			(at 262.89 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 256.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5d8b17e-494c-4f37-b41c-4210099b3f87")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 203.2 95.25) (xy 195.58 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf120b9c-f65d-4866-9baa-8267505764d1")
+	)
+	(label "CAN_H"
+		(at 195.58 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "24323aeb-ceae-4168-8be5-db1220b9e927")
+	)
+	(wire
+		(pts
+			(xy 402.59 102.87) (xy 410.21 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d297ab6c-a20a-4647-898f-ad918457ae83")
+	)
+	(label "CAN_H"
+		(at 410.21 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc853d0e-4275-42da-992e-c2b16b0f1e66")
+	)
+	(wire
+		(pts
+			(xy 203.2 92.71) (xy 195.58 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "242b4520-dc9f-42f4-8771-9c6fe07404db")
+	)
+	(label "CAN_L"
+		(at 195.58 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a6c0621c-9015-411b-b329-a816ac1dc9e9")
+	)
+	(wire
+		(pts
+			(xy 402.59 105.41) (xy 410.21 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f86c747-de9f-40b0-8e4b-b8b4d433d46d")
+	)
+	(label "CAN_L"
+		(at 410.21 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a8f1427-ff0a-4675-a1b1-e04306c9afb3")
+	)
+	(wire
+		(pts
+			(xy 251.46 115.57) (xy 259.08 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c93baea2-6060-4508-92c1-1af9db8d4d35")
+	)
+	(label "WBO_SEL1"
+		(at 259.08 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cdce857b-99ea-405f-b9d0-e6e9e84a57e7")
+	)
+	(wire
+		(pts
+			(xy 251.46 118.11) (xy 259.08 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88d3225b-320a-456b-a83a-f96eada354b6")
+	)
+	(label "WBO_SEL1"
+		(at 259.08 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7899da9-cb31-4881-bd6d-d53bbcdb863b")
+	)
+	(wire
+		(pts
+			(xy 251.46 95.25) (xy 259.08 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a41b904c-9b1a-4f4f-8d35-375eace6dbd0")
+	)
+	(label "WBO_HEATER"
+		(at 259.08 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "91982c77-399c-4991-a682-d21eafc1bbd1")
+	)
+	(wire
+		(pts
+			(xy 33.02 325.12) (xy 40.64 325.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f3c4a5e-a97d-4b89-bc69-7023df6657cb")
+	)
+	(label "WBO_HEATER"
+		(at 40.64 325.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "632e4c0e-e489-4cd3-9796-1bcafbd64bf2")
+	)
+	(wire
+		(pts
+			(xy 33.02 327.66) (xy 40.64 327.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e4b17d1-b4f5-429d-b112-d219d604616c")
+	)
+	(label "WBO_HEATER"
+		(at 40.64 327.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b15449d2-2df6-4336-961c-75b1179be9cd")
+	)
+	(wire
+		(pts
+			(xy 251.46 105.41) (xy 259.08 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38f4f74e-a4d4-4db6-a9b0-d3953973b8d9")
+	)
+	(label "WBO_UN"
+		(at 259.08 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f07da81a-e92d-4738-9148-795a4aa93bba")
+	)
+	(wire
+		(pts
+			(xy 251.46 102.87) (xy 259.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701e643d-cffe-49f6-9866-b91d9d62f4f5")
+	)
+	(label "WBO_VM"
+		(at 259.08 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b9916c5-221f-4894-8c7a-2ae3dae970e1")
+	)
+	(wire
+		(pts
+			(xy 251.46 100.33) (xy 259.08 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e795e53-35ca-431f-8e32-897d2a63e212")
+	)
+	(label "WBO_IP"
+		(at 259.08 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "275d7e21-eaf1-4ab3-97bd-412ee0333d83")
+	)
+	(wire
+		(pts
+			(xy 251.46 97.79) (xy 259.08 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6aaa893-df6c-451d-83c9-7e865347fb6b")
+	)
+	(label "WBO_RTRIM"
+		(at 259.08 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d26e6dd1-8286-49e3-9002-677ad757d1b7")
+	)
+	(wire
+		(pts
+			(xy 33.02 403.86) (xy 40.64 403.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a23b4c4c-e4a6-40c0-9bcf-92b3b2e379e4")
+	)
+	(label "WBO_UN_J1"
+		(at 40.64 403.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d33136a8-bbf1-440e-938e-284218439896")
+	)
+	(wire
+		(pts
+			(xy 33.02 386.08) (xy 40.64 386.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4840f710-2573-4b78-baba-35fc55ffd125")
+	)
+	(label "WBO_VM_J1"
+		(at 40.64 386.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59d38455-a336-4861-b564-1d529b6b15b7")
+	)
+	(wire
+		(pts
+			(xy 33.02 383.54) (xy 40.64 383.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0413e391-ce98-45b1-8396-4f7ae2b9d2d8")
+	)
+	(label "WBO_IP_J1"
+		(at 40.64 383.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ff0cbc8-fce9-4def-8d3a-a97be7ad99cb")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 81.28 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86411096-6ac5-45ba-90a0-5f28b33d384d")
+		(property "Reference" "JP1"
+			(at 81.28 441.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 81.28 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 81.28 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 81.28 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "925cccaf-8673-48bc-8580-20a63ea11ecf")
+		)
+		(pin "2"
+			(uuid "87746ee7-230b-487b-80a5-c100afaa0151")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 444.5) (xy 73.66 444.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a4d9952-8fd8-4d2d-8ebc-3682ebca07f2")
+	)
+	(label "WBO_UN"
+		(at 73.66 444.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d0c07385-6420-4d76-aa4e-b53593442902")
+	)
+	(wire
+		(pts
+			(xy 86.36 444.5) (xy 88.9 444.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8df081fd-9e18-469a-ad50-ac3f650ba2b9")
+	)
+	(label "WBO_UN_J1"
+		(at 88.9 444.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4e7ef15-80d4-4157-8049-245e71c710f7")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 81.28 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c01bfeae-20c6-41b3-9942-79055457b40e")
+		(property "Reference" "JP2"
+			(at 81.28 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 81.28 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 81.28 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 81.28 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "407b8b97-fb5e-4abd-bc13-5ae8876276c3")
+		)
+		(pin "2"
+			(uuid "678c4125-115d-4b57-a0d1-2f511c52c809")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 452.12) (xy 73.66 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbd230be-318a-480b-9572-42fb9e553589")
+	)
+	(label "WBO_VM"
+		(at 73.66 452.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f6387d02-a572-4c3d-bb08-0830f1c02f25")
+	)
+	(wire
+		(pts
+			(xy 86.36 452.12) (xy 88.9 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db1061d5-9993-49de-9f33-35f9099a8938")
+	)
+	(label "WBO_VM_J1"
+		(at 88.9 452.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "555ddf3a-7312-4fcb-b1b5-cf67fb7ce590")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 81.28 459.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8dbfcf60-6f74-4975-81d4-261ac290d698")
+		(property "Reference" "JP3"
+			(at 81.28 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 81.28 462.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 81.28 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 81.28 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6dc5d735-4be0-4867-bb35-b9362be30d3c")
+		)
+		(pin "2"
+			(uuid "c95c6c59-b592-4cd3-84f9-01cfe66766c0")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 459.74) (xy 73.66 459.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f92cf121-1c7b-461a-aee3-04468247b48f")
+	)
+	(label "WBO_IP"
+		(at 73.66 459.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "65214e13-4a2c-442c-b8d2-35cd29f7e6b3")
+	)
+	(wire
+		(pts
+			(xy 86.36 459.74) (xy 88.9 459.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f0bdd77-4e50-43f7-8e26-f784d81754aa")
+	)
+	(label "WBO_IP_J1"
+		(at 88.9 459.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f69de590-8bd0-4b29-b3c4-24e04393f506")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 467.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ff76705-9eab-446d-a69f-25cd2ba50e4f")
+		(property "Reference" "P1"
+			(at 81.28 464.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WBO_UN"
+			(at 81.28 469.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4eda607f-6273-44c5-bf8e-9ff348e521e2")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 467.36) (xy 73.66 467.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a8a3c71-f117-447a-a204-e498771dd357")
+	)
+	(label "WBO_UN"
+		(at 73.66 467.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "638c7bf9-d5ce-4d40-a7fc-47a4197fa120")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 474.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0ba4abf-2095-4bca-b782-288060895e22")
+		(property "Reference" "P2"
+			(at 81.28 472.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WBO_VM"
+			(at 81.28 477.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 474.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 474.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63da75fe-cb28-42c3-8484-5b4acc5923f2")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 474.98) (xy 73.66 474.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "795ec109-9417-45d7-b08b-4db95c8ae600")
+	)
+	(label "WBO_VM"
+		(at 73.66 474.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "137c3a93-13ea-4767-b16d-eacfb950739c")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 482.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15b38617-289d-4beb-8b02-9771e62aada7")
+		(property "Reference" "P3"
+			(at 81.28 480.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WBO_IP"
+			(at 81.28 485.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dabef566-8139-4b5f-90ec-7a3da9167e3a")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 482.6) (xy 73.66 482.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "332fe958-8ead-44ae-8d4c-d376936a8028")
+	)
+	(label "WBO_IP"
+		(at 73.66 482.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "135aaac9-2ada-4b84-9a98-c6fb987f0601")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 490.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "585cff38-3d9f-42fa-b409-bb9691ae3375")
+		(property "Reference" "P4"
+			(at 81.28 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WBO_RTRIM"
+			(at 81.28 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "abca6313-91d8-42dc-9a29-801cdf06214f")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 490.22) (xy 73.66 490.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb13f416-8965-4018-bc34-ef79cd5d3e2b")
+	)
+	(label "WBO_RTRIM"
+		(at 73.66 490.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d176a74d-ec80-4142-81f0-3946a359f569")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c31b151-cfb2-4ef4-b11e-314338e4e816")
+		(property "Reference" "P5"
+			(at 81.28 495.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WBO_HEATER"
+			(at 81.28 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acaa9c2f-836b-42c9-84c7-abb2dbd3cb27")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 497.84) (xy 73.66 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e88673aa-94fc-441d-9aaa-85f8540e276c")
+	)
+	(label "WBO_HEATER"
+		(at 73.66 497.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0fcc5a89-215a-410a-b9ba-21dc4c12c043")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b3ce3c6-5f68-422b-aed2-25e3699d9469")
+		(property "Reference" "P6"
+			(at 81.28 502.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CAN_H"
+			(at 81.28 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "824faf93-152e-45e7-9615-5d7727c2feb9")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 505.46) (xy 73.66 505.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e8f2e00-2040-4299-a589-713527b46c75")
+	)
+	(label "CAN_H"
+		(at 73.66 505.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "538290c3-ab31-48bb-a440-0a31bf819652")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 513.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c1d62a2-a60f-43a0-8a08-23d2ab90157d")
+		(property "Reference" "P7"
+			(at 81.28 510.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CAN_L"
+			(at 81.28 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f0bbe40-f763-421e-949b-d34a2bf85c02")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 513.08) (xy 73.66 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84924513-958a-490c-9787-c59d57ea9ca1")
+	)
+	(label "CAN_L"
+		(at 73.66 513.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35af119a-4e4e-4e33-9d83-071e551d1b86")
+	)
+	(symbol
+		(lib_id "hellen-one-lin-0.1:Module-lin-0.1")
+		(at 299.72 449.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed4be268-3661-4703-8be6-9b604412daed")
+		(property "Reference" "M10"
+			(at 299.72 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Module-lin-0.1"
+			(at 299.72 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-lin-0.1:lin"
+			(at 299.72 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299.72 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "V1"
+			(uuid "f9eaf3da-583c-4fbe-8297-67937bbbc014")
+		)
+		(pin "V2"
+			(uuid "1e90b4c9-14fd-4514-ae50-0f8e63a79ec3")
+		)
+		(pin "V3"
+			(uuid "9b2e4342-8a80-410f-ade1-4c9c6d2e2225")
+		)
+		(pin "V4"
+			(uuid "36fbc329-a27b-410a-8b7d-6b8b8121b1ea")
+		)
+		(pin "V5"
+			(uuid "c42df05b-9d9b-42bd-9895-e845d72e1348")
+		)
+		(pin "S1"
+			(uuid "b9058891-dfcb-4ce0-8660-fc86a59c8186")
+		)
+		(pin "E1"
+			(uuid "05501d6e-b357-4c58-a60b-8946e551b720")
+		)
+		(pin "N1"
+			(uuid "aa9a62d6-0638-4ba8-a3b0-cc94bb55ea0e")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "M10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 294.64 452.12) (xy 292.1 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a42156ab-7c60-42c3-a3b9-83f9903e85c0")
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 292.1 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64f0ceed-fadb-4e8b-91f1-ed6fa0da112f")
+		(property "Reference" "#PWR074"
+			(at 292.1 455.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 292.4683 447.7956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 292.1 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 292.1 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 292.1 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6723d93-158d-4ddd-9531-b65a3dfef69a")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 294.64 454.66) (xy 292.1 454.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f652f0d-7a63-4f39-a3bc-d0c99aa7147a")
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 292.1 454.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3cf72689-5fe1-4553-aabd-347222a13436")
+		(property "Reference" "#PWR075"
+			(at 292.1 458.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 292.4683 450.3356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 292.1 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 292.1 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 292.1 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "748e0027-8537-4aa8-951a-bcf8dad2ff9a")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 294.64 459.74) (xy 292.1 459.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "518dc7e3-d80d-4227-a53f-1ad7a184e88d")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 292.1 459.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5731b1f6-eb36-4c7f-91c9-e4fcfbe8c7ae")
+		(property "Reference" "#PWR076"
+			(at 288.29 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 297.434 459.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 292.1 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 292.1 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 292.1 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "837e5f00-5b61-45c8-ac20-e4d8e43fe628")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 294.64 464.82) (xy 292.1 464.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02a3f56-3186-41b4-bc04-be126c1668bb")
+	)
+	(label "KLINE_RX"
+		(at 292.1 464.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5be8bf25-80a8-475c-9857-ec57d3356eda")
+	)
+	(wire
+		(pts
+			(xy 294.64 467.36) (xy 292.1 467.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00b742db-0b32-4469-b783-7550f6566fda")
+	)
+	(label "KLINE_TX"
+		(at 292.1 467.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bef696e7-41a5-40d6-bc69-4c2d62385b77")
+	)
+	(wire
+		(pts
+			(xy 337.82 452.12) (xy 340.36 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8569041c-2c57-4dfa-a92b-f25243a692b1")
+	)
+	(label "K_LINE"
+		(at 340.36 452.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e81e26d7-b4e7-45de-8a3c-4ed9e5cf9750")
+	)
+	(wire
+		(pts
+			(xy 337.82 464.82) (xy 340.36 464.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad1ede49-908d-47af-9757-42dfe653c12d")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 340.36 464.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e417259-d36b-4878-bafb-b7143dc4b6a7")
+		(property "Reference" "#PWR077"
+			(at 346.71 464.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 345.44 464.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 340.36 464.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 340.36 464.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 340.36 464.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "877edf19-6f62-423b-9ed6-3a0998da2297")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 337.82 467.36) (xy 340.36 467.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3886a4e-ed83-4c64-a746-146e480631b9")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 340.36 467.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2fd7551-b911-448a-a367-d7b0a0d1e7f7")
+		(property "Reference" "#PWR078"
+			(at 346.71 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 345.44 467.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 340.36 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 340.36 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 340.36 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9379e122-f548-4e6a-a4de-af69c22f9847")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 402.59 123.19) (xy 410.21 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ec4b0c-b8f0-43e2-92e0-223ed2af6886")
+	)
+	(label "KLINE_RX"
+		(at 410.21 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d39115e-ead0-4bc6-b2f5-ec4af1f1af01")
+	)
+	(wire
+		(pts
+			(xy 402.59 125.73) (xy 410.21 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80de8554-37b6-4cec-bb77-3196d41a7075")
+	)
+	(label "KLINE_TX"
+		(at 410.21 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2af79464-8306-4f01-a48c-87a4ef5db121")
+	)
+	(wire
+		(pts
+			(xy 30.48 74.93) (xy 38.1 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daca5bfe-60c7-48a8-b70f-745883859144")
+	)
+	(label "K_LINE"
+		(at 38.1 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb429292-cc60-4220-ba6a-f6522473c5ff")
+	)
+	(wire
+		(pts
+			(xy 30.48 97.79) (xy 38.1 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8359a04-3322-4cd0-9c18-fb9e844fb35c")
+	)
+	(label "DLC6_D29"
+		(at 38.1 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2547a8c5-241a-4bbf-9858-d174fde33b64")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 81.28 520.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "eeb18acf-ff66-4f49-b933-e98efee4989f")
+		(property "Reference" "JP4"
+			(at 81.28 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNP 0R"
+			(at 81.28 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 81.28 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 81.28 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5baf32b0-3b3f-44da-8808-b16b50408017")
+		)
+		(pin "2"
+			(uuid "782abb1f-902d-40ae-9bc5-f583e2d13d75")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 520.7) (xy 73.66 520.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42afc922-c93e-4c83-bc78-48ac323c140a")
+	)
+	(label "DLC6_D29"
+		(at 73.66 520.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1759fabe-8e7a-4640-9328-9b230f2c53ee")
+	)
+	(wire
+		(pts
+			(xy 86.36 520.7) (xy 88.9 520.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27abaf67-57b7-4bb8-9ca8-67d63ad26304")
+	)
+	(label "K_LINE"
+		(at 88.9 520.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc5f4a7f-2cae-454e-bb71-8f7ea04a9168")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 81.28 528.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4581714-83e1-4537-8345-5dad3e5198dd")
+		(property "Reference" "P8"
+			(at 81.28 525.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "K_LINE"
+			(at 81.28 530.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 81.28 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf58b9cb-5bc1-492b-86d6-f1cafbdd6abf")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 528.32) (xy 73.66 528.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d10fe354-d7c1-4730-8a31-a1c686a36f3f")
+	)
+	(label "K_LINE"
+		(at 73.66 528.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8edd6dfc-9a20-4e59-be7b-5d2e50c557b0")
+	)
+	(wire
+		(pts
+			(xy 33.02 139.7) (xy 40.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49b8f22a-2160-4d48-bc71-4e4ec5abbc10")
+	)
+	(label "IN_CRUISE_MAIN"
+		(at 40.64 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e30951a-d738-472f-a104-61cc244cb2cd")
+	)
+	(wire
+		(pts
+			(xy 340.36 275.59) (xy 332.74 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b725c4a-310a-41a4-a3d6-0db7fd17a0ad")
+	)
+	(label "IN_CRUISE_MAIN"
+		(at 332.74 275.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "442c72be-3e19-45f3-b0fe-a68b95897111")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 76.2 535.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2669723b-0c2e-4d40-a92c-0ae61b0e460f")
+		(property "Reference" "R35"
+			(at 76.2 533.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 76.2 538.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R1206"
+			(at 76.2 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4410"
+			(at 76.2 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b955c545-04e9-426e-a3ce-48fe7136f010")
+		)
+		(pin "2"
+			(uuid "8f8008b8-cf4e-4729-b574-713bacdaecaf")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 76.2 535.94) (xy 73.66 535.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a504ebe3-27a8-444b-8714-bb3273ff1f6b")
+	)
+	(label "IN_CRUISE_MAIN"
+		(at 73.66 535.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a693e1fd-52e0-4f21-b09c-e5016d84aebd")
+	)
+	(wire
+		(pts
+			(xy 86.36 535.94) (xy 88.9 535.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a1bd0e9-9db1-49e8-adc2-552adb66b56f")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 88.9 535.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "016ab758-fac2-42e8-ba94-c2b5a5ee65e8")
+		(property "Reference" "#PWR079"
+			(at 95.25 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 535.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef9fc906-37cc-4c9c-980e-852f7c9b8db4")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 33.02 147.32) (xy 40.64 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ba7418-5f3e-426f-8b41-1849c3299bb5")
+	)
+	(label "IN_CRUISE_RESUME"
+		(at 40.64 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "07f9f4b4-b601-4bc5-906f-f1c94b364cae")
+	)
+	(wire
+		(pts
+			(xy 340.36 280.67) (xy 332.74 280.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d31a648-a9b7-49eb-a80e-6847f75f9c90")
+	)
+	(label "IN_CRUISE_RESUME"
+		(at 332.74 280.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "53d5e4a9-6c2d-4301-9bfe-37c3ca2fe4af")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "791b1b96-bccd-4613-8587-029af903257b")
+		(property "Reference" "R36"
+			(at 124.46 441.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 124.46 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R1206"
+			(at 124.46 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4410"
+			(at 124.46 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c86d0729-48de-4c2f-b1aa-1ef6fa07a6c7")
+		)
+		(pin "2"
+			(uuid "b8b6cc8d-d537-4ddf-b1b8-2cc78353347c")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 444.5) (xy 121.92 444.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01c14a7d-71ef-47d9-9e9a-1811354b9c60")
+	)
+	(label "IN_CRUISE_RESUME"
+		(at 121.92 444.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4f419d30-e2d9-4d6b-8312-2a06855f1b40")
+	)
+	(wire
+		(pts
+			(xy 134.62 444.5) (xy 137.16 444.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92a66341-1fa5-48f2-8b76-b00754c4295e")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06ae88b5-1af7-4413-b4a5-d91b7b68c6a9")
+		(property "Reference" "#PWR080"
+			(at 143.51 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 444.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec2648e7-60d4-4e69-a1b4-c62ab06c61b5")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 33.02 149.86) (xy 40.64 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6849635-8267-4d66-9f08-77ffac284d4e")
+	)
+	(label "IN_CRUISE_SET"
+		(at 40.64 149.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5da78bc-6777-44bc-beda-81e6ea3e8a07")
+	)
+	(wire
+		(pts
+			(xy 340.36 283.21) (xy 332.74 283.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bda984e-e57a-4a19-a3b0-7b5845cfdb8e")
+	)
+	(label "IN_CRUISE_SET"
+		(at 332.74 283.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "88999eb4-0337-423e-8b40-d79963af28ea")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a3cb282-aad5-4001-9a78-c50f100a2867")
+		(property "Reference" "R37"
+			(at 124.46 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 124.46 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R1206"
+			(at 124.46 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4410"
+			(at 124.46 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "509b6df0-1a75-447b-8f25-d4be945ddb71")
+		)
+		(pin "2"
+			(uuid "04b2525a-ec49-4697-8ec5-fd50694b6666")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 452.12) (xy 121.92 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da4013b8-514b-43ca-a811-58449e88d990")
+	)
+	(label "IN_CRUISE_SET"
+		(at 121.92 452.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9e4a03f-aef7-4009-86d3-5b29b1bc567c")
+	)
+	(wire
+		(pts
+			(xy 134.62 452.12) (xy 137.16 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "367cf7bb-eba7-4be8-b5cc-ce0b5339c814")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84a96b95-0ad9-4e00-9272-cf62cb67dc84")
+		(property "Reference" "#PWR081"
+			(at 143.51 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 452.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33863900-15e8-4ce7-80c4-f870ac624003")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 309.88 495.3)
+		(size 20.32 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a3895837-b56b-507f-8607-cee38bbe16a0")
+		(property "Sheetname" "LS4"
+			(at 309.88 494.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "INJ4.kicad_sch"
+			(at 309.88 508.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "IN1" input
+			(at 330.2 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5b6b2222-ba88-4de9-866e-e9e9da704cc7")
+		)
+		(pin "IN2" input
+			(at 330.2 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "45a819ab-99c3-4bf9-9cd0-67cd8085de32")
+		)
+		(pin "IN4" input
+			(at 330.2 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2dea7794-f9a9-473f-b207-158f197e8287")
+		)
+		(pin "IN3" input
+			(at 330.2 502.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d6020017-ffa0-46d7-924e-c6cb3e9d3cb3")
+		)
+		(pin "OUT3" output
+			(at 309.88 502.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9b9f6f1f-7161-438c-8ad0-0fecb3f7bbb3")
+		)
+		(pin "OUT2" output
+			(at 309.88 500.38 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "03fe6701-e66e-4ae3-bd4b-4396a427a3bf")
+		)
+		(pin "OUT1" output
+			(at 309.88 497.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c39da9ff-9279-4265-92ee-89bf18dee072")
+		)
+		(pin "OUT4" output
+			(at 309.88 505.46 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e790f27d-8dec-4f21-af02-0830f760d761")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(page "6")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 330.2 497.84) (xy 337.82 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab47a022-70e5-451e-8760-040d16f3368b")
+	)
+	(label "CRUISE_MAIN_LIGHT"
+		(at 337.82 497.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14177b1d-e831-4511-8525-251ed338fdb0")
+	)
+	(wire
+		(pts
+			(xy 309.88 497.84) (xy 302.26 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20e17eec-2945-4901-a9e6-5cbb2b02fb32")
+	)
+	(label "OUT_CRUISE_MAIN_LIGHT"
+		(at 302.26 497.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "308f61bd-fabf-4085-ad95-f490271a35b7")
+	)
+	(wire
+		(pts
+			(xy 330.2 500.38) (xy 337.82 500.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77e77360-30c7-4736-abf0-6dfa36d30406")
+	)
+	(label "CRUISE_SET_LIGHT"
+		(at 337.82 500.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9e09c5b-b71a-40fc-8545-0590d2e58e30")
+	)
+	(wire
+		(pts
+			(xy 309.88 500.38) (xy 302.26 500.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cf4d997-57ee-41a9-a53e-89b471b11d7b")
+	)
+	(label "OUT_CRUISE_SET_LIGHT"
+		(at 302.26 500.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd772854-683d-48ff-8407-56bb12951be4")
+	)
+	(wire
+		(pts
+			(xy 330.2 502.92) (xy 337.82 502.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3fb93b0-9e48-470b-a339-865f591c3b12")
+	)
+	(label "SPARE_LS1"
+		(at 337.82 502.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e22ef8c-60fa-4d75-8c3e-6f52ee368005")
+	)
+	(wire
+		(pts
+			(xy 309.88 502.92) (xy 302.26 502.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a838207b-56c3-4394-9b19-e23cc22dc665")
+	)
+	(label "OUT_SPARE_LS1"
+		(at 302.26 502.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b461ec1-197a-49be-bb0a-70c4ee56824a")
+	)
+	(wire
+		(pts
+			(xy 330.2 505.46) (xy 337.82 505.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f60b9d-ad48-4136-b445-e5972b048ddd")
+	)
+	(label "SPARE_LS2"
+		(at 337.82 505.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efb33d4b-2d98-44d5-aa9c-fa5cacfe737c")
+	)
+	(wire
+		(pts
+			(xy 309.88 505.46) (xy 302.26 505.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8021449d-6826-4b29-864f-1ea0bb111da5")
+	)
+	(label "OUT_SPARE_LS2"
+		(at 302.26 505.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1cfb6336-01a2-4116-9d6d-0fd619d9540c")
+	)
+	(wire
+		(pts
+			(xy 340.36 156.21) (xy 332.74 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "405552ee-113b-4062-a5b1-91f11e501ef4")
+	)
+	(label "CRUISE_MAIN_LIGHT"
+		(at 332.74 156.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "117e0182-0e79-43ea-a5bf-eb6cbd716ae0")
+	)
+	(wire
+		(pts
+			(xy 340.36 158.75) (xy 332.74 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f053476b-9f6f-444b-8a85-034ce9df9787")
+	)
+	(label "CRUISE_SET_LIGHT"
+		(at 332.74 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6382224c-148f-4a30-9be1-b6c952d2cd3a")
+	)
+	(wire
+		(pts
+			(xy 340.36 161.29) (xy 332.74 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0aabdb-3d4b-4644-8106-905438bd6d83")
+	)
+	(label "SPARE_LS1"
+		(at 332.74 161.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "164df603-3330-432a-8797-614543077819")
+	)
+	(wire
+		(pts
+			(xy 340.36 163.83) (xy 332.74 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0415baf5-defd-49c0-b34d-ec2971d48466")
+	)
+	(label "SPARE_LS2"
+		(at 332.74 163.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b373c53c-8cef-4f05-83db-70d086a25957")
+	)
+	(wire
+		(pts
+			(xy 33.02 358.14) (xy 40.64 358.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a72bccb-9938-45c0-9407-22f8f27cf011")
+	)
+	(label "OUT_CRUISE_MAIN_LIGHT"
+		(at 40.64 358.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "106e76a9-37e7-4709-ba21-e12c0ead494a")
+	)
+	(wire
+		(pts
+			(xy 33.02 360.68) (xy 40.64 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afc0b8b3-fe1c-442c-a655-7ce1e0fed1b1")
+	)
+	(label "OUT_CRUISE_SET_LIGHT"
+		(at 40.64 360.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f84b3b6c-38a3-4bd7-a577-b31a3b6a62d3")
+	)
+	(wire
+		(pts
+			(xy 33.02 350.52) (xy 40.64 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3b96966-05fa-4912-b3bf-e788fbc86760")
+	)
+	(label "EVAP_A12"
+		(at 40.64 350.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64110859-9e28-4556-a704-9a6bd516ba00")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 129.54 459.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "f7d8f0d3-fed5-4078-8b51-9f84d604f1eb")
+		(property "Reference" "JP5"
+			(at 129.54 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNP 0R"
+			(at 129.54 462.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 129.54 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 129.54 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d3f8c51-e73a-4426-bf87-863c3fea37f5")
+		)
+		(pin "2"
+			(uuid "51486e38-b09b-43b1-ab0d-221ff5dce801")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 459.74) (xy 121.92 459.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08425967-fdf0-4342-8c86-7a8b3d6fc5dc")
+	)
+	(label "OUT_SPARE_LS1"
+		(at 121.92 459.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1eba0293-296d-4167-9c1b-8a44988cb982")
+	)
+	(wire
+		(pts
+			(xy 134.62 459.74) (xy 137.16 459.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "134c6472-7efb-4c2d-adbd-c130eb8b0795")
+	)
+	(label "EVAP_A12"
+		(at 137.16 459.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f71f0532-f656-4e05-a70f-c5ae0ab6d753")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 129.54 467.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41af6ccf-c6c9-4389-b02d-2d5fea9d4807")
+		(property "Reference" "P9"
+			(at 129.54 464.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OUT_SPARE_LS1"
+			(at 129.54 469.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 129.54 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "814ed8a6-6ee3-4472-b935-b809ff127c27")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 467.36) (xy 121.92 467.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebc643dc-2b53-422e-8d87-070161067042")
+	)
+	(label "OUT_SPARE_LS1"
+		(at 121.92 467.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5e3a5b01-1934-430d-99d7-a3d3189d551d")
+	)
+	(wire
+		(pts
+			(xy 33.02 353.06) (xy 40.64 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9491a7cc-a122-4fbb-859d-4c9e012e46a5")
+	)
+	(label "EVAP_A13"
+		(at 40.64 353.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0cff03e-01bf-49de-b0c1-b301789a59ce")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 129.54 474.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "5a0c1799-f605-482a-8439-6d1e04f54a64")
+		(property "Reference" "JP6"
+			(at 129.54 472.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNP 0R"
+			(at 129.54 477.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 129.54 474.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 474.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 129.54 474.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78f119dd-04a9-40f7-920c-81b0e5cb4ee2")
+		)
+		(pin "2"
+			(uuid "8c3dd1b8-72c4-42e9-9a11-b689832ba2cf")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 474.98) (xy 121.92 474.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b8065de-b3c9-4ed2-9eea-223d4fed971f")
+	)
+	(label "OUT_SPARE_LS2"
+		(at 121.92 474.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "20fa5d00-8fdf-4fc5-9466-cb1592fb85d3")
+	)
+	(wire
+		(pts
+			(xy 134.62 474.98) (xy 137.16 474.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe512d90-8877-47e3-884a-c0509a7d8f1a")
+	)
+	(label "EVAP_A13"
+		(at 137.16 474.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90c22e59-96d8-42cd-a722-9edea3e393f3")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 129.54 482.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e747447-3099-4ef4-98c5-b78093b5eae2")
+		(property "Reference" "P10"
+			(at 129.54 480.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OUT_SPARE_LS2"
+			(at 129.54 485.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 129.54 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb3ec304-9298-4c76-9091-cf6772e9ee5b")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 482.6) (xy 121.92 482.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60911659-1bae-4b80-ac64-0aa19c61a8fb")
+	)
+	(label "OUT_SPARE_LS2"
+		(at 121.92 482.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd4f87c6-f819-46fd-ab49-f30697ba9d66")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 490.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "23d36b7b-1a6b-46ad-aa2d-f4e89d17c724")
+		(property "Reference" "R38"
+			(at 124.46 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 124.46 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0805"
+			(at 124.46 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17520"
+			(at 124.46 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9a2856e-7a69-4b20-8068-6eba65bafd64")
+		)
+		(pin "2"
+			(uuid "be6b95f6-78ab-4375-b48d-b0fb9f7ccff5")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 490.22) (xy 121.92 490.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a02ea95d-2f33-4ffd-ba29-d5381e9c5cf2")
+	)
+	(label "OUT_TACH"
+		(at 121.92 490.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa3154a0-638f-4fbf-b7a0-32e745b6e8d2")
+	)
+	(wire
+		(pts
+			(xy 134.62 490.22) (xy 137.16 490.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f62f312e-1876-4d76-9376-92aa1e565560")
+	)
+	(symbol
+		(lib_id "hellen-one-common:+12V_RAW")
+		(at 137.16 490.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79e9eed8-4a3a-45ef-acef-44fd9c0681df")
+		(property "Reference" "#PWR082"
+			(at 133.35 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_RAW"
+			(at 140.3351 489.8517 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90d6b7dc-b57f-4cf8-a9fd-32f47b4265af")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "430afd97-00c6-4246-bcc0-557e92513f26")
+		(property "Reference" "R39"
+			(at 124.46 495.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 124.46 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0603"
+			(at 124.46 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 124.46 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5de22a1a-2bf6-42f1-bf9c-21dbad25eda4")
+		)
+		(pin "2"
+			(uuid "e9aa3edb-8086-44c3-94fc-4fb1f3035b95")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 497.84) (xy 121.92 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60ee4f33-a71a-41f0-a325-f0c7d72686e6")
+	)
+	(label "FP_CMD"
+		(at 121.92 497.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4fe40b85-ee62-4a29-b7eb-af22fc1aaf57")
+	)
+	(wire
+		(pts
+			(xy 134.62 497.84) (xy 137.16 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86660d4a-673a-44e2-99b0-cc8d5e7b414d")
+	)
+	(label "FUEL_PUMP_SIGNAL1"
+		(at 137.16 497.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d1581b5-9bd5-452f-82f0-26a4f7e52582")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "67fb55a2-6b52-4686-970d-ccfa4302f167")
+		(property "Reference" "R40"
+			(at 124.46 502.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 124.46 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0603"
+			(at 124.46 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 124.46 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5528a957-7def-4a04-a22f-f3e6b0b5050e")
+		)
+		(pin "2"
+			(uuid "c068e3f5-fdfb-4771-b06f-557ce970fd37")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 505.46) (xy 121.92 505.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f52def6-a744-464b-b7f3-ede859add4fc")
+	)
+	(label "FUEL_PUMP_SIGNAL1"
+		(at 121.92 505.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "054ab18e-1ecf-4bd5-8b9f-519eacc79e0f")
+	)
+	(wire
+		(pts
+			(xy 134.62 505.46) (xy 137.16 505.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af74009-300b-4d26-93a8-ed4c6a4410aa")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 137.16 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4141596-d150-4e0c-939d-f61412c3080a")
+		(property "Reference" "#PWR083"
+			(at 133.35 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 142.494 505.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "659f4cfa-7b43-41be-8215-75146183fdf7")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 513.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "3072e08e-cb01-4174-ab8d-687edd6ff5f4")
+		(property "Reference" "R41"
+			(at 124.46 510.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 124.46 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0603"
+			(at 124.46 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 124.46 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbe4ff58-010f-4f02-a08a-1754669811ca")
+		)
+		(pin "2"
+			(uuid "4e9d3527-4757-4b1f-824a-1a5beee27a9c")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 513.08) (xy 121.92 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17ae7f50-230a-4bd0-9ed5-4705fe956b0d")
+	)
+	(label "FUEL_PUMP_SIGNAL1"
+		(at 121.92 513.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bbe20308-86c4-4dbb-b0df-3477e1e7c1bc")
+	)
+	(wire
+		(pts
+			(xy 134.62 513.08) (xy 137.16 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98946e9e-a411-440f-b36a-b01bbc1f31d2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16 513.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "378e732e-a7cf-49f6-9121-2da9fcfc7449")
+		(property "Reference" "#PWR084"
+			(at 143.51 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 513.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7acc1ce2-86b1-47db-b8f1-b21dabbbf331")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 340.36 214.63) (xy 332.74 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "871f3486-f260-4a5e-b14c-8f40bb2f44e3")
+	)
+	(label "FP_STATUS_IN"
+		(at 332.74 214.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "af3ddeea-1394-49e1-8442-e7f579170f1c")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 129.54 520.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "893ada2f-617f-42d6-ba1b-cb23b6f09a7d")
+		(property "Reference" "JP7"
+			(at 129.54 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNP 0R"
+			(at 129.54 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 129.54 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 129.54 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2acdc0f0-fed1-48fb-a76f-515294eea7bc")
+		)
+		(pin "2"
+			(uuid "242f6211-3d3b-4b0a-88a5-1a939798ecff")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 520.7) (xy 121.92 520.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65f2b7f2-cebc-410b-a3aa-f6f601b56250")
+	)
+	(label "FP_STATUS"
+		(at 121.92 520.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "74e3161d-10f3-450f-802b-6882bd67fc1f")
+	)
+	(wire
+		(pts
+			(xy 134.62 520.7) (xy 137.16 520.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e27dd9-a2e7-450c-9187-4ceff42ccb8b")
+	)
+	(label "FP_STATUS_IN"
+		(at 137.16 520.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a233c34-7917-4e4e-9c47-892d34240830")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 528.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "431818ab-2194-4d4c-b3b3-d040ee26e796")
+		(property "Reference" "R42"
+			(at 124.46 525.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 124.46 530.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0603"
+			(at 124.46 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 124.46 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9480841f-74d6-4cf4-8f58-5447f6b1fed3")
+		)
+		(pin "2"
+			(uuid "7718b336-4a2e-4939-a3c4-bf5b5411d412")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 528.32) (xy 121.92 528.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00c29ce8-c604-44bb-8e98-49861cd36b33")
+	)
+	(label "IN_CAM"
+		(at 121.92 528.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1c4244f-a599-4aa3-9316-d2aebe09d246")
+	)
+	(wire
+		(pts
+			(xy 134.62 528.32) (xy 137.16 528.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5989f2a1-55a4-420b-b4b0-a68c1eefee1d")
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 137.16 528.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdd2cbe1-d9c2-4183-b21d-9300c937123f")
+		(property "Reference" "#PWR085"
+			(at 140.97 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 131.5656 528.6883 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "692b323a-0d66-436e-99c6-b2429346f7f6")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 124.46 535.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "a5d1775a-6285-4a3d-9a5b-38c966dc783e")
+		(property "Reference" "R43"
+			(at 124.46 533.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 124.46 538.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0603"
+			(at 124.46 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 124.46 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e138c6cc-2b0a-4692-9a6c-8d8ddf79d705")
+		)
+		(pin "2"
+			(uuid "b3822541-de54-4d00-96c5-ccfba497e757")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 535.94) (xy 121.92 535.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a5f9f62-c26c-4a6b-8751-aa2c8be9b7fb")
+	)
+	(label "IN_CAM_RH"
+		(at 121.92 535.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a2bc1842-42ac-4148-9c9d-0220fb74af7c")
+	)
+	(wire
+		(pts
+			(xy 134.62 535.94) (xy 137.16 535.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd55f7da-43e8-48f0-b077-10c444b2cb0d")
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 137.16 535.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca9c0ef2-6bfc-4ea1-9710-35bb3dcc9aa0")
+		(property "Reference" "#PWR086"
+			(at 140.97 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 131.5656 536.3083 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a8effa3-44c1-438b-adef-d0e0aa0db576")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 172.72 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "96f07ec6-52f1-4908-8db2-4239b0e0aa70")
+		(property "Reference" "R44"
+			(at 172.72 441.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 172.72 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0603"
+			(at 172.72 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 172.72 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6acb92c1-3492-4d9e-bb37-f93453461541")
+		)
+		(pin "2"
+			(uuid "6970e8b8-8559-4728-b16f-d849dcc5761c")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 444.5) (xy 170.18 444.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6c34f7d-ee5c-41e8-bc32-d1cfde39bd6a")
+	)
+	(label "IN_NEUTRAL_SWITCH"
+		(at 170.18 444.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "335a63fb-70e6-4d24-9b0d-3d92ed853dc1")
+	)
+	(wire
+		(pts
+			(xy 182.88 444.5) (xy 185.42 444.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3e72469-ca3a-4909-8d99-3dd854122096")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1238edb6-4a5c-4730-8599-212c168e0ca4")
+		(property "Reference" "#PWR087"
+			(at 191.77 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 444.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8360b85f-9c0d-419a-af4e-909e3b91f549")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Res")
+		(at 172.72 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "ee6a3b62-13f2-44c8-9814-dd3cb0ec5043")
+		(property "Reference" "R45"
+			(at 172.72 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 172.72 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:R0603"
+			(at 172.72 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 172.72 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50870232-cb35-47db-8c4b-246a4cfb3459")
+		)
+		(pin "2"
+			(uuid "19325c82-46ed-4e68-862f-7f522518989e")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 452.12) (xy 170.18 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "591bd925-a07d-434f-ad42-af9669031bc1")
+	)
+	(label "IN_FUEL_LEVEL"
+		(at 170.18 452.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2f049217-7075-4730-b104-6edb5d070cb9")
+	)
+	(wire
+		(pts
+			(xy 182.88 452.12) (xy 185.42 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54db4acf-860b-44db-a5be-7b70d5f8a5a7")
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 185.42 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05c9bc24-e4ed-4a72-842c-3f2e43a90403")
+		(property "Reference" "#PWR088"
+			(at 189.23 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 179.8256 452.4883 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df0812dc-b424-451a-ac57-c1ef03d43810")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 33.02 375.92) (xy 40.64 375.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19c371f5-0abe-4f68-9da5-85bcb8d6bd54")
+	)
+	(label "CHARGE_A22"
+		(at 40.64 375.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22b7cffe-111a-409f-a80c-165dcc66e20a")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 459.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "874cd025-7de1-478b-a079-5165e78b9d8a")
+		(property "Reference" "P11"
+			(at 177.8 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CHARGE_A22"
+			(at 177.8 462.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d52e528-2938-496c-8fc3-f90321327247")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 459.74) (xy 170.18 459.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "196a800e-863a-49d6-8475-84032c131865")
+	)
+	(label "CHARGE_A22"
+		(at 170.18 459.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ca27829-80ae-4c1b-8312-067b9c3b65ea")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 467.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67993ba8-65da-4749-b9c4-26850973c1d2")
+		(property "Reference" "P12"
+			(at 177.8 464.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FP_STATUS"
+			(at 177.8 469.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 467.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b32be764-042a-4912-a637-ea2e41d4cc4a")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 467.36) (xy 170.18 467.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35e3eb23-e4bd-4001-958e-21a8fec15fee")
+	)
+	(label "FP_STATUS"
+		(at 170.18 467.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc547f18-4ee6-4fcf-a636-7d0133cd0d1a")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 474.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03bbbe03-95c8-4b24-ac02-1a7e5d746133")
+		(property "Reference" "P13"
+			(at 177.8 472.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DLC6_D29"
+			(at 177.8 477.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 474.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 474.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f4e28f6-b5ec-448e-ae6c-790d238bae7a")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 474.98) (xy 170.18 474.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95d2bdd4-bcda-4c91-834d-f04d237bbbdb")
+	)
+	(label "DLC6_D29"
+		(at 170.18 474.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b5a11b91-0b74-4aa0-9a78-2c61ec182bb5")
+	)
+	(label "GND_SENSOR"
+		(at 53.34 200.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6affbe1-8766-490c-8a7d-5aa8adf93e55")
+	)
+	(label "GND_SENSOR"
+		(at 53.34 208.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a523904-c851-4e39-8e71-e00a18858b7e")
+	)
+	(label "GND_SENSOR"
+		(at 53.34 210.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "306c3664-bdf1-4102-a3df-b2389e586cc5")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 177.8 482.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1c5d732-dda7-4ebd-914e-fcc3153c8216")
+		(property "Reference" "JP8"
+			(at 177.8 480.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 177.8 485.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 177.8 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 177.8 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af8ef3a6-e677-4e80-bca0-0b2b4ba84b66")
+		)
+		(pin "2"
+			(uuid "997f8bf8-e708-43ff-bd8f-968bb3879a8d")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 482.6) (xy 170.18 482.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5f16cc3-4096-45f8-bd25-36580d14819f")
+	)
+	(label "GND_SENSOR"
+		(at 170.18 482.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ac9416b1-da71-4c1f-8e83-f7da34c13a2e")
+	)
+	(wire
+		(pts
+			(xy 182.88 482.6) (xy 185.42 482.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36f7d952-a0f3-4d23-b0e1-ed1e3badc0c1")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 482.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "869a98bd-e145-450d-8120-ef05541afd56")
+		(property "Reference" "#PWR089"
+			(at 191.77 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 482.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 482.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3888941-e193-47ef-8496-26d7c551807b")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Jumper-Pad-Pad")
+		(at 177.8 490.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "9ff8177c-64d8-4f0c-b3f7-986b9b76a2c1")
+		(property "Reference" "JP9"
+			(at 177.8 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNP 0R"
+			(at 177.8 492.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-0805-PAD"
+			(at 177.8 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 177.8 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae0b9014-a8d6-49c7-bcb4-0224c00e333d")
+		)
+		(pin "2"
+			(uuid "62ed963e-f830-49a0-a350-040ed9aedcfe")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "JP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 490.22) (xy 170.18 490.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da46e307-0512-4a6b-accf-dfc234028c5a")
+	)
+	(label "GND_SENSOR"
+		(at 170.18 490.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "12a0a8fb-9916-4ba5-8ff6-38b6f3d6649f")
+	)
+	(wire
+		(pts
+			(xy 182.88 490.22) (xy 185.42 490.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52852600-bb7f-4c3f-a880-51176a8e7c66")
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 185.42 490.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "356836f4-71ca-4cb6-8b29-ac50693e3a7f")
+		(property "Reference" "#PWR090"
+			(at 185.42 496.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 185.5343 495.8144 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 490.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d08425c-9d94-4351-9c3d-0ed83828f374")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 340.36 113.03) (xy 332.74 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5bffb79-35a6-432b-b7ee-7dd02211f91c")
+	)
+	(label "SPARE_INJ8"
+		(at 332.74 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fdb12a17-f637-4444-9004-02589ea25ca3")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c5fb489-0633-4d8d-8fb2-3bd6597ae94d")
+		(property "Reference" "P14"
+			(at 177.8 495.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPARE_INJ8"
+			(at 177.8 500.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b6ee86e-1c6f-4ea2-a953-91881671b4f6")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 497.84) (xy 170.18 497.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4dd7c6d-4b23-4c11-8752-e3ed0094fd0d")
+	)
+	(label "SPARE_INJ8"
+		(at 170.18 497.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bc872da1-0196-4513-a0c1-069b22a0ae1d")
+	)
+	(wire
+		(pts
+			(xy 340.36 166.37) (xy 332.74 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00c17b19-969d-4b71-9e82-e92c76899e4d")
+	)
+	(label "SPARE_IO9"
+		(at 332.74 166.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "899d53b0-27f6-4411-ab56-f204a1957225")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 505.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d92d7910-32eb-4b6e-9368-ab71691ecf66")
+		(property "Reference" "P15"
+			(at 177.8 502.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPARE_IO9"
+			(at 177.8 508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 505.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1aed2907-d2c0-45f2-bf08-01f7de692220")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 505.46) (xy 170.18 505.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d1e2a17-2fcc-4a7e-a1b5-fe82f521112a")
+	)
+	(label "SPARE_IO9"
+		(at 170.18 505.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "40c08ec3-8041-44e5-82d4-4d5c912eca9d")
+	)
+	(wire
+		(pts
+			(xy 340.36 168.91) (xy 332.74 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e486b06-5a91-42e6-96da-68c9779abe2b")
+	)
+	(label "SPARE_IO10"
+		(at 332.74 168.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e5d7566-ef1c-40ad-968f-51890fe4b2ea")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 513.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff8b8eaa-34d0-4d98-93ce-cd60aeb70f56")
+		(property "Reference" "P16"
+			(at 177.8 510.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPARE_IO10"
+			(at 177.8 515.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 513.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e396006-832b-4b7a-8ee9-54b884fd7be9")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 513.08) (xy 170.18 513.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "379f23c3-fc5d-4137-9446-cd9aeebe90bc")
+	)
+	(label "SPARE_IO10"
+		(at 170.18 513.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "27b89a01-4359-418a-a29d-56cdc8709144")
+	)
+	(wire
+		(pts
+			(xy 340.36 171.45) (xy 332.74 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4bc0f54-806e-4c29-afaf-a1876b816eef")
+	)
+	(label "SPARE_IO11"
+		(at 332.74 171.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1e49e979-68cc-4dd0-858e-0e39c4f8281d")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 520.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1070f883-1201-475f-a443-e4b5c81ea6e3")
+		(property "Reference" "P17"
+			(at 177.8 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPARE_IO11"
+			(at 177.8 523.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 520.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "727690f5-a78c-4af0-858e-65944125f66c")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 520.7) (xy 170.18 520.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7707dff4-ec12-45f2-993a-dc839bb8db8c")
+	)
+	(label "SPARE_IO11"
+		(at 170.18 520.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "01ac1d6a-1edd-45e4-98f9-5e9283ee0d7b")
+	)
+	(wire
+		(pts
+			(xy 340.36 176.53) (xy 332.74 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b363a5ff-223e-46e1-9d68-f71ac6bfde39")
+	)
+	(label "SPARE_IO13"
+		(at 332.74 176.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3bd0cdf-ee3e-432a-8e1d-8ba1fcb046a6")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 528.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b45dd23-07fb-4b52-ab90-41fef44a2c2a")
+		(property "Reference" "P18"
+			(at 177.8 525.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPARE_IO13"
+			(at 177.8 530.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 528.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc2e29d6-4a60-4b6b-b6e0-5561185c15e1")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 528.32) (xy 170.18 528.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfe8fb49-5025-4b92-b7ff-0745656d94ae")
+	)
+	(label "SPARE_IO13"
+		(at 170.18 528.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d5b73e64-f6e6-4ad8-8814-dffc2001351a")
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 177.8 535.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72352acd-ddff-4b40-8eca-db865bf3d681")
+		(property "Reference" "P19"
+			(at 177.8 533.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 177.8 538.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 177.8 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5461252-410f-44cd-9df3-48b9c1d45bcc")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 172.72 535.94) (xy 170.18 535.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d38179e-3227-4cae-80ae-232a35352787")
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 170.18 535.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "04d27c55-26f2-48c0-b847-690bd47a7ac6")
+		(property "Reference" "#PWR091"
+			(at 173.99 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 164.5856 536.3083 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 535.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da061376-8692-4f51-9e2e-c64c82fda362")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 226.06 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1581ad3-dc70-494c-9205-c8afe992d3ba")
+		(property "Reference" "P20"
+			(at 226.06 441.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 226.06 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 226.06 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19ce4298-d627-4939-9901-e27f03a476a9")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 220.98 444.5) (xy 218.44 444.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c12b8acf-5570-4322-b7c5-ad10e433aaed")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 218.44 444.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8ef6b3c-1e27-455e-9912-89c6034ed3c3")
+		(property "Reference" "#PWR092"
+			(at 222.25 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 215.9 444.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 444.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e9f9ff6-4a17-4b8b-bb73-87f90c21548f")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 226.06 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b8f559e-6dc5-4d07-b8c2-241887a89959")
+		(property "Reference" "P21"
+			(at 226.06 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_RAW"
+			(at 226.06 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 226.06 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a924e1b6-a8eb-4f2d-8538-75cc603ba06e")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 220.98 452.12) (xy 218.44 452.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d0156a-82c9-458a-a21f-8c52e85f685e")
+	)
+	(symbol
+		(lib_id "hellen-one-common:+12V_RAW")
+		(at 218.44 452.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24e030a0-2858-4ee5-b5aa-2b1bb89327c4")
+		(property "Reference" "#PWR093"
+			(at 214.63 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_RAW"
+			(at 221.6151 451.7517 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 452.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44cccfd9-506e-4e5d-b68e-71391da3bd73")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:Pad")
+		(at 226.06 459.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44ee44de-81f1-4aff-a1bb-a83b106b4de3")
+		(property "Reference" "P22"
+			(at 226.06 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 462.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PAD-TH"
+			(at 226.06 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f2ab242-d09a-4e6e-b05c-980f35fb4779")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "P22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 220.98 459.74) (xy 218.44 459.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e623485-52d6-44d4-8543-418602a39faf")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 459.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1c1034e-5b4a-480a-b0e8-320941d1163a")
+		(property "Reference" "#PWR094"
+			(at 224.79 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 459.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "abedb1a7-643a-48b8-89ef-132712239a09")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hellen-one-common:PROTO_AREA")
+		(at 76.2 548.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ed86cd9-fc06-4506-98c1-42ae9c050bc3")
+		(property "Reference" "G1"
+			(at 76.2 546.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PROTO_AREA"
+			(at 76.2 551.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hellen-one-common:PROTO_AREA"
+			(at 76.2 548.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 548.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6537a959-8ab9-4463-bd44-42a706fbb5f3")
+		)
+		(pin "10"
+			(uuid "11bda820-28e3-4f28-98db-aff4b2e9bf13")
+		)
+		(pin "11"
+			(uuid "11a33b3c-14db-4f50-8c77-42a39478052d")
+		)
+		(pin "12"
+			(uuid "cb050d77-dd2d-43d3-bc2b-9a9deec2f8b4")
+		)
+		(pin "13"
+			(uuid "115e3a9d-70a6-4a1f-a713-dd341366d2e4")
+		)
+		(pin "14"
+			(uuid "6ca9ebcf-2a32-4efc-beb8-ce9a6c620a82")
+		)
+		(pin "15"
+			(uuid "6df1fa1b-a339-449f-bb45-c506f6f4b807")
+		)
+		(pin "2"
+			(uuid "b444f159-faf3-498b-a5fb-46594b61855c")
+		)
+		(pin "3"
+			(uuid "4e916737-19a1-4bc8-b412-ba8dd5513dfd")
+		)
+		(pin "4"
+			(uuid "a305cb50-a5ac-4d32-83d4-95a697dae6a9")
+		)
+		(pin "5"
+			(uuid "3f9631c0-4b2a-40dc-9bce-94c58f43e85a")
+		)
+		(pin "6"
+			(uuid "77c85a38-57a3-4d81-8835-8a976df8afa7")
+		)
+		(pin "7"
+			(uuid "9d67ca8a-e80c-4550-b3df-d52c39281ca0")
+		)
+		(pin "8"
+			(uuid "e047a631-8e46-4ff0-9d00-0342d8757015")
+		)
+		(pin "9"
+			(uuid "7931516d-e4a4-45fb-8dee-20eb8b468de8")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "G1")
 					(unit 1)
 				)
 			)

@@ -30,7 +30,7 @@ Needs `kicad-cli` and `gridcraft-cli`. The status column is judged on the last s
 
 ## Rev b wiring (branch `rev-b-wiring`, 2026-10-13)
 
-Status on this branch: **78 OK**, 21 not wired (optional loads, plus the front A/F sensor awaiting a decision), 33 unused by the car, 2 to check (D29, A22, both left open on purpose), 1 label only (D28 fuel pump control unit status, not needed to run).
+Status on this branch: **94 OK**, 8 not wired (defogger/light/blower load inputs D11-D13, test mode D14, blow-by D24, EVAP sensors C12/C21 and valve A24), 33 unused by the car.
 
 **Fixed:** MAF/MAP swap (C23 -> IN_MAF, C22 -> IN_MAP), injector ground D7 and A34 to GND, stray D22 removed from the crank, clutch renamed from IN_CLT.
 
@@ -66,7 +66,49 @@ Status on this branch: **78 OK**, 21 not wired (optional loads, plus the front A
 
 Q9-Q16 are two more copies of the 4-channel `INJ4` low-side sheet (LS2, LS3).
 
-**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q16, R11-R23).
+| C7 / C10 / C11 | Cruise main / resume / set (12 V when pressed) | IN_D1 / IN_D3 / IN_D4 | R35-R37 1k 1206 pull-downs |
+| A15 / A16 | Cruise main lamp / set lamp | OUT_IO5 / OUT_IO6 -> Q17 / Q18 | sheet LS4 |
+| D20 | K-line (SSM) | M10 LIN module, UART8 TX/RX | |
+| A2+A3, A33, A26, A25 | LSU 4.9 (see below) | M3 WBO module, CAN to M1 CANH/CANL | |
+
+### Front O2: Bosch LSU 4.9 on the rusEFI WBO module (M3)
+
+Wired like rusefi/hellen154hyundai: module LSU_H- to GND, LSU_H+ is the switched heater return, SEL1 tied to PULL_DOWN1, CAN to the MCU. Heater +12 V stays on the car harness (front sensor plug B18 pin 2, from the main relay).
+
+The stock harness has four wires plus a shield to the front sensor, so the LSU needs an adapter pigtail at plug B18:
+
+| Car harness | ECM pin | LSU 4.9 pin |
+|---|---|---|
+| B18 pin 2 (+12 V, main relay) | - | 4 H+ (grey) |
+| B18 pin 1 (heater return) | A2 + A3 | 3 H- (white) |
+| B18 pin 3 | A33 | 6 Un (black) |
+| B18 pin 4 | A26 | 2 Vm (yellow) |
+| shield drain | A25 | 1 Ip (red) |
+| none | pad P4 only | 5 Rtrim (green) |
+
+Before relying on it: confirm the A25 shield is not grounded at the sensor end (it becomes a signal wire), and whether the WBO firmware needs Rtrim. JP1-JP3 (fitted 0R) take Un/Vm/Ip to the harness; remove them and use pads P1-P5 for a direct LSU pigtail instead.
+
+### Option parts (footprints on the board, not assembled)
+
+Listed in `bom_replace_rusefiSTI2004-a.csv` (Hellen's removal list) and marked DNP in KiCad. Fit one by deleting its line.
+
+| Ref | Option | When to fit |
+|---|---|---|
+| R38 2.2k 0805 | Tach A23 pull-up to +12V_RAW | tach needle dead |
+| R39 100R | *Fitted*: series resistor on the FPCU command | always |
+| R40 1k / R41 10k | FPCU command B26 pull-up to 5 V / pull-down | if the FPCU input needs it (scope the stock ECM first) |
+| JP7 | D28 FPCU status -> IN_AT2 | to read pump status |
+| R42 / R43 1k | Extra pull-ups on cam LH / RH | weak or noisy cam signal |
+| R44 4.7k | Neutral switch pull-down | if neutral turns out to be 12 V-active |
+| R45 1k | Fuel level pull-up | to tune the fuel gauge reading |
+| JP4 | D29 (DLC pin 6) -> K-line | if D29 is a second K-line |
+| JP5 / JP6 | Spare low-side LS4 ch3 / ch4 -> EVAP A12 / A13 | to drive the EVAP solenoids |
+| JP8 (fitted) / JP9 | Sensor ground GND_SENSOR (C31, C34, C35) -> GND / -> GNDA | move sensor returns to analog ground |
+| R30-R37 | Pull-down values (fitted) | change the value if a switch reads wrong |
+
+Pads: P1-P7 LSU and CAN, P8 K-line, P9/P10 spare low-side outputs, P11 A22 charging wire, P12 FPCU status, P13 D29, P14-P18 spare MCU pins (OUT_INJ8, OUT_IO9-11, OUT_IO13), P19-P22 rails (+5VA, +3.3V, +12V_RAW, GND), plus a prototype area G1 for any extra circuit.
+
+**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q20, R11-R22 in the low-side sheets, R30-R45, JP1-JP9, P1-P22, M10, G1).
 
 ## Findings (2026-10-13, master vs `rev-b-schematic-fixes`)
 
