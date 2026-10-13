@@ -37,6 +37,7 @@ EXPECT = {
     "C7": "CRUISE_MAIN", "C10": "CRUISE_RESUME", "C11": "CRUISE_SET", "A15": "CRUISE_MAIN_LIGHT", "A16": "CRUISE_SET_LIGHT",
     "D20": "K_LINE", "A2": "WBO_HEATER", "A3": "WBO_HEATER", "A33": "WBO_UN", "A26": "WBO_VM", "A25": "WBO_IP",
     "A12": "EVAP_A12", "A13": "EVAP_A13", "D28": "FP_STATUS", "D29": "DLC6", "A22": "CHARGE_A22",
+    "D11": "DEFOG", "D12": "SMALL_LIGHT", "D13": "BLOWER", "D14": "TEST_MODE", "D24": "BLOWBY",
     "A1": "CLUTCH", "A6": "^GND$", "A7": "^GND$", "A14": "PURGE", "A18": r"VVT_RH\+|12V_RAW", "A19": r"VVT_LH\+|12V_RAW",
     "A23": "TACH", "A28": "VVT_RH-", "A29": "VVT_LH-", "A32": "WG|WASTEGATE", "A34": "^GND$",
 }

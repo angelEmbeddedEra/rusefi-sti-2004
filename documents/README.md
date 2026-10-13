@@ -30,11 +30,11 @@ Needs `kicad-cli` and `gridcraft-cli`. The status column is judged on the last s
 
 ## Rev b wiring (branch `rev-b-wiring`, 2026-10-13)
 
-Status on this branch: **94 OK**, 8 not wired (defogger/light/blower load inputs D11-D13, test mode D14, blow-by D24, EVAP sensors C12/C21 and valve A24), 33 unused by the car.
+Status on this branch: **99 OK**, 3 not wired (EVAP: fuel temperature C12, tank pressure C21, tank sensor valve A24; rusEFI has no EVAP diagnostics), 33 unused by the car.
 
 **Fixed:** MAF/MAP swap (C23 -> IN_MAF, C22 -> IN_MAP), injector ground D7 and A34 to GND, stray D22 removed from the crank, clutch renamed from IN_CLT.
 
-**Cam sensors are Hall, not VR** (3-wire, 12 V from the harness, open collector; WI-114). M6 (VR module) is off the LH cam; both cams go straight to pulled-up MCU inputs. M6 is now unused.
+**Cam sensors are Hall, not VR** (3-wire, 12 V from the harness, open collector; WI-114). M6 (VR module) is off the LH cam; both cams go straight to pulled-up MCU inputs. M6 has been removed.
 
 **MCU (M1) assignments for the firmware config:**
 
@@ -70,6 +70,10 @@ Q9-Q16 are two more copies of the 4-channel `INJ4` low-side sheet (LS2, LS3).
 | A15 / A16 | Cruise main lamp / set lamp | OUT_IO5 / OUT_IO6 -> Q17 / Q18 | sheet LS4 |
 | D20 | K-line (SSM) | M10 LIN module, UART8 TX/RX | |
 | A2+A3, A33, A26, A25 | LSU 4.9 (see below) | M3 WBO module, CAN to M1 CANH/CANL | |
+| D11 / D12 / D13 / D14 | Defogger / small lights / blower (A/C) / test mode | M11 dinput4 -> IO5 / IO6 / IO7 / OUT_IO13 | close to ground; 680k pull-up to 5 V, R49-R51 10k options |
+| D24 | Blow-by (PCV) diagnosis | M12 dinput4 ch4 -> OUT_INJ8 | |
+| aux pads P29-P31 | AUX_IN1-3: launch / 2-step button, map switch, spare | M12 dinput4 ch1-3 -> OUT_IO9 / OUT_IO10 / OUT_IO11 | expect 12 V when pressed; 680k pull-down, R46-R48 4.7k options |
+| USB J2 (mini-B) | TunerStudio | M1 USB D+/D-/VBUS/ID | |
 
 ### Front O2: Bosch LSU 4.9 on the rusEFI WBO module (M3)
 
@@ -88,6 +92,16 @@ The stock harness has four wires plus a shield to the front sensor, so the LSU n
 
 Before relying on it: confirm the A25 shield is not grounded at the sensor end (it becomes a signal wire), and whether the WBO firmware needs Rtrim. JP1-JP3 (fitted 0R) take Un/Vm/Ip to the harness; remove them and use pads P1-P5 for a direct LSU pigtail instead.
 
+### Board-level fixes (2026-10-13)
+
+- **M1 module ground (`GND_G`) was not connected.** Now on GND.
+- **F5 (JK-nSMD005, a 50 mA PTC) was in series with the throttle motor supply** (D6 -> M2). It would have tripped as soon as the motor moved. Removed; D6 feeds +12V_ETB directly. The car fuses the throttle relay feed upstream.
+- **No USB.** J2 mini-B (vertical, C13453) to the MCU USB pins. BOOT0 pad P23 with open link JP10 to 3.3 V for DFU recovery; SWD pads P24-P26 (SWDIO, SWCLK, NRST).
+- **Removed unused modules:** M6 (VR, the cams are Hall) and M4 (CAN; M1 has its own transceiver). Their MCU pins OUT_PWM3 and IN_RES2 are on pads P27/P28.
+- **More inputs:** two Hellen dinput4 modules (M11, M12) on spare 5 V-tolerant GPIOs. An I2C expander was considered: rusEFI has no driver for I2C input expanders, and its one supported switch-input chip (MC33972, SPI) is obsolete. I2C SCL/SDA are on pads in case an expander is added later.
+- Spare 5 V push-pull outputs IGN6-8 on pads.
+- Still unused: M7 (second knock module; the STI has one knock sensor) and M8 (second power module, earmarked to give the pedal C15 its own 5 V).
+
 ### Option parts (footprints on the board, not assembled)
 
 Listed in `bom_replace_rusefiSTI2004-a.csv` (Hellen's removal list) and marked DNP in KiCad. Fit one by deleting its line.
@@ -105,10 +119,13 @@ Listed in `bom_replace_rusefiSTI2004-a.csv` (Hellen's removal list) and marked D
 | JP5 / JP6 | Spare low-side LS4 ch3 / ch4 -> EVAP A12 / A13 | to drive the EVAP solenoids |
 | JP8 (fitted) / JP9 | Sensor ground GND_SENSOR (C31, C34, C35) -> GND / -> GNDA | move sensor returns to analog ground |
 | R30-R37 | Pull-down values (fitted) | change the value if a switch reads wrong |
+| R46-R48 4.7k | Aux input pull-downs | if an aux button input floats |
+| R49-R51 10k | Pull-ups on defogger / lights / blower lines | if a load line floats when off |
+| JP10 | BOOT0 to 3.3 V | bridge to force USB DFU bootloader |
 
-Pads: P1-P7 LSU and CAN, P8 K-line, P9/P10 spare low-side outputs, P11 A22 charging wire, P12 FPCU status, P13 D29, P14-P18 spare MCU pins (OUT_INJ8, OUT_IO9-11, OUT_IO13), P19-P22 rails (+5VA, +3.3V, +12V_RAW, GND), plus a prototype area G1 for any extra circuit.
+Pads: P1-P7 LSU and CAN, P8 K-line, P9/P10 spare low-side outputs, P11 A22 charging wire, P12 FPCU status, P13 D29, P14-P18 spare MCU pins (IGN6-8, I2C SCL/SDA), P19-P22 rails, P23 BOOT0, P24-P26 SWD, P27/P28 OUT_PWM3 / IN_RES2, P29-P31 aux inputs (+5VA, +3.3V, +12V_RAW, GND), plus a prototype area G1 for any extra circuit.
 
-**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q20, R11-R22 in the low-side sheets, R30-R45, JP1-JP9, P1-P22, M10, G1).
+**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q20, R11-R22 in the low-side sheets, R30-R51, JP1-JP10, P1-P31, M10-M12, J2, G1).
 
 ## Findings (2026-10-13, master vs `rev-b-schematic-fixes`)
 
