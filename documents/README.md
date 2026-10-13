@@ -34,7 +34,7 @@ The schematic is split by function (root page `rusefiSTI2004.kicad_sch` shows th
 | Comms | `Comms.kicad_sch` | LSU 4.9 wideband (M3), K-line (M10), CAN |
 | Aux and expansion | `Aux.kicad_sch` | J3 Mini-Fit Jr, its fuses, spare pins and rails on pads, prototype area |
 
-Checks: `python3 tools/sch_overlap_check.py <sheet>.kicad_sch` (no text may overlap), `python3 tools/pinout_check.py` (car pinout), `python3 tools/options_table.py` (option list).
+Checks: `kicad-tidy-check` (house style on every sheet, netlist unchanged, 0 overlaps; shared tools in EmbeddedEra/KiCad `scripting/schematic`), `python3 tools/pinout_check.py` (car pinout), `python3 tools/options_table.py` (option list).
 
 ## Libraries, template and KiCad version
 

@@ -2,7 +2,7 @@
 
 Q: How do I build the board package?
 
-A: ``tools/create-board.sh`` on our machine (docker, KiCad 10). Output lands in ``boards/<board>-<rev>/``. There is no GitHub workflow.
+A: ``hellen-create-board`` in this folder (EmbeddedEra/KiCad scripting/hellen; docker, KiCad 10). Output lands in ``boards/<board>-<rev>/``. There is no GitHub workflow.
 
 Q: How do I get latest hellen-one?
 
