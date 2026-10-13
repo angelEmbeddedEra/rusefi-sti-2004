@@ -2708,16 +2708,6 @@
 		)
 		(uuid "a7b3062d-3aee-4b28-82a3-6cd18cd0efbd")
 	)
-	(text "D: B137"
-		(exclude_from_sim no)
-		(at 99.314 93.726 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ec91205e-3840-4f78-a7c4-e7bb5abaab43")
-	)
 	(text "J3: Molex Mini-Fit Jr 2x7 (pinout in documents/README.md): fused 12 V and 5 V, sensor ground, three digital\ninputs, two analog inputs, two low-side outputs, CAN.\nSpare MCU pins (IGN6-8, I2C, OUT_PWM3, IN_RES2) and every rail are on pads next to the prototype area G1."
 		(exclude_from_sim no)
 		(at 15.24 22.86 0)

@@ -66,6 +66,16 @@ def text_box(s, x, y, angle, size, justify):
     return (min(xs) - PAD, min(ys) - PAD, max(xs) + PAD, max(ys) + PAD)
 
 
+# KiCad draws a symbol field's left/right justification mirrored for some orientations. Measured
+# from kicad-cli 10 PDF output over every field angle x rotation x mirror (2026-10-13):
+# with A = field angle + symbol rotation, it flips for A in the set below.
+_HFLIP = {None: (180, 270), 'x': (90, 180), 'y': (0, 270)}
+
+
+def field_hflip(drawn_angle, rot, mirror):
+    return int(round(drawn_angle)) % 360 in _HFLIP[mirror]
+
+
 def effects(node):
     e = one(node, 'effects')
     size, just, hide = 1.27, '', False
@@ -134,6 +144,8 @@ def items(path):
                 continue
             pa = one(p, 'at')
             ang = (float(pa[3]) if len(pa) > 3 else 0) + rot      # field angles are relative to the symbol
+            if field_hflip(ang, rot, mir):
+                just = just.replace('left', '\0').replace('right', 'left').replace('\0', 'right')
             out.append(('field', ref, p[2], text_box(p[2], float(pa[1]), float(pa[2]), ang, size, just or 'center')))
         if lib is not None and not ref.startswith('#'):
             b = body_box(lib, unit, x, y, rot, mir)

@@ -1149,7 +1149,7 @@
 		)
 		(uuid "28f87c2e-4742-4966-a231-0f1c969c57ed")
 	)
-	(text "Crank: 2-wire VR sensor (B10 +, B22 -) into M5. Knock (C25) into M13. M7 is a spare knock channel (not used).\nCams: 3-wire Hall sensors (WI-114), wired straight to M1 inputs that have pull-ups; crossed parts = stronger pull-ups.\nAnalog sensors (MAF, MAP, IAT, ECT, TPS, pedal, TGV, fuel level) go straight to M1 inputs by net label.\nSensor returns C31/C34/C35 (GND_SENSOR): to GND through the fitted 0R, or to GNDA through the open link."
+	(text "Crank: 2-wire VR sensor (B10 +, B22 -) into M5. Knock (C25) into M13 (the STI has one knock sensor).\nCams: 3-wire Hall sensors (WI-114), wired straight to M1 inputs that have pull-ups; crossed parts = stronger pull-ups.\nAnalog sensors (MAF, MAP, IAT, ECT, TPS, pedal, TGV, fuel level) go straight to M1 inputs by net label.\nSensor returns C31/C34/C35 (GND_SENSOR): to GND through the fitted 0R, or to GNDA through the open link."
 		(exclude_from_sim no)
 		(at 15.24 22.86 0)
 		(effects
@@ -2164,95 +2164,6 @@
 			(project "rusefiSTI2004"
 				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hellen-one-knock-0.2:Module-knock-0.2")
-		(at 256.54 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "735be1e0-59be-41b0-b83e-0e981d50d6a2")
-		(property "Reference" "M7"
-			(at 299.72 47.0214 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Module-knock-0.2"
-			(at 299.72 49.5614 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "hellen-one-knock-0.2:knock"
-			(at 256.54 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Hellen-One Knock Pre-amplifier Module"
-			(at 256.54 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "E2"
-			(uuid "22a9f3f7-3035-4707-b5ab-41a79740d3db")
-		)
-		(pin "W2"
-			(uuid "402b94a4-dd9e-4673-839a-d17f8cbb526e")
-		)
-		(pin "E1"
-			(uuid "004cc6dd-16c2-4bda-bc7b-46dea1de55d2")
-		)
-		(pin "E3"
-			(uuid "697486b0-8c31-457f-b57c-9cbdd65b67de")
-		)
-		(pin "W1"
-			(uuid "9c0a64e6-766e-4747-9917-1d0e838f58db")
-		)
-		(instances
-			(project ""
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/174c6130-5ef2-5679-8495-7e10ec78ddae"
-					(reference "M7")
 					(unit 1)
 				)
 			)

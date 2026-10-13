@@ -28,7 +28,7 @@ The schematic is split by function (root page `rusefiSTI2004.kicad_sch` shows th
 | Vehicle connector | `Connector.kicad_sch` | J1, all four ECM plugs (D=B137, C=B136, B=B135, A=B134), coil-line fuses, battery divider |
 | Power | `Power.kicad_sch` | M14 main power module, M8 pedal-only 5 V |
 | MCU and USB | `Mcu.kicad_sch` | M1 STM32F7 module, USB-C with ESD, BOOT0 and SWD |
-| Sensors | `Sensors.kicad_sch` | crank VR (M5), knock (M13, spare M7), cam pull-up options, sensor-ground selection |
+| Sensors | `Sensors.kicad_sch` | crank VR (M5), knock (M13), cam pull-up options, sensor-ground selection |
 | Switch inputs | `Inputs.kicad_sch` | dinput4 modules (M11, M12), pull-downs and pull-up options for every switch |
 | Outputs | `Outputs.kicad_sch` | low-side driver sheets (INJ, LS1-LS4 in `INJ4.kicad_sch`), throttle (M2), TGV (M9), fuel pump options |
 | Comms | `Comms.kicad_sch` | LSU 4.9 wideband (M3), K-line (M10), CAN |
@@ -126,7 +126,7 @@ Before relying on it: confirm the A25 shield is not grounded at the sensor end (
 - Spare 5 V push-pull outputs IGN6-8 on pads.
 - **Pedal 5 V is now its own rail.** The pedal supply C15 (net APS_PS_5V) comes from the second power module M8's protected 5 V; the throttle/MAP/TGV sensor supply C16 stays on M14 (+5VAS). A shared rail would let one short take out both pedal and throttle sensors and defeat their plausibility check. JP12 (open) puts the pedal back on +5VAS if M8 is not fitted; M8's power-good is on pad P32.
 - **CAN termination:** M1 already has 120R across CANH/CANL (R100 on mega-mcu144 sheet 15); the WBO module has none. R54 (120R, DNP) at the aux connector terminates the far end if an external device on the aux CAN does not.
-- Still unused: M7 (second knock module; the STI has one knock sensor).
+- Removed M7 (second knock module): the STI has one knock sensor (C25), read by M13.
 
 ### Aux connector J3: Molex Mini-Fit Jr 2x7 (5566-14A vertical, Molex 39281143)
 
