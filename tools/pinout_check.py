@@ -28,11 +28,13 @@ EXPECT = {
     "C22": "MAP", "C23": "MAF", "C25": "KNOCK", "C26": "TUMBLE_SENSOR_LH", "C27": "TUMBLE_SENSOR_RH",
     "C28": "PPS_SUB|APS_SUB", "C29": "TPS_SUB",
     "C31": "GND", "C32": "GND", "C33": "GND", "C34": "GND", "C35": "GND",
-    "B1": "^GND$", "B4": "^GND$", "B5": "12V_RAW", "B6": "12V_RAW", "B8": "CAM.*LH", "B9": "CAM.*RH",
+    "B1": "^GND$", "B4": "^GND$", "B5": "12V_RAW", "B6": "12V_RAW", "B8": "IN_CAM$|CAM.*LH", "B9": "CAM.*RH",
     "B10": r"CRANK\+", "B12": "^GND$", "B15": "IGN4", "B16": "IGN3", "B17": "IGN2", "B18": "IGN1",
     "B19": "BACK_UP", "B22": "CRANK-", "B24": "FAN_RELAY_2", "B25": "FAN_RELAY_1",
     "B26": "FUEL_PUMP_SIGNAL1", "B27": "VSS", "B31": "GND", "B35": "THROTT?L?E_RELAY|ETB_RELAY",
-    "A1": "CLUTCH", "A6": "^GND$", "A7": "^GND$", "A14": "PURGE", "A18": r"VVT_RH\+", "A19": r"VVT_LH\+",
+    "D16": "AC_REQUEST", "D25": "O2S", "C8": "BRAKE_SW2", "C9": "BRAKE_SW1", "B2": "O2_HEATER", "B33": "AC_RELAY",
+    "A8": "TGV_CLOSE", "A10": "TGV_CLOSE", "A9": "TGV_OPEN", "A11": "TGV_OPEN", "A17": "MIL",
+    "A1": "CLUTCH", "A6": "^GND$", "A7": "^GND$", "A14": "PURGE", "A18": r"VVT_RH\+|12V_RAW", "A19": r"VVT_LH\+|12V_RAW",
     "A23": "TACH", "A28": "VVT_RH-", "A29": "VVT_LH-", "A32": "WG|WASTEGATE", "A34": "^GND$",
 }
 RAILS = {"GND", "GNDA", "+12V_RAW"}

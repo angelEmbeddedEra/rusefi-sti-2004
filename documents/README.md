@@ -28,6 +28,46 @@ python3 tools/pinout_check.py --sch master=a.kicad_sch --sch rev-b=b.kicad_sch
 
 Needs `kicad-cli` and `gridcraft-cli`. The status column is judged on the last schematic given.
 
+## Rev b wiring (branch `rev-b-wiring`, 2026-10-13)
+
+Status on this branch: **78 OK**, 21 not wired (optional loads, plus the front A/F sensor awaiting a decision), 33 unused by the car, 2 to check (D29, A22, both left open on purpose), 1 label only (D28 fuel pump control unit status, not needed to run).
+
+**Fixed:** MAF/MAP swap (C23 -> IN_MAF, C22 -> IN_MAP), injector ground D7 and A34 to GND, stray D22 removed from the crank, clutch renamed from IN_CLT.
+
+**Cam sensors are Hall, not VR** (3-wire, 12 V from the harness, open collector; WI-114). M6 (VR module) is off the LH cam; both cams go straight to pulled-up MCU inputs. M6 is now unused.
+
+**MCU (M1) assignments for the firmware config:**
+
+| Car pin | Signal | M1 pin | Notes |
+|---|---|---|---|
+| B8 | Cam LH (Hall) | IN_CAM | 2.35k pull-up on module |
+| B9 | Cam RH (Hall) | IN_AUX1 | 5k pull-up |
+| D9 | Neutral switch | IN_AUX2 | closes to ground |
+| D10 | Power steering switch | IN_AUX3 | closes to ground |
+| D8 | Starter | IN_SENS2 | 12 V when cranking; R19 4.7k pull-down |
+| D16 | A/C request | IN_SENS3 | 12 V = on; R20 pull-down |
+| C8 | Brake switch 2 (stop lamp) | IN_SENS4 | 12 V when pressed; R21 pull-down |
+| A1 | Clutch switch | IN_RES1 | 12 V released, 0 V pressed; R22 pull-down |
+| C9 | Brake switch 1 | IN_O2S2 | 12 V released, 0 V pressed; R23 pull-down |
+| C23 | MAF | IN_SENS1 | |
+| C22 | MAP | IN_MAP1 | |
+| C26 / C27 | TGV position LH / RH | IN_MAP2 / IN_MAP3 | |
+| C20 | Fuel level | IN_AT1 | muxed input, slow signal |
+| D25 | Rear O2 | IN_O2S | |
+| B26 | Fuel pump control unit command | IGN5 | 5 V push-pull PWM; 0 V = pump off |
+| A32 | Wastegate | OUT_PWM1 -> Q9 | low-side, 12 V from harness |
+| A28 / A29 | AVCS RH / LH (-) | OUT_PWM4 / OUT_PWM5 -> Q10 / Q11 | ~300 Hz; (+) A18/A19 now fed from +12V_RAW (main relay) |
+| A14 | Purge | OUT_PWM7 -> Q12 | |
+| A17 | Check engine lamp | OUT_IO1 -> Q13 | |
+| B2 | Rear O2 heater | OUT_IO2 -> Q14 | |
+| B33 | A/C relay | OUT_IO3 -> Q15 | |
+| A23 | Tach | OUT_IO4 -> Q16 | open drain; add a pull-up to 12 V if the needle is dead |
+| A9+A11 / A8+A10 | TGV open / close (both banks in parallel) | M9 motor driver: PWM = OUT_IO12, DIR = IO3, DIS = IO4 | owner does not use TGVs; wired anyway |
+
+Q9-Q16 are two more copies of the 4-channel `INJ4` low-side sheet (LS2, LS3).
+
+**Next:** in KiCad, *Update PCB from Schematic*, then place and route the new parts (Q9-Q16, R11-R23).
+
 ## Findings (2026-10-13, master vs `rev-b-schematic-fixes`)
 
 Status counts on rev-b: 47 OK, 3 mismatch, 16 label only, 34 not wired, 3 to check, 32 unused by the car.
