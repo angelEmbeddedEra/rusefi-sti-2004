@@ -9732,16 +9732,6 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 113.03) (xy 340.36 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d191de7-9007-4567-9055-fc01f05aee91")
-	)
-	(wire
-		(pts
 			(xy 241.3 52.07) (xy 259.08 52.07)
 		)
 		(stroke
@@ -11054,7 +11044,7 @@
 		)
 		(uuid "05eae88f-c00d-48f6-aba1-4e0c1fc45b9f")
 	)
-	(label "THRESHOLD_VR_CR"
+	(label "THRESHOLD_VR_CAM"
 		(at 265.43 196.85 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11185,17 +11175,6 @@
 			(justify right bottom)
 		)
 		(uuid "142a7062-d7fd-468a-84f5-137d6e8636dd")
-	)
-	(label "FAN_RELAY_2"
-		(at 326.39 113.03 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "184335b5-b65d-4d29-85b0-2535d652b903")
 	)
 	(label "INJ1"
 		(at 328.93 95.25 0)
@@ -11472,17 +11451,6 @@
 		)
 		(uuid "4fef0b86-8977-4c3a-9357-2dfce268d7d1")
 	)
-	(label "IN_CRANK-"
-		(at 182.88 189.23 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "50a59355-3744-4345-b779-770f3dbeab6c")
-	)
 	(label "VR_ANALOG_CR"
 		(at 265.43 162.56 180)
 		(fields_autoplaced yes)
@@ -11659,7 +11627,7 @@
 		)
 		(uuid "6e14293d-5831-48cb-847b-7b12f4a6b81d")
 	)
-	(label "OUT_IGN1"
+	(label "OUT_IGN3"
 		(at 328.93 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11868,7 +11836,7 @@
 		)
 		(uuid "961867c4-6cdf-42cc-9354-55be69cc6fd3")
 	)
-	(label "ETB_DIS"
+	(label "ETB_DIR"
 		(at 255.27 327.66 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11912,7 +11880,7 @@
 		)
 		(uuid "a035c885-99b6-4b05-a925-a290a70ba1ad")
 	)
-	(label "IN_CRANK+"
+	(label "IN_CAM_HALL_CAM_LH"
 		(at 182.88 186.69 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11967,7 +11935,7 @@
 		)
 		(uuid "a6d4bd0d-8f00-4da4-a952-77c1910ec3c4")
 	)
-	(label "VR_ANALOG_CR"
+	(label "VR_ANALOG_CAM"
 		(at 265.43 191.77 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12077,7 +12045,7 @@
 		)
 		(uuid "be95d58a-5563-44b0-98e1-43f5db664c31")
 	)
-	(label "ETB_PWM"
+	(label "ETB_DIS"
 		(at 255.27 322.58 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12198,7 +12166,7 @@
 		)
 		(uuid "d748b0f3-3bcf-43dd-b7c5-da737b1d1e7a")
 	)
-	(label "ETB_DIR"
+	(label "ETB_PWM"
 		(at 255.27 325.12 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12209,7 +12177,7 @@
 		)
 		(uuid "d8133053-e815-4b78-b8e9-fe0ad028ee79")
 	)
-	(label "OUT_IGN1"
+	(label "OUT_IGN4"
 		(at 328.93 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12242,7 +12210,7 @@
 		)
 		(uuid "dd00fa3c-9d87-4285-a3c6-c926ca90d7dd")
 	)
-	(label "IN_CRANK"
+	(label "IN_CAM"
 		(at 265.43 186.69 180)
 		(fields_autoplaced yes)
 		(effects
@@ -19324,6 +19292,245 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 189.23 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7626d1f0-6862-43e6-a0a3-55d2dc4703b0")
+		(property "Reference" "#PWR055"
+			(at 182.88 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdd0ed1a-2dea-45c1-a70c-6fedd918db23")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "IN_CAM"
+		(at 340.36 186.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5e5bd68f-ba5e-489d-a54e-ed7a4315feba")
+	)
+	(label "VR_ANALOG_CAM"
+		(at 340.36 229.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1a78e718-2281-4fb1-8294-f2d42aae3eed")
+	)
+	(label "THRESHOLD_VR_CAM"
+		(at 340.36 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1cc2872b-2326-41df-8a8f-bbbce83cd751")
+	)
+	(symbol
+		(lib_id "alphax:+5VAS")
+		(at 49.53 160.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d0a80c4-d7cc-4341-af45-470bcb64de8b")
+		(property "Reference" "#PWR056"
+			(at 49.53 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VAS"
+			(at 49.53 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f64a9ae8-a5c9-461a-901e-dac2808512cd")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "alphax:+5VAS")
+		(at 49.53 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4933415c-a810-4d68-9f69-4c35967e1488")
+		(property "Reference" "#PWR057"
+			(at 49.53 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VAS"
+			(at 49.53 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbab7208-2e89-4fc7-aadc-811934425fbf")
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "IN_VSS"
+		(at 340.36 189.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "add478ec-7224-4262-bf81-40c53aeea833")
 	)
 	(sheet_instances
 		(path "/"
