@@ -73,7 +73,7 @@ Q9-Q16 are two more copies of the 4-channel `INJ4` low-side sheet (LS2, LS3).
 | D11 / D12 / D13 / D14 | Defogger / small lights / blower (A/C) / test mode | M11 dinput4 -> IO5 / IO6 / IO7 / OUT_IO13 | close to ground; 680k pull-up to 5 V, R49-R51 10k options |
 | D24 | Blow-by (PCV) diagnosis | M12 dinput4 ch4 -> OUT_INJ8 | |
 | aux pads P29-P31 | AUX_IN1-3: launch / 2-step button, map switch, spare | M12 dinput4 ch1-3 -> OUT_IO9 / OUT_IO10 / OUT_IO11 | expect 12 V when pressed; 680k pull-down, R46-R48 4.7k options |
-| USB J2 (mini-B) | TunerStudio | M1 USB D+/D-/VBUS/ID | |
+| USB J2 (USB-C) | TunerStudio | M1 USB D+/D-/VBUS | ESD U1 |
 
 ### Front O2: Bosch LSU 4.9 on the rusEFI WBO module (M3)
 
@@ -96,7 +96,7 @@ Before relying on it: confirm the A25 shield is not grounded at the sensor end (
 
 - **M1 module ground (`GND_G`) was not connected.** Now on GND.
 - **F5 (JK-nSMD005, a 50 mA PTC) was in series with the throttle motor supply** (D6 -> M2). It would have tripped as soon as the motor moved. Removed; D6 feeds +12V_ETB directly. The car fuses the throttle relay feed upstream.
-- **No USB.** J2 mini-B (vertical, C13453) to the MCU USB pins. BOOT0 pad P23 with open link JP10 to 3.3 V for DFU recovery; SWD pads P24-P26 (SWDIO, SWCLK, NRST).
+- **No USB.** J2 USB-C (HRO TYPE-C-31-M-12, C165948, the EmbeddedEra library part we already build with) to the MCU USB pins, 5.1k CC pull-downs (device), USBLC6-2SC6 ESD (U1, C7519), shield to GND through a fitted 0R link. BOOT0 pad P23 with open link JP10 to 3.3 V for DFU recovery; SWD pads P24-P26 (SWDIO, SWCLK, NRST).
 - **Removed unused modules:** M6 (VR, the cams are Hall) and M4 (CAN; M1 has its own transceiver). Their MCU pins OUT_PWM3 and IN_RES2 are on pads P27/P28.
 - **More inputs:** two Hellen dinput4 modules (M11, M12) on spare 5 V-tolerant GPIOs. An I2C expander was considered: rusEFI has no driver for I2C input expanders, and its one supported switch-input chip (MC33972, SPI) is obsolete. I2C SCL/SDA are on pads in case an expander is added later.
 - Spare 5 V push-pull outputs IGN6-8 on pads.
