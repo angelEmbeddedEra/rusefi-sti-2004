@@ -240,5 +240,6 @@
       0.3
     ]
   },
-  "trim_inner_pads": "^(J1|J3|P\\d+)$"
+  "trim_inner_pads": "^(J1|J3|P\\d+)$",
+  "locked": "^(J\\d+|H\\d+|M\\d+)$"
 }
