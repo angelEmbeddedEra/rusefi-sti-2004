@@ -1,6 +1,6 @@
 # Routing plan: rusefiSTI2004 rev B
 
-Status 2026-10-13: placed, planes poured, stage 2 (high-current) routed. **320 connections to route**, DRC 0 errors, schematic parity 0.
+Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **324 connections to route**, DRC 0 errors, schematic parity 0.
 Procedure: SOP-021 step 9 (routing order). This file is the board-specific part: which nets, which layer, which width, in which order.
 
 ## Ground rules
@@ -68,9 +68,13 @@ Not started.
 
 ### 2. High-current paths
 
-Done 2026-10-13 with `kicad-autoroute` (93 segments, 8 vias, 0 bends under 135°, DRC 0 errors, unconnected 326 → 320).
-To redo: `git checkout rusefiSTI2004.kicad_pcb && kicad-autoroute 'OUT_ETB+,OUT_ETB-,+12V_ETB,OUT_TGV_OPEN,OUT_TGV_CLOSE,WBO_HEATER,OUT_O2_HEATER_REAR' --width-max 1.0 --passes 20`.
-Open items: tracks are narrowed to 1.0 mm where the 2.5 mm Power_5A width breaks clearance (mirror them on the other layer or widen by hand); run Edit > Edit Teardrops > Add teardrops on all in the GUI (the flag is set, the shapes are made only by the editor).
+Done 2026-10-14 with `kicad-autoroute` at `--width-max 0.8` (the widest track that passes between J1 pins, 1.2 mm gap), then `kicad-nudge` and `--widen-only`. All 7 nets routed (checked per net), DRC 0 errors, no bend under 135 degrees.
+- Correction: the first pass (2026-10-13, commit bd881db) left OUT_ETB+ and OUT_TGV_OPEN unrouted; the summary only counted errors.
+- U20 (on-board MAP) first sat in the ETB corridor and blocked it; it moved to the gap east of M2.
+- Parts nudged off the wide tracks: F3, F4, P2, P4, R33, R34, R36, R37 (positions in `pcb_place.json`).
+- Width reached (share of length at full class width): +12V_ETB 53%, OUT_ETB+ 52%, OUT_ETB- 32% (2.5 mm class); TGV open/close 62%/59% (1.25 mm); WBO heater 48%, rear O2 heater 73% (1.0 mm). Nearly all of the rest is the neck inside the J1 pin field and at the Hellen module edges, which do not move.
+- Open: mirror the ETB pair on the other layer through J1 to carry the current where it necks; run Edit > Edit Teardrops in the GUI.
+- To redo: rip the nets, then `kicad-autoroute 'OUT_ETB+,OUT_ETB-,+12V_ETB,OUT_TGV_OPEN,OUT_TGV_CLOSE,WBO_HEATER,OUT_O2_HEATER_REAR' --width-max 0.8 --passes 25`, `kicad-nudge` the same nets, then `kicad-autoroute` the same nets with `--widen-only`.
 
 **Nets and layers:**
 
