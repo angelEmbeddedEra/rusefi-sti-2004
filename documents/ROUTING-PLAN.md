@@ -1,6 +1,6 @@
 # Routing plan: rusefiSTI2004 rev B
 
-Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **274 connections to route**, DRC 0 errors, schematic parity 0.
+Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **156 connections to route** (233 counting Hellen module pad pairs), DRC 0 errors, schematic parity 0.
 Procedure: SOP-021 step 9 (routing order). This file is the board-specific part: which nets, which layer, which width, in which order.
 
 ## Ground rules
@@ -108,7 +108,11 @@ Done 2026-10-14. All 19 OUT_* drains (J1 -> VNLD5160 / NCV8401B) at class width,
 
 ### 4. Sensitive analog
 
-Not started.
+Done 2026-10-14. All 34 analog nets (crank VR and conditioned, cams, knock, wideband, MAF/MAP/IAT/ECT, TPS, pedal, TGV position, fuel level, VSS, on-board MAP, sensor supplies and returns), routed on F.Cu, In2.Cu and B.Cu.
+- The two outer layers were not enough (M1's south edge and the J1 pin field), so In2 became a mixed layer (owner): signals plus a +12V_RAW pour. +12V_RAW was routed as tracks first (step 5a, 0 opens with the pour removed), so no In2 signal can cut 12 V off.
+- On the way: J1 pads and every via had lost their trimmed inner rings on `--keep-placed` rebuilds (fixed in the tool and on the board), and the router had been seeing all of them as full rings on In2.
+- The 2 mm spacing in the plan was not met at this density: `spacing.py` finds 28 nets closer than 2 mm somewhere to a power or driver track. Coupled runs within 1 mm of a switching output, longest: TGV position LH 22 mm beside ETB-, cam 17 mm beside VVT LH and 14 mm beside INJ3, VSS 11 mm beside VVT LH, conditioned crank 8 mm beside TGV open, IAT 8 mm beside VVT RH; the rest are short. These are digital (cam, VSS, crank after M5) or slow filtered signals. Rerouting them with 0.8 mm extra clearance left four unroutable, so they stay as routed. The VR pair and knock raw run inside the J1 field or alone.
+- DRC 0 errors, no net worse (per-net guard), real opens 156 (unconnected 233 including Hellen module pad pairs).
 
 **Nets and layers:**
 
