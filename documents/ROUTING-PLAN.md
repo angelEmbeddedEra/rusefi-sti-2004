@@ -107,6 +107,7 @@ Not started.
 | Signal | From → to | Notes |
 |---|---|---|
 | Crank VR IN_CRANK+ / IN_CRANK- | J1 pins 76/88 → M5 | route as a pair; shield B31 to GND at the J1 end only |
+| On-board MAP IN_MAP_ONBOARD | U20 pin 4 → M1 S19 (test pad P28 on the way) | C1 tight to U20 pins 2/3; keep it over L2 |
 | Knock IN_KNOCK_RAW | J1 pin 56 → M13 | keep away from the injector and coil traces |
 | Wideband WBO_IP / WBO_UN / WBO_VM / WBO_RTRIM | J1 pins 126/127/134 → M3 | through the fitted option links |
 | Sensors IN_MAF, IN_MAP, IN_IAT, IN_ECT, IN_TPS_*, IN_PPS_* | J1 → M1 | Signal_Robust |

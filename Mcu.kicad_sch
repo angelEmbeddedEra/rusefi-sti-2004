@@ -8597,7 +8597,7 @@
 			)
 		)
 	)
-	(global_label "IN_TUMBLE_SENSOR_RH"
+	(global_label "IN_MAP_ONBOARD"
 		(shape passive)
 		(at 48.26 222.25 180)
 		(fields_autoplaced yes)
@@ -9773,7 +9773,7 @@
 			)
 		)
 	)
-	(global_label "SPARE_RES2"
+	(global_label "IN_TUMBLE_SENSOR_RH"
 		(shape passive)
 		(at 55.88 209.55 180)
 		(fields_autoplaced yes)

@@ -488,6 +488,52 @@
 			)
 		)
 	)
+	(sheet
+		(at 15.24 182.88)
+		(size 76.2 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e729c69d-7173-4928-857d-36b330aeb43d")
+		(property "Sheetname" "On-board MAP"
+			(at 15.24 182.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.8 1.8)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MAP.kicad_sch"
+			(at 15.24 213.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rusefiSTI2004"
+				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4"
+					(page "15")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

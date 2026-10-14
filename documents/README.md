@@ -74,8 +74,9 @@ Status on this branch: **99 OK**, 3 not wired (EVAP: fuel temperature C12, tank 
 | A1 | Clutch switch | IN_RES1 | 12 V released, 0 V pressed; R22 pull-down |
 | C9 | Brake switch 1 | IN_O2S2 | 12 V released, 0 V pressed; R23 pull-down |
 | C23 | MAF | IN_SENS1 | |
-| C22 | MAP | IN_MAP1 | |
-| C26 / C27 | TGV position LH / RH | IN_MAP2 / IN_MAP3 | |
+| C22 | MAP (external, on the intake) | IN_MAP1 | |
+| C26 / C27 | TGV position LH / RH | IN_MAP2 / IN_RES2 | RH moved off IN_MAP3 for the on-board MAP; IN_RES2 has only a 340k pull-up |
+| on board | MAP sensor U20 (MPXHZ6400AC6T1) | IN_MAP3 | see *On-board MAP sensor* |
 | C20 | Fuel level | IN_AT1 | muxed input, slow signal |
 | D25 | Rear O2 | IN_O2S | |
 | B26 | Fuel pump control unit command | IGN5 | 5 V push-pull PWM; 0 V = pump off |
@@ -140,12 +141,20 @@ Mating plug: Molex 39-01-2140 (5557-14R housing) with 39-00-0038 crimp terminals
 | 1 | +12 V out (main relay, F6 0.5 A PTC) | 2 | GND |
 | 3 | +5 V sensor out (+5VAS, F7 50 mA PTC) | 4 | Sensor ground (GND_SENSOR) |
 | 5 | AUX_IN1 digital (launch / 2-step) | 6 | AUX_IN2 digital (map switch) |
-| 7 | AUX_IN3 digital (spare, flex fuel frequency OK) | 8 | AUX_AN1 analog 0-5 V (IN_RES2, 340k) |
+| 7 | AUX_IN3 digital (spare, flex fuel frequency OK) | 8 | not connected (IN_RES2 now carries TGV RH) |
 | 9 | AUX_AN2 analog (IN_AT2, 2.35k pull-up: thermistor-ready) | 10 | AUX_OUT1 low-side (LS4 ch3) |
 | 11 | AUX_OUT2 low-side (LS4 ch4) | 12 | CAN H |
 | 13 | CAN L | 14 | GND |
 
 AUX_IN1-3 expect a switch to 12 V (680k pull-down on the dinput4, R48-R50 4.7k options). AUX_AN2 shares IN_AT2 with the FPCU status option JP7: fit only one. AUX_OUT1/2 also reach EVAP A12/A13 through open JP5/JP6.
+
+### On-board MAP sensor
+
+Copied from rusEFI AlphaX-4chan (`MAP.kicad_sch` there, the same as AlphaX-2chan and Silver): NXP **MPXHZ6400AC6T1**, 20-400 kPa absolute, enough for about 2.9 bar of boost.
+- **Circuit:** 5 V from +5VA, C1 100 nF at Vs, Vout straight to M1 IN_MAP3 (S19). The MCU module input does the divide and filter. Test pad P28 is on the output.
+- **Firmware:** `map.sensor.hwChannel = H144_IN_MAP3`, type `MT_MPXH6400`. The external MAP (C22) stays on IN_MAP1, so either one can be the MAP and the other the baro or a second MAP.
+- **Mechanical:** the AC6 package has an axial port: the barb points straight up. The lid needs a hole or grommet above U20 for a vacuum hose to the intake manifold, after the throttle.
+- **Sourcing:** LCSC C511770 is an extended JLC part (about $11). Digi-Key and Mouser stock it at about $21. AlphaX leaves it out of JLC assembly and fits it by hand; decide at BOM time.
 
 ### Option parts (footprints on the board)
 
