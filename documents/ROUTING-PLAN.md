@@ -1,6 +1,6 @@
 # Routing plan: rusefiSTI2004 rev B
 
-Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **324 connections to route**, DRC 0 errors, schematic parity 0.
+Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **318 connections to route**, DRC 0 errors, schematic parity 0.
 Procedure: SOP-021 step 9 (routing order). This file is the board-specific part: which nets, which layer, which width, in which order.
 
 ## Ground rules
@@ -53,7 +53,8 @@ Done 2026-10-14.
 
 ### 1. Plane fan-out
 
-Not started.
+Done 2026-10-14 with `autoroute.py fanout BOARD 'GND,+12V_RAW'` (66 vias: every SMD pad on a plane net gets a stub and a via, two on big pads, never inside a Hellen module). J1 pin 120 (+12V_RAW) sits inside the J1 pin field where neither a 1.2 mm via nor the plane fits, so it is tied to its neighbour pin 119 with a 1.25 mm +12V_RAW track on In2. DRC 0 errors, unconnected 324 -> 318, +12V_RAW fully connected.
+- What still shows as GND unconnected is pad-to-pad inside one Hellen module (the module draws its GND pads per layer; its own copper joins them at the Hellen merge), plus one B.Cu pour scrap by J1 pin 63, left for step 9 (stitching).
 
 **Nets and layers:**
 - Every GND pad gets a via to L2: the VNLD sources (pins 5 and 7), module GND pins, connector GND and passive GND ends.
