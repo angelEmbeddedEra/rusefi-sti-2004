@@ -112,3 +112,10 @@
 	(condition "A.memberOfFootprint('J1') || A.memberOfFootprint('J2')")
 	(constraint min_resolved_spokes 1)
 )
+
+# Routing: 45 degree corners only. A bend between two connected segments of less than 135 degrees
+# (a 90 degree corner or anything sharper) is an error. Syntax: plain number, no "deg" unit (KiCad 10).
+(rule "45 degree corners only"
+	(constraint track_angle (min 135))
+	(severity error)
+)

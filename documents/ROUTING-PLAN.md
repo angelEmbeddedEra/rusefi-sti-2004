@@ -11,6 +11,12 @@ Procedure: SOP-021 step 9 (routing order). This file is the board-specific part:
   - L3 (In2.Cu): +12V_RAW plane. Short jogs are allowed, but never cut it into islands.
   - L4 (B.Cu): signals.
   - Pick the JLC04161H-7628 stackup (1.6 mm) in Board Setup before routing the USB pair; that sets its impedance.
+- **45 degree corners only, never 90.**
+  - Keep the router in its 45° posture (the default; `/` toggles posture and `Ctrl+/` the corner style), with free-angle mode off.
+  - The design rule `45 degree corners only` (track_angle min 135) makes any bend sharper than 135° between connected segments a DRC error, so a 90° corner fails the gate.
+- **Teardrops always.**
+  - Every copper pad and via has curved teardrops switched on (Board Setup > Teardrops, plus the per-item flag `kicad-pcb-from-netlist` sets), including at track-width changes.
+  - KiCad draws them as you route and refreshes them on zone refill. Before each stage's commit, run Edit > Edit Teardrops > Add teardrops on all.
 - **Track widths come from the net classes.** Use the router's net-class width, not a hand-typed one:
 
   | Class | Width | Via | Typical nets |
