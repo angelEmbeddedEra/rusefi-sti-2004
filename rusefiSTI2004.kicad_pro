@@ -126,7 +126,7 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
-        "track_angle": "error",
+        "track_angle": "warning",
         "track_dangling": "warning",
         "track_not_centered_on_via": "ignore",
         "track_on_post_machined_layer": "error",

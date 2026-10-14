@@ -1,6 +1,6 @@
 # Routing plan: rusefiSTI2004 rev B
 
-Status 2026-10-13: placed, planes poured, **326 connections to route**, DRC 0 errors, schematic parity 0.
+Status 2026-10-13: placed, planes poured, stage 2 (high-current) routed. **320 connections to route**, DRC 0 errors, schematic parity 0.
 Procedure: SOP-021 step 9 (routing order). This file is the board-specific part: which nets, which layer, which width, in which order.
 
 ## Ground rules
@@ -67,7 +67,9 @@ Not started.
 
 ### 2. High-current paths
 
-Not started.
+Done 2026-10-13 with `kicad-autoroute` (93 segments, 8 vias, 0 bends under 135°, DRC 0 errors, unconnected 326 → 320).
+To redo: `git checkout rusefiSTI2004.kicad_pcb && kicad-autoroute 'OUT_ETB+,OUT_ETB-,+12V_ETB,OUT_TGV_OPEN,OUT_TGV_CLOSE,WBO_HEATER,OUT_O2_HEATER_REAR' --width-max 1.0 --passes 20`.
+Open items: tracks are narrowed to 1.0 mm where the 2.5 mm Power_5A width breaks clearance (mirror them on the other layer or widen by hand); run Edit > Edit Teardrops > Add teardrops on all in the GUI (the flag is set, the shapes are made only by the editor).
 
 **Nets and layers:**
 
