@@ -1,6 +1,6 @@
 # Routing plan: rusefiSTI2004 rev B
 
-Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **318 connections to route**, DRC 0 errors, schematic parity 0.
+Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **274 connections to route**, DRC 0 errors, schematic parity 0.
 Procedure: SOP-021 step 9 (routing order). This file is the board-specific part: which nets, which layer, which width, in which order.
 
 ## Ground rules
@@ -16,7 +16,7 @@ Procedure: SOP-021 step 9 (routing order). This file is the board-specific part:
   - The design rule `45 degree corners only` (track_angle min 135) makes any bend sharper than 135° between connected segments a DRC error, so a 90° corner fails the gate.
 - **Teardrops always.**
   - Every copper pad and via has curved teardrops switched on (Board Setup > Teardrops, plus the per-item flag `kicad-pcb-from-netlist` sets), including at track-width changes.
-  - KiCad draws them as you route and refreshes them on zone refill. Before each stage's commit, run Edit > Edit Teardrops > Add teardrops on all.
+  - Before each stage's commit, `kicad-cli pcb drc --refill-zones --save-board` rebuilds them headless (kicad-autoroute does this on its last check); in the editor, Edit > Edit Teardrops does the same.
 - **Track widths come from the net classes.** Use the router's net-class width, not a hand-typed one:
 
   | Class | Width | Via | Typical nets |
@@ -91,7 +91,11 @@ Done 2026-10-14 with `kicad-autoroute` at `--width-max 0.8` (the widest track th
 
 ### 3. Low-side outputs
 
-Not started.
+Done 2026-10-14. All 19 OUT_* drains (J1 -> VNLD5160 / NCV8401B) at class width, and all 20 driver inputs (pull-down -> M1).
+- The inputs did not fit at first: M1's east edge carries 34 signals and sat 2.15 mm from the board edge, so the board grew 6 mm to the right (now 144.6 x 113.6 mm); J2 and its USB parts, H2 and H4 moved with the edge.
+- J1 pin 63 (GND) is tied to pin 64 on In1 (the plane cannot flow into the J1 pin field); J3 pin 14 got its own fan-out vias after WG cut its pour spokes, and WG was rerouted around it.
+- Teardrops are written headless (`kicad-cli pcb drc --refill-zones --save-board`, also at the end of every `kicad-autoroute` run): 424 on the board.
+- DRC 0 errors, no bend under 135 degrees, no net worse than before (per-net guard), unconnected 274 (about 45 of them are pad pairs inside a Hellen module, joined by the module's copper at the merge).
 
 **Nets and layers:**
 - The 19 OUT_* nets (injectors, relays, solenoids, lamps, tach, spares): J1 pin to its VNLD5160 drain (pins 6 or 8).
