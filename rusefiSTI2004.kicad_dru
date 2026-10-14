@@ -128,9 +128,9 @@
 	(constraint min_resolved_spokes 1)
 )
 
-# On-board MAP (U20 -> M1 S19): analog. Its tracks keep other nets' tracks 0.5 mm away; at the U20 and M1
+# On-board MAP (U20 -> M1 S19): analog. Its tracks keep power-class tracks (drivers, heaters, motors, rails) 0.5 mm away; at the U20 and M1
 # pins the board minimum applies, so the module pin field can still be routed.
 (rule "On-board MAP keep-away"
-	(condition "A.NetName == 'IN_MAP_ONBOARD' && A.Type == 'Track' && B.Type == 'Track' && B.NetName != 'GND'")
+	(condition "A.NetName == 'IN_MAP_ONBOARD' && A.Type == 'Track' && B.Type == 'Track' && B.NetClass == 'Power_*'")
 	(constraint clearance (min 0.5mm))
 )

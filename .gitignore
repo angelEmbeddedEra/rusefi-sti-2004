@@ -13,3 +13,4 @@ _autosave-*
 
 # board build intermediates (tools/create-board.sh)
 /gerber/
+*.autoroute.lock

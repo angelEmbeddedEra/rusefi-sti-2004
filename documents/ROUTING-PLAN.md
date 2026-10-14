@@ -8,7 +8,7 @@ Procedure: SOP-021 step 9 (routing order). This file is the board-specific part:
 - **Stackup (4 layers):**
   - L1 (F.Cu): parts and signals.
   - L2 (In1.Cu): solid GND. **Never route on L2.**
-  - L3 (In2.Cu): +12V_RAW plane. Short jogs are allowed, but never cut it into islands.
+  - L3 (In2.Cu): mixed since 2026-10-14 (owner): signal tracks plus a +12V_RAW pour in the space left over. The outer layers ran out of room for the analog group (M1's south edge and the J1 pin field); 12 V only has to reach a few modules. Never cut the pour so a +12V_RAW pad loses its connection (the per-net guard checks it).
   - L4 (B.Cu): signals.
   - Pick the JLC04161H-7628 stackup (1.6 mm) in Board Setup before routing the USB pair; that sets its impedance.
 - **45 degree corners only, never 90.**
