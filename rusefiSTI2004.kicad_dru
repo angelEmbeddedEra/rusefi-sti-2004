@@ -127,3 +127,9 @@
 	(condition "A.Type == 'Pad' && A.Pad_Type == 'SMD'")
 	(constraint min_resolved_spokes 1)
 )
+
+# On-board MAP (U20 -> M1 S19): analog, keep other nets' tracks 0.5 mm away (pads keep the board minimum).
+(rule "On-board MAP keep-away"
+	(condition "A.NetName == 'IN_MAP_ONBOARD' && B.Type == 'Track' && B.NetName != 'GND'")
+	(constraint clearance (min 0.5mm))
+)

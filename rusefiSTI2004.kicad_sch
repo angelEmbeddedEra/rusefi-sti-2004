@@ -42,7 +42,7 @@
 		)
 		(uuid "42616b1f-f3ca-455a-b444-e3446e4a96ab")
 	)
-	(text "J3: Molex Mini-Fit Jr 2x7 (pinout in\ndocuments/README.md): fused 12 V and 5 V, sensor\nground, three digital"
+	(text "J3: Molex Mini-Fit Jr 2x7 (pinout in\ndocuments/README.md): fused 12 V and 5 V, sensor\nground, 3 digital in, 1 analog in, 2 low-side, CAN."
 		(exclude_from_sim no)
 		(at 300.99 156.21 0)
 		(effects
@@ -53,7 +53,7 @@
 		)
 		(uuid "52628ba9-9e22-4d63-a194-ad68e725add3")
 	)
-	(text "M11/M12 (dinput4): car lines that close to ground\n(defogger D11, lights D12, blower D13, test mode\nD14,"
+	(text "M11/M12 (dinput4): car lines that close to ground\n(defogger D11, lights D12, blower D13, test mode\nD14) and the aux switch inputs."
 		(exclude_from_sim no)
 		(at 15.24 156.21 0)
 		(effects
@@ -64,7 +64,7 @@
 		)
 		(uuid "63304620-a66d-414d-a213-11b9dcb2a61d")
 	)
-	(text "M3: rusEFI wideband (WBO) for a Bosch LSU 4.9 front\nO2, on CAN to M1. It reaches the sensor through the\nstock"
+	(text "M3: rusEFI wideband (WBO) for a Bosch LSU 4.9 front\nO2, on CAN to M1. It reaches the sensor through the\nstock harness (J1 pins 103/104, 126/127/134)."
 		(exclude_from_sim no)
 		(at 205.74 156.21 0)
 		(effects
@@ -75,7 +75,7 @@
 		)
 		(uuid "78218469-0c52-4ec6-8457-40f10d182a8b")
 	)
-	(text "Crank: 2-wire VR sensor (B10 +, B22 -) into M5.\nKnock (C25) into M13. M7 is a spare knock channel\n(not used)."
+	(text "Crank: 2-wire VR sensor (B10 +, B22 -) into M5.\nKnock (C25) into M13 (the STI has one knock\nsensor). External MAP (C22) on IN_MAP1."
 		(exclude_from_sim no)
 		(at 300.99 95.25 0)
 		(effects
@@ -109,7 +109,7 @@
 		)
 		(uuid "a78eeb20-4fc4-414a-9051-b1e647865cf4")
 	)
-	(text "Protected low-side drivers sized per load (Outputs):\n8 DPAK, 4 SOT-223, 8 SOT-23F."
+	(text "Protected low-side drivers (Outputs): 10 VNLD5160\n(SO-8, two channels each) and one NCV8401B DPAK\nfor the rear O2 heater."
 		(exclude_from_sim no)
 		(at 110.49 156.21 0)
 		(effects
@@ -119,6 +119,17 @@
 			(justify left top)
 		)
 		(uuid "c5c5a691-2167-43fb-b752-6699e59cb319")
+	)
+	(text "U20: NXP MPXHZ6400AC6T1 on-board MAP (20-400 kPa\nabs, top hose port) into M1 IN_MAP3 (S19), as on\nthe rusEFI AlphaX boards."
+		(exclude_from_sim no)
+		(at 15.24 217.17 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "e5aaed21-ada8-4430-a08b-37d7acee721a")
 	)
 	(sheet
 		(at 300.99 60.96)

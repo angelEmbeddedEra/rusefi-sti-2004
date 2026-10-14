@@ -815,6 +815,10 @@
       },
       {
         "netclass": "Signal_Robust",
+        "pattern": "IN_MAP_ONBOARD"
+      },
+      {
+        "netclass": "Signal_Robust",
         "pattern": "IN_*"
       },
       {

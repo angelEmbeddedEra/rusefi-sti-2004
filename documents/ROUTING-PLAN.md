@@ -31,7 +31,8 @@ Procedure: SOP-021 step 9 (routing order). This file is the board-specific part:
   | Ground | 0.50 mm stubs into the planes | 0.8/0.4 | GND |
   | USB2 | 0.20 mm | 0.6/0.3 | USB D+/D- |
 
-- **Placement is frozen.** From now on, run `kicad-pcb-from-netlist --keep-placed` after any schematic change. It keeps the tracks, vias and pours.
+- **Placement moves when routing needs it.** Never neck a trace down or detour it to get past a part: nudge the part instead (passives, drivers, test pads). Connectors, mounting holes and the Hellen modules stay fixed. Put the new position in `pcb_place.json` (`fixed`) so a rerun keeps it, and run `kicad-pcb-from-netlist --keep-placed` after any schematic change; it keeps the tracks, vias and pours.
+- **Every net has a rule.** A net class through a pattern in the `.kicad_pro`, plus a DRC rule for analog or noisy nets (for example `On-board MAP keep-away`). In the `.kicad_dru`, lengths need the unit (`0.5mm`); a bare number silently disables the whole file. After any rules edit, append a 5 mm clearance probe, check that the errors explode, then remove it.
 - **Commit and push after every step below.** One commit per step, with a message naming the step and the DRC result, so a bad step can be reverted on its own.
 - **Gate for every step:**
   - `kicad-cli pcb drc --refill-zones` shows 0 errors.
