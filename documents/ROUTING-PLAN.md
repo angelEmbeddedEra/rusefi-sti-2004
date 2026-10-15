@@ -5,12 +5,15 @@ Procedure: SOP-021 step 9 (routing order). This file is the board-specific part:
 
 ## Ground rules
 
-- **Stackup (4 layers):**
+- **Stackup (6 layers since 2026-10-14, owner):** JLC06161H-7628, 1.6 mm (`kicad-stackup JLC06161H-7628`).
   - L1 (F.Cu): parts and signals.
   - L2 (In1.Cu): solid GND. **Never route on L2.**
-  - L3 (In2.Cu): mixed since 2026-10-14 (owner): signal tracks plus a +12V_RAW pour in the space left over. The outer layers ran out of room for the analog group (M1's south edge and the J1 pin field); 12 V only has to reach a few modules. Never cut the pour so a +12V_RAW pad loses its connection (the per-net guard checks it).
-  - L4 (B.Cu): signals.
-  - Pick the JLC04161H-7628 stackup (1.6 mm) in Board Setup before routing the USB pair; that sets its impedance.
+  - L3 (In2.Cu): mixed: signals plus a +12V_RAW pour. +12V_RAW is routed as tracks, so the pour is a bonus.
+  - L4 (In3.Cu): signals (added when 44 connections around M1 would not fit on three layers).
+  - L5 (In4.Cu): solid GND, the reference for the bottom layer.
+  - L6 (B.Cu): signals.
+  - Every Hellen module outline has a keepout on In3/In4 for tracks and pour: the module's own vias drill through all six layers in the merged board and are not in our KiCad file. Vias stay allowed (they already were on four layers).
+  - `hellen-create-board` must map the modules' two inner layers to In1/In2 and pass In3/In4 straight through (the hellen-one merge only knew four layers).
 - **45 degree corners only, never 90.**
   - Keep the router in its 45° posture (the default; `/` toggles posture and `Ctrl+/` the corner style), with free-angle mode off.
   - The design rule `45 degree corners only` (track_angle min 135) makes any bend sharper than 135° between connected segments a DRC error, so a 90° corner fails the gate.

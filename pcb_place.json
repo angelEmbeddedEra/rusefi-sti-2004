@@ -1,6 +1,6 @@
 {
   "libs": {},
-  "copper_layers": 4,
+  "copper_layers": 6,
   "planes": [
     {
       "layer": "In1.Cu",
@@ -16,6 +16,10 @@
     },
     {
       "layer": "B.Cu",
+      "net": "GND"
+    },
+    {
+      "layer": "In4.Cu",
       "net": "GND"
     }
   ],
