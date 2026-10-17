@@ -251,6 +251,13 @@ def penalty(st, boxes):
         pen += max(0, l - A[0]) + max(0, t - A[1]) + max(0, A[2] - r_ok) + max(0, A[3] - b_ok)
     pen += max(0, W - 1.0 - boxes['J2'][2])     # J2 flush with the far edge (the brief: USB and CAN connectors on the far edge)
     pen += max(0, W - 6.0 - boxes['J3'][2])     # J3 (CAN / harness Mini-Fit) within 6 mm of the far edge
+    # WBO (M3) in a quiet corner: courtyard within 25 mm of both nearest edges, and 20 mm clear of the driver bank
+    M = boxes['M3']
+    pen += max(0, min(M[0], W - M[2]) - 25.0) + max(0, min(M[1], H - M[3]) - 25.0)
+    for u in DRV:
+        D = boxes[u]
+        sep = max(max(D[0] - M[2], M[0] - D[2]), max(D[1] - M[3], M[1] - D[3]))
+        pen += max(0, 20.0 - sep)
     return pen
 
 
