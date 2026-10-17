@@ -1,0 +1,43 @@
+== rusefiSTI2004.kicad_pcb
+signal layers 4 (F.Cu, In2.Cu, In3.Cu, B.Cu), pitch 0.40 mm, plane nets left out: +12V_RAW, GND
+
+1 HPWL        total 10311.1 mm over 167 nets (MST 8183.0 mm)
+  longest nets: +5VA 253, AUX_AN2 201, +3.3V 195, +5V 189, +5VAS 169
+2 crossings   1610 ratsnest crossings (different nets, 272 MST edges)
+  most crossed: +5VA 102, AUX_AN2 75, +5VAS 72, +5V 71, +12V_BACK_UP 61
+3 cut lines   58 cuts every 5 mm, window 20 mm; peak window ratio 7.13, peak whole-cut ratio 0.14; 17 cuts overloaded, 108.3 tracks short in total
+  axis    at  from..to   sigs  demand  capacity  ratio   (tracks of 0.40 mm; worst window per cut)
+  x     175.0   50.5..70.5     11    14.2       2.0  7.13
+  x     150.0  120.5..140.5    15    16.4       5.0  3.28
+  x     155.0  120.5..140.5    14    15.5       5.0  3.10
+  x     170.0   50.5..70.5      9    11.8       2.0  5.88
+  y      70.0  165.5..185.5    13    32.4      23.0  1.41
+  x     115.0   95.5..115.5    10    11.6       3.0  3.88
+  y      65.0  165.5..185.5    17    37.9      30.0  1.26
+  x     180.0   50.5..70.5      8     9.8       2.0  4.88
+  x     140.0  120.5..140.5    11    12.1       5.0  2.43
+  x     145.0  120.5..140.5    11    12.1       5.0  2.43
+  Hellen modules block every signal layer inside their outline (ROUTING-PLAN: In3/In4 keepouts): M13, M8, M1, M3, M9, M10, M14, M5, M11, M12, M2
+4 edge        16 parts within 5 mm of an edge, 0 short of room (sum 0.00 mm)
+  J2     west  gap  2.50 mm   6 signals face it, need  0.60 mm
+  J3     west  gap  4.35 mm   6 signals face it, need  0.60 mm
+  R53    east  gap  2.50 mm   2 signals face it, need  0.20 mm
+  R52    east  gap  4.50 mm   2 signals face it, need  0.20 mm
+  R51    east  gap  4.50 mm   2 signals face it, need  0.20 mm
+  JP10   west  gap  3.30 mm   1 signals face it, need  0.10 mm
+  P19    south gap  4.00 mm   1 signals face it, need  0.10 mm
+5 grid        outline corner off 10: 0, size off 10: 0, part origins off whole mm: 0 of 130 (0 only on half mm), holes off: 5, rotations not 0/90: 0
+6 symmetry    identical-footprint groups (constant pitch along rows?)
+  Fuse_1206_3216Metric               JK-nSMD005   n=5   in rows 4   constant
+  MountingHole_3.2mm_M3_DIN965_Pad   MountingHole n=4   in rows 4   constant
+  R_0603_1608Metric                  10K          n=4   in rows 2   constant
+  R_0603_1608Metric                  1K           n=4   in rows 2   constant
+  R_0603_1608Metric                  4.7K         n=29  in rows 23  pitch varies, spread 49.00 mm
+  R_0603_1608Metric                  5.1K         n=2   in rows 0   no row
+  R_0805_2012Metric                  0            n=12  in rows 5   pitch varies, spread 78.00 mm
+  R_1206_3216Metric                  1K           n=3   in rows 2   constant
+  SOIC-8_3.9x4.9mm_P1.27mm           VNLD5160TR-E n=10  in rows 10  pitch varies, spread 16.00 mm
+  dinput4                            Module-dinpu n=2   in rows 2   constant
+  motor-driver                       Module-motor n=2   in rows 0   no row
+  power_12and5V                      Module-power n=2   in rows 2   constant
+

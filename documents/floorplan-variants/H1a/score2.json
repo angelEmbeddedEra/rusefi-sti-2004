@@ -1,0 +1,2520 @@
+{
+ "board": "rusefiSTI2004.kicad_pcb",
+ "params": {
+  "layers": [
+   "F.Cu",
+   "B.Cu"
+  ],
+  "signal_layers": 2,
+  "track": 0.2,
+  "clearance": 0.2,
+  "pitch": 0.4,
+  "exclude": [
+   "+12V_RAW",
+   "GND"
+  ],
+  "edge_clear": 0.5
+ },
+ "summary": {
+  "hpwl_mm": 10311.1,
+  "mst_mm": 8183.0,
+  "ratsnest_crossings": 1610,
+  "peak_window_ratio": 14.25,
+  "peak_cut_ratio": 0.283,
+  "overload_tracks": 255.1,
+  "overloaded_cuts": 29,
+  "edge_short_mm": 0,
+  "edge_parts_pressed": 0,
+  "off_grid_parts": 0,
+  "off_grid_holes": 5,
+  "bad_rotation": 0,
+  "outline_off_10": 0
+ },
+ "nets": {
+  "count": 167,
+  "edges": 272,
+  "per_net": {
+   "+12V": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 3,
+    "hpwl": 56.97,
+    "mst": 41.503,
+    "crossings": 17,
+    "hot_cuts": 4
+   },
+   "+12V_BACK_UP": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 3,
+    "hpwl": 127.4,
+    "mst": 107.654,
+    "crossings": 61,
+    "hot_cuts": 4
+   },
+   "+12V_ETB": {
+    "class": "Power_5A",
+    "width": 2.5,
+    "pads": 3,
+    "hpwl": 29.7,
+    "mst": 25.599,
+    "crossings": 12,
+    "hot_cuts": 5
+   },
+   "+12V_IGN": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 3,
+    "hpwl": 62.35,
+    "mst": 50.029,
+    "crossings": 23,
+    "hot_cuts": 6
+   },
+   "+3.3V": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 6,
+    "hpwl": 194.562,
+    "mst": 170.59,
+    "crossings": 61,
+    "hot_cuts": 7
+   },
+   "+5V": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 13,
+    "hpwl": 189.255,
+    "mst": 184.665,
+    "crossings": 71,
+    "hot_cuts": 8
+   },
+   "+5VA": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 12,
+    "hpwl": 252.555,
+    "mst": 246.12,
+    "crossings": 102,
+    "hot_cuts": 3
+   },
+   "+5VAS": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 4,
+    "hpwl": 168.6,
+    "mst": 141.392,
+    "crossings": 72,
+    "hot_cuts": 10
+   },
+   "/Vehicle connector/IGN1_COIL": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 40.0,
+    "mst": 37.121,
+    "crossings": 16,
+    "hot_cuts": 1
+   },
+   "/Vehicle connector/IGN2_COIL": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 29.1,
+    "mst": 21.477,
+    "crossings": 7,
+    "hot_cuts": 0
+   },
+   "/Vehicle connector/IGN3_COIL": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 41.4,
+    "mst": 41.4,
+    "crossings": 9,
+    "hot_cuts": 0
+   },
+   "/Vehicle connector/IGN4_COIL": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 19.7,
+    "mst": 15.062,
+    "crossings": 7,
+    "hot_cuts": 0
+   },
+   "AC_RELAY": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 105.275,
+    "mst": 76.771,
+    "crossings": 32,
+    "hot_cuts": 9
+   },
+   "APS_PS_5V": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 3,
+    "hpwl": 80.95,
+    "mst": 64.411,
+    "crossings": 53,
+    "hot_cuts": 1
+   },
+   "AUX_12V": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 4.6,
+    "mst": 4.6,
+    "crossings": 0,
+    "hot_cuts": 0
+   },
+   "AUX_5V": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 15.8,
+    "mst": 13.613,
+    "crossings": 2,
+    "hot_cuts": 0
+   },
+   "AUX_AN2": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 201.238,
+    "mst": 154.643,
+    "crossings": 75,
+    "hot_cuts": 11
+   },
+   "AUX_IN1": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 4,
+    "hpwl": 167.275,
+    "mst": 126.297,
+    "crossings": 18,
+    "hot_cuts": 2
+   },
+   "AUX_IN2": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 4,
+    "hpwl": 161.125,
+    "mst": 120.936,
+    "crossings": 14,
+    "hot_cuts": 2
+   },
+   "AUX_IN3": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 4,
+    "hpwl": 157.775,
+    "mst": 113.536,
+    "crossings": 11,
+    "hot_cuts": 1
+   },
+   "BOOT0": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 13.937,
+    "mst": 10.458,
+    "crossings": 4,
+    "hot_cuts": 1
+   },
+   "CAN_H": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 5,
+    "hpwl": 79.6,
+    "mst": 77.35,
+    "crossings": 13,
+    "hot_cuts": 0
+   },
+   "CAN_L": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 5,
+    "hpwl": 80.1,
+    "mst": 77.496,
+    "crossings": 11,
+    "hot_cuts": 0
+   },
+   "CHARGE_A22": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 19.3,
+    "mst": 18.327,
+    "crossings": 2,
+    "hot_cuts": 0
+   },
+   "CRUISE_MAIN_LIGHT": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 120.475,
+    "mst": 90.06,
+    "crossings": 35,
+    "hot_cuts": 8
+   },
+   "CRUISE_SET_LIGHT": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 121.775,
+    "mst": 92.019,
+    "crossings": 33,
+    "hot_cuts": 8
+   },
+   "DIN_AUX1": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 67.55,
+    "mst": 49.246,
+    "crossings": 5,
+    "hot_cuts": 0
+   },
+   "DIN_AUX2": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 69.7,
+    "mst": 50.384,
+    "crossings": 6,
+    "hot_cuts": 0
+   },
+   "DIN_AUX3": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 59.625,
+    "mst": 45.683,
+    "crossings": 10,
+    "hot_cuts": 0
+   },
+   "DIN_BLOWBY": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 52.975,
+    "mst": 43.59,
+    "crossings": 13,
+    "hot_cuts": 0
+   },
+   "DIN_BLOWER": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 60.025,
+    "mst": 45.837,
+    "crossings": 14,
+    "hot_cuts": 0
+   },
+   "DIN_DEFOG": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 104.95,
+    "mst": 74.94,
+    "crossings": 21,
+    "hot_cuts": 1
+   },
+   "DIN_SMALL_LIGHT": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 59.7,
+    "mst": 45.712,
+    "crossings": 13,
+    "hot_cuts": 0
+   },
+   "DIN_TEST_MODE": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 74.175,
+    "mst": 52.955,
+    "crossings": 16,
+    "hot_cuts": 0
+   },
+   "DLC6_D29": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 27.0,
+    "mst": 26.976,
+    "crossings": 13,
+    "hot_cuts": 0
+   },
+   "ELECTRONIC_THROTTE_RELAY": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 4.365,
+    "mst": 4.017,
+    "crossings": 2,
+    "hot_cuts": 0
+   },
+   "ETB_DIR": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 106.8,
+    "mst": 75.646,
+    "crossings": 26,
+    "hot_cuts": 3
+   },
+   "ETB_DIS": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 106.8,
+    "mst": 75.525,
+    "crossings": 25,
+    "hot_cuts": 3
+   },
+   "ETB_PWM": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 78.6,
+    "mst": 55.597,
+    "crossings": 14,
+    "hot_cuts": 2
+   },
+   "EVAP_A12": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 29.363,
+    "mst": 21.09,
+    "crossings": 8,
+    "hot_cuts": 0
+   },
+   "EVAP_A13": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 20.662,
+    "mst": 16.092,
+    "crossings": 9,
+    "hot_cuts": 0
+   },
+   "FAN_RELAY_1": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 39.375,
+    "mst": 29.318,
+    "crossings": 16,
+    "hot_cuts": 2
+   },
+   "FAN_RELAY_2": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 59.675,
+    "mst": 44.979,
+    "crossings": 27,
+    "hot_cuts": 5
+   },
+   "FP_CMD": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 103.325,
+    "mst": 75.182,
+    "crossings": 39,
+    "hot_cuts": 1
+   },
+   "FP_STATUS": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 23.862,
+    "mst": 19.74,
+    "crossings": 10,
+    "hot_cuts": 0
+   },
+   "FUEL_PUMP_SIGNAL1": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 4,
+    "hpwl": 57.455,
+    "mst": 58.394,
+    "crossings": 5,
+    "hot_cuts": 0
+   },
+   "GNDA": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 25.438,
+    "mst": 19.317,
+    "crossings": 18,
+    "hot_cuts": 2
+   },
+   "GND_SENSOR": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 6,
+    "hpwl": 152.1,
+    "mst": 124.954,
+    "crossings": 51,
+    "hot_cuts": 10
+   },
+   "I2C_1_SCL": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 10.8,
+    "mst": 8.602,
+    "crossings": 3,
+    "hot_cuts": 2
+   },
+   "I2C_1_SDA": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 11.0,
+    "mst": 8.431,
+    "crossings": 1,
+    "hot_cuts": 1
+   },
+   "IGN": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 117.05,
+    "mst": 83.135,
+    "crossings": 32,
+    "hot_cuts": 7
+   },
+   "INJ1": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 38.775,
+    "mst": 35.035,
+    "crossings": 14,
+    "hot_cuts": 0
+   },
+   "INJ2": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 36.94,
+    "mst": 35.607,
+    "crossings": 15,
+    "hot_cuts": 0
+   },
+   "INJ3": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 30.875,
+    "mst": 27.125,
+    "crossings": 17,
+    "hot_cuts": 1
+   },
+   "INJ4": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 32.975,
+    "mst": 27.08,
+    "crossings": 15,
+    "hot_cuts": 1
+   },
+   "IN_AC_REQUEST": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 89.175,
+    "mst": 68.066,
+    "crossings": 26,
+    "hot_cuts": 1
+   },
+   "IN_BLOWBY": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 74.075,
+    "mst": 52.38,
+    "crossings": 22,
+    "hot_cuts": 7
+   },
+   "IN_BLOWER": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 71.325,
+    "mst": 62.945,
+    "crossings": 20,
+    "hot_cuts": 8
+   },
+   "IN_BRAKE_SW1": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 47.4,
+    "mst": 37.095,
+    "crossings": 22,
+    "hot_cuts": 1
+   },
+   "IN_BRAKE_SW2": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 89.975,
+    "mst": 75.687,
+    "crossings": 33,
+    "hot_cuts": 0
+   },
+   "IN_CAM": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 45.3,
+    "mst": 38.521,
+    "crossings": 32,
+    "hot_cuts": 1
+   },
+   "IN_CAM_RH": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 52.9,
+    "mst": 44.84,
+    "crossings": 23,
+    "hot_cuts": 1
+   },
+   "IN_CLUTCH": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 62.8,
+    "mst": 48.27,
+    "crossings": 25,
+    "hot_cuts": 1
+   },
+   "IN_CRANK": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 31.3,
+    "mst": 26.151,
+    "crossings": 20,
+    "hot_cuts": 5
+   },
+   "IN_CRANK+": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 70.665,
+    "mst": 50.092,
+    "crossings": 21,
+    "hot_cuts": 0
+   },
+   "IN_CRANK-": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 74.665,
+    "mst": 52.801,
+    "crossings": 24,
+    "hot_cuts": 0
+   },
+   "IN_CRUISE_MAIN": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 43.0,
+    "mst": 35.672,
+    "crossings": 16,
+    "hot_cuts": 0
+   },
+   "IN_CRUISE_RESUME": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 44.2,
+    "mst": 38.749,
+    "crossings": 24,
+    "hot_cuts": 0
+   },
+   "IN_CRUISE_SET": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 50.2,
+    "mst": 44.636,
+    "crossings": 43,
+    "hot_cuts": 1
+   },
+   "IN_DEFOG": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 66.625,
+    "mst": 56.25,
+    "crossings": 21,
+    "hot_cuts": 7
+   },
+   "IN_ECT": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 53.5,
+    "mst": 38.948,
+    "crossings": 22,
+    "hot_cuts": 1
+   },
+   "IN_FUEL_LEVEL": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 118.175,
+    "mst": 90.088,
+    "crossings": 37,
+    "hot_cuts": 0
+   },
+   "IN_IAT": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 51.8,
+    "mst": 37.566,
+    "crossings": 23,
+    "hot_cuts": 0
+   },
+   "IN_KNOCK": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 42.5,
+    "mst": 30.825,
+    "crossings": 24,
+    "hot_cuts": 6
+   },
+   "IN_KNOCK_RAW": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 102.7,
+    "mst": 72.696,
+    "crossings": 39,
+    "hot_cuts": 0
+   },
+   "IN_MAF": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 38.1,
+    "mst": 36.345,
+    "crossings": 24,
+    "hot_cuts": 0
+   },
+   "IN_MAP": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 53.2,
+    "mst": 39.365,
+    "crossings": 26,
+    "hot_cuts": 0
+   },
+   "IN_MAP_ONBOARD": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 66.42,
+    "mst": 51.83,
+    "crossings": 27,
+    "hot_cuts": 6
+   },
+   "IN_NEUTRAL_SWITCH": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 95.175,
+    "mst": 68.126,
+    "crossings": 35,
+    "hot_cuts": 3
+   },
+   "IN_O2S": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 64.5,
+    "mst": 45.751,
+    "crossings": 20,
+    "hot_cuts": 1
+   },
+   "IN_PPS_MAIN": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 77.7,
+    "mst": 55.06,
+    "crossings": 31,
+    "hot_cuts": 0
+   },
+   "IN_PPS_SUB": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 83.1,
+    "mst": 58.847,
+    "crossings": 30,
+    "hot_cuts": 1
+   },
+   "IN_PS_PRESSURE_SWITCH": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 72.4,
+    "mst": 51.359,
+    "crossings": 26,
+    "hot_cuts": 2
+   },
+   "IN_SMALL_LIGHT": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 67.975,
+    "mst": 61.803,
+    "crossings": 21,
+    "hot_cuts": 8
+   },
+   "IN_STARTER_SWITCH": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 88.375,
+    "mst": 63.307,
+    "crossings": 31,
+    "hot_cuts": 4
+   },
+   "IN_TEST_MODE": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 56.675,
+    "mst": 40.58,
+    "crossings": 14,
+    "hot_cuts": 8
+   },
+   "IN_TPS_MAIN": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 72.9,
+    "mst": 51.595,
+    "crossings": 32,
+    "hot_cuts": 0
+   },
+   "IN_TPS_SUB": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 78.2,
+    "mst": 55.326,
+    "crossings": 30,
+    "hot_cuts": 1
+   },
+   "IN_TUMBLE_SENSOR_LH": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 43.2,
+    "mst": 35.799,
+    "crossings": 27,
+    "hot_cuts": 0
+   },
+   "IN_TUMBLE_SENSOR_RH": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 37.3,
+    "mst": 36.314,
+    "crossings": 28,
+    "hot_cuts": 0
+   },
+   "IN_VMAIN": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 3,
+    "hpwl": 6.125,
+    "mst": 6.134,
+    "crossings": 5,
+    "hot_cuts": 0
+   },
+   "IN_VSS": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 53.1,
+    "mst": 39.318,
+    "crossings": 21,
+    "hot_cuts": 0
+   },
+   "K_LINE": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 4,
+    "hpwl": 64.8,
+    "mst": 55.815,
+    "crossings": 18,
+    "hot_cuts": 4
+   },
+   "MAIN_RELAY": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 37.275,
+    "mst": 28.34,
+    "crossings": 17,
+    "hot_cuts": 2
+   },
+   "MIL": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 127.675,
+    "mst": 96.857,
+    "crossings": 32,
+    "hot_cuts": 7
+   },
+   "NRST": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 10.8,
+    "mst": 8.246,
+    "crossings": 2,
+    "hot_cuts": 1
+   },
+   "O2_HEATER_REAR": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 61.88,
+    "mst": 44.982,
+    "crossings": 24,
+    "hot_cuts": 2
+   },
+   "OUT_AC_RELAY": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 41.97,
+    "mst": 29.681,
+    "crossings": 10,
+    "hot_cuts": 0
+   },
+   "OUT_CRUISE_MAIN_LIGHT": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 21.47,
+    "mst": 16.172,
+    "crossings": 9,
+    "hot_cuts": 0
+   },
+   "OUT_CRUISE_SET_LIGHT": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 23.31,
+    "mst": 17.679,
+    "crossings": 9,
+    "hot_cuts": 0
+   },
+   "OUT_ELECTRONIC_THROTTE_RELAY": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 29.64,
+    "mst": 22.535,
+    "crossings": 9,
+    "hot_cuts": 0
+   },
+   "OUT_ETB+": {
+    "class": "Power_5A",
+    "width": 2.5,
+    "pads": 2,
+    "hpwl": 35.9,
+    "mst": 31.721,
+    "crossings": 13,
+    "hot_cuts": 7
+   },
+   "OUT_ETB-": {
+    "class": "Power_5A",
+    "width": 2.5,
+    "pads": 2,
+    "hpwl": 24.5,
+    "mst": 20.5,
+    "crossings": 10,
+    "hot_cuts": 3
+   },
+   "OUT_FAN_RELAY_1": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 41.84,
+    "mst": 29.939,
+    "crossings": 24,
+    "hot_cuts": 0
+   },
+   "OUT_FAN_RELAY_2": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 19.68,
+    "mst": 19.182,
+    "crossings": 7,
+    "hot_cuts": 0
+   },
+   "OUT_IGN1": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 92.1,
+    "mst": 66.137,
+    "crossings": 30,
+    "hot_cuts": 0
+   },
+   "OUT_IGN2": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 47.3,
+    "mst": 39.568,
+    "crossings": 26,
+    "hot_cuts": 6
+   },
+   "OUT_IGN3": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 93.1,
+    "mst": 66.959,
+    "crossings": 35,
+    "hot_cuts": 0
+   },
+   "OUT_IGN4": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 50.3,
+    "mst": 42.5,
+    "crossings": 27,
+    "hot_cuts": 5
+   },
+   "OUT_INJ1": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 31.98,
+    "mst": 23.576,
+    "crossings": 23,
+    "hot_cuts": 0
+   },
+   "OUT_INJ2": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 26.24,
+    "mst": 18.737,
+    "crossings": 18,
+    "hot_cuts": 0
+   },
+   "OUT_INJ3": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 14.28,
+    "mst": 11.598,
+    "crossings": 8,
+    "hot_cuts": 0
+   },
+   "OUT_INJ4": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 13.81,
+    "mst": 11.481,
+    "crossings": 6,
+    "hot_cuts": 0
+   },
+   "OUT_MAIN_RELAY": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 37.97,
+    "mst": 27.532,
+    "crossings": 12,
+    "hot_cuts": 0
+   },
+   "OUT_MIL": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 2,
+    "hpwl": 25.07,
+    "mst": 17.984,
+    "crossings": 6,
+    "hot_cuts": 0
+   },
+   "OUT_O2_HEATER_REAR": {
+    "class": "Power_2A",
+    "width": 1.0,
+    "pads": 2,
+    "hpwl": 13.64,
+    "mst": 12.772,
+    "crossings": 4,
+    "hot_cuts": 0
+   },
+   "OUT_PURGE_CONTROL": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 28.64,
+    "mst": 20.421,
+    "crossings": 8,
+    "hot_cuts": 0
+   },
+   "OUT_SPARE_LS1": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 4,
+    "hpwl": 111.963,
+    "mst": 101.337,
+    "crossings": 34,
+    "hot_cuts": 0
+   },
+   "OUT_SPARE_LS2": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 4,
+    "hpwl": 121.162,
+    "mst": 99.557,
+    "crossings": 32,
+    "hot_cuts": 0
+   },
+   "OUT_TACH": {
+    "class": "Power_500mA",
+    "width": 0.4,
+    "pads": 3,
+    "hpwl": 39.775,
+    "mst": 29.225,
+    "crossings": 13,
+    "hot_cuts": 0
+   },
+   "OUT_TGV_CLOSE": {
+    "class": "Power_3A",
+    "width": 1.25,
+    "pads": 3,
+    "hpwl": 66.5,
+    "mst": 48.316,
+    "crossings": 15,
+    "hot_cuts": 1
+   },
+   "OUT_TGV_OPEN": {
+    "class": "Power_3A",
+    "width": 1.25,
+    "pads": 3,
+    "hpwl": 54.6,
+    "mst": 40.567,
+    "crossings": 13,
+    "hot_cuts": 0
+   },
+   "OUT_VVT_LH-": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 24.68,
+    "mst": 21.059,
+    "crossings": 7,
+    "hot_cuts": 1
+   },
+   "OUT_VVT_RH-": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 29.44,
+    "mst": 23.335,
+    "crossings": 7,
+    "hot_cuts": 0
+   },
+   "OUT_WG": {
+    "class": "Power_1A",
+    "width": 0.6,
+    "pads": 2,
+    "hpwl": 40.78,
+    "mst": 28.946,
+    "crossings": 9,
+    "hot_cuts": 1
+   },
+   "PG_5VP": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 48.6,
+    "mst": 34.38,
+    "crossings": 10,
+    "hot_cuts": 2
+   },
+   "PG_5VP_APS": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 6.9,
+    "mst": 6.607,
+    "crossings": 1,
+    "hot_cuts": 0
+   },
+   "PURGE": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 84.975,
+    "mst": 64.842,
+    "crossings": 20,
+    "hot_cuts": 10
+   },
+   "PWR_EN": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 120.2,
+    "mst": 91.293,
+    "crossings": 34,
+    "hot_cuts": 5
+   },
+   "SPARE_IGN6": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 4.5,
+    "mst": 3.511,
+    "crossings": 4,
+    "hot_cuts": 1
+   },
+   "SPARE_IGN7": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 8.5,
+    "mst": 6.159,
+    "crossings": 2,
+    "hot_cuts": 2
+   },
+   "SPARE_IGN8": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 10.1,
+    "mst": 7.558,
+    "crossings": 7,
+    "hot_cuts": 2
+   },
+   "SPARE_LS1": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 94.575,
+    "mst": 72.787,
+    "crossings": 28,
+    "hot_cuts": 10
+   },
+   "SPARE_LS2": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 104.375,
+    "mst": 80.991,
+    "crossings": 30,
+    "hot_cuts": 10
+   },
+   "SPARE_PWM3": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 3.0,
+    "mst": 3.0,
+    "crossings": 2,
+    "hot_cuts": 0
+   },
+   "SWCLK": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 9.8,
+    "mst": 7.335,
+    "crossings": 9,
+    "hot_cuts": 0
+   },
+   "SWDIO": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 7.4,
+    "mst": 5.28,
+    "crossings": 1,
+    "hot_cuts": 0
+   },
+   "TACH": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 120.175,
+    "mst": 95.778,
+    "crossings": 33,
+    "hot_cuts": 10
+   },
+   "TGV_DIR": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 110.2,
+    "mst": 83.191,
+    "crossings": 21,
+    "hot_cuts": 2
+   },
+   "TGV_DIS": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 108.6,
+    "mst": 82.962,
+    "crossings": 20,
+    "hot_cuts": 1
+   },
+   "TGV_PWM": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 113.2,
+    "mst": 94.187,
+    "crossings": 33,
+    "hot_cuts": 5
+   },
+   "THRESHOLD_VR_CR": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 64.3,
+    "mst": 52.849,
+    "crossings": 23,
+    "hot_cuts": 9
+   },
+   "UART_8_RX": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 94.975,
+    "mst": 73.324,
+    "crossings": 14,
+    "hot_cuts": 1
+   },
+   "UART_8_TX": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 99.6,
+    "mst": 75.532,
+    "crossings": 17,
+    "hot_cuts": 1
+   },
+   "USB_CC1": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 10.642,
+    "mst": 9.919,
+    "crossings": 1,
+    "hot_cuts": 0
+   },
+   "USB_CC2": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 18.64,
+    "mst": 14.68,
+    "crossings": 3,
+    "hot_cuts": 0
+   },
+   "USB_D+": {
+    "class": "USB2",
+    "width": 0.25,
+    "pads": 5,
+    "hpwl": 45.54,
+    "mst": 37.296,
+    "crossings": 8,
+    "hot_cuts": 1
+   },
+   "USB_D-": {
+    "class": "USB2",
+    "width": 0.25,
+    "pads": 5,
+    "hpwl": 46.865,
+    "mst": 37.899,
+    "crossings": 7,
+    "hot_cuts": 1
+   },
+   "USB_SHIELD": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 5,
+    "hpwl": 17.497,
+    "mst": 21.598,
+    "crossings": 5,
+    "hot_cuts": 0
+   },
+   "USB_VBUS": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 6,
+    "hpwl": 46.915,
+    "mst": 40.799,
+    "crossings": 7,
+    "hot_cuts": 1
+   },
+   "VBAT": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 126.15,
+    "mst": 89.212,
+    "crossings": 39,
+    "hot_cuts": 9
+   },
+   "VREF": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 38.7,
+    "mst": 27.405,
+    "crossings": 19,
+    "hot_cuts": 1
+   },
+   "VR_ANALOG_CR": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 33.7,
+    "mst": 30.49,
+    "crossings": 19,
+    "hot_cuts": 5
+   },
+   "VVT_LH": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 90.875,
+    "mst": 66.558,
+    "crossings": 23,
+    "hot_cuts": 9
+   },
+   "VVT_RH": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 84.975,
+    "mst": 62.011,
+    "crossings": 25,
+    "hot_cuts": 7
+   },
+   "WBO_HEATER": {
+    "class": "Power_2A",
+    "width": 1.0,
+    "pads": 4,
+    "hpwl": 101.65,
+    "mst": 79.991,
+    "crossings": 16,
+    "hot_cuts": 0
+   },
+   "WBO_IP": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 80.763,
+    "mst": 77.741,
+    "crossings": 6,
+    "hot_cuts": 0
+   },
+   "WBO_IP_J1": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 21.262,
+    "mst": 16.695,
+    "crossings": 6,
+    "hot_cuts": 0
+   },
+   "WBO_RTRIM": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 8.55,
+    "mst": 6.201,
+    "crossings": 0,
+    "hot_cuts": 0
+   },
+   "WBO_SEL1": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 0.0,
+    "mst": 0,
+    "crossings": 0,
+    "hot_cuts": 0
+   },
+   "WBO_UN": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 93.313,
+    "mst": 85.151,
+    "crossings": 12,
+    "hot_cuts": 0
+   },
+   "WBO_UN_J1": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 10.562,
+    "mst": 8.793,
+    "crossings": 1,
+    "hot_cuts": 0
+   },
+   "WBO_VM": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 86.913,
+    "mst": 85.451,
+    "crossings": 9,
+    "hot_cuts": 0
+   },
+   "WBO_VM_J1": {
+    "class": "Signal_Robust",
+    "width": 0.25,
+    "pads": 2,
+    "hpwl": 17.562,
+    "mst": 13.521,
+    "crossings": 3,
+    "hot_cuts": 0
+   },
+   "WG": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 3,
+    "hpwl": 72.475,
+    "mst": 54.302,
+    "crossings": 21,
+    "hot_cuts": 7
+   },
+   "unconnected-(M11-PULL_V5-PadV6)": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 0.0,
+    "mst": 0,
+    "crossings": 0,
+    "hot_cuts": 0
+   },
+   "unconnected-(M12-PULL_V5-PadV6)": {
+    "class": "Default",
+    "width": 0.2,
+    "pads": 2,
+    "hpwl": 0.0,
+    "mst": 0,
+    "crossings": 0,
+    "hot_cuts": 0
+   }
+  },
+  "longest_hpwl": [
+   [
+    "+5VA",
+    252.555
+   ],
+   [
+    "AUX_AN2",
+    201.238
+   ],
+   [
+    "+3.3V",
+    194.562
+   ],
+   [
+    "+5V",
+    189.255
+   ],
+   [
+    "+5VAS",
+    168.6
+   ],
+   [
+    "AUX_IN1",
+    167.275
+   ],
+   [
+    "AUX_IN2",
+    161.125
+   ],
+   [
+    "AUX_IN3",
+    157.775
+   ],
+   [
+    "GND_SENSOR",
+    152.1
+   ],
+   [
+    "MIL",
+    127.675
+   ]
+  ],
+  "most_crossings": [
+   [
+    "+5VA",
+    102
+   ],
+   [
+    "AUX_AN2",
+    75
+   ],
+   [
+    "+5VAS",
+    72
+   ],
+   [
+    "+5V",
+    71
+   ],
+   [
+    "+12V_BACK_UP",
+    61
+   ],
+   [
+    "+3.3V",
+    61
+   ],
+   [
+    "APS_PS_5V",
+    53
+   ],
+   [
+    "GND_SENSOR",
+    51
+   ],
+   [
+    "IN_CRUISE_SET",
+    43
+   ],
+   [
+    "FP_CMD",
+    39
+   ]
+  ]
+ },
+ "cutlines": {
+  "pitch": 0.4,
+  "layers": [
+   "F.Cu",
+   "B.Cu"
+  ],
+  "window_mm": 20.0,
+  "step_mm": 5.0,
+  "peak_window_ratio": 14.250142501424959,
+  "overload_tracks": 255.1253300000007,
+  "overloaded_cuts": 29,
+  "peak_cut_ratio": 0.2829092920353977,
+  "worst": [
+   {
+    "axis": "y",
+    "at": 65.0,
+    "from": 165.5,
+    "to": 185.5,
+    "signals": 17,
+    "demand": 37.88,
+    "capacity": 15.0,
+    "excess": 22.875004999999987,
+    "ratio": 2.525000841666945,
+    "cut_signals": 44,
+    "cut_ratio": 0.14263158195013856
+   },
+   {
+    "axis": "y",
+    "at": 70.0,
+    "from": 165.5,
+    "to": 185.5,
+    "signals": 13,
+    "demand": 32.38,
+    "capacity": 11.5,
+    "excess": 20.87500499999993,
+    "ratio": 2.8152186153124243,
+    "cut_signals": 44,
+    "cut_ratio": 0.15632318867267403
+   },
+   {
+    "axis": "x",
+    "at": 150.0,
+    "from": 120.5,
+    "to": 140.5,
+    "signals": 15,
+    "demand": 16.38,
+    "capacity": 2.5,
+    "excess": 13.87501999999995,
+    "ratio": 6.550052400419071,
+    "cut_signals": 67,
+    "cut_ratio": 0.17783506580578975
+   },
+   {
+    "axis": "x",
+    "at": 175.0,
+    "from": 50.5,
+    "to": 70.5,
+    "signals": 11,
+    "demand": 14.25,
+    "capacity": 1.0,
+    "excess": 13.250009999999996,
+    "ratio": 14.250142501424959,
+    "cut_signals": 79,
+    "cut_ratio": 0.20800555683490154
+   },
+   {
+    "axis": "x",
+    "at": 155.0,
+    "from": 120.5,
+    "to": 140.5,
+    "signals": 14,
+    "demand": 15.5,
+    "capacity": 2.5,
+    "excess": 13.00001999999995,
+    "ratio": 6.200049600396678,
+    "cut_signals": 61,
+    "cut_ratio": 0.21851010211756638
+   },
+   {
+    "axis": "y",
+    "at": 80.0,
+    "from": 165.5,
+    "to": 185.5,
+    "signals": 11,
+    "demand": 24.5,
+    "capacity": 11.5,
+    "excess": 13.00000499999993,
+    "ratio": 2.130435708885078,
+    "cut_signals": 39,
+    "cut_ratio": 0.12305986969090613
+   },
+   {
+    "axis": "y",
+    "at": 135.0,
+    "from": 140.5,
+    "to": 160.5,
+    "signals": 23,
+    "demand": 24.25,
+    "capacity": 12.5,
+    "excess": 11.750010000000117,
+    "ratio": 1.9400015520012597,
+    "cut_signals": 39,
+    "cut_ratio": 0.12957431692751695
+   },
+   {
+    "axis": "x",
+    "at": 170.0,
+    "from": 45.5,
+    "to": 65.5,
+    "signals": 13,
+    "demand": 16.25,
+    "capacity": 4.5,
+    "excess": 11.750010000000017,
+    "ratio": 3.611119135820316,
+    "cut_signals": 65,
+    "cut_ratio": 0.13046844956203563
+   },
+   {
+    "axis": "y",
+    "at": 130.0,
+    "from": 140.5,
+    "to": 160.5,
+    "signals": 22,
+    "demand": 23.62,
+    "capacity": 12.5,
+    "excess": 11.125010000000117,
+    "ratio": 1.8900015120012272,
+    "cut_signals": 44,
+    "cut_ratio": 0.1246450047154309
+   },
+   {
+    "axis": "x",
+    "at": 115.0,
+    "from": 95.5,
+    "to": 115.5,
+    "signals": 10,
+    "demand": 11.62,
+    "capacity": 1.5,
+    "excess": 10.125000000000014,
+    "ratio": 7.750000000000074,
+    "cut_signals": 22,
+    "cut_ratio": 0.04820261595433384
+   }
+  ],
+  "hot_nets": {
+   "+3.3V": 7,
+   "AUX_IN1": 2,
+   "AUX_IN2": 2,
+   "AUX_IN3": 1,
+   "BOOT0": 1,
+   "I2C_1_SCL": 2,
+   "USB_D+": 1,
+   "USB_D-": 1,
+   "USB_VBUS": 1,
+   "GND_SENSOR": 10,
+   "IGN": 7,
+   "PWR_EN": 5,
+   "VBAT": 9,
+   "TGV_DIR": 2,
+   "TGV_DIS": 1,
+   "+5VAS": 10,
+   "AUX_AN2": 11,
+   "OUT_IGN2": 6,
+   "TGV_PWM": 5,
+   "AC_RELAY": 9,
+   "CRUISE_MAIN_LIGHT": 8,
+   "CRUISE_SET_LIGHT": 8,
+   "MIL": 7,
+   "OUT_IGN4": 5,
+   "SPARE_IGN7": 2,
+   "SPARE_IGN8": 2,
+   "TACH": 10,
+   "VVT_LH": 9,
+   "IN_KNOCK": 6,
+   "IN_MAP_ONBOARD": 6,
+   "PURGE": 10,
+   "SPARE_LS1": 10,
+   "SPARE_LS2": 10,
+   "THRESHOLD_VR_CR": 9,
+   "VVT_RH": 7,
+   "IN_CRANK": 5,
+   "WG": 7,
+   "+12V": 4,
+   "+12V_IGN": 6,
+   "+5V": 8,
+   "ETB_DIR": 3,
+   "ETB_DIS": 3,
+   "ETB_PWM": 2,
+   "IN_BLOWBY": 7,
+   "IN_BLOWER": 8,
+   "IN_DEFOG": 7,
+   "IN_SMALL_LIGHT": 8,
+   "IN_TEST_MODE": 8,
+   "K_LINE": 4,
+   "+12V_ETB": 5,
+   "IN_NEUTRAL_SWITCH": 3,
+   "IN_PS_PRESSURE_SWITCH": 2,
+   "IN_STARTER_SWITCH": 4,
+   "OUT_ETB+": 7,
+   "OUT_ETB-": 3,
+   "/Vehicle connector/IGN1_COIL": 1,
+   "OUT_TGV_CLOSE": 1,
+   "OUT_VVT_LH-": 1,
+   "OUT_WG": 1,
+   "+12V_BACK_UP": 4,
+   "PG_5VP": 2,
+   "+5VA": 3,
+   "APS_PS_5V": 1,
+   "FAN_RELAY_1": 2,
+   "FAN_RELAY_2": 5,
+   "INJ3": 1,
+   "INJ4": 1,
+   "IN_CRUISE_SET": 1,
+   "MAIN_RELAY": 2,
+   "IN_AC_REQUEST": 1,
+   "O2_HEATER_REAR": 2,
+   "DIN_DEFOG": 1,
+   "I2C_1_SDA": 1,
+   "NRST": 1,
+   "UART_8_RX": 1,
+   "UART_8_TX": 1,
+   "IN_BRAKE_SW1": 1,
+   "IN_CAM_RH": 1,
+   "IN_O2S": 1,
+   "IN_CLUTCH": 1,
+   "VR_ANALOG_CR": 5,
+   "IN_CAM": 1,
+   "GNDA": 2,
+   "IN_ECT": 1,
+   "IN_PPS_SUB": 1,
+   "IN_TPS_SUB": 1,
+   "FP_CMD": 1,
+   "SPARE_IGN6": 1,
+   "VREF": 1
+  },
+  "modules": [
+   {
+    "ref": "M13",
+    "rect": [
+     137.25,
+     150.7,
+     146.55,
+     160.0
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M8",
+    "rect": [
+     145.999998,
+     60.199998,
+     162.999999,
+     81.0
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M1",
+    "rect": [
+     114.599998,
+     97.699999,
+     158.00000200000002,
+     140.000004
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M3",
+    "rect": [
+     90.0,
+     176.0,
+     114.60000000000001,
+     190.0
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M9",
+    "rect": [
+     146.7,
+     176.20000000000002,
+     163.3,
+     190.0
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M10",
+    "rect": [
+     144.0826542531694,
+     43.1000095,
+     149.52499799999998,
+     55.95
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M14",
+    "rect": [
+     165.999998,
+     60.199998,
+     182.999999,
+     81.0
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M5",
+    "rect": [
+     150.275,
+     148.875,
+     159.975,
+     163.97500000000002
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M11",
+    "rect": [
+     162.775,
+     44.149998,
+     167.900003,
+     56.050025999999995
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M12",
+    "rect": [
+     152.775,
+     44.149998,
+     157.900003,
+     56.050025999999995
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   },
+   {
+    "ref": "M2",
+    "rect": [
+     168.7,
+     46.199999999999996,
+     185.3,
+     60.0
+    ],
+    "keepout_layers": [
+     "In3.Cu",
+     "In4.Cu",
+     "F.Cu",
+     "B.Cu"
+    ]
+   }
+  ],
+  "n_cuts": 58
+ },
+ "edge_pressure": [
+  {
+   "ref": "J2",
+   "lib": "USB_C_Receptacle_HRO _TYPE-C-31-M-12",
+   "side": "west",
+   "gap_mm": 2.5,
+   "signals_toward_edge": 6,
+   "edge_part": false,
+   "need_mm": 1.2,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "J3",
+   "lib": "Molex_Mini-Fit_Jr_5566-14A_2x07_P4.20mm_Vertical",
+   "side": "west",
+   "gap_mm": 4.35,
+   "signals_toward_edge": 6,
+   "edge_part": false,
+   "need_mm": 1.2,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "R53",
+   "lib": "R_0603_1608Metric",
+   "side": "east",
+   "gap_mm": 2.495,
+   "signals_toward_edge": 2,
+   "edge_part": false,
+   "need_mm": 0.4,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "R52",
+   "lib": "R_0603_1608Metric",
+   "side": "east",
+   "gap_mm": 4.495,
+   "signals_toward_edge": 2,
+   "edge_part": false,
+   "need_mm": 0.4,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "R51",
+   "lib": "R_0603_1608Metric",
+   "side": "east",
+   "gap_mm": 4.495,
+   "signals_toward_edge": 2,
+   "edge_part": false,
+   "need_mm": 0.4,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "JP10",
+   "lib": "R_0805_2012Metric",
+   "side": "west",
+   "gap_mm": 3.3,
+   "signals_toward_edge": 1,
+   "edge_part": false,
+   "need_mm": 0.2,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "P19",
+   "lib": "TestPoint_THTPad_D2.0mm_Drill1.0mm",
+   "side": "south",
+   "gap_mm": 4.0,
+   "signals_toward_edge": 1,
+   "edge_part": false,
+   "need_mm": 0.2,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H2",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "east",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H2",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "north",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H4",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "east",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H4",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "south",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H3",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "west",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H3",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "south",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H1",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "west",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "H1",
+   "lib": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "side": "north",
+   "gap_mm": 1.2,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  },
+  {
+   "ref": "P21",
+   "lib": "TestPoint_THTPad_D2.0mm_Drill1.0mm",
+   "side": "south",
+   "gap_mm": 4.0,
+   "signals_toward_edge": 0,
+   "edge_part": false,
+   "need_mm": 0.0,
+   "short_mm": 0.0
+  }
+ ],
+ "grid": {
+  "origin": [
+   80.0,
+   30.0
+  ],
+  "outline_corner_off_10": [],
+  "outline_size_off_10": [],
+  "parts_off": [],
+  "parts_half": [],
+  "holes_off": [
+   {
+    "ref": "J1.",
+    "x": 122.45,
+    "y": 42.5
+   },
+   {
+    "ref": "J1.",
+    "x": 122.45,
+    "y": 88.25
+   },
+   {
+    "ref": "J1.",
+    "x": 122.45,
+    "y": 135.1
+   },
+   {
+    "ref": "J2.",
+    "x": 4.55,
+    "y": 82.89
+   },
+   {
+    "ref": "J2.",
+    "x": 4.55,
+    "y": 77.11
+   }
+  ],
+  "bad_rotation": [],
+  "counts": {
+   "outline_corner_off_10": 0,
+   "outline_size_off_10": 0,
+   "parts_off_whole_mm": 0,
+   "parts_on_half_mm_only": 0,
+   "holes_off": 5,
+   "bad_rotation": 0,
+   "parts_total": 130
+  }
+ },
+ "symmetry": [
+  {
+   "footprint": "Fuse_1206_3216Metric",
+   "value": "JK-nSMD005",
+   "count": 5,
+   "in_rows": 4,
+   "rows": [
+    {
+     "axis": "x",
+     "at": 179.0,
+     "n": 2,
+     "gaps": [
+      3.0
+     ],
+     "constant": true
+    },
+    {
+     "axis": "x",
+     "at": 131.0,
+     "n": 2,
+     "gaps": [
+      5.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": true,
+   "gap_spread": 2.0
+  },
+  {
+   "footprint": "MountingHole_3.2mm_M3_DIN965_Pad",
+   "value": "MountingHole_3.2mm",
+   "count": 4,
+   "in_rows": 4,
+   "rows": [
+    {
+     "axis": "x",
+     "at": 34.0,
+     "n": 2,
+     "gaps": [
+      122.0
+     ],
+     "constant": true
+    },
+    {
+     "axis": "x",
+     "at": 196.0,
+     "n": 2,
+     "gaps": [
+      122.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": true,
+   "gap_spread": 0.0
+  },
+  {
+   "footprint": "R_0603_1608Metric",
+   "value": "10K",
+   "count": 4,
+   "in_rows": 2,
+   "rows": [
+    {
+     "axis": "x",
+     "at": 60.0,
+     "n": 2,
+     "gaps": [
+      2.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": true,
+   "gap_spread": 0.0
+  },
+  {
+   "footprint": "R_0603_1608Metric",
+   "value": "1K",
+   "count": 4,
+   "in_rows": 2,
+   "rows": [
+    {
+     "axis": "y",
+     "at": 178.0,
+     "n": 2,
+     "gaps": [
+      20.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": true,
+   "gap_spread": 0.0
+  },
+  {
+   "footprint": "R_0603_1608Metric",
+   "value": "4.7K",
+   "count": 29,
+   "in_rows": 23,
+   "rows": [
+    {
+     "axis": "y",
+     "at": 166.0,
+     "n": 19,
+     "gaps": [
+      3.0,
+      5.0,
+      3.0,
+      5.0,
+      3.0,
+      21.0,
+      3.0,
+      5.0,
+      3.0,
+      5.0,
+      3.0,
+      5.0,
+      3.0,
+      9.0,
+      4.0,
+      3.0,
+      5.0,
+      3.0
+     ],
+     "constant": false
+    },
+    {
+     "axis": "y",
+     "at": 98.0,
+     "n": 2,
+     "gaps": [
+      7.0
+     ],
+     "constant": true
+    },
+    {
+     "axis": "y",
+     "at": 178.0,
+     "n": 2,
+     "gaps": [
+      52.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": false,
+   "gap_spread": 49.0
+  },
+  {
+   "footprint": "R_0603_1608Metric",
+   "value": "5.1K",
+   "count": 2,
+   "in_rows": 0,
+   "rows": [],
+   "constant": false,
+   "gap_spread": null
+  },
+  {
+   "footprint": "R_0805_2012Metric",
+   "value": "0",
+   "count": 12,
+   "in_rows": 5,
+   "rows": [
+    {
+     "axis": "x",
+     "at": 118.0,
+     "n": 3,
+     "gaps": [
+      83.0,
+      5.0
+     ],
+     "constant": false
+    },
+    {
+     "axis": "x",
+     "at": 178.0,
+     "n": 2,
+     "gaps": [
+      5.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": false,
+   "gap_spread": 78.0
+  },
+  {
+   "footprint": "R_1206_3216Metric",
+   "value": "1K",
+   "count": 3,
+   "in_rows": 2,
+   "rows": [
+    {
+     "axis": "x",
+     "at": 91.0,
+     "n": 2,
+     "gaps": [
+      5.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": true,
+   "gap_spread": 0.0
+  },
+  {
+   "footprint": "SOIC-8_3.9x4.9mm_P1.27mm",
+   "value": "VNLD5160TR-E",
+   "count": 10,
+   "in_rows": 10,
+   "rows": [
+    {
+     "axis": "y",
+     "at": 172.0,
+     "n": 10,
+     "gaps": [
+      8.0,
+      8.0,
+      24.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+     ],
+     "constant": false
+    }
+   ],
+   "constant": false,
+   "gap_spread": 16.0
+  },
+  {
+   "footprint": "dinput4",
+   "value": "Module-dinput4-0.1",
+   "count": 2,
+   "in_rows": 2,
+   "rows": [
+    {
+     "axis": "x",
+     "at": 56.0,
+     "n": 2,
+     "gaps": [
+      10.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": true,
+   "gap_spread": 0.0
+  },
+  {
+   "footprint": "motor-driver",
+   "value": "Module-motor-driver-0.1",
+   "count": 2,
+   "in_rows": 0,
+   "rows": [],
+   "constant": false,
+   "gap_spread": null
+  },
+  {
+   "footprint": "power_12and5V",
+   "value": "Module-power_12and5V-0.3",
+   "count": 2,
+   "in_rows": 2,
+   "rows": [
+    {
+     "axis": "x",
+     "at": 81.0,
+     "n": 2,
+     "gaps": [
+      20.0
+     ],
+     "constant": true
+    }
+   ],
+   "constant": true,
+   "gap_spread": 0.0
+  }
+ ]
+}

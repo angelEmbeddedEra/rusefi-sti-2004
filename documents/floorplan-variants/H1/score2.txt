@@ -1,0 +1,40 @@
+== rusefiSTI2004.kicad_pcb
+signal layers 2 (F.Cu, B.Cu), pitch 0.40 mm, plane nets left out: +12V_RAW, GND
+
+1 HPWL        total 10270.8 mm over 167 nets (MST 8417.0 mm)
+  longest nets: +5VA 248, +5V 193, AUX_AN2 191, +5VAS 159, +3.3V 158
+2 crossings   2168 ratsnest crossings (different nets, 272 MST edges)
+  most crossed: +5VA 121, +5VAS 77, +3.3V 65, GND_SENSOR 65, IN_BRAKE_SW1 65
+3 cut lines   58 cuts every 5 mm, window 20 mm; peak window ratio 8.75, peak whole-cut ratio 0.25; 23 cuts overloaded, 295.3 tracks short in total
+  axis    at  from..to   sigs  demand  capacity  ratio   (tracks of 0.40 mm; worst window per cut)
+  y     125.0  140.5..160.5    35    39.0      11.0  3.55
+  y     120.0  140.5..160.5    33    35.2      11.0  3.20
+  x     155.0  115.5..135.5    27    30.6       7.5  4.08
+  y      70.0  175.5..195.5    20    40.4      20.5  1.97
+  y     130.0  140.5..160.5    27    30.4      11.0  2.76
+  y      65.0  165.5..185.5    13    33.4      15.0  2.23
+  x     150.0  115.5..135.5    22    25.2       7.5  3.37
+  x     135.0  115.5..135.5    21    23.9       7.5  3.18
+  x     140.0  115.5..135.5    21    23.8       7.5  3.17
+  y     115.0  140.5..160.5    25    26.4      11.0  2.40
+  Hellen modules block every signal layer inside their outline (ROUTING-PLAN: In3/In4 keepouts): M12, M14, M5, M2, M3, M1, M11, M13, M8, M10, M9
+4 edge        14 parts within 5 mm of an edge, 0 short of room (sum 0.00 mm)
+  J2     west  gap  2.50 mm   6 signals face it, need  1.20 mm
+  J3     west  gap  4.35 mm   6 signals face it, need  1.20 mm
+  JP10   west  gap  3.30 mm   1 signals face it, need  0.20 mm
+  P19    south gap  4.00 mm   1 signals face it, need  0.20 mm
+5 grid        outline corner off 10: 0, size off 10: 0, part origins off whole mm: 0 of 130 (0 only on half mm), holes off: 5, rotations not 0/90: 0
+6 symmetry    identical-footprint groups (constant pitch along rows?)
+  Fuse_1206_3216Metric               JK-nSMD005   n=5   in rows 4   constant
+  MountingHole_3.2mm_M3_DIN965_Pad   MountingHole n=4   in rows 4   constant
+  R_0603_1608Metric                  10K          n=4   in rows 2   constant
+  R_0603_1608Metric                  1K           n=4   in rows 2   constant
+  R_0603_1608Metric                  4.7K         n=29  in rows 21  pitch varies, spread 49.00 mm
+  R_0603_1608Metric                  5.1K         n=2   in rows 2   constant
+  R_0805_2012Metric                  0            n=12  in rows 4   constant
+  R_1206_3216Metric                  1K           n=3   in rows 2   constant
+  SOIC-8_3.9x4.9mm_P1.27mm           VNLD5160TR-E n=10  in rows 10  pitch varies, spread 16.00 mm
+  dinput4                            Module-dinpu n=2   in rows 2   constant
+  motor-driver                       Module-motor n=2   in rows 0   no row
+  power_12and5V                      Module-power n=2   in rows 2   constant
+

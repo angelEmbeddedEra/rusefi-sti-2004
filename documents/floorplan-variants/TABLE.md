@@ -9,6 +9,9 @@ Scorer: `floorplan_score.py BOARD --layers N` (branch floorplan-scorer of ~/kica
 | A0 landscape, J1 on the short edge, no WBO-corner rule | 170 x 130 | 14526.8 | 2310 | 33.4 tracks, 10 cuts | 14.3 tracks, 6 cuts | 0 | 0 | 5 |
 | A-land-M3 landscape with the WBO-corner rule | 170 x 130 | 14559.3 | 2395 | 44.5 tracks, 10 cuts | 22.0 tracks, 8 cuts | 0 | 1 (R45 half mm) | 5 |
 | A-portrait seed 21 (fresh start) | 130 x 170 | 14641.2 | 3035 | 55.8 tracks, 16 cuts | 15.6 tracks, 6 cuts | 0 | 0 | 5 |
+| H1 hand plan, J1 on the right long edge, driver bank beside J1, M1 rot 0 | 130 x 170 | 10270.8 | 2168 | 295.3 tracks, 23 cuts | 116.6 tracks, 14 cuts | 0 | 0 | 5 |
+| H1a hand plan, as H1 with M1 rot 90 (CHOSEN H) | 130 x 170 | 10311.1 | 1610 | 255.1 tracks, 29 cuts | 108.3 tracks, 17 cuts | 0 | 0 | 5 |
+| H1b hand plan, as H1a with M1 rot 0 at (36,106) | 130 x 170 | 10485.1 | 2227 | 307.3 tracks, 27 cuts | 146.1 tracks, 22 cuts | 0 | 0 | 5 |
 | B (control) | 160 x 120 | 13696.7 | 2302 | 51.4 tracks, 16 cuts | 12.8 tracks, 5 cuts | 0 | 0 | 5 |
 | C (own optimised plan with M1 rotated 90; not "A rotated") | 170 x 130 | 12720.4 | 2577 | 225.6 tracks, 18 cuts | 168.1 tracks, 12 cuts | 0 | 0 | 5 |
 
