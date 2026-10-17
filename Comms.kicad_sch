@@ -1289,7 +1289,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "hellen-one-wbo-0.5:Module-wbo-0.5"
+		(symbol "hellen-one-wbo-0.6:Module-wbo-0.6"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1305,8 +1305,8 @@
 					)
 				)
 			)
-			(property "Value" "Module-wbo-0.5"
-				(at 8.89 -40.64 0)
+			(property "Value" "Module-wbo-0.6"
+				(at 8.128 -41.91 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1315,7 +1315,7 @@
 					)
 				)
 			)
-			(property "Footprint" "hellen-one-wbo-0.5:wbo"
+			(property "Footprint" "hellen-one-wbo-0.6:wbo"
 				(at 25.4 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1348,25 +1348,9 @@
 					)
 				)
 			)
-			(symbol "Module-wbo-0.5_0_0"
+			(symbol "Module-wbo-0.6_0_0"
 				(text "Heater negative"
-					(at 16.51 -7.62 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "Power GND"
-					(at 19.05 -5.08 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "Analog/digital"
-					(at 20.32 -20.32 0)
+					(at 17.526 -7.366 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1374,10 +1358,10 @@
 					)
 				)
 			)
-			(symbol "Module-wbo-0.5_1_0"
+			(symbol "Module-wbo-0.6_1_0"
 				(rectangle
 					(start 0 0)
-					(end 33.02 -39.37)
+					(end 33.02 -40.64)
 					(stroke
 						(width 0)
 						(type default)
@@ -1386,13 +1370,45 @@
 						(type background)
 					)
 				)
-				(text "Internal TC2030\nconnector"
-					(at 7.1222 -16.2666 0)
+				(text "Internal SWD TC2030 connector"
+					(at 0.508 -22.86 0)
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 						(justify left)
+					)
+				)
+				(text "Sensor Voltage VS"
+					(at 16.256 -17.78 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "Analog/digital/power"
+					(at 18.034 -20.32 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "Virtual Ground\nVS/IP"
+					(at 18.288 -15.24 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "Pump Current"
+					(at 18.542 -12.446 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 				(pin passive line
@@ -1470,7 +1486,7 @@
 				(pin passive line
 					(at 40.64 -7.62 180)
 					(length 7.62)
-					(name "LSU_H+"
+					(name "LSU_Htr"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1478,24 +1494,6 @@
 						)
 					)
 					(number "E5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -5.08 180)
-					(length 7.62)
-					(name "LSU_H-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "E6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2239,16 +2237,6 @@
 			(type default)
 		)
 		(uuid "c4cd3b28-b8da-4bda-bac2-d287966a030a")
-	)
-	(wire
-		(pts
-			(xy 80.01 55.88) (xy 85.09 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d00f858e-e24d-4d1b-b5a1-dad077ab8d54")
 	)
 	(wire
 		(pts
@@ -3616,85 +3604,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "EmbeddedEra_Generic:GND")
-		(at 85.09 55.88 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6824c384-57e4-4497-b898-7204a14aa7f4")
-		(property "Reference" "#PWR070"
-			(at 85.09 55.88 270)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 55.88 270)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 55.88 270)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 55.88 270)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground. Copied from KiCad library power:GND (KiCad 10.0), CC-BY-SA 4.0 with the KiCad library exception."
-			(at 85.09 55.88 270)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7ac2ae48-5a93-4c54-ab16-f35e160905b9")
-		)
-		(instances
-			(project "rusefiSTI2004"
-				(path "/00d4d98c-a749-4bd2-a087-ea484becbbe4/b698161d-5eaf-5046-aa12-9fab6361af26"
-					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+(symbol
 		(lib_id "EmbeddedEra:TestPoint_THT")
 		(at 30.48 104.14 270)
 		(unit 1)
@@ -4141,7 +4051,7 @@
 		)
 	)
 	(symbol
-		(lib_id "hellen-one-wbo-0.5:Module-wbo-0.5")
+		(lib_id "hellen-one-wbo-0.6:Module-wbo-0.6")
 		(at 39.37 50.8 0)
 		(unit 1)
 		(body_style 1)
@@ -4162,7 +4072,7 @@
 				)
 			)
 		)
-		(property "Value" "Module-wbo-0.5"
+		(property "Value" "Module-wbo-0.6"
 			(at 55.88 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4172,7 +4082,7 @@
 				)
 			)
 		)
-		(property "Footprint" "hellen-one-wbo-0.5:wbo"
+		(property "Footprint" "hellen-one-wbo-0.6:wbo"
 			(at 64.77 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4211,10 +4121,7 @@
 		(pin "W1"
 			(uuid "762000f5-2505-4845-9766-516051325afb")
 		)
-		(pin "E6"
-			(uuid "724cfc2b-268d-450f-b3ea-ed2ee93885de")
-		)
-		(pin "W2"
+	(pin "W2"
 			(uuid "50d15f9c-df63-499b-98b8-3e661f8cbc08")
 		)
 		(pin "J_VCC2"

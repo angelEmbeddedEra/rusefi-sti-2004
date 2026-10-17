@@ -26,4 +26,5 @@
   (lib (name "hellen-one-motor-driver-0.1")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/motor-driver/0.1")(options "")(descr ""))
   (lib (name "hellen-one-vr-discrete-0.5")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/vr-discrete/0.5")(options "")(descr ""))
   (lib (name "hellen-one-wbo-0.5")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/wbo/0.5")(options "")(descr ""))
+  (lib (name "hellen-one-wbo-0.6")(type "KiCad")(uri "${KIPRJMOD}/hellen-one/modules/wbo/0.6")(options "")(descr ""))
 )

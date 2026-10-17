@@ -102,7 +102,7 @@ Q9-Q16 are two more copies of the 4-channel `INJ4` low-side sheet (LS2, LS3).
 
 ### Front O2: Bosch LSU 4.9 on the rusEFI WBO module (M3)
 
-Wired like rusefi/hellen154hyundai: module LSU_H- to GND, LSU_H+ is the switched heater return, SEL1 tied to PULL_DOWN1, CAN to the MCU. Heater +12 V stays on the car harness (front sensor plug B18 pin 2, from the main relay).
+Module wbo 0.6 (2026-10-17, as rusefi/uaefi rev E-2 and later): the heater MOSFET (VNN7NV04P, SOT-223) is on the module with its source on module GND, so there is one heater pin, `LSU_Htr` (E5), the switched heater return to the sensor (WBO_HEATER, J1 A2+A3); 0.5's separate `LSU_H-` pad (E6, tied to GND here) no longer exists. SEL1 is tied to PULL_DOWN1, CAN to the MCU. Heater +12 V stays on the car harness (front sensor plug B18 pin 2, from the main relay).
 
 The stock harness has four wires plus a shield to the front sensor, so the LSU needs an adapter pigtail at plug B18:
 
