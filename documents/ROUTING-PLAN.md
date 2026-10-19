@@ -1,5 +1,38 @@
 # Routing plan: rusefiSTI2004 rev B
 
+## Current H1a native-routing checkpoint — 2026-10-18
+
+Branch `layout-v2-native-usb-breakout`, based on `c0ed69a`, contains a native
+KiCad PNS route for **USB_D+ U1:6 → M1:N3**. Current H1a is four layers; this
+trial permits tracks on F.Cu/B.Cu only and leaves both inner layers intact.
+The older six-layer stage descriptions below are historical planning context.
+
+The automatic planner's forward attempts stopped at the VBAT track beside M1.
+Routing outwards from M1 on B.Cu lets native shove move VBAT into outside space;
+the route changes to F.Cu through one new 0.6/0.3 mm via at
+(99.25, 105.599998) mm, outside module footprints, and finishes at U1. No routed
+reference was supplied. Only USB_D+ and VBAT track/via geometry changes; all
+130 footprint positions/rotations/layers/locks and all 950 pad geometry/net/layer
+identities remain exact. Project and design-rule files are unchanged. Native
+preview/Cancel protections and one-step exact Undo/Redo were verified on copies.
+
+The delivered board is downgraded to stock KiCad 10 format, refilled and saved
+with stock 10.0.7. Independent before/after checks confirm:
+
+- USB_D+ opens **1→0**; real house-filtered board opens **116→115** (raw 185→184).
+- One added via; no other-net connectivity regressions or new routing findings.
+- House sharp bends **6→6**; changed-net teardrop gate passes (676 total teardrops).
+- Eight pre-existing DRC errors remain: six clearance, two track-width findings.
+
+This completes one connection, not the USB pair or this routing stage. USB_D−,
+90Ω stackup geometry, return-path review and 0.15 mm pair skew still require work.
+This prototype uses vias and does not meet the old plan's no-via USB ideal;
+it is not an electrically completed USB design or a fabrication release.
+The full save/refill normalizes rectangle corner ordering and zone serialization;
+that file churn does not indicate placement changes. The text-only bend count
+includes pad junctions (6→7); the installed house checker excludes them and stays at 6.
+
+
 Status 2026-10-14: placed, planes poured, stage 2 (high-current) routed. **156 connections to route** (233 counting Hellen module pad pairs), DRC 0 errors, schematic parity 0.
 Procedure: SOP-021 step 9 (routing order). This file is the board-specific part: which nets, which layer, which width, in which order.
 
