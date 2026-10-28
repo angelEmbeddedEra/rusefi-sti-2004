@@ -113,15 +113,6 @@
 	(constraint min_resolved_spokes 1)
 )
 
-# Routing: 45 degree corners only. KiCad's track_angle also checks the branches of a T-junction, and a
-# three-way junction always has one angle of 120 degrees or less, so here it is a warning (visible in the
-# editor). Bends (two segments) are enforced by kicad-autoroute, which cuts every bend under 135 degrees
-# into 45-degree steps, and by the routing gate. Syntax: plain number, no "deg" unit (KiCad 10).
-(rule "45 degree corners only"
-	(constraint track_angle (min 135))
-	(severity warning)
-)
-
 # Small SMD pads next to a track keep a single thermal spoke into the pour; one is enough for 0603-1206.
 (rule "SMD pads: one thermal spoke"
 	(condition "A.Type == 'Pad' && A.Pad_Type == 'SMD'")
