@@ -52,6 +52,7 @@ teardrops on new vias, finishing pass). Same nets, same router, same settings:
 | Master as hand-finished | 8 |
 
 No other net got worse and there is no new DRC finding versus the ripped start. Whole-board DRC
-unconnected items: master 123, this branch 102. Still open here: DIN_DEFOG, O2_HEATER_REAR, OUT_IGN2,
-PURGE, SPARE_LS1, SPARE_LS2, TACH (one connection each). Ten new vias next to module keep-clear areas
+unconnected items: master 123, this branch 102. After a clean-up pass (via minimisation: 3 layer-change vias replaced by single-layer
+paths) and one more short routing pass: **6 open** on these nets (PURGE now routed), whole-board
+unconnected items 101; still open: DIN_DEFOG, O2_HEATER_REAR, OUT_IGN2, SPARE_LS1, SPARE_LS2, TACH. Ten new vias next to module keep-clear areas
 on In3 have teardrops off (a teardrop there would violate the keep-clear).
